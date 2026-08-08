@@ -173,6 +173,7 @@ body {
   overflow: hidden;
   text-overflow: ellipsis;
 }
+.row .title { overflow-wrap: anywhere; }
 .row .trailing {
   flex: none;
   display: flex;

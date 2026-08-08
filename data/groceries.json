@@ -1,1 +1,1982 @@
-{"placeholder": true}
+{
+ "checked_on": "2026-08-08",
+ "pincode_context": "560038",
+ "methodology": {
+  "verified": "Price read from a page actually loaded in a real browser session (BigBasket defaulted to Bangalore/bbnow 10-min zone; Licious Bangalore). source_url is the page fetched.",
+  "reported": "Price seen in a search-engine snippet of a platform page that blocks direct fetches (Blinkit/Zepto). Location-dependent; treat as indicative.",
+  "derived": "Quick-commerce price computed as BigBasket verified price +10% (stated markup), because Blinkit/Zepto/Instamart do not render prices without a pincode session.",
+  "estimated": "No page fetched; number is a reasonable Bangalore market assumption.",
+  "qty_disclaimer": "ALL per-serving and weekly quantities are assumptions for one ~3,000 kcal/day adult male; every item carries estimated: true for quantities even when the price is verified."
+ },
+ "items": [
+  {
+   "id": "milk_toned",
+   "name": "Toned milk (Nandini GoodLife / fresh pouch)",
+   "category": "dairy",
+   "type": "perishable",
+   "pack": "500 ml pouch",
+   "weekly_qty": "3.5 L",
+   "qty_note": "Shakes Tue/Wed/Thu/Sat ~300ml, plain glass 250ml x3, cereal Mon/Fri 250ml x2, bedtime oats 250ml x3 training nights ~= 500 ml/day",
+   "prices": [
+    {
+     "platform": "BigBasket",
+     "product": "Nandini GoodLife Toned Milk 500 ml pouch",
+     "price": 26,
+     "url": "https://www.bigbasket.com/ps/?q=toned+milk",
+     "confidence": "verified"
+    },
+    {
+     "platform": "BigBasket",
+     "product": "Nandini GoodLife UHT 1 L Tetra Pak",
+     "price": 64,
+     "url": "https://www.bigbasket.com/ps/?q=toned+milk",
+     "confidence": "verified"
+    },
+    {
+     "platform": "Blinkit/Zepto",
+     "price": 29,
+     "confidence": "derived",
+     "note": "+10% over BigBasket 500 ml pouch"
+    },
+    {
+     "platform": "Kirana/Nandini booth",
+     "price": 24,
+     "confidence": "estimated",
+     "note": "Nandini booth pouch price is usually MRP ~24"
+    }
+   ],
+   "cheapest_platform": "Kirana/Nandini booth",
+   "weekly_cost_typical": 182,
+   "estimated": true,
+   "source_url": "https://www.bigbasket.com/ps/?q=toned+milk",
+   "short": "Milk"
+  },
+  {
+   "id": "curd",
+   "name": "Curd / dahi",
+   "category": "dairy",
+   "type": "perishable",
+   "pack": "1 kg pouch",
+   "weekly_qty": "1.5 kg",
+   "qty_note": "Curd rice Mon 150g, lunch curd/raita ~100g x5, dinner raita ~100g x7",
+   "prices": [
+    {
+     "platform": "BigBasket",
+     "product": "Amul Masti Dahi 1 kg pouch",
+     "price": 77,
+     "url": "https://www.bigbasket.com/ps/?q=curd",
+     "confidence": "verified"
+    },
+    {
+     "platform": "BigBasket",
+     "product": "Milky Mist Probiotic Curd 1 kg",
+     "price": 95,
+     "url": "https://www.bigbasket.com/ps/?q=curd",
+     "confidence": "verified"
+    },
+    {
+     "platform": "Blinkit/Zepto",
+     "price": 85,
+     "confidence": "derived",
+     "note": "+10% over BigBasket Amul 1 kg"
+    }
+   ],
+   "cheapest_platform": "BigBasket",
+   "weekly_cost_typical": 115,
+   "estimated": true,
+   "source_url": "https://www.bigbasket.com/ps/?q=curd",
+   "short": "Curd"
+  },
+  {
+   "id": "paneer",
+   "name": "Paneer (fresh)",
+   "category": "dairy",
+   "type": "perishable",
+   "pack": "200 g pouch",
+   "weekly_qty": "400 g",
+   "qty_note": "Tawa paneer Wed lunch ~150g, paneer capsicum Wed dinner ~100g, matar paneer Sun ~150g -> 2 x 200 g packs",
+   "prices": [
+    {
+     "platform": "BigBasket",
+     "product": "Milky Mist Paneer 200 g (13% off)",
+     "price": 70,
+     "url": "https://www.bigbasket.com/ps/?q=paneer",
+     "confidence": "verified"
+    },
+    {
+     "platform": "BigBasket",
+     "product": "Amul Fresh Malai Paneer 200 g",
+     "price": 76,
+     "url": "https://www.bigbasket.com/ps/?q=paneer",
+     "confidence": "verified"
+    },
+    {
+     "platform": "BigBasket",
+     "product": "Nandini Fresh Paneer 200 g",
+     "price": 96,
+     "url": "https://www.bigbasket.com/ps/?q=paneer",
+     "confidence": "verified"
+    },
+    {
+     "platform": "Blinkit",
+     "product": "Milky Mist Paneer 200 g",
+     "price": 89,
+     "url": "https://blinkit.com/prn/milky-mist-paneer/prid/28169",
+     "confidence": "reported",
+     "note": "search snippet; Blinkit blocks fetches; ranged 89-113 by location"
+    }
+   ],
+   "cheapest_platform": "BigBasket",
+   "weekly_cost_typical": 140,
+   "estimated": true,
+   "source_url": "https://www.bigbasket.com/ps/?q=paneer",
+   "short": "Paneer"
+  },
+  {
+   "id": "eggs",
+   "name": "Eggs (farm, white)",
+   "category": "protein",
+   "type": "perishable",
+   "pack": "Tray of 30",
+   "weekly_qty": "14 pcs",
+   "qty_note": "2 eggs/day Mon-Sat breakfasts (sandwich/omelette/fried/boiled), 0 Sun -> tray lasts ~2 weeks",
+   "prices": [
+    {
+     "platform": "BigBasket",
+     "product": "fresho! Farm Eggs Regular 30 pcs",
+     "price": 249,
+     "url": "https://www.bigbasket.com/ps/?q=eggs",
+     "confidence": "verified"
+    },
+    {
+     "platform": "Blinkit/Zepto",
+     "price": 274,
+     "confidence": "derived",
+     "note": "+10% over BigBasket tray"
+    },
+    {
+     "platform": "Kirana",
+     "price": 210,
+     "confidence": "estimated",
+     "note": "loose eggs ~Rs 7/pc in Bangalore"
+    }
+   ],
+   "cheapest_platform": "Kirana",
+   "weekly_cost_typical": 116,
+   "estimated": true,
+   "source_url": "https://www.bigbasket.com/ps/?q=eggs",
+   "short": "Eggs"
+  },
+  {
+   "id": "chicken_breast",
+   "name": "Chicken breast / boneless",
+   "category": "meat",
+   "type": "perishable",
+   "pack": "450-500 g",
+   "weekly_qty": "500 g raw",
+   "qty_note": "Chicken dry Sat lunch ~250g + chicken gravy Sun dinner ~250g",
+   "prices": [
+    {
+     "platform": "BigBasket",
+     "product": "Delfrez Chicken Boneless Breast 500 g",
+     "price": 239,
+     "url": "https://www.bigbasket.com/ps/?q=chicken+breast",
+     "confidence": "verified"
+    },
+    {
+     "platform": "BigBasket",
+     "product": "Venkys Chicken Breast 430 g (frozen)",
+     "price": 175,
+     "url": "https://www.bigbasket.com/ps/?q=chicken+breast",
+     "confidence": "verified"
+    },
+    {
+     "platform": "Licious",
+     "product": "Chicken Breast - Boneless 450 g",
+     "price": 356,
+     "url": "https://www.licious.in/chicken",
+     "confidence": "verified"
+    },
+    {
+     "platform": "Licious",
+     "product": "Chicken Curry Cut Small 500 g",
+     "price": 196,
+     "url": "https://www.licious.in/chicken",
+     "confidence": "verified"
+    },
+    {
+     "platform": "Blinkit",
+     "product": "Licious Chicken Breast Boneless",
+     "price": 275,
+     "url": "https://blinkit.com/prn/licious-chicken-breast-boneless/prid/481137",
+     "confidence": "reported",
+     "note": "search snippet; page blocks fetch"
+    },
+    {
+     "platform": "Zepto",
+     "product": "Licious Chicken Breast Boneless",
+     "price": 284,
+     "url": "https://www.zepto.com/pn/licious-chicken-breast-boneless/pvid/8ff55a82-411a-4793-8259-396e72f415fb",
+     "confidence": "reported",
+     "note": "search snippet; page blocks fetch"
+    }
+   ],
+   "cheapest_platform": "BigBasket",
+   "weekly_cost_typical": 239,
+   "estimated": true,
+   "source_url": "https://www.bigbasket.com/ps/?q=chicken+breast",
+   "short": "Chicken breast"
+  },
+  {
+   "id": "chicken_sausages",
+   "name": "Chicken breakfast sausages",
+   "category": "meat",
+   "type": "perishable",
+   "pack": "250 g (frozen)",
+   "weekly_qty": "125 g (half pack)",
+   "qty_note": "Fri dinner sausages in tomato-onion; frozen pack survives 2 weeks",
+   "prices": [
+    {
+     "platform": "BigBasket",
+     "product": "fresho! Chicken Breakfast Sausages 250 g",
+     "price": 99,
+     "url": "https://www.bigbasket.com/ps/?q=chicken+sausage",
+     "confidence": "verified"
+    },
+    {
+     "platform": "BigBasket",
+     "product": "Prasuma Chicken Sausage 250 g",
+     "price": 170,
+     "url": "https://www.bigbasket.com/ps/?q=chicken+sausage",
+     "confidence": "verified"
+    }
+   ],
+   "cheapest_platform": "BigBasket",
+   "weekly_cost_typical": 50,
+   "estimated": true,
+   "source_url": "https://www.bigbasket.com/ps/?q=chicken+sausage",
+   "short": "Chicken sausages"
+  },
+  {
+   "id": "cheese_slices",
+   "name": "Cheese slices",
+   "category": "dairy",
+   "type": "perishable",
+   "pack": "200 g (10 slices)",
+   "weekly_qty": "2 slices (~40 g)",
+   "qty_note": "Fri kheera+cheese sandwich only; pack lasts ~5 weeks",
+   "prices": [
+    {
+     "platform": "BigBasket",
+     "product": "Amul Pure Milk Cheese Slices 200 g",
+     "price": 140,
+     "url": "https://www.bigbasket.com/ps/?q=cheese+slices",
+     "confidence": "verified"
+    },
+    {
+     "platform": "BigBasket",
+     "product": "Go Cheese Slices 200 g (33% off)",
+     "price": 107,
+     "url": "https://www.bigbasket.com/ps/?q=cheese+slices",
+     "confidence": "verified"
+    }
+   ],
+   "cheapest_platform": "BigBasket",
+   "weekly_cost_typical": 28,
+   "estimated": true,
+   "source_url": "https://www.bigbasket.com/ps/?q=cheese+slices",
+   "short": "Cheese slices"
+  },
+  {
+   "id": "ghee",
+   "name": "Ghee",
+   "category": "fats",
+   "type": "staple",
+   "pack": "500 ml pouch",
+   "weekly_qty": "~100 g",
+   "qty_note": "Tadka on dals, parathas, sewai, kheer-style bedtime oats ~15 g/day",
+   "prices": [
+    {
+     "platform": "BigBasket",
+     "product": "Milky Mist Ghee 500 ml PET (22% off)",
+     "price": 296,
+     "url": "https://www.bigbasket.com/ps/?q=ghee+500ml",
+     "confidence": "verified"
+    },
+    {
+     "platform": "BigBasket",
+     "product": "Amul Ghee 500 ml pouch",
+     "price": 323,
+     "url": "https://www.bigbasket.com/ps/?q=ghee+500ml",
+     "confidence": "verified"
+    },
+    {
+     "platform": "BigBasket",
+     "product": "Nandini Pure Ghee 1 L pouch",
+     "price": 656,
+     "url": "https://www.bigbasket.com/ps/?q=ghee+500ml",
+     "confidence": "verified"
+    }
+   ],
+   "cheapest_platform": "BigBasket",
+   "weekly_cost_typical": 72,
+   "estimated": true,
+   "source_url": "https://www.bigbasket.com/ps/?q=ghee+500ml",
+   "short": "Ghee"
+  },
+  {
+   "id": "bread_ww",
+   "name": "Whole wheat bread",
+   "category": "bakery",
+   "type": "perishable",
+   "pack": "400-450 g loaf",
+   "weekly_qty": "1 loaf",
+   "qty_note": "Mon avocado-egg sandwich 4 slices, Wed bread omelette 3, Fri cheese sandwich 4",
+   "prices": [
+    {
+     "platform": "BigBasket",
+     "product": "Britannia Whole Wheat Bread 450 g",
+     "price": 50,
+     "url": "https://www.bigbasket.com/ps/?q=whole+wheat+bread",
+     "confidence": "verified"
+    },
+    {
+     "platform": "BigBasket",
+     "product": "English Oven Zero Maida 400 g",
+     "price": 60,
+     "url": "https://www.bigbasket.com/ps/?q=whole+wheat+bread",
+     "confidence": "verified"
+    }
+   ],
+   "cheapest_platform": "BigBasket",
+   "weekly_cost_typical": 50,
+   "estimated": true,
+   "source_url": "https://www.bigbasket.com/ps/?q=whole+wheat+bread",
+   "short": "Whole wheat bread"
+  },
+  {
+   "id": "avocado",
+   "name": "Avocado (Indian)",
+   "category": "fruit",
+   "type": "perishable",
+   "pack": "2 pcs (~500-700 g)",
+   "weekly_qty": "1 pc",
+   "qty_note": "Mon breakfast sandwich; Indian variety, buy 2-pack alternate weeks or 1 pc",
+   "prices": [
+    {
+     "platform": "BigBasket",
+     "product": "fresho! Indian Avocado 2 pcs 500-700 g",
+     "price": 111,
+     "url": "https://www.bigbasket.com/ps/?q=avocado",
+     "confidence": "verified"
+    },
+    {
+     "platform": "BigBasket",
+     "product": "fresho! Avocado Imported Small 1 pc",
+     "price": 65,
+     "url": "https://www.bigbasket.com/ps/?q=avocado",
+     "confidence": "verified"
+    }
+   ],
+   "cheapest_platform": "BigBasket",
+   "weekly_cost_typical": 55,
+   "estimated": true,
+   "source_url": "https://www.bigbasket.com/ps/?q=avocado",
+   "short": "Avocado"
+  },
+  {
+   "id": "almonds",
+   "name": "Almonds (badam)",
+   "category": "nuts",
+   "type": "staple",
+   "pack": "500 g pouch",
+   "weekly_qty": "100 g",
+   "qty_note": "20 nuts (~24 g) Mon+Thu early morning + share of bedtime mixed nuts x3 training nights",
+   "prices": [
+    {
+     "platform": "BigBasket",
+     "product": "BB Royal Organic Almonds 500 g",
+     "price": 462,
+     "url": "https://www.bigbasket.com/ps/?q=almonds+500g",
+     "confidence": "verified"
+    },
+    {
+     "platform": "BigBasket",
+     "product": "bb Popular Californian Almonds 500 g",
+     "price": 500,
+     "url": "https://www.bigbasket.com/ps/?q=almonds+500g",
+     "confidence": "verified"
+    },
+    {
+     "platform": "Blinkit/Zepto",
+     "price": 550,
+     "confidence": "derived",
+     "note": "+10% over bb Popular 500 g"
+    }
+   ],
+   "cheapest_platform": "BigBasket",
+   "weekly_cost_typical": 100,
+   "estimated": true,
+   "source_url": "https://www.bigbasket.com/ps/?q=almonds+500g",
+   "short": "Almonds"
+  },
+  {
+   "id": "walnuts",
+   "name": "Walnut kernels",
+   "category": "nuts",
+   "type": "staple",
+   "pack": "200 g",
+   "weekly_qty": "30 g",
+   "qty_note": "6 halves (~15 g) Tue + Fri early morning",
+   "prices": [
+    {
+     "platform": "BigBasket",
+     "product": "bb Popular Walnut Kernels 200 g (64% off)",
+     "price": 309,
+     "url": "https://www.bigbasket.com/ps/?q=walnut+kernels",
+     "confidence": "verified"
+    },
+    {
+     "platform": "BigBasket",
+     "product": "Happilo Kashmiri Walnut Kernels 200 g",
+     "price": 339,
+     "url": "https://www.bigbasket.com/ps/?q=walnut+kernels",
+     "confidence": "verified"
+    }
+   ],
+   "cheapest_platform": "BigBasket",
+   "weekly_cost_typical": 46,
+   "estimated": true,
+   "source_url": "https://www.bigbasket.com/ps/?q=walnut+kernels",
+   "short": "Walnut kernels"
+  },
+  {
+   "id": "pista",
+   "name": "Pistachios (roasted, salted)",
+   "category": "nuts",
+   "type": "staple",
+   "pack": "200 g",
+   "weekly_qty": "40 g",
+   "qty_note": "20 pcs (~20 g with shell) Wed + Sat early morning",
+   "prices": [
+    {
+     "platform": "BigBasket",
+     "product": "Happilo Roasted & Salted Pistachios 200 g",
+     "price": 405,
+     "url": "https://www.bigbasket.com/ps/?q=pistachio+roasted+salted",
+     "confidence": "verified"
+    },
+    {
+     "platform": "BigBasket",
+     "product": "Tata Sampann Roasted & Salted Pistachios 500 g",
+     "price": 849,
+     "url": "https://www.bigbasket.com/ps/?q=pistachio+roasted+salted",
+     "confidence": "verified"
+    }
+   ],
+   "cheapest_platform": "BigBasket",
+   "weekly_cost_typical": 81,
+   "estimated": true,
+   "source_url": "https://www.bigbasket.com/ps/?q=pistachio+roasted+salted",
+   "short": "Pistachios"
+  },
+  {
+   "id": "cashew",
+   "name": "Cashew (kaju, whole)",
+   "category": "nuts",
+   "type": "staple",
+   "pack": "500 g",
+   "weekly_qty": "50 g",
+   "qty_note": "20 pcs Sun morning (~30 g) + curd rice Mon ~10 g + sewai Thu ~10 g",
+   "prices": [
+    {
+     "platform": "BigBasket",
+     "product": "bb Royal Cashew Whole 500 g (30% off)",
+     "price": 547,
+     "url": "https://www.bigbasket.com/ps/?q=cashew+500g",
+     "confidence": "verified"
+    },
+    {
+     "platform": "BigBasket",
+     "product": "Tata Sampann Premium Cashews 500 g",
+     "price": 565,
+     "url": "https://www.bigbasket.com/ps/?q=cashew+500g",
+     "confidence": "verified"
+    }
+   ],
+   "cheapest_platform": "BigBasket",
+   "weekly_cost_typical": 55,
+   "estimated": true,
+   "source_url": "https://www.bigbasket.com/ps/?q=cashew+500g",
+   "short": "Cashew"
+  },
+  {
+   "id": "raisins",
+   "name": "Raisins (kishmish)",
+   "category": "nuts",
+   "type": "staple",
+   "pack": "500 g",
+   "weekly_qty": "15 g",
+   "qty_note": "Thu sewai + occasional bedtime oats; 500 g lasts ~8 months",
+   "prices": [
+    {
+     "platform": "BigBasket",
+     "product": "bb SUPER SAVER Indian Raisins 500 g",
+     "price": 162,
+     "url": "https://www.bigbasket.com/ps/?q=raisins",
+     "confidence": "verified"
+    }
+   ],
+   "cheapest_platform": "BigBasket",
+   "weekly_cost_typical": 5,
+   "estimated": true,
+   "source_url": "https://www.bigbasket.com/ps/?q=raisins",
+   "short": "Raisins"
+  },
+  {
+   "id": "peanuts",
+   "name": "Raw peanuts",
+   "category": "nuts",
+   "type": "staple",
+   "pack": "500 g",
+   "weekly_qty": "50 g",
+   "qty_note": "Sat chiwra/poha with peanuts ~30 g + puliogare Wed ~20 g",
+   "prices": [
+    {
+     "platform": "BigBasket",
+     "product": "bb Royal Raw Peanuts 500 g",
+     "price": 75,
+     "url": "https://www.bigbasket.com/ps/?q=raw+peanuts",
+     "confidence": "verified"
+    },
+    {
+     "platform": "BigBasket",
+     "product": "bb Popular Raw Peanuts 1 kg",
+     "price": 192,
+     "url": "https://www.bigbasket.com/ps/?q=raw+peanuts",
+     "confidence": "verified"
+    }
+   ],
+   "cheapest_platform": "BigBasket",
+   "weekly_cost_typical": 8,
+   "estimated": true,
+   "source_url": "https://www.bigbasket.com/ps/?q=raw+peanuts",
+   "short": "Raw peanuts"
+  },
+  {
+   "id": "atta",
+   "name": "Whole wheat atta",
+   "category": "grains",
+   "type": "staple",
+   "pack": "5 kg bag",
+   "weekly_qty": "750 g",
+   "qty_note": "~18 rotis/week x 30 g + dal paratha Tue 100 g + aloo paratha Sun 100 g; 5 kg lasts ~6-7 weeks",
+   "prices": [
+    {
+     "platform": "BigBasket",
+     "product": "Aashirvaad Shudh Chakki Atta 5 kg",
+     "price": 242,
+     "url": "https://www.bigbasket.com/ps/?q=aashirvaad+atta+5+kg",
+     "confidence": "verified"
+    },
+    {
+     "platform": "BigBasket",
+     "product": "Aashirvaad Select Sharbati 5 kg",
+     "price": 261,
+     "url": "https://www.bigbasket.com/ps/?q=aashirvaad+atta+5+kg",
+     "confidence": "verified"
+    },
+    {
+     "platform": "Blinkit/Zepto",
+     "price": 267,
+     "confidence": "derived",
+     "note": "+10% over Shudh Chakki 5 kg"
+    }
+   ],
+   "cheapest_platform": "BigBasket",
+   "weekly_cost_typical": 36,
+   "estimated": true,
+   "source_url": "https://www.bigbasket.com/ps/?q=aashirvaad+atta+5+kg",
+   "short": "Whole wheat atta"
+  },
+  {
+   "id": "rice_sona_masoori",
+   "name": "Sona masoori rice",
+   "category": "grains",
+   "type": "staple",
+   "pack": "5 kg bag",
+   "weekly_qty": "320 g",
+   "qty_note": "Curd rice Mon, puliogare Wed, lemon rice Fri, veg pulao Sat ~80 g dry each; 5 kg lasts ~15 weeks",
+   "prices": [
+    {
+     "platform": "BigBasket",
+     "product": "bb SUPER SAVER Sona Masoori Raw Rice 5 kg",
+     "price": 275,
+     "url": "https://www.bigbasket.com/ps/?q=sona+masoori+rice+5kg",
+     "confidence": "verified"
+    },
+    {
+     "platform": "BigBasket",
+     "product": "bb Royal Sona Masoori 5 kg",
+     "price": 315,
+     "url": "https://www.bigbasket.com/ps/?q=sona+masoori+rice+5kg",
+     "confidence": "verified"
+    }
+   ],
+   "cheapest_platform": "BigBasket",
+   "weekly_cost_typical": 18,
+   "estimated": true,
+   "source_url": "https://www.bigbasket.com/ps/?q=sona+masoori+rice+5kg",
+   "short": "Sona masoori rice"
+  },
+  {
+   "id": "little_millet",
+   "name": "Little millet (samai/kutki)",
+   "category": "grains",
+   "type": "staple",
+   "pack": "500 g",
+   "weekly_qty": "140 g",
+   "qty_note": "Tue + Thu lunch base ~70 g dry each; 500 g lasts ~3.5 weeks",
+   "prices": [
+    {
+     "platform": "BigBasket",
+     "product": "Parry's Little Millet 500 g (25% off)",
+     "price": 75,
+     "url": "https://www.bigbasket.com/ps/?q=little+millet",
+     "confidence": "verified"
+    },
+    {
+     "platform": "BigBasket",
+     "product": "Safe Harvest Little Millet 500 g",
+     "price": 108,
+     "url": "https://www.bigbasket.com/ps/?q=little+millet",
+     "confidence": "verified"
+    }
+   ],
+   "cheapest_platform": "BigBasket",
+   "weekly_cost_typical": 21,
+   "estimated": true,
+   "source_url": "https://www.bigbasket.com/ps/?q=little+millet",
+   "short": "Little millet"
+  },
+  {
+   "id": "dosa_batter",
+   "name": "Dosa batter (ready)",
+   "category": "grains",
+   "type": "perishable",
+   "pack": "1 kg tub",
+   "weekly_qty": "~500 g",
+   "qty_note": "Thu + Fri dinner dosas ~4 dosas; iD/Milky Mist tub. Not price-verified this session",
+   "prices": [
+    {
+     "platform": "BigBasket",
+     "product": "iD Fresh Dosa Batter 1 kg (typical)",
+     "price": 120,
+     "confidence": "estimated",
+     "note": "not fetched; typical shelf price 95-145"
+    }
+   ],
+   "cheapest_platform": "BigBasket",
+   "weekly_cost_typical": 60,
+   "estimated": true,
+   "source_url": "",
+   "short": "Dosa batter"
+  },
+  {
+   "id": "toor_dal",
+   "name": "Toor/arhar dal",
+   "category": "dals",
+   "type": "staple",
+   "pack": "1 kg",
+   "weekly_qty": "60 g",
+   "qty_note": "Assumption: dal = 60 g dry per serving; Mon dinner arhar dal",
+   "prices": [
+    {
+     "platform": "BigBasket",
+     "product": "bb Popular Toor/Arhar Dal 1 kg (57% off)",
+     "price": 119,
+     "url": "https://www.bigbasket.com/ps/?q=toor+dal+1kg",
+     "confidence": "verified"
+    },
+    {
+     "platform": "BigBasket",
+     "product": "Tata Sampann Toor Dal 1 kg",
+     "price": 171,
+     "url": "https://www.bigbasket.com/ps/?q=toor+dal+1kg",
+     "confidence": "verified"
+    }
+   ],
+   "cheapest_platform": "BigBasket",
+   "weekly_cost_typical": 7,
+   "estimated": true,
+   "source_url": "https://www.bigbasket.com/ps/?q=toor+dal+1kg",
+   "short": "Toor"
+  },
+  {
+   "id": "masoor_dal",
+   "name": "Masoor dal",
+   "category": "dals",
+   "type": "staple",
+   "pack": "1 kg",
+   "weekly_qty": "60 g",
+   "qty_note": "Sat dinner masoor dal, 60 g dry",
+   "prices": [
+    {
+     "platform": "BigBasket",
+     "product": "bb Popular Masoor Dal 1 kg (33% off)",
+     "price": 101,
+     "url": "https://www.bigbasket.com/ps/?q=masoor+dal",
+     "confidence": "verified"
+    }
+   ],
+   "cheapest_platform": "BigBasket",
+   "weekly_cost_typical": 6,
+   "estimated": true,
+   "source_url": "https://www.bigbasket.com/ps/?q=masoor+dal",
+   "short": "Masoor dal"
+  },
+  {
+   "id": "rajma",
+   "name": "Rajma (kidney beans)",
+   "category": "dals",
+   "type": "staple",
+   "pack": "500 g",
+   "weekly_qty": "70 g",
+   "qty_note": "Tue dinner dry rajma 60 g + ~10 g into dal makhani",
+   "prices": [
+    {
+     "platform": "BigBasket",
+     "product": "bb Royal Rajma Kashmiri 500 g",
+     "price": 70,
+     "url": "https://www.bigbasket.com/ps/?q=rajma",
+     "confidence": "verified"
+    },
+    {
+     "platform": "BigBasket",
+     "product": "bb Royal Rajma Red 500 g",
+     "price": 90,
+     "url": "https://www.bigbasket.com/ps/?q=rajma",
+     "confidence": "verified"
+    }
+   ],
+   "cheapest_platform": "BigBasket",
+   "weekly_cost_typical": 10,
+   "estimated": true,
+   "source_url": "https://www.bigbasket.com/ps/?q=rajma",
+   "short": "Rajma"
+  },
+  {
+   "id": "urad_whole",
+   "name": "Urad dal whole (for dal makhani)",
+   "category": "dals",
+   "type": "staple",
+   "pack": "500 g",
+   "weekly_qty": "60 g",
+   "qty_note": "Tue lunch dal makhani base; price not individually captured this session",
+   "prices": [
+    {
+     "platform": "BigBasket",
+     "product": "bb Royal Urad Whole 500 g (typical)",
+     "price": 120,
+     "confidence": "estimated",
+     "note": "not fetched; typical 100-140"
+    }
+   ],
+   "cheapest_platform": "BigBasket",
+   "weekly_cost_typical": 14,
+   "estimated": true,
+   "source_url": "",
+   "short": "Urad dal whole"
+  },
+  {
+   "id": "kala_chana",
+   "name": "Kala chana (brown chana)",
+   "category": "dals",
+   "type": "staple",
+   "pack": "500 g",
+   "weekly_qty": "140 g",
+   "qty_note": "Mon lunch 50 g + Fri lunch 50 g + Wed chaat 40 g dry",
+   "prices": [
+    {
+     "platform": "BigBasket",
+     "product": "bb Popular Chana Brown 500 g (22% off)",
+     "price": 51,
+     "url": "https://www.bigbasket.com/ps/?q=kala+chana",
+     "confidence": "verified"
+    },
+    {
+     "platform": "BigBasket",
+     "product": "Tata Sampann Kala Chana 500 g",
+     "price": 54,
+     "url": "https://www.bigbasket.com/ps/?q=kala+chana",
+     "confidence": "verified"
+    }
+   ],
+   "cheapest_platform": "BigBasket",
+   "weekly_cost_typical": 14,
+   "estimated": true,
+   "source_url": "https://www.bigbasket.com/ps/?q=kala+chana",
+   "short": "Kala chana"
+  },
+  {
+   "id": "kabuli_chana",
+   "name": "Kabuli chana (white chole)",
+   "category": "dals",
+   "type": "staple",
+   "pack": "500 g",
+   "weekly_qty": "110 g",
+   "qty_note": "Thu lunch white chole 60 g + Sun chole chaat 50 g dry",
+   "prices": [
+    {
+     "platform": "BigBasket",
+     "product": "bb Popular Kabuli Chana 500 g",
+     "price": 65,
+     "url": "https://www.bigbasket.com/ps/?q=kabuli+chana",
+     "confidence": "verified"
+    },
+    {
+     "platform": "BigBasket",
+     "product": "bb Royal Kabuli Chana 500 g (35% off)",
+     "price": 68,
+     "url": "https://www.bigbasket.com/ps/?q=kabuli+chana",
+     "confidence": "verified"
+    }
+   ],
+   "cheapest_platform": "BigBasket",
+   "weekly_cost_typical": 14,
+   "estimated": true,
+   "source_url": "https://www.bigbasket.com/ps/?q=kabuli+chana",
+   "short": "Kabuli chana"
+  },
+  {
+   "id": "lobia",
+   "name": "Lobia (black-eyed peas)",
+   "category": "dals",
+   "type": "staple",
+   "pack": "500 g",
+   "weekly_qty": "60 g",
+   "qty_note": "Thu dinner lobia dry, 60 g",
+   "prices": [
+    {
+     "platform": "BigBasket",
+     "product": "bb Royal Lobia White 500 g",
+     "price": 60,
+     "url": "https://www.bigbasket.com/ps/?q=lobia",
+     "confidence": "verified"
+    }
+   ],
+   "cheapest_platform": "BigBasket",
+   "weekly_cost_typical": 7,
+   "estimated": true,
+   "source_url": "https://www.bigbasket.com/ps/?q=lobia",
+   "short": "Lobia"
+  },
+  {
+   "id": "besan",
+   "name": "Besan (for kadhi pakora)",
+   "category": "dals",
+   "type": "staple",
+   "pack": "1 kg",
+   "weekly_qty": "80 g",
+   "qty_note": "Sun kadhi pakora; 1 kg lasts ~3 months",
+   "prices": [
+    {
+     "platform": "BigBasket",
+     "product": "bb SUPER SAVER Besan 1 kg",
+     "price": 99,
+     "url": "https://www.bigbasket.com/ps/?q=besan+1kg",
+     "confidence": "verified"
+    },
+    {
+     "platform": "BigBasket",
+     "product": "Tata Sampann Fine Besan 1 kg",
+     "price": 110,
+     "url": "https://www.bigbasket.com/ps/?q=besan+1kg",
+     "confidence": "verified"
+    }
+   ],
+   "cheapest_platform": "BigBasket",
+   "weekly_cost_typical": 8,
+   "estimated": true,
+   "source_url": "https://www.bigbasket.com/ps/?q=besan+1kg",
+   "short": "Besan"
+  },
+  {
+   "id": "oil_sunflower",
+   "name": "Sunflower oil",
+   "category": "fats",
+   "type": "staple",
+   "pack": "1 L",
+   "weekly_qty": "250 ml",
+   "qty_note": "~15-20 ml per cooked meal, two cooked meals/day",
+   "prices": [
+    {
+     "platform": "BigBasket",
+     "product": "Sunpure Refined Sunflower Oil 1 L PET",
+     "price": 140,
+     "url": "https://www.bigbasket.com/ps/?q=sunflower+oil+1l",
+     "confidence": "verified"
+    },
+    {
+     "platform": "BigBasket",
+     "product": "Gold Winner 1 L pouch",
+     "price": 182,
+     "url": "https://www.bigbasket.com/ps/?q=sunflower+oil+1l",
+     "confidence": "verified"
+    }
+   ],
+   "cheapest_platform": "BigBasket",
+   "weekly_cost_typical": 35,
+   "estimated": true,
+   "source_url": "https://www.bigbasket.com/ps/?q=sunflower+oil+1l",
+   "short": "Sunflower oil"
+  },
+  {
+   "id": "oats",
+   "name": "Rolled oats",
+   "category": "breakfast",
+   "type": "staple",
+   "pack": "1 kg",
+   "weekly_qty": "120 g",
+   "qty_note": "Bedtime milk+oats+nuts on ~3 training nights x 40 g",
+   "prices": [
+    {
+     "platform": "BigBasket",
+     "product": "Quaker Rolled Oats 1 kg (23% off)",
+     "price": 162,
+     "url": "https://www.bigbasket.com/ps/?q=oats+1kg",
+     "confidence": "verified"
+    },
+    {
+     "platform": "BigBasket",
+     "product": "Saffola Rolled Oats 1 kg + 300 g free",
+     "price": 191,
+     "url": "https://www.bigbasket.com/ps/?q=oats+1kg",
+     "confidence": "verified"
+    }
+   ],
+   "cheapest_platform": "BigBasket",
+   "weekly_cost_typical": 19,
+   "estimated": true,
+   "source_url": "https://www.bigbasket.com/ps/?q=oats+1kg",
+   "short": "Rolled oats"
+  },
+  {
+   "id": "cereal_muesli",
+   "name": "Cereal / muesli",
+   "category": "breakfast",
+   "type": "staple",
+   "pack": "750 g",
+   "weekly_qty": "80 g",
+   "qty_note": "Mon + Fri evening milk+cereal x 40 g",
+   "prices": [
+    {
+     "platform": "BigBasket",
+     "product": "Kellogg's Fruit Nut & Seeds Muesli 750 g",
+     "price": 349,
+     "url": "https://www.bigbasket.com/ps/?q=muesli",
+     "confidence": "verified"
+    },
+    {
+     "platform": "BigBasket",
+     "product": "Kellogg's Millet Muesli 500 g (56% off)",
+     "price": 165,
+     "url": "https://www.bigbasket.com/ps/?q=muesli",
+     "confidence": "verified"
+    }
+   ],
+   "cheapest_platform": "BigBasket",
+   "weekly_cost_typical": 37,
+   "estimated": true,
+   "source_url": "https://www.bigbasket.com/ps/?q=muesli",
+   "short": "Cereal / muesli"
+  },
+  {
+   "id": "sattu",
+   "name": "Sattu (chana)",
+   "category": "breakfast",
+   "type": "staple",
+   "pack": "500 g",
+   "weekly_qty": "75 g",
+   "qty_note": "Tue/Thu/Sat evening sattu drink x 25 g",
+   "prices": [
+    {
+     "platform": "BigBasket",
+     "product": "bb Royal Sattu Atta 500 g (38% off)",
+     "price": 74,
+     "url": "https://www.bigbasket.com/ps/?q=sattu",
+     "confidence": "verified"
+    },
+    {
+     "platform": "BigBasket",
+     "product": "Ganesh Chana Sattu 500 g",
+     "price": 81,
+     "url": "https://www.bigbasket.com/ps/?q=sattu",
+     "confidence": "verified"
+    }
+   ],
+   "cheapest_platform": "BigBasket",
+   "weekly_cost_typical": 11,
+   "estimated": true,
+   "source_url": "https://www.bigbasket.com/ps/?q=sattu",
+   "short": "Sattu"
+  },
+  {
+   "id": "flax_seed",
+   "name": "Flax seeds",
+   "category": "breakfast",
+   "type": "staple",
+   "pack": "200 g",
+   "weekly_qty": "30 g",
+   "qty_note": "Tue/Wed/Fri lunch 10 g (roasted, on curd)",
+   "prices": [
+    {
+     "platform": "BigBasket",
+     "product": "bb Royal Flax Seeds 200 g",
+     "price": 69,
+     "url": "https://www.bigbasket.com/ps/?q=flax+seeds",
+     "confidence": "verified"
+    },
+    {
+     "platform": "BigBasket",
+     "product": "BB Royal Organic Flax Seeds 1 kg",
+     "price": 224,
+     "url": "https://www.bigbasket.com/ps/?q=flax+seeds",
+     "confidence": "verified"
+    }
+   ],
+   "cheapest_platform": "BigBasket",
+   "weekly_cost_typical": 10,
+   "estimated": true,
+   "source_url": "https://www.bigbasket.com/ps/?q=flax+seeds",
+   "short": "Flax seeds"
+  },
+  {
+   "id": "sewai",
+   "name": "Sewai / vermicelli",
+   "category": "breakfast",
+   "type": "staple",
+   "pack": "850 g",
+   "weekly_qty": "60 g",
+   "qty_note": "Thu breakfast milk sewai; 850 g lasts ~3 months",
+   "prices": [
+    {
+     "platform": "BigBasket",
+     "product": "MTR Vermicelli 850 g (30% off)",
+     "price": 61,
+     "url": "https://www.bigbasket.com/ps/?q=vermicelli",
+     "confidence": "verified"
+    }
+   ],
+   "cheapest_platform": "BigBasket",
+   "weekly_cost_typical": 4,
+   "estimated": true,
+   "source_url": "https://www.bigbasket.com/ps/?q=vermicelli",
+   "short": "Sewai"
+  },
+  {
+   "id": "poha",
+   "name": "Poha (chiwra, thick)",
+   "category": "breakfast",
+   "type": "staple",
+   "pack": "1 kg",
+   "weekly_qty": "60 g",
+   "qty_note": "Sat breakfast poha with peanuts",
+   "prices": [
+    {
+     "platform": "BigBasket",
+     "product": "bb Royal Thick Poha 1 kg (35% off)",
+     "price": 72,
+     "url": "https://www.bigbasket.com/ps/?q=poha+1kg",
+     "confidence": "verified"
+    },
+    {
+     "platform": "BigBasket",
+     "product": "Tata Sampann Thick Poha 1 kg",
+     "price": 86,
+     "url": "https://www.bigbasket.com/ps/?q=poha+1kg",
+     "confidence": "verified"
+    }
+   ],
+   "cheapest_platform": "BigBasket",
+   "weekly_cost_typical": 4,
+   "estimated": true,
+   "source_url": "https://www.bigbasket.com/ps/?q=poha+1kg",
+   "short": "Poha"
+  },
+  {
+   "id": "boondi",
+   "name": "Boondi (raita)",
+   "category": "snacks",
+   "type": "staple",
+   "pack": "200 g",
+   "weekly_qty": "50 g",
+   "qty_note": "Thu + Sat boondi raita x 25 g",
+   "prices": [
+    {
+     "platform": "BigBasket",
+     "product": "Haldiram's Boondi 200 g",
+     "price": 55,
+     "url": "https://www.bigbasket.com/ps/?q=boondi",
+     "confidence": "verified"
+    },
+    {
+     "platform": "BigBasket",
+     "product": "Modern Kitchens Raita Boondi 200 g",
+     "price": 64,
+     "url": "https://www.bigbasket.com/ps/?q=boondi",
+     "confidence": "verified"
+    }
+   ],
+   "cheapest_platform": "BigBasket",
+   "weekly_cost_typical": 14,
+   "estimated": true,
+   "source_url": "https://www.bigbasket.com/ps/?q=boondi",
+   "short": "Boondi"
+  },
+  {
+   "id": "honey",
+   "name": "Honey",
+   "category": "condiments",
+   "type": "staple",
+   "pack": "500 g",
+   "weekly_qty": "50 g",
+   "qty_note": "1 tsp/day in recovery shot",
+   "prices": [
+    {
+     "platform": "BigBasket",
+     "product": "bb Royal Honey 500 g (48% off)",
+     "price": 125,
+     "url": "https://www.bigbasket.com/ps/?q=honey+500g",
+     "confidence": "verified"
+    },
+    {
+     "platform": "BigBasket",
+     "product": "Dabur Pure Honey 400 g B1G1",
+     "price": 269,
+     "url": "https://www.bigbasket.com/ps/?q=honey+500g",
+     "confidence": "verified"
+    }
+   ],
+   "cheapest_platform": "BigBasket",
+   "weekly_cost_typical": 13,
+   "estimated": true,
+   "source_url": "https://www.bigbasket.com/ps/?q=honey+500g",
+   "short": "Honey"
+  },
+  {
+   "id": "green_tea",
+   "name": "Green tea bags",
+   "category": "beverages",
+   "type": "staple",
+   "pack": "20-25 bags",
+   "weekly_qty": "10 bags",
+   "qty_note": "1-2 cups/day",
+   "prices": [
+    {
+     "platform": "BigBasket",
+     "product": "Organic Tattva Tulsi Green Tea 20 bags",
+     "price": 108,
+     "url": "https://www.bigbasket.com/ps/?q=green+tea+bags",
+     "confidence": "verified"
+    }
+   ],
+   "cheapest_platform": "BigBasket",
+   "weekly_cost_typical": 54,
+   "estimated": true,
+   "source_url": "https://www.bigbasket.com/ps/?q=green+tea+bags",
+   "short": "Green tea bags"
+  },
+  {
+   "id": "turmeric",
+   "name": "Turmeric powder",
+   "category": "spices",
+   "type": "staple",
+   "pack": "200 g",
+   "weekly_qty": "20 g",
+   "qty_note": "Half tsp daily shot + cooking",
+   "prices": [
+    {
+     "platform": "BigBasket",
+     "product": "bb Royal Turmeric Powder 200 g",
+     "price": 40,
+     "url": "https://www.bigbasket.com/ps/?q=turmeric+powder+200g",
+     "confidence": "verified"
+    },
+    {
+     "platform": "BigBasket",
+     "product": "Tata Sampann Turmeric 200 g",
+     "price": 63,
+     "url": "https://www.bigbasket.com/ps/?q=turmeric+powder+200g",
+     "confidence": "verified"
+    }
+   ],
+   "cheapest_platform": "BigBasket",
+   "weekly_cost_typical": 4,
+   "estimated": true,
+   "source_url": "https://www.bigbasket.com/ps/?q=turmeric+powder+200g",
+   "short": "Turmeric powder"
+  },
+  {
+   "id": "black_pepper",
+   "name": "Black pepper (whole)",
+   "category": "spices",
+   "type": "staple",
+   "pack": "100 g",
+   "weekly_qty": "5 g",
+   "qty_note": "Pinch in daily recovery shot",
+   "prices": [
+    {
+     "platform": "BigBasket",
+     "product": "bb Royal Black Pepper 100 g (typical)",
+     "price": 120,
+     "confidence": "estimated",
+     "note": "not individually fetched; typical 100-150"
+    }
+   ],
+   "cheapest_platform": "BigBasket",
+   "weekly_cost_typical": 6,
+   "estimated": true,
+   "source_url": "",
+   "short": "Black pepper"
+  },
+  {
+   "id": "jeera",
+   "name": "Cumin seeds (jeera)",
+   "category": "spices",
+   "type": "staple",
+   "pack": "200 g",
+   "weekly_qty": "10 g",
+   "qty_note": "Aloo jeera, tadkas",
+   "prices": [
+    {
+     "platform": "BigBasket",
+     "product": "Khetika Jeera 200 g (50% off)",
+     "price": 80,
+     "url": "https://www.bigbasket.com/ps/?q=jeera+cumin+seeds",
+     "confidence": "verified"
+    },
+    {
+     "platform": "BigBasket",
+     "product": "Tata Sampann Jeera 200 g",
+     "price": 109,
+     "url": "https://www.bigbasket.com/ps/?q=jeera+cumin+seeds",
+     "confidence": "verified"
+    }
+   ],
+   "cheapest_platform": "BigBasket",
+   "weekly_cost_typical": 4,
+   "estimated": true,
+   "source_url": "https://www.bigbasket.com/ps/?q=jeera+cumin+seeds",
+   "short": "Cumin seeds"
+  },
+  {
+   "id": "spice_basket",
+   "name": "Other spices & pantry (garam/chole/sambar masala, chilli, dhania, mustard, hing, salt, sugar, tamarind, puliogare paste)",
+   "category": "spices",
+   "type": "staple",
+   "pack": "assorted small packs",
+   "weekly_qty": "amortized",
+   "qty_note": "Amortized basket; restocked every 1-2 months",
+   "prices": [
+    {
+     "platform": "BigBasket",
+     "price": 40,
+     "confidence": "estimated",
+     "note": "~Rs 170/month amortized"
+    }
+   ],
+   "cheapest_platform": "Kirana",
+   "weekly_cost_typical": 40,
+   "estimated": true,
+   "source_url": "",
+   "short": "Spices & pantry"
+  },
+  {
+   "id": "potato",
+   "name": "Potato (aloo)",
+   "category": "vegetables",
+   "type": "perishable",
+   "pack": "1 kg",
+   "weekly_qty": "1 kg",
+   "qty_note": "Aloo jeera, beans-aloo, gobi-aloo, aloo paratha, stuffed capsicum filling",
+   "prices": [
+    {
+     "platform": "BigBasket",
+     "product": "fresho! Potato 1 kg",
+     "price": 45,
+     "url": "https://www.bigbasket.com/pc/fruits-vegetables/fresh-vegetables/",
+     "confidence": "verified"
+    },
+    {
+     "platform": "Blinkit/Zepto",
+     "price": 50,
+     "confidence": "derived",
+     "note": "+10%"
+    }
+   ],
+   "cheapest_platform": "BigBasket",
+   "weekly_cost_typical": 45,
+   "estimated": true,
+   "source_url": "https://www.bigbasket.com/pc/fruits-vegetables/fresh-vegetables/",
+   "short": "Potato"
+  },
+  {
+   "id": "onion",
+   "name": "Onion",
+   "category": "vegetables",
+   "type": "perishable",
+   "pack": "2 kg",
+   "weekly_qty": "1 kg",
+   "qty_note": "Base for most sabzis/gravies + raita + chaat",
+   "prices": [
+    {
+     "platform": "BigBasket",
+     "product": "fresho! Onion 2 kg",
+     "price": 80,
+     "url": "https://www.bigbasket.com/pc/fruits-vegetables/fresh-vegetables/",
+     "confidence": "verified"
+    }
+   ],
+   "cheapest_platform": "BigBasket",
+   "weekly_cost_typical": 40,
+   "estimated": true,
+   "source_url": "https://www.bigbasket.com/pc/fruits-vegetables/fresh-vegetables/",
+   "short": "Onion"
+  },
+  {
+   "id": "tomato",
+   "name": "Tomato (local)",
+   "category": "vegetables",
+   "type": "perishable",
+   "pack": "1 kg",
+   "weekly_qty": "750 g",
+   "qty_note": "Gravies, tomato-onion raita Thu/Fri, salads",
+   "prices": [
+    {
+     "platform": "BigBasket",
+     "product": "fresho! Local Tomato 1 kg",
+     "price": 32,
+     "url": "https://www.bigbasket.com/pc/fruits-vegetables/fresh-vegetables/",
+     "confidence": "verified"
+    }
+   ],
+   "cheapest_platform": "BigBasket",
+   "weekly_cost_typical": 24,
+   "estimated": true,
+   "source_url": "https://www.bigbasket.com/pc/fruits-vegetables/fresh-vegetables/",
+   "short": "Tomato"
+  },
+  {
+   "id": "palak",
+   "name": "Palak (spinach, cleaned)",
+   "category": "vegetables",
+   "type": "perishable",
+   "pack": "250-500 g",
+   "weekly_qty": "300 g",
+   "qty_note": "Mon + Fri lunch palak sabzi x 150 g",
+   "prices": [
+    {
+     "platform": "BigBasket",
+     "product": "fresho! Palak Cleaned 1 kg @105",
+     "price": 32,
+     "url": "https://www.bigbasket.com/pc/fruits-vegetables/fresh-vegetables/",
+     "confidence": "verified",
+     "note": "Rs 105/kg; 300 g = ~32"
+    }
+   ],
+   "cheapest_platform": "Local mandi",
+   "weekly_cost_typical": 32,
+   "estimated": true,
+   "source_url": "https://www.bigbasket.com/pc/fruits-vegetables/fresh-vegetables/",
+   "short": "Palak"
+  },
+  {
+   "id": "bhindi",
+   "name": "Bhindi (okra)",
+   "category": "vegetables",
+   "type": "perishable",
+   "pack": "500 g",
+   "weekly_qty": "400 g",
+   "qty_note": "Tue + Thu dinner x 200 g",
+   "prices": [
+    {
+     "platform": "BigBasket",
+     "product": "fresho! Ladies Finger 1 kg @75.5 / Premium Bhindi deal @40",
+     "price": 30,
+     "url": "https://www.bigbasket.com/pc/fruits-vegetables/fresh-vegetables/",
+     "confidence": "verified",
+     "note": "400 g at Rs 75.5/kg = ~30"
+    }
+   ],
+   "cheapest_platform": "BigBasket",
+   "weekly_cost_typical": 30,
+   "estimated": true,
+   "source_url": "https://www.bigbasket.com/pc/fruits-vegetables/fresh-vegetables/",
+   "short": "Bhindi"
+  },
+  {
+   "id": "gobi",
+   "name": "Cauliflower (gobi)",
+   "category": "vegetables",
+   "type": "perishable",
+   "pack": "1 pc (400-600 g)",
+   "weekly_qty": "1 pc",
+   "qty_note": "Mon dinner gobi aloo",
+   "prices": [
+    {
+     "platform": "BigBasket",
+     "product": "fresho! Cauliflower 1 pc (49% off)",
+     "price": 24,
+     "url": "https://www.bigbasket.com/pc/fruits-vegetables/fresh-vegetables/",
+     "confidence": "verified"
+    }
+   ],
+   "cheapest_platform": "BigBasket",
+   "weekly_cost_typical": 24,
+   "estimated": true,
+   "source_url": "https://www.bigbasket.com/pc/fruits-vegetables/fresh-vegetables/",
+   "short": "Cauliflower"
+  },
+  {
+   "id": "capsicum",
+   "name": "Capsicum (green)",
+   "category": "vegetables",
+   "type": "perishable",
+   "pack": "500 g",
+   "weekly_qty": "500 g",
+   "qty_note": "Wed paneer-capsicum 200 g + Sat stuffed capsicum 300 g",
+   "prices": [
+    {
+     "platform": "BigBasket",
+     "product": "fresho! Capsicum Green 1 kg @68 (46% off)",
+     "price": 34,
+     "url": "https://www.bigbasket.com/pc/fruits-vegetables/fresh-vegetables/",
+     "confidence": "verified",
+     "note": "500 g = 34"
+    }
+   ],
+   "cheapest_platform": "BigBasket",
+   "weekly_cost_typical": 34,
+   "estimated": true,
+   "source_url": "https://www.bigbasket.com/pc/fruits-vegetables/fresh-vegetables/",
+   "short": "Capsicum"
+  },
+  {
+   "id": "carrot",
+   "name": "Carrot",
+   "category": "vegetables",
+   "type": "perishable",
+   "pack": "500 g",
+   "weekly_qty": "400 g",
+   "qty_note": "Carrot raita Wed/Sat, carrot salad Sun",
+   "prices": [
+    {
+     "platform": "BigBasket",
+     "product": "fresho! Carrot Orange 1 kg @62",
+     "price": 25,
+     "url": "https://www.bigbasket.com/pc/fruits-vegetables/fresh-vegetables/",
+     "confidence": "verified",
+     "note": "400 g = ~25"
+    }
+   ],
+   "cheapest_platform": "BigBasket",
+   "weekly_cost_typical": 25,
+   "estimated": true,
+   "source_url": "https://www.bigbasket.com/pc/fruits-vegetables/fresh-vegetables/",
+   "short": "Carrot"
+  },
+  {
+   "id": "cucumber",
+   "name": "Cucumber (kheera)",
+   "category": "vegetables",
+   "type": "perishable",
+   "pack": "500 g",
+   "weekly_qty": "500 g",
+   "qty_note": "Fri breakfast sandwich, Tue kheera raita, Sun salad",
+   "prices": [
+    {
+     "platform": "BigBasket",
+     "product": "fresho! Cucumber 1 kg @32 (40% off)",
+     "price": 16,
+     "url": "https://www.bigbasket.com/pc/fruits-vegetables/fresh-vegetables/",
+     "confidence": "verified",
+     "note": "500 g = 16"
+    }
+   ],
+   "cheapest_platform": "BigBasket",
+   "weekly_cost_typical": 16,
+   "estimated": true,
+   "source_url": "https://www.bigbasket.com/pc/fruits-vegetables/fresh-vegetables/",
+   "short": "Cucumber (kheera)"
+  },
+  {
+   "id": "matar",
+   "name": "Green peas (matar)",
+   "category": "vegetables",
+   "type": "perishable",
+   "pack": "250 g / frozen 500 g",
+   "weekly_qty": "200 g",
+   "qty_note": "Sun matar paneer + veg pulao; frozen works off-season",
+   "prices": [
+    {
+     "platform": "BigBasket",
+     "product": "fresho! Green Peas 1 kg @121",
+     "price": 24,
+     "url": "https://www.bigbasket.com/pc/fruits-vegetables/fresh-vegetables/",
+     "confidence": "verified",
+     "note": "200 g = ~24"
+    }
+   ],
+   "cheapest_platform": "BigBasket",
+   "weekly_cost_typical": 24,
+   "estimated": true,
+   "source_url": "https://www.bigbasket.com/pc/fruits-vegetables/fresh-vegetables/",
+   "short": "Green peas"
+  },
+  {
+   "id": "beans",
+   "name": "French/haricot beans",
+   "category": "vegetables",
+   "type": "perishable",
+   "pack": "250 g",
+   "weekly_qty": "200 g",
+   "qty_note": "Thu beans-aloo + Sat pulao",
+   "prices": [
+    {
+     "platform": "BigBasket",
+     "product": "fresho! Haricot Beans 250 g (35% off)",
+     "price": 27,
+     "url": "https://www.bigbasket.com/pc/fruits-vegetables/fresh-vegetables/",
+     "confidence": "verified"
+    }
+   ],
+   "cheapest_platform": "BigBasket",
+   "weekly_cost_typical": 22,
+   "estimated": true,
+   "source_url": "https://www.bigbasket.com/pc/fruits-vegetables/fresh-vegetables/",
+   "short": "French beans"
+  },
+  {
+   "id": "ginger",
+   "name": "Ginger",
+   "category": "vegetables",
+   "type": "perishable",
+   "pack": "250 g",
+   "weekly_qty": "100 g",
+   "qty_note": "1 inch (~10 g) daily recovery shot + cooking",
+   "prices": [
+    {
+     "platform": "BigBasket",
+     "product": "fresho! Ginger 250 g (20% off)",
+     "price": 29,
+     "url": "https://www.bigbasket.com/ps/?q=fresh+ginger",
+     "confidence": "verified"
+    },
+    {
+     "platform": "BigBasket",
+     "product": "fresho! Ginger 100 g (33% off)",
+     "price": 10,
+     "url": "https://www.bigbasket.com/ps/?q=fresh+ginger",
+     "confidence": "verified"
+    }
+   ],
+   "cheapest_platform": "BigBasket",
+   "weekly_cost_typical": 12,
+   "estimated": true,
+   "source_url": "https://www.bigbasket.com/ps/?q=fresh+ginger",
+   "short": "Ginger"
+  },
+  {
+   "id": "lemon",
+   "name": "Lemon",
+   "category": "vegetables",
+   "type": "perishable",
+   "pack": "6 pcs",
+   "weekly_qty": "4 pcs",
+   "qty_note": "Half lemon daily shot + lemon rice Fri",
+   "prices": [
+    {
+     "platform": "BigBasket",
+     "product": "fresho! Lemon 6 pcs (20% off)",
+     "price": 23,
+     "url": "https://www.bigbasket.com/ps/?q=lemon",
+     "confidence": "verified"
+    },
+    {
+     "platform": "BigBasket",
+     "product": "fresho! Lemon 500 g (56% off)",
+     "price": 34,
+     "url": "https://www.bigbasket.com/ps/?q=lemon",
+     "confidence": "verified"
+    }
+   ],
+   "cheapest_platform": "BigBasket",
+   "weekly_cost_typical": 15,
+   "estimated": true,
+   "source_url": "https://www.bigbasket.com/ps/?q=lemon",
+   "short": "Lemon"
+  },
+  {
+   "id": "herbs_chilli",
+   "name": "Coriander, curry leaves, green chilli, mint",
+   "category": "vegetables",
+   "type": "perishable",
+   "pack": "small bunches",
+   "weekly_qty": "1 basket",
+   "qty_note": "Garnish/tempering basket; often free/cheap at mandi",
+   "prices": [
+    {
+     "platform": "BigBasket",
+     "price": 20,
+     "confidence": "estimated",
+     "note": "coriander Rs 145/kg verified on category page; basket-level amount estimated"
+    }
+   ],
+   "cheapest_platform": "Local mandi",
+   "weekly_cost_typical": 20,
+   "estimated": true,
+   "source_url": "https://www.bigbasket.com/pc/fruits-vegetables/fresh-vegetables/",
+   "short": "Coriander, chilli, curry leaves"
+  },
+  {
+   "id": "banana",
+   "name": "Banana (robusta)",
+   "category": "fruit",
+   "type": "perishable",
+   "pack": "1 kg (10-12 pcs)",
+   "weekly_qty": "1 kg",
+   "qty_note": "Shakes Tue/Sat (2 pcs each) + fruit servings",
+   "prices": [
+    {
+     "platform": "BigBasket",
+     "product": "fresho! Banana Robusta 1 kg",
+     "price": 69,
+     "url": "https://www.bigbasket.com/pc/fruits-vegetables/fresh-fruits/",
+     "confidence": "verified"
+    },
+    {
+     "platform": "BigBasket",
+     "product": "fresho! Banana Robusta 500 g (3-4 pcs)",
+     "price": 22,
+     "url": "https://www.bigbasket.com/pc/fruits-vegetables/fresh-fruits/",
+     "confidence": "verified"
+    }
+   ],
+   "cheapest_platform": "Local vendor",
+   "weekly_cost_typical": 69,
+   "estimated": true,
+   "source_url": "https://www.bigbasket.com/pc/fruits-vegetables/fresh-fruits/",
+   "short": "Banana"
+  },
+  {
+   "id": "chikku",
+   "name": "Chikku (sapota)",
+   "category": "fruit",
+   "type": "perishable",
+   "pack": "500 g",
+   "weekly_qty": "250 g",
+   "qty_note": "Wed chikku shake (2 pcs)",
+   "prices": [
+    {
+     "platform": "BigBasket",
+     "product": "fresho! Sapota 500 g (20% off)",
+     "price": 60,
+     "url": "https://www.bigbasket.com/ps/?q=sapota",
+     "confidence": "verified"
+    },
+    {
+     "platform": "BigBasket",
+     "product": "fresho! Sapota 250 g",
+     "price": 31,
+     "url": "https://www.bigbasket.com/ps/?q=sapota",
+     "confidence": "verified"
+    }
+   ],
+   "cheapest_platform": "BigBasket",
+   "weekly_cost_typical": 31,
+   "estimated": true,
+   "source_url": "https://www.bigbasket.com/ps/?q=sapota",
+   "short": "Chikku"
+  },
+  {
+   "id": "apple",
+   "name": "Apple (Royal Gala economy)",
+   "category": "fruit",
+   "type": "perishable",
+   "pack": "4 pcs (400-500 g)",
+   "weekly_qty": "3 pcs",
+   "qty_note": "Apple raita Mon/Fri/Sun + fruit serving",
+   "prices": [
+    {
+     "platform": "BigBasket",
+     "product": "fresho! Apple Royal Gala Economy 4 pcs",
+     "price": 197,
+     "url": "https://www.bigbasket.com/pc/fruits-vegetables/fresh-fruits/",
+     "confidence": "verified"
+    },
+    {
+     "platform": "BigBasket",
+     "product": "fresho! Apple Red Delicious 2 pcs",
+     "price": 92,
+     "url": "https://www.bigbasket.com/pc/fruits-vegetables/fresh-fruits/",
+     "confidence": "verified"
+    }
+   ],
+   "cheapest_platform": "BigBasket",
+   "weekly_cost_typical": 148,
+   "estimated": true,
+   "source_url": "https://www.bigbasket.com/pc/fruits-vegetables/fresh-fruits/",
+   "short": "Apple"
+  },
+  {
+   "id": "seasonal_fruit",
+   "name": "Seasonal fruit rotation (papaya/guava/watermelon/muskmelon/pomegranate)",
+   "category": "fruit",
+   "type": "perishable",
+   "pack": "mixed",
+   "weekly_qty": "~2 kg mixed",
+   "qty_note": "One fruit serving with lunch daily + some breakfasts; component prices verified, basket mix assumed",
+   "prices": [
+    {
+     "platform": "BigBasket",
+     "product": "fresho! Papaya Small (50% off)",
+     "price": 52,
+     "url": "https://www.bigbasket.com/pc/fruits-vegetables/fresh-fruits/",
+     "confidence": "verified"
+    },
+    {
+     "platform": "BigBasket",
+     "product": "fresho! Guava 1 kg",
+     "price": 110,
+     "url": "https://www.bigbasket.com/pc/fruits-vegetables/fresh-fruits/",
+     "confidence": "verified"
+    },
+    {
+     "platform": "BigBasket",
+     "product": "fresho! Watermelon Small 1 pc",
+     "price": 55,
+     "url": "https://www.bigbasket.com/pc/fruits-vegetables/fresh-fruits/",
+     "confidence": "verified"
+    },
+    {
+     "platform": "BigBasket",
+     "product": "fresho! Pomegranate Premium 2 pcs",
+     "price": 93,
+     "url": "https://www.bigbasket.com/pc/fruits-vegetables/fresh-fruits/",
+     "confidence": "verified"
+    }
+   ],
+   "cheapest_platform": "Local mandi",
+   "weekly_cost_typical": 160,
+   "estimated": true,
+   "source_url": "https://www.bigbasket.com/pc/fruits-vegetables/fresh-fruits/",
+   "short": "Seasonal fruit"
+  }
+ ],
+ "fresh_index": {
+  "mon": [
+   "avocado",
+   "eggs",
+   "bread_ww",
+   "milk_toned",
+   "seasonal_fruit",
+   "curd",
+   "palak",
+   "gobi",
+   "apple"
+  ],
+  "tue": [
+   "eggs",
+   "milk_toned",
+   "banana",
+   "curd",
+   "bhindi",
+   "cucumber"
+  ],
+  "wed": [
+   "eggs",
+   "bread_ww",
+   "milk_toned",
+   "chikku",
+   "paneer",
+   "curd",
+   "onion",
+   "tomato",
+   "capsicum",
+   "carrot"
+  ],
+  "thu": [
+   "milk_toned",
+   "eggs",
+   "seasonal_fruit",
+   "beans",
+   "curd",
+   "bhindi",
+   "tomato",
+   "onion",
+   "dosa_batter"
+  ],
+  "fri": [
+   "cucumber",
+   "cheese_slices",
+   "bread_ww",
+   "eggs",
+   "milk_toned",
+   "seasonal_fruit",
+   "palak",
+   "curd",
+   "lemon",
+   "chicken_sausages",
+   "tomato",
+   "onion",
+   "apple",
+   "dosa_batter"
+  ],
+  "sat": [
+   "eggs",
+   "milk_toned",
+   "banana",
+   "chicken_breast",
+   "curd",
+   "matar",
+   "carrot",
+   "capsicum",
+   "paneer"
+  ],
+  "sun": [
+   "milk_toned",
+   "seasonal_fruit",
+   "paneer",
+   "matar",
+   "curd",
+   "carrot",
+   "onion",
+   "tomato",
+   "chicken_breast",
+   "apple",
+   "cucumber"
+  ]
+ },
+ "totals": {
+  "weekly": {
+   "lean": {
+    "low": 2100,
+    "typical": 2250,
+    "high": 2450
+   },
+   "normal": {
+    "low": 2750,
+    "typical": 2900,
+    "high": 3150
+   },
+   "convenience": {
+    "low": 3400,
+    "typical": 3650,
+    "high": 4000
+   }
+  },
+  "monthly": {
+   "lean": {
+    "low": 9100,
+    "typical": 9750,
+    "high": 10600
+   },
+   "normal": {
+    "low": 11900,
+    "typical": 12550,
+    "high": 13650
+   },
+   "convenience": {
+    "low": 14700,
+    "typical": 15800,
+    "high": 17300
+   }
+  },
+  "tier_definitions": {
+   "lean": "BigBasket big-pack staples + kirana/mandi for vegetables, fruit, milk (Nandini booth pouches), loose eggs; value brands (bb Popular/SUPER SAVER, Venkys frozen chicken); no memberships needed (1 big slotted order/week, often free delivery above cart threshold).",
+   "normal": "Everything on a single quick-commerce platform (Blinkit/Zepto/Instamart) at BigBasket-verified prices +10% derived markup, with a membership (Swiggy One / Zepto Club) killing most delivery fees at ~3 orders/week.",
+   "convenience": "Premium picks: Licious chicken (356/450g) & Prasuma sausages, Akshayakalpa organic milk, organic paneer/veg, Happilo nuts, imported avocado, quick-commerce without membership incl. surge/handling/small-cart fees."
+  },
+  "base_reference": "Raw BigBasket-verified basket (before tier adjustments) computes to ~Rs 2,583/week ~= Rs 11,180/month for one person at 3,000 kcal/day.",
+  "delivery_reality": {
+   "note": "Blinkit: delivery ~Rs 16-30 + handling ~Rs 5-15 below free-delivery carts (thresholds are hyperlocal, commonly Rs 199-499; reports of Rs 16 fee even above Rs 199 in Bangalore micro-markets, Jan 2026). Zepto: similar fees; Zepto Club at Rs 99/month (invite-based intro) gives free delivery over Rs 99 carts + 5% Z-Coins. Swiggy Instamart: free delivery over Rs 99 with Swiggy One (~Rs 83-116/month effective; One Lite Rs 99/3 months = 10 free deliveries over Rs 199). BigBasket slotted delivery is free above modest cart values and bbnow mirrors quick-commerce fees.",
+   "membership_math": "At ~3 quick-commerce orders/week (13/month), unmembered fees run Rs 30-45/order = Rs 390-585/month. Swiggy One (~Rs 100/month) or Zepto Club (Rs 99/month) claws back ~Rs 300-480/month net - pays for itself 3-5x. On the lean tier (1 weekly BigBasket slot order) memberships add nothing."
+  }
+ },
+ "cost_drivers": [
+  {
+   "rank": 1,
+   "item": "Chicken breast (500 g/wk)",
+   "monthly_cost": 1035,
+   "substitute": "Licious curry cut small 500 g at 196 or Venkys frozen breast 430 g at 175 vs Delfrez 239/Licious breast 356 - same protein, saves Rs 250-690/month"
+  },
+  {
+   "rank": 2,
+   "item": "Milk 3.5 L/wk",
+   "monthly_cost": 788,
+   "substitute": "Nandini booth/kirana pouches (Rs 24/500ml) instead of app UHT tetra (Rs 64+/L) - saves Rs 60-180/month"
+  },
+  {
+   "rank": 3,
+   "item": "Seasonal fruit basket",
+   "monthly_cost": 693,
+   "substitute": "Stick to papaya/guava/watermelon/banana; skip pomegranate and imported fruit - nutrition equal or better fibre/vit-C per rupee"
+  },
+  {
+   "rank": 4,
+   "item": "Apples (3/wk for raita + fruit)",
+   "monthly_cost": 641,
+   "substitute": "Use banana or pineapple in raita, keep 1 apple/week - saves ~Rs 400/month"
+  },
+  {
+   "rank": 5,
+   "item": "Paneer 400 g/wk",
+   "monthly_cost": 606,
+   "substitute": "Milky Mist 200 g at 70 (discounted) over Nandini 96; swap one paneer meal for tofu (69-75/200 g) - protein preserved"
+  },
+  {
+   "rank": 6,
+   "item": "Eggs 14/wk",
+   "monthly_cost": 502,
+   "substitute": "Always buy the 30-tray (249) not 6/12-packs; kirana loose ~Rs 7/egg = Rs 420/month"
+  },
+  {
+   "rank": 7,
+   "item": "Curd 1.5 kg/wk",
+   "monthly_cost": 498,
+   "substitute": "Set curd at home from the same milk (~40% cheaper) or Amul Masti 1 kg pouch at 77 over cups"
+  },
+  {
+   "rank": 8,
+   "item": "Almonds 100 g/wk",
+   "monthly_cost": 433,
+   "substitute": "Buy 500 g value packs (bb Popular 500); kirana loose California ~Rs 850-900/kg is slightly cheaper - do not cut, best calorie quality in the plan"
+  },
+  {
+   "rank": 9,
+   "item": "Pistachios 40 g/wk",
+   "monthly_cost": 351,
+   "substitute": "Costliest nut per gram (Rs 2000+/kg kernels); alternate pista days with roasted chana/peanuts at ~1/10th the cost, protein similar"
+  },
+  {
+   "rank": 10,
+   "item": "Ghee 100 g/wk",
+   "monthly_cost": 312,
+   "substitute": "Nandini 1 L pouch (656) beats 500 ml jars per ml; Milky Mist 500 ml at 296 on discount"
+  }
+ ],
+ "kirana_better": [
+  "All vegetables (local mandi/HOPCOMS ~20-30% below app prices, esp. palak, bhindi, tomato)",
+  "Seasonal fruit and bananas (street vendor/mandi)",
+  "Nandini milk and curd at booth MRP (apps charge premium or push UHT)",
+  "Loose eggs (~Rs 7/pc vs Rs 8.3/pc on apps)",
+  "Loose dals, poha, sattu, besan (flour-mill/kirana loose ~10-20% cheaper than branded)",
+  "Fresh atta from local chakki (often cheaper + fresher than 5 kg branded bags)",
+  "Ginger, lemon, green chilli, coriander (mandi bunches, near-zero cost)",
+  "Boondi from local mithai/farsan shop",
+  "Whole spices from kirana loose counters"
+ ],
+ "fresh_index_note": "Derived from menu.json fresh arrays, perishables only. Single source of truth: menu.json.",
+ "version": 1
+}

@@ -1,1 +1,642 @@
-{"placeholder": true}
+{
+  "checked_on": "2026-08-08",
+  "hydration": {
+    "base_bottles": 3,
+    "training_bottles": 4,
+    "bottle_size_l": 1,
+    "reasoning": "EFSA adequate intake for adult men is 2.5 L/day TOTAL water, of which ~20% comes from food, so ~2.0 L from drinks for a reference man in a temperate climate. ICMR-NIN guidance for India works out to roughly 32-58 ml/kg for men (~2.7-4.8 L total at 83 kg) and Indian guidance adds +0.5-1 L for hot/humid climate and activity. Subject is 83 kg (above reference weight), trains daily at 5:30 AM (~0.5-1 L sweat loss per session), lives in Bangalore (mild-warm, not extreme heat), and eats a fibre-heavy dal/legume diet. Net: ~3 L drunk water on rest days, ~3.5-4 L on training days. Actionable: 3 x 1L bottles on rest days, 4 x 1L bottles on training days (first ~500 ml before/during the 5:30 AM session).",
+    "source_url": "https://www.nutrition.org.uk/nutritional-information/hydration/ (fetched; cites EFSA AI 2.5 L/day men, 20% from food, heat/exercise adjustment, hyponatraemia warning). Also: EFSA Journal 2010;8(3):1459 https://efsa.onlinelibrary.wiley.com/doi/10.2903/j.efsa.2010.1459 (paywalled) and ICMR-NIN Dietary Guidelines for Indians 2024 https://nin.res.in/dietaryguidelines/pdfjs/locale/DGI_2024.pdf",
+    "caveat": "Do not force it. Spread intake across the day and keep it under ~1 L/hour; chugging several litres quickly, or drinking far beyond thirst during long exercise, risks hyponatraemia (dangerously low sodium). Pale-straw urine is the target; on heavy-sweat days add a pinch of salt/electrolytes rather than more plain water.",
+    "fibre_note": "A high-fibre diet (dal/chana/rajma daily) slightly raises water need: fibre absorbs water in the gut and needs it to do its job. The same legumes also carry cooking water, so this nudges the target up ~0.25-0.5 L rather than adding a full bottle. Bonus: sipping water is a useful craving-displacement tool while quitting smoking."
+  },
+  "supplements": [
+    {
+      "id": "magnesium-glycinate",
+      "name": "Magnesium glycinate",
+      "dose": "300-400 mg elemental",
+      "timing": "night (~22:00)",
+      "why": "Sleep quality and muscle recovery for a daily 5:30 AM trainer; magnesium status is commonly marginal on refined-grain-heavy diets.",
+      "form_note": "Glycinate (bisglycinate) is the gentle, well-absorbed form - it rarely causes loose stools. Oxide is the cheap form on many Indian labels: poorly absorbed (~4%) and a laxative at these doses. Citrate absorbs decently but is more laxative than glycinate. KEY TRAP: '2000 mg magnesium glycinate' on Indian labels is the COMPOUND weight - only ~10-14% is elemental magnesium. Read the elemental number, not the headline number.",
+      "options": [
+        {
+          "id": "hk-vitals-mag-glycinate",
+          "name": "HK Vitals 100% Magnesium Glycinate 1880 mg",
+          "brand": "HealthKart HK Vitals",
+          "tier": "cheap",
+          "best_overall": false,
+          "pack": "120 tablets",
+          "servings": 60,
+          "price": {
+            "low": 699,
+            "typical": 699,
+            "high": 999
+          },
+          "cost_per_month": 525,
+          "elemental_delivered": "220 mg elemental per 2-tab serving (110 mg/tab). To reach ~330 mg you need 3 tabs/night, so the bottle lasts 40 days, not 60.",
+          "buy_at": [
+            {
+              "platform": "HealthKart",
+              "url": "https://www.healthkart.com/sv/healthkart-hk-vitals-100-magnesium-glycinate/SP-128849",
+              "price": 699,
+              "confidence": "verified"
+            }
+          ],
+          "quality_signal": "FSSAI Lic. No. 10015064000576 shown on page; GMP manufacturing claim. No third-party (NSF/Labdoor/Informed Sport) certification.",
+          "review_signal": {
+            "rating_seen": 4.0,
+            "recurring_negative": "Only 7 reviews on HealthKart, 14% one-star; too few to read a pattern."
+          },
+          "source_url": "https://www.healthkart.com/sv/healthkart-hk-vitals-100-magnesium-glycinate/SP-128849",
+          "estimated": false
+        },
+        {
+          "id": "carbamide-forte-mag-glycinate",
+          "name": "Carbamide Forte Chelated Magnesium Glycinate 2000 mg",
+          "brand": "Carbamide Forte",
+          "tier": "mid",
+          "best_overall": true,
+          "pack": "120 tablets",
+          "servings": 60,
+          "price": {
+            "low": 699,
+            "typical": 899,
+            "high": 999
+          },
+          "cost_per_month": 450,
+          "elemental_delivered": "340 mg elemental per 2-tab serving - lands inside the 300-400 mg target at the label dose, so the bottle genuinely lasts 60 nights.",
+          "buy_at": [
+            {
+              "platform": "1mg",
+              "url": "https://www.1mg.com/otc/carbamide-forte-chelated-magnesium-glycinate-2000mg-for-muscle-recovery-sleep-support-tablet-otc608593",
+              "price": 899,
+              "confidence": "verified"
+            },
+            {
+              "platform": "Blinkit",
+              "url": "https://blinkit.com/prn/carbamide-forte-chelated-magnesium-glycinate-supplement/prid/581342",
+              "price": 699,
+              "confidence": "estimated"
+            }
+          ],
+          "quality_signal": "FSSAI + GMP claims only; no third-party testing program. Best elemental-dose-per-rupee of the domestic glycinates.",
+          "review_signal": {
+            "rating_seen": 4.1,
+            "recurring_negative": "'No noticeable effect' and acidity complaints; one reviewer alleges fake positive reviews (22 ratings total on 1mg)."
+          },
+          "source_url": "https://www.1mg.com/otc/carbamide-forte-chelated-magnesium-glycinate-2000mg-for-muscle-recovery-sleep-support-tablet-otc608593",
+          "estimated": false
+        },
+        {
+          "id": "gnc-magnesium-pureglycinate",
+          "name": "GNC Magnesium PureGlycinate",
+          "brand": "GNC India (Guardian Healthcare)",
+          "tier": "mid",
+          "best_overall": false,
+          "pack": "90 tablets",
+          "servings": 30,
+          "price": {
+            "low": 499,
+            "typical": 499,
+            "high": 799
+          },
+          "cost_per_month": 499,
+          "elemental_delivered": "440 mg elemental per 3-tab serving (3666 mg bisglycinate); ~147 mg/tab, so 2 tabs = ~293 mg if you want the lower end. At 3 tabs/night the 90-tab bottle is exactly 30 days.",
+          "buy_at": [
+            {
+              "platform": "Guardian/GNC India",
+              "url": "https://www.guardian.in/products/gnc-magnesium-pureglycinate",
+              "price": 499,
+              "confidence": "verified"
+            }
+          ],
+          "quality_signal": "GNC brand licence via Guardian Healthcare; '100% non-buffered glycinate' claim (i.e. not cut with oxide). No published third-party CoA on the product page.",
+          "review_signal": {
+            "rating_seen": 4.5,
+            "recurring_negative": "97 verified reviews on guardian.in; no recurring complaint captured on fetched page."
+          },
+          "source_url": "https://www.guardian.in/products/gnc-magnesium-pureglycinate",
+          "estimated": false
+        },
+        {
+          "id": "wellbeing-triple-magnesium",
+          "name": "Wellbeing Nutrition Slow Triple Magnesium Complex (glycinate + threonate + marine citrate)",
+          "brand": "Wellbeing Nutrition",
+          "tier": "premium",
+          "best_overall": false,
+          "pack": "60 capsules",
+          "servings": 30,
+          "price": {
+            "low": 1189,
+            "typical": 1189,
+            "high": 1399
+          },
+          "cost_per_month": 1189,
+          "elemental_delivered": "220 mg elemental per 2-cap serving - BELOW the 300-400 mg target despite the premium price; you pay for the threonate blend, not for more magnesium.",
+          "buy_at": [
+            {
+              "platform": "1mg",
+              "url": "https://www.1mg.com/otc/wellbeing-nutrition-slow-triple-magnesium-complex-with-glycinate-aquamin-citrate-threonate-1000mg-capsule-otc976083",
+              "price": 1189,
+              "confidence": "verified"
+            }
+          ],
+          "quality_signal": "Wellbeing Nutrition publishes batch lab reports (heavy metals, microbial, contaminants) - the strongest domestic QC signal; FSSAI + USFDA-facility claims.",
+          "review_signal": {
+            "rating_seen": 4.3,
+            "recurring_negative": "32 ratings on 1mg; no recurring complaint pattern in the small sample."
+          },
+          "source_url": "https://www.1mg.com/otc/wellbeing-nutrition-slow-triple-magnesium-complex-with-glycinate-aquamin-citrate-threonate-1000mg-capsule-otc976083",
+          "estimated": false
+        }
+      ]
+    },
+    {
+      "id": "d3",
+      "name": "Vitamin D3 (cholecalciferol)",
+      "dose": "1000-2000 IU/day (after testing 25-OH-D)",
+      "timing": "breakfast, with fat",
+      "why": "Indoor-heavy urban Indian lifestyles are strongly associated with low vitamin D; supports bone, muscle and mood - relevant while quitting smoking.",
+      "form_note": "D3 (cholecalciferol) raises blood levels better and for longer than D2 (ergocalciferol) - everything listed here is D3. It is fat-soluble: take with the fattiest meal of the day (breakfast with ghee/nuts/eggs works). Softgels in oil and chewables both absorb fine; the oil-based capsule is the safest default.",
+      "options": [
+        {
+          "id": "hk-vitals-d3-2000",
+          "name": "HK Vitals Vitamin D3 2000 IU",
+          "brand": "HealthKart HK Vitals",
+          "tier": "cheap",
+          "best_overall": true,
+          "pack": "90 capsules",
+          "servings": 90,
+          "price": {
+            "low": 525,
+            "typical": 550,
+            "high": 759
+          },
+          "cost_per_month": 180,
+          "elemental_delivered": "2000 IU D3 per capsule in sunflower-oil base; 1 capsule/day = full target dose, bottle lasts 3 months.",
+          "buy_at": [
+            {
+              "platform": "HealthKart",
+              "url": "https://www.healthkart.com/sv/healthkart-hk-vitals-vitamin-d3/SP-77213",
+              "price": 525,
+              "confidence": "estimated"
+            }
+          ],
+          "quality_signal": "FSSAI-licensed, GMP claim; no third-party certification. (Direct page fetch confirmed the 600 IU 90-cap variant at Rs 579; the 2000 IU 90-cap price of ~Rs 525 comes from HealthKart search data, so marked estimated.)",
+          "review_signal": {
+            "rating_seen": 4.6,
+            "recurring_negative": "~258 reviews; none captured on fetched page."
+          },
+          "source_url": "https://www.healthkart.com/sv/healthkart-hk-vitals-vitamin-d3/SP-77213",
+          "estimated": true
+        },
+        {
+          "id": "carbamide-forte-d3-2000-chewable",
+          "name": "Carbamide Forte Chewable Vitamin D3 2000 IU (raspberry)",
+          "brand": "Carbamide Forte",
+          "tier": "mid",
+          "best_overall": false,
+          "pack": "90 tablets",
+          "servings": 90,
+          "price": {
+            "low": 460,
+            "typical": 540,
+            "high": 615
+          },
+          "cost_per_month": 180,
+          "elemental_delivered": "2000 IU D3 per chewable tablet; 1/day, 3-month supply.",
+          "buy_at": [
+            {
+              "platform": "1mg",
+              "url": "https://www.1mg.com/otc/carbamide-forte-chewable-vitamin-d3-2000iu-tablet-otc1135485",
+              "price": 615,
+              "confidence": "verified"
+            },
+            {
+              "platform": "Flipkart",
+              "url": "https://www.flipkart.com/carbamide-forte-chewable-cholecalciferol-vitamin-d3-2000-iu-supplement/p/itmab8a1d8ae8b39",
+              "price": 460,
+              "confidence": "estimated"
+            }
+          ],
+          "quality_signal": "FSSAI + GMP claims only. Note: 1mg listing showed MRP Rs 615 but SKU out of stock at fetch time - check availability.",
+          "review_signal": {
+            "rating_seen": 0,
+            "recurring_negative": "No ratings visible on fetched 1mg page."
+          },
+          "source_url": "https://www.1mg.com/otc/carbamide-forte-chewable-vitamin-d3-2000iu-tablet-otc1135485",
+          "estimated": false
+        },
+        {
+          "id": "swisse-ultiboost-d",
+          "name": "Swisse Ultiboost Vitamin D 400 IU",
+          "brand": "Swisse (imported, Australia)",
+          "tier": "premium",
+          "best_overall": false,
+          "pack": "90 tablets",
+          "servings": 90,
+          "price": {
+            "low": 1181,
+            "typical": 1181,
+            "high": 1299
+          },
+          "cost_per_month": 1181,
+          "elemental_delivered": "Only 400 IU per tablet on the India listing - you need 3 tabs/day for 1200 IU, which burns the 90-tab bottle in a month. Poor IU-per-rupee; buy the brand, not the value.",
+          "buy_at": [
+            {
+              "platform": "1mg",
+              "url": "https://www.1mg.com/otc/swisse-ultiboost-vitamin-d-tablet-for-healthy-bones-muscles-otc591294",
+              "price": 1181,
+              "confidence": "verified"
+            }
+          ],
+          "quality_signal": "Australian heritage brand from a TGA-regulated home market - credible manufacturing pedigree, but no India-specific third-party CoA published.",
+          "review_signal": {
+            "rating_seen": 4.5,
+            "recurring_negative": "One stomach-pain report among 21 ratings; otherwise positive."
+          },
+          "source_url": "https://www.1mg.com/otc/swisse-ultiboost-vitamin-d-tablet-for-healthy-bones-muscles-otc591294",
+          "estimated": false
+        }
+      ]
+    },
+    {
+      "id": "omega3",
+      "name": "Omega-3 fish oil",
+      "dose": "1-2 g EPA+DHA per day (not 1-2 g 'fish oil')",
+      "timing": "breakfast, with fat (same meal as D3)",
+      "why": "Anti-inflammatory support for daily training and cardiovascular support while recovering from smoking.",
+      "form_note": "THE TRAP: 'Fish oil 1000 mg' is the oil weight, not the omega-3 dose. Many cheap Indian softgels deliver only ~300 mg EPA+DHA per 1000 mg capsule, so a '1 g' habit is actually 0.3 g - you need 3-4 caps/day to hit 1 g, which erases the price advantage. Read EPA+DHA per capsule. Form: natural triglyceride (TG) oils absorb somewhat better than ethyl-ester (EE) concentrates, especially away from fatty meals; concentrates (60%+) are usually EE unless the label says re-esterified/natural triglyceride. Taking any form with a fatty breakfast narrows the gap. Burp-prone? Enteric-coated or TG forms help.",
+      "options": [
+        {
+          "id": "hk-vitals-fish-oil-1000",
+          "name": "HK Vitals Fish Oil 1000 mg (180 EPA / 120 DHA)",
+          "brand": "HealthKart HK Vitals",
+          "tier": "cheap",
+          "best_overall": false,
+          "pack": "60 capsules",
+          "servings": 20,
+          "price": {
+            "low": 348,
+            "typical": 359,
+            "high": 359
+          },
+          "cost_per_month": 539,
+          "elemental_delivered": "300 mg EPA+DHA per capsule (30% concentration). At 3 caps/day = 900 mg EPA+DHA, the 60-cap bottle lasts only 20 days - this is the trap product priced honestly.",
+          "buy_at": [
+            {
+              "platform": "HealthKart",
+              "url": "https://www.healthkart.com/sv/healthkart-hk-vitals-fish-oil-1000mg-with-180mg-epa-and-120mg-dha/SP-43252",
+              "price": 359,
+              "confidence": "verified"
+            }
+          ],
+          "quality_signal": "FSSAI Lic. 10015064000576, GMP-certified, molecular distillation claim for heavy-metal removal; no independent third-party testing.",
+          "review_signal": {
+            "rating_seen": 4.6,
+            "recurring_negative": "2,898 reviews, 76% five-star; no recurring complaint captured on fetched page."
+          },
+          "source_url": "https://www.healthkart.com/sv/healthkart-hk-vitals-fish-oil-1000mg-with-180mg-epa-and-120mg-dha/SP-43252",
+          "estimated": false
+        },
+        {
+          "id": "gnc-triple-strength-fish-oil",
+          "name": "GNC Triple Strength Fish Oil 1500 mg (900 mg EPA+DHA)",
+          "brand": "GNC India (Guardian Healthcare)",
+          "tier": "mid",
+          "best_overall": true,
+          "pack": "60 enteric-coated softgels",
+          "servings": 60,
+          "price": {
+            "low": 855,
+            "typical": 960,
+            "high": 1069
+          },
+          "cost_per_month": 480,
+          "elemental_delivered": "900 mg EPA+DHA per single softgel (60% concentration). 1 softgel/day is a real ~1 g dose and the bottle lasts 2 months - cheapest rupees-per-gram of EPA+DHA in this list.",
+          "buy_at": [
+            {
+              "platform": "PharmEasy",
+              "url": "https://pharmeasy.in/health-care/products/gnc-triple-strength-fish-oil---1500mg-fish-oil-with-900mg-of-highly-absorbable-epa-dha-omega-3s---60-enteric-coated-softgels-500209",
+              "price": 855,
+              "confidence": "estimated"
+            },
+            {
+              "platform": "Flipkart",
+              "url": "https://www.flipkart.com/gnc-triple-strength-fish-oil-1500-mg-900-epa-dha-omega-3s/p/itm77ce5dd529bf0",
+              "price": 1069,
+              "confidence": "estimated"
+            }
+          ],
+          "quality_signal": "GNC US-spec formula sold under licence; enteric coating (no fishy burps). Concentrate - likely ethyl-ester form (label does not state TG). No published India CoA.",
+          "review_signal": {
+            "rating_seen": 0,
+            "recurring_negative": "Rating not captured; prices from search results, not page fetch."
+          },
+          "source_url": "https://www.guardian.in/products/gnc-triple-strength-fish-oil-5",
+          "estimated": true
+        },
+        {
+          "id": "wellbeing-3x-omega",
+          "name": "Wellbeing Nutrition Slow Triple Strength Omega-3 (TG form)",
+          "brand": "Wellbeing Nutrition",
+          "tier": "premium",
+          "best_overall": false,
+          "pack": "60 capsules",
+          "servings": 30,
+          "price": {
+            "low": 969,
+            "typical": 969,
+            "high": 999
+          },
+          "cost_per_month": 969,
+          "elemental_delivered": "~1078 mg EPA+DHA per 2-cap serving (647 EPA + 431 DHA per product page; earlier label states 612+408). Natural triglyceride form, claimed 1.7x more bioavailable than ethyl ester. 30-day bottle at the full ~1 g dose.",
+          "buy_at": [
+            {
+              "platform": "Wellbeing Nutrition (brand site)",
+              "url": "https://wellbeingnutrition.com/products/3x-omega",
+              "price": 969,
+              "confidence": "verified"
+            },
+            {
+              "platform": "Apollo Pharmacy",
+              "url": "https://www.apollopharmacy.in/otc/wellbeing-nutrition-slow-virgin-omega-3-cap-60-s",
+              "price": 999,
+              "confidence": "estimated"
+            }
+          ],
+          "quality_signal": "Best domestic QC signal: publishes lab reports for heavy metals, microbial, contaminant residue and oxidation value; FSSAI + USFDA-facility claims. Not IFOS-certified.",
+          "review_signal": {
+            "rating_seen": 4.5,
+            "recurring_negative": "91% positive of ~400 reviews; users specifically praise absence of fishy burps. No recurring negative captured."
+          },
+          "source_url": "https://wellbeingnutrition.com/products/3x-omega",
+          "estimated": false
+        }
+      ]
+    },
+    {
+      "id": "nac",
+      "name": "NAC (N-acetyl cysteine) 600 mg",
+      "dose": "600 mg/day",
+      "timing": "post-workout (or split if GP advises)",
+      "why": "Glutathione precursor with evidence for airway mucus clearance - directly relevant while lungs recover from smoking.",
+      "form_note": "NAC smells and tastes of sulphur (rotten egg) - that is normal chemistry, not spoilage. Plain tablets/capsules sidestep the taste; effervescent pharma versions (e.g. Mucinac) taste strongly and are best avoided unless you like the fizz. Take with water; if it niggles an empty stomach post-workout, move it to lunch.",
+      "options": [
+        {
+          "id": "nutrija-nac-600",
+          "name": "NutriJa NAC 600 mg",
+          "brand": "NutriJa",
+          "tier": "cheap",
+          "best_overall": false,
+          "pack": "60 capsules",
+          "servings": 60,
+          "price": {
+            "low": 595,
+            "typical": 595,
+            "high": 650
+          },
+          "cost_per_month": 298,
+          "elemental_delivered": "600 mg NAC per capsule; 1/day = 2-month pack.",
+          "buy_at": [
+            {
+              "platform": "Amazon.in",
+              "url": "https://www.amazon.in/s?k=nutrija+nac+600mg",
+              "price": 595,
+              "confidence": "estimated"
+            }
+          ],
+          "quality_signal": "Small Indian sports-nutrition brand, FSSAI-licensed; no third-party testing signal. Price from Amazon search data only - verify before relying on it.",
+          "review_signal": {
+            "rating_seen": 0,
+            "recurring_negative": "Not captured."
+          },
+          "source_url": "https://www.amazon.in/s?k=nutrija+nac+600mg",
+          "estimated": true
+        },
+        {
+          "id": "carbamide-forte-nac-600",
+          "name": "Carbamide Forte NAC 600 mg (+80 mg vitamin C)",
+          "brand": "Carbamide Forte",
+          "tier": "mid",
+          "best_overall": true,
+          "pack": "60 veg tablets",
+          "servings": 60,
+          "price": {
+            "low": 599,
+            "typical": 599,
+            "high": 920
+          },
+          "cost_per_month": 300,
+          "elemental_delivered": "600 mg NAC per tablet; 1/day = 2-month bottle. Includes 80 mg vitamin C (trivial next to the separate 500 mg C).",
+          "buy_at": [
+            {
+              "platform": "Carbamide Forte (brand site)",
+              "url": "https://mycf.in/products/carbamide-forte-n-acetyl-l-cysteine-600mg-nac-60-veg-tablets",
+              "price": 599,
+              "confidence": "verified"
+            },
+            {
+              "platform": "1mg",
+              "url": "https://www.1mg.com/otc/carbamide-forte-n-acetyl-l-cysteine-600mg-tablet-otc787894",
+              "price": 799,
+              "confidence": "verified"
+            }
+          ],
+          "quality_signal": "FSSAI + GMP claims; no third-party program. Note: 1mg listing was out of stock at fetch (MRP Rs 799); brand site had stock at Rs 599.",
+          "review_signal": {
+            "rating_seen": 4.5,
+            "recurring_negative": "91% five-star on the brand's own site (211/232) - treat brand-site ratings as inflated."
+          },
+          "source_url": "https://mycf.in/products/carbamide-forte-n-acetyl-l-cysteine-600mg-nac-60-veg-tablets",
+          "estimated": false
+        },
+        {
+          "id": "now-foods-nac-600",
+          "name": "NOW Foods NAC 600 mg (import)",
+          "brand": "NOW Foods (USA)",
+          "tier": "premium",
+          "best_overall": false,
+          "pack": "100 veg capsules",
+          "servings": 100,
+          "price": {
+            "low": 1975,
+            "typical": 3042,
+            "high": 3299
+          },
+          "cost_per_month": 913,
+          "elemental_delivered": "600 mg NAC per capsule; 1/day = 100 days. Cost/month computed at the verified 1mg price of Rs 3,042.",
+          "buy_at": [
+            {
+              "platform": "1mg",
+              "url": "https://www.1mg.com/otc/now-foods-nac-600mg-free-radical-protection-capsule-otc1092608",
+              "price": 3042,
+              "confidence": "verified"
+            },
+            {
+              "platform": "HealthKart",
+              "url": "https://www.healthkart.com/sv/now-nac-acetyl-cysteine-600mg/SP-34971",
+              "price": 1975,
+              "confidence": "estimated"
+            }
+          ],
+          "quality_signal": "Strongest QC pedigree in this list: NOW is GMP-certified with in-house labs and consistently ranks well on US Labdoor testing. But it is a parallel import at ~3x the US price - buy only from 1mg/HealthKart listings, not random marketplace sellers, to dodge fakes.",
+          "review_signal": {
+            "rating_seen": 0,
+            "recurring_negative": "No rating displayed on 1mg listing."
+          },
+          "source_url": "https://www.1mg.com/otc/now-foods-nac-600mg-free-radical-protection-capsule-otc1092608",
+          "estimated": false
+        }
+      ]
+    },
+    {
+      "id": "c",
+      "name": "Vitamin C 500 mg",
+      "dose": "500 mg/day",
+      "timing": "with a meal (breakfast is fine)",
+      "why": "Smokers and recent quitters have measurably higher vitamin C turnover; cheap insurance during the quit.",
+      "form_note": "Plain ascorbic acid is fully effective - fancy 'ester' or liposomal forms are not worth paying for at this dose. Chewables contain sugar/sweetener; take with food if it ever feels acidic on an empty stomach.",
+      "options": [
+        {
+          "id": "limcee-500",
+          "name": "Limcee 500 mg chewable (orange)",
+          "brand": "Abbott",
+          "tier": "cheap",
+          "best_overall": true,
+          "pack": "strip of 15 tablets",
+          "servings": 15,
+          "price": {
+            "low": 18,
+            "typical": 24.5,
+            "high": 24.5
+          },
+          "cost_per_month": 49,
+          "elemental_delivered": "500 mg vitamin C per tablet; 1/day = 2 strips a month.",
+          "buy_at": [
+            {
+              "platform": "Apollo Pharmacy",
+              "url": "https://www.apollopharmacy.in/otc/limcee-500mg-tablet",
+              "price": 24.5,
+              "confidence": "verified"
+            },
+            {
+              "platform": "Blinkit",
+              "url": "https://blinkit.com/prn/limcee-500mg-orange-flavour-chewable-tablets/prid/639494",
+              "price": 24,
+              "confidence": "estimated"
+            }
+          ],
+          "quality_signal": "Pharma-grade product from Abbott India under drug-manufacturing GMP - arguably tighter QC than any 'supplement' on this list, at 1/10th the price.",
+          "review_signal": {
+            "rating_seen": 0,
+            "recurring_negative": "No rating shown on Apollo page; decades-old pharmacy staple."
+          },
+          "source_url": "https://www.apollopharmacy.in/otc/limcee-500mg-tablet",
+          "estimated": false
+        },
+        {
+          "id": "hk-vitals-vitamin-c-500",
+          "name": "HK Vitals Vitamin C 500 mg (orange)",
+          "brand": "HealthKart HK Vitals",
+          "tier": "mid",
+          "best_overall": false,
+          "pack": "60 tablets",
+          "servings": 60,
+          "price": {
+            "low": 350,
+            "typical": 449,
+            "high": 533
+          },
+          "cost_per_month": 225,
+          "elemental_delivered": "500 mg per tablet; 1/day = 2-month bottle.",
+          "buy_at": [
+            {
+              "platform": "1mg",
+              "url": "https://www.1mg.com/otc/healthkart-hk-vitals-vitamin-c-500mg-tablet-orange-otc610107",
+              "price": 533,
+              "confidence": "verified"
+            }
+          ],
+          "quality_signal": "FSSAI + GMP claims; no third-party testing. 1mg listing showed MRP Rs 533 but out of stock at fetch - typical street price estimated. Honestly hard to justify over Limcee.",
+          "review_signal": {
+            "rating_seen": 0,
+            "recurring_negative": "No ratings on fetched page."
+          },
+          "source_url": "https://www.1mg.com/otc/healthkart-hk-vitals-vitamin-c-500mg-tablet-orange-otc610107",
+          "estimated": true
+        },
+        {
+          "id": "swisse-ultiboost-c",
+          "name": "Swisse Ultiboost Vitamin C 500 mg chewable (orange)",
+          "brand": "Swisse (imported, Australia)",
+          "tier": "premium",
+          "best_overall": false,
+          "pack": "110 tablets",
+          "servings": 110,
+          "price": {
+            "low": 589,
+            "typical": 700,
+            "high": 1299
+          },
+          "cost_per_month": 191,
+          "elemental_delivered": "500 mg per chewable; 1/day = 110 days. Cost/month at typical Rs 700 street price; drops to ~Rs 161/month when the recurring 54% HealthKart discount is live.",
+          "buy_at": [
+            {
+              "platform": "HealthKart",
+              "url": "https://www.healthkart.com/sv/swisse-ultiboost-vitamin-c-chewable/SP-88581",
+              "price": 589,
+              "confidence": "estimated"
+            },
+            {
+              "platform": "PharmEasy",
+              "url": "https://pharmeasy.in/health-care/products/swisse-ultiboost-vitamin-c-chewable-tablets-for-immunity-natural-orange-flavour---110-tablets-3119714",
+              "price": 701,
+              "confidence": "estimated"
+            }
+          ],
+          "quality_signal": "Australian brand, TGA-regulated home market; no India CoA published. Perfectly good, but you are paying for the koala on the label.",
+          "review_signal": {
+            "rating_seen": 0,
+            "recurring_negative": "Not captured; prices from search data."
+          },
+          "source_url": "https://www.healthkart.com/sv/swisse-ultiboost-vitamin-c-chewable/SP-88581",
+          "estimated": true
+        }
+      ]
+    }
+  ],
+  "timing_map": [
+    {
+      "time": "post-workout (~07:00)",
+      "items": [
+        "nac"
+      ]
+    },
+    {
+      "time": "breakfast (~08:30, with fat)",
+      "items": [
+        "d3",
+        "omega3",
+        "c"
+      ]
+    },
+    {
+      "time": "22:00",
+      "items": [
+        "magnesium-glycinate"
+      ]
+    }
+  ],
+  "monthly_totals": {
+    "cheap": 1590,
+    "mid": 1635,
+    "premium": 4415
+  },
+  "gp_signoff_note": "Run the whole five-item stack past your GP once before starting - one conversation covers everything. Flag NAC specifically (it interacts with nitroglycerin and some blood-pressure medication) and agree the D3 dose off a blood test. Nothing here replaces prescribed medication.",
+  "d3_test_first": "Test serum 25-OH-D before buying D3. 1000-2000 IU/day is a MAINTENANCE dose; if the test shows deficiency (<20 ng/mL), the standard Indian protocol your GP will likely use is 60,000 IU once weekly for 6-8 weeks (prescription sachets, ~Rs 30-50 each), then step down to daily maintenance. The test costs ~Rs 700-1,500 in Bangalore labs.",
+  "amla_note": {
+    "what": "Amla for the recovery shot is a grocery, not a supplement: Patanjali Divya Amla Churna 100 g covers about a month at ~3 g/day; fresh amla shows up in Bangalore markets and on Blinkit/BigBasket roughly Oct-Mar at ~Rs 60-120/kg (estimated) - use fresh in season, powder the rest of the year. Ginger, turmeric, lemon, honey and black pepper are ordinary kitchen shopping.",
+    "price": 49.5,
+    "source_url": "https://www.netmeds.com/non-prescriptions/amla-churna-powder-100gm"
+  }
+}

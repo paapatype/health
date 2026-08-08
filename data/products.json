@@ -1,1 +1,3003 @@
-{"placeholder": true}
+{
+ "version": 1,
+ "checked_on": "2026-08-08",
+ "skincare": {
+  "checked_on": "2026-08-08",
+  "buyer_profile": "Indian male, brown skin, dry + sensitive, Bangalore, smoker (quitting), outdoors/on-camera professionally",
+  "categories": [
+   {
+    "id": "sunscreen",
+    "name": "Sunscreen",
+    "priority": 1,
+    "notes": "Filter trade-off: modern organic filters (Uvinul A+/T150, Tinosorb M/S, Iscotrizinol) give high UVA protection with zero white cast on brown skin — best default here. Pure mineral (ZnO/TiO2) is the least-irritating option for reactive skin but almost always leaves a grey cast on brown skin at SPF50 doses; hybrid Cetaphil Sun is the compromise. Reapplication on camera: India has no credible SPF powder/cushion; the honest least-bad answer is a stick (BoJ Matte Sun Stick) over the base for touch-ups, plus one proper cream reapplication midday in a restroom (dab sweat off with tissue first, reapply 2-finger dose).",
+    "options": [
+     {
+      "id": "ss-minimalist-mv",
+      "name": "Multi-Vitamin SPF 50 PA++++",
+      "brand": "Minimalist",
+      "tier": "cheap",
+      "best_overall": false,
+      "size": "50 g",
+      "price": {
+       "low": 360,
+       "typical": 399,
+       "high": 399,
+       "currency": "INR"
+      },
+      "cost_per_month": 650,
+      "months_per_pack": 0.6,
+      "in_sweet_spot": false,
+      "buy_at": [
+       {
+        "platform": "Brand site (beminimalist.co)",
+        "url": "https://beminimalist.co/products/multi-vitamin-spf-50",
+        "price": 360,
+        "confidence": "verified"
+       },
+       {
+        "platform": "Amazon",
+        "url": "https://www.amazon.in/Minimalist-Sunscreen-Clinically-Lightweight-Multi-Vitamins/dp/B0CW5BK193",
+        "price": 399,
+        "confidence": "estimated"
+       }
+      ],
+      "key_actives": [
+       "Uvinul T150 (ethylhexyl triazone)",
+       "avobenzone",
+       "octocrylene",
+       "titanium dioxide",
+       "niacinamide",
+       "panthenol",
+       "sodium hyaluronate"
+      ],
+      "texture_finish": "light lotion, natural (not matte) finish, minimal cast that settles in minutes",
+      "review_signal": {
+       "count_seen": "1,946 on brand site",
+       "rating_seen": 3.9,
+       "recurring_negative": "stings eyes for a meaningful minority; pills when layered over serums; a few report redness/breakouts"
+      },
+      "why": "Cheapest fragrance-free, alcohol-denat-free SPF50 with barrier extras (panthenol, HA) that is actually hydrating rather than mattifying.",
+      "not_for": "Anyone whose eyes water easily — the eye-sting complaints recur at volume; apply short of the orbital bone.",
+      "flags": [
+       "fragrance-free",
+       "no-alcohol-denat",
+       "octocrylene (rare sensitizer)"
+      ],
+      "source_url": "https://beminimalist.co/products/multi-vitamin-spf-50",
+      "checked_on": "2026-08-08",
+      "estimated": false
+     },
+     {
+      "id": "ss-fixderma-shadow",
+      "name": "Shadow SPF 50+ Moisturizing Cream (dry skin)",
+      "brand": "Fixderma",
+      "tier": "cheap",
+      "best_overall": false,
+      "size": "75 g",
+      "price": {
+       "low": 418,
+       "typical": 440,
+       "high": 550,
+       "currency": "INR"
+      },
+      "cost_per_month": 500,
+      "months_per_pack": 0.9,
+      "in_sweet_spot": false,
+      "buy_at": [
+       {
+        "platform": "Brand site (fixderma.com)",
+        "url": "https://www.fixderma.com/products/shadow-sunscreen-for-dry-skin-spf-50-cream",
+        "price": 440,
+        "confidence": "verified"
+       },
+       {
+        "platform": "Amazon",
+        "url": "https://www.amazon.in/FIXDERMA-SHADOW-SPF-50-CREAM/dp/B015ZLIN4S",
+        "price": 418,
+        "confidence": "estimated"
+       }
+      ],
+      "key_actives": [
+       "SunCat MTA (encapsulated filters)",
+       "titanium dioxide",
+       "vitamin E"
+      ],
+      "texture_finish": "proper cream for dry skin, water-resistant, no white cast per reviews",
+      "review_signal": {
+       "count_seen": "247 on brand site",
+       "rating_seen": 4.4,
+       "recurring_negative": "can feel rich/heavy in peak humidity; review volume on big marketplaces is modest"
+      },
+      "why": "Derm-clinic brand cream formulation actually built for dry skin, water-resistant for sweat, at a budget price.",
+      "not_for": "Hot humid afternoons if you dislike a creamy feel on skin.",
+      "flags": [
+       "no-alcohol-denat",
+       "full INCI not published on product page - check carton"
+      ],
+      "source_url": "https://www.fixderma.com/products/shadow-sunscreen-for-dry-skin-spf-50-cream",
+      "checked_on": "2026-08-08",
+      "estimated": false
+     },
+     {
+      "id": "ss-drsheths-ceramide",
+      "name": "Ceramide & Vitamin C Sunscreen SPF 50+ PA++++ (In-Vivo tested)",
+      "brand": "Dr. Sheth's",
+      "tier": "mid",
+      "best_overall": false,
+      "size": "50 g (also 80 g / 125 g)",
+      "price": {
+       "low": 499,
+       "typical": 699,
+       "high": 1199,
+       "currency": "INR"
+      },
+      "cost_per_month": 699,
+      "months_per_pack": 1.0,
+      "in_sweet_spot": false,
+      "buy_at": [
+       {
+        "platform": "Brand site (drsheths.com)",
+        "url": "https://www.drsheths.com/products/ceramide-vitamin-c-sunscreen-50g",
+        "price": 499,
+        "confidence": "verified"
+       },
+       {
+        "platform": "Nykaa",
+        "url": "https://www.nykaa.com/dr-sheth-s-ceramide-vitamin-c-sunscreen/p/12341930",
+        "price": 499,
+        "confidence": "estimated"
+       }
+      ],
+      "key_actives": [
+       "hybrid mineral + organic filters",
+       "1% ceramide complex",
+       "2% stabilized vitamin C complex",
+       "1% hyaluronic acid"
+      ],
+      "texture_finish": "lightweight lotion, blends with no white cast on brown skin, comfortable not greasy",
+      "review_signal": {
+       "count_seen": "861 on brand site",
+       "rating_seen": 4.3,
+       "recurring_negative": "10% one-star tail: breakouts on acne-prone cheeks for some; breaks down with heavy sweat (not sweatproof)"
+      },
+      "why": "Indian brand formulated for Indian melanin-rich skin; ceramides + SPF50+ PA++++ in one step is exactly the barrier-first brief.",
+      "not_for": "Long sweaty outdoor stretches without reapplication - it is not water/sweat-proof.",
+      "flags": [
+       "fragrance-free (brand claim)",
+       "no-alcohol-denat",
+       "in-vivo SPF tested"
+      ],
+      "source_url": "https://www.drsheths.com/products/ceramide-vitamin-c-sunscreen-50g",
+      "checked_on": "2026-08-08",
+      "estimated": false
+     },
+     {
+      "id": "ss-boj-relief",
+      "name": "Relief Sun: Rice + Probiotics SPF 50+ PA++++",
+      "brand": "Beauty of Joseon (Korea)",
+      "tier": "mid",
+      "best_overall": true,
+      "size": "50 ml",
+      "price": {
+       "low": 1256,
+       "typical": 1413,
+       "high": 1570,
+       "currency": "INR"
+      },
+      "cost_per_month": 2000,
+      "months_per_pack": 0.6,
+      "in_sweet_spot": true,
+      "buy_at": [
+       {
+        "platform": "Nykaa",
+        "url": "https://www.nykaa.com/beauty-of-joseon-relief-sunscreen-rice-probiotics-spf-50-pa/p/16900408",
+        "price": 1256,
+        "confidence": "estimated"
+       }
+      ],
+      "key_actives": [
+       "Uvinul A+ (DHHB)",
+       "Uvinul T150",
+       "Iscotrizinol",
+       "rice extract",
+       "niacinamide",
+       "grain probiotics"
+      ],
+      "texture_finish": "creamy-dewy, sinks in like a moisturizer, zero white cast on brown skin — the benchmark for dry-skin sunscreen feel",
+      "review_signal": {
+       "count_seen": "large volume on Nykaa (listing active, count not captured)",
+       "rating_seen": null,
+       "recurring_negative": "counterfeits rampant on marketplaces (fakes cause breakouts/dryness) — buy Nykaa/authorized only; some find newer batches less dewy"
+      },
+      "why": "Modern EU filters, genuinely hydrating, fragrance-free, no alcohol denat, invisible on brown skin — the best single answer for dry + sensitive + on-camera.",
+      "not_for": "Anyone buying from grey-market sellers - the fake rate is the real risk with this product.",
+      "what_premium_buys": "Over the cheap tier: newer-generation UVA filters (higher PA in practice), elegant dewy finish that reads well on camera, no eye sting reports at volume.",
+      "flags": [
+       "fragrance-free",
+       "no-alcohol-denat",
+       "counterfeit-risk-on-marketplaces"
+      ],
+      "source_url": "https://www.nykaa.com/beauty-of-joseon-relief-sunscreen-rice-probiotics-spf-50-pa/p/16900408",
+      "checked_on": "2026-08-08",
+      "estimated": true
+     },
+     {
+      "id": "ss-skin1004",
+      "name": "Madagascar Centella Hyalu-Cica Water-Fit Sun Serum SPF 50+ PA++++",
+      "brand": "Skin1004 (Korea)",
+      "tier": "premium",
+      "best_overall": false,
+      "size": "50 ml",
+      "price": {
+       "low": 1699,
+       "typical": 1699,
+       "high": 1999,
+       "currency": "INR"
+      },
+      "cost_per_month": 2700,
+      "months_per_pack": 0.6,
+      "in_sweet_spot": false,
+      "buy_at": [
+       {
+        "platform": "Nykaa",
+        "url": "https://www.nykaa.com/skin1004-madagascar-centella-hyalu-cica-water-fit-sun-serum/p/18377209",
+        "price": 1699,
+        "confidence": "estimated"
+       }
+      ],
+      "key_actives": [
+       "Uvinul A+ (DHHB)",
+       "Uvinul T150",
+       "Tinosorb M",
+       "Iscotrizinol",
+       "niacinamide",
+       "centella asiatica",
+       "glycerin"
+      ],
+      "texture_finish": "watery serum texture, dewy-natural finish, zero cast; centella actively calms reactive skin",
+      "review_signal": {
+       "count_seen": "listing active on Nykaa (count not captured)",
+       "rating_seen": null,
+       "recurring_negative": "India price has crept up ~₹300 vs 2025; finish can look shiny under studio lights"
+      },
+      "what_premium_buys": "Tinosorb M on top of Uvinul filters (best-in-class photostable UVA), centella soothing for sensitive skin, serum texture that layers under camera makeup without pilling.",
+      "why": "Verified INCI: fragrance-free, essential-oil-free, alcohol-free with four modern filters — the most sensitive-skin-safe high-UVA formula sold in India.",
+      "not_for": "Budget buyers - per-gram this is the most expensive daily-use option here.",
+      "flags": [
+       "fragrance-free",
+       "no-alcohol-denat",
+       "essential-oil-free"
+      ],
+      "source_url": "https://incidecoder.com/products/skin1004-hyalu-cica-water-fit-sun-serum",
+      "checked_on": "2026-08-08",
+      "estimated": true
+     },
+     {
+      "id": "ss-cetaphil-sun-light-gel",
+      "name": "Cetaphil Sun SPF 50+ Light Gel (sensitive skin)",
+      "brand": "Cetaphil (Galderma)",
+      "tier": "premium",
+      "best_overall": false,
+      "size": "50 ml",
+      "price": {
+       "low": 1131,
+       "typical": 1169,
+       "high": 1299,
+       "currency": "INR"
+      },
+      "cost_per_month": 1900,
+      "months_per_pack": 0.6,
+      "in_sweet_spot": true,
+      "buy_at": [
+       {
+        "platform": "1mg",
+        "url": "https://www.1mg.com/otc/cetaphil-sun-light-high-protection-sunscreen-gel-spf-50-sensitive-skin-otc774772",
+        "price": 1169,
+        "confidence": "verified"
+       },
+       {
+        "platform": "Blinkit",
+        "url": "https://blinkit.com/prn/cetaphil-light-sunscreen-gel-spf-50/prid/544196",
+        "price": 1131,
+        "confidence": "estimated"
+       }
+      ],
+      "key_actives": [
+       "zinc oxide 7% + titanium dioxide 9% (liposomal)",
+       "Tinosorb S",
+       "Uvinul A+",
+       "vitamin E"
+      ],
+      "texture_finish": "liposomal light gel, hydrating; highest mineral load of the qualifying picks — a subtle cast is possible on deeper brown skin",
+      "review_signal": {
+       "count_seen": "167 ratings on 1mg",
+       "rating_seen": 4.3,
+       "recurring_negative": "some deeper skin tones report a faint grey-white tone; 50 ml feels small for the price"
+      },
+      "what_premium_buys": "The most irritation-proof formula on this list — Galderma's sensitive-skin pedigree, fragrance-free, paraben-free; the pick if even Korean formulas sting.",
+      "why": "The dermatologist-default for reactive skin in India; hybrid mineral gives extra insurance if organic filters ever irritate.",
+      "not_for": "Anyone strict about zero white cast on deep skin - test the cast in daylight first.",
+      "flags": [
+       "fragrance-free",
+       "no-alcohol-denat",
+       "mineral-heavy (slight cast risk)"
+      ],
+      "source_url": "https://www.1mg.com/otc/cetaphil-sun-light-high-protection-sunscreen-gel-spf-50-sensitive-skin-otc774772",
+      "checked_on": "2026-08-08",
+      "estimated": false
+     },
+     {
+      "id": "ss-boj-stick",
+      "name": "Matte Sun Stick: Mugwort + Camelia SPF 50+ PA++++ (reapplication)",
+      "brand": "Beauty of Joseon (Korea)",
+      "tier": "premium",
+      "best_overall": false,
+      "size": "18 g",
+      "price": {
+       "low": 1413,
+       "typical": 1413,
+       "high": 1570,
+       "currency": "INR"
+      },
+      "cost_per_month": 700,
+      "months_per_pack": 2.0,
+      "in_sweet_spot": true,
+      "buy_at": [
+       {
+        "platform": "Nykaa",
+        "url": "https://www.nykaa.com/beauty-of-joseon-matte-sun-stick-mugwort-camelia-spf50-pa/p/12370856",
+        "price": 1413,
+        "confidence": "estimated"
+       }
+      ],
+      "key_actives": [
+       "organic UV filters",
+       "mugwort",
+       "silica (sebum control)"
+      ],
+      "texture_finish": "matte glide-on stick; swipes over a base coat and light makeup without disturbing it",
+      "review_signal": {
+       "count_seen": "listing active on Nykaa (count not captured)",
+       "rating_seen": null,
+       "recurring_negative": "stick coverage is thinner than a cream dose — it is a top-up, not a replacement; drags on beard stubble"
+      },
+      "why": "The practical answer to public/on-camera reapplication every 2-3 hours: pocketable, no hands, no mess, matte for lights.",
+      "not_for": "Being your only sunscreen — a stick swipe delivers well under the tested SPF dose.",
+      "what_premium_buys": "Only stick format from a modern-filter K-brand reliably stocked on Nykaa.",
+      "flags": [
+       "top-up-only",
+       "counterfeit-risk-on-marketplaces"
+      ],
+      "source_url": "https://www.nykaa.com/beauty-of-joseon-matte-sun-stick-mugwort-camelia-spf50-pa/p/12370856",
+      "checked_on": "2026-08-08",
+      "estimated": true
+     }
+    ]
+   },
+   {
+    "id": "cleanser",
+    "name": "Cleanser (low-pH, non-stripping)",
+    "priority": 2,
+    "notes": "Night sunscreen removal without stripping: micellar water (Bioderma Sensibio) on a cotton pad first, then the gentle cleanser — a 'soft double cleanse'. A single pass of a gentle cleanser does NOT fully remove water-resistant SPF; a single pass of anything strong enough to remove it in one go is too stripping for dry sensitive skin.",
+    "options": [
+     {
+      "id": "cl-minimalist-oat",
+      "name": "B12 + Oat Extract 6.5% Gentle Cleanser",
+      "brand": "Minimalist",
+      "tier": "cheap",
+      "best_overall": false,
+      "size": "100 ml",
+      "price": {
+       "low": 270,
+       "typical": 299,
+       "high": 299,
+       "currency": "INR"
+      },
+      "cost_per_month": 135,
+      "months_per_pack": 2.0,
+      "in_sweet_spot": false,
+      "buy_at": [
+       {
+        "platform": "Brand site (beminimalist.co)",
+        "url": "https://beminimalist.co/search?q=oat",
+        "price": 270,
+        "confidence": "verified"
+       }
+      ],
+      "key_actives": [
+       "colloidal oat 6.5%",
+       "vitamin B12",
+       "mild non-sulfate surfactants"
+      ],
+      "texture_finish": "low-foam gel-cream, no squeaky feel",
+      "review_signal": {
+       "count_seen": "not shown on search page",
+       "rating_seen": null,
+       "recurring_negative": "doesn't remove sunscreen/sebum fully in one pass (by design)"
+      },
+      "why": "Cheapest SLS/SLES-free oat cleanser from a brand that publishes full INCI; oats actively calm sensitive skin.",
+      "not_for": "Removing water-resistant sunscreen alone at night.",
+      "flags": [
+       "fragrance-free",
+       "sulfate-free"
+      ],
+      "source_url": "https://beminimalist.co/search?q=oat",
+      "checked_on": "2026-08-08",
+      "estimated": false
+     },
+     {
+      "id": "cl-cetaphil-gentle",
+      "name": "Gentle Skin Cleanser (dry to normal, sensitive)",
+      "brand": "Cetaphil",
+      "tier": "mid",
+      "best_overall": false,
+      "size": "125 ml",
+      "price": {
+       "low": 414,
+       "typical": 429,
+       "high": 429,
+       "currency": "INR"
+      },
+      "cost_per_month": 172,
+      "months_per_pack": 2.5,
+      "in_sweet_spot": false,
+      "buy_at": [
+       {
+        "platform": "1mg",
+        "url": "https://www.1mg.com/otc/cetaphil-gentle-skin-cleanser-for-dry-to-normal-sensitive-skin-otc533388",
+        "price": 429,
+        "confidence": "verified"
+       },
+       {
+        "platform": "Blinkit",
+        "url": "https://blinkit.com/prn/cetaphil-gentle-skin-cleanser-face-wash-125-ml/prid/496038",
+        "price": 414,
+        "confidence": "estimated"
+       },
+       {
+        "platform": "Apollo Pharmacy",
+        "url": "https://www.apollopharmacy.in/otc/cetaphil-gentle-skin-cleanser-125ml",
+        "price": 429,
+        "confidence": "estimated"
+       }
+      ],
+      "key_actives": [
+       "non-foaming emollient cleansing base",
+       "glycerin"
+      ],
+      "texture_finish": "lotion cleanser, can be used with or without water",
+      "review_signal": {
+       "count_seen": "1,855 ratings on 1mg",
+       "rating_seen": 4.4,
+       "recurring_negative": "\"doesn't feel like it cleans\" from foam-cleanser habitués; won't remove SPF alone"
+      },
+      "why": "Fifty years of dermatologist defaults for a reason: essentially zero irritation potential, available in every pharmacy including Apollo and quick-commerce.",
+      "not_for": "People who need a fresh squeaky-clean feel to believe a cleanser works.",
+      "flags": [
+       "fragrance-free",
+       "sulfate-free",
+       "non-foaming"
+      ],
+      "source_url": "https://www.1mg.com/otc/cetaphil-gentle-skin-cleanser-for-dry-to-normal-sensitive-skin-otc533388",
+      "checked_on": "2026-08-08",
+      "estimated": false
+     },
+     {
+      "id": "cl-cerave-hydrating",
+      "name": "Hydrating Cleanser (non-foaming, ceramides + HA)",
+      "brand": "CeraVe",
+      "tier": "premium",
+      "best_overall": true,
+      "size": "236 ml",
+      "price": {
+       "low": 639,
+       "typical": 699,
+       "high": 799,
+       "currency": "INR"
+      },
+      "cost_per_month": 175,
+      "months_per_pack": 4.0,
+      "in_sweet_spot": true,
+      "buy_at": [
+       {
+        "platform": "PharmEasy",
+        "url": "https://pharmeasy.in/health-care/products/cerave-hydrating-cleanser-for-normal-to-dry-skin-236ml-4030436",
+        "price": 639,
+        "confidence": "verified"
+       },
+       {
+        "platform": "Nykaa",
+        "url": "https://www.nykaa.com/cerave-hydrating-facial-cleanser-non-foaming-face-wash-with-hyaluronic-acid-ceramides-glycerin/p/13169473",
+        "price": 699,
+        "confidence": "estimated"
+       }
+      ],
+      "key_actives": [
+       "3 essential ceramides",
+       "hyaluronic acid",
+       "glycerin",
+       "MVE delivery"
+      ],
+      "texture_finish": "true non-foaming cream-gel; skin feels coated, not stripped",
+      "review_signal": {
+       "count_seen": "large global volume; India listings newer (L'Oréal India manufactured)",
+       "rating_seen": null,
+       "recurring_negative": "pump/packaging complaints; buy from authorized listings to avoid grey imports"
+      },
+      "what_premium_buys": "Ceramides in the cleansing base itself — it deposits barrier lipids while cleansing; best per-ml value of the three at 236 ml.",
+      "why": "The single best cleanser match for the brief: non-foaming, ceramide-led, fragrance-free, now made in India so pricing has dropped.",
+      "not_for": "One-step SPF removal - still pair with micellar at night.",
+      "flags": [
+       "fragrance-free",
+       "sulfate-free",
+       "non-foaming",
+       "ceramides"
+      ],
+      "source_url": "https://pharmeasy.in/health-care/products/cerave-hydrating-cleanser-for-normal-to-dry-skin-236ml-4030436",
+      "checked_on": "2026-08-08",
+      "estimated": false
+     },
+     {
+      "id": "cl-bioderma-micellar",
+      "name": "Sensibio H2O Micellar Water (PM sunscreen removal)",
+      "brand": "Bioderma",
+      "tier": "mid",
+      "best_overall": false,
+      "size": "250 ml",
+      "price": {
+       "low": 799,
+       "typical": 809,
+       "high": 899,
+       "currency": "INR"
+      },
+      "cost_per_month": 270,
+      "months_per_pack": 3.0,
+      "in_sweet_spot": true,
+      "buy_at": [
+       {
+        "platform": "Apollo Pharmacy",
+        "url": "https://www.apollopharmacy.in/otc/bioderma-sensibio-h2o-250-ml-solution",
+        "price": 809,
+        "confidence": "verified"
+       }
+      ],
+      "key_actives": [
+       "micelle technology",
+       "cucumber extract; pH ~5.5"
+      ],
+      "texture_finish": "water; wipe off with cotton pad, follow with cleanser",
+      "review_signal": {
+       "count_seen": "global benchmark product; Apollo page shows no count",
+       "rating_seen": null,
+       "recurring_negative": "cost adds up used daily over a large area; 100 ml (₹449) is a cheaper trial size"
+      },
+      "why": "The gentlest way to break down water-resistant sunscreen before your cleanser - the missing step that stops nightly stripping.",
+      "not_for": "Replacing cleansing entirely - follow with the gentle cleanser.",
+      "flags": [
+       "fragrance-free",
+       "for-sensitive-skin"
+      ],
+      "source_url": "https://www.apollopharmacy.in/otc/bioderma-sensibio-h2o-250-ml-solution",
+      "checked_on": "2026-08-08",
+      "estimated": false
+     }
+    ]
+   },
+   {
+    "id": "moisturizer",
+    "name": "Moisturizer (ceramide-led)",
+    "priority": 3,
+    "options": [
+     {
+      "id": "mo-minimalist-ceramide",
+      "name": "Ceramides 0.3% + Madecassoside Moisturizer (day, layers under SPF)",
+      "brand": "Minimalist",
+      "tier": "cheap",
+      "best_overall": false,
+      "size": "50 g",
+      "price": {
+       "low": 540,
+       "typical": 599,
+       "high": 599,
+       "currency": "INR"
+      },
+      "cost_per_month": 360,
+      "months_per_pack": 1.5,
+      "in_sweet_spot": false,
+      "buy_at": [
+       {
+        "platform": "Brand site (beminimalist.co)",
+        "url": "https://beminimalist.co/search?q=moisturizer",
+        "price": 540,
+        "confidence": "verified"
+       }
+      ],
+      "key_actives": [
+       "ceramides 0.3%",
+       "madecassoside (centella)",
+       "glycerin"
+      ],
+      "texture_finish": "light cream, absorbs fast, no pilling under sunscreen",
+      "review_signal": {
+       "count_seen": "not captured",
+       "rating_seen": null,
+       "recurring_negative": "not rich enough as a standalone night cream for very dry skin"
+      },
+      "why": "Cheapest real-ceramide day cream that sits cleanly under sunscreen; madecassoside calms sensitivity.",
+      "not_for": "Night duty on very dry skin - pair with a richer PM cream.",
+      "flags": [
+       "fragrance-free",
+       "ceramides"
+      ],
+      "source_url": "https://beminimalist.co/search?q=moisturizer",
+      "checked_on": "2026-08-08",
+      "estimated": false
+     },
+     {
+      "id": "mo-venusia-max",
+      "name": "Venusia Max Intensive Moisturizing Cream (night)",
+      "brand": "Dr. Reddy's",
+      "tier": "cheap",
+      "best_overall": false,
+      "size": "150 g",
+      "price": {
+       "low": 606,
+       "typical": 672,
+       "high": 739,
+       "currency": "INR"
+      },
+      "cost_per_month": 300,
+      "months_per_pack": 2.0,
+      "in_sweet_spot": false,
+      "buy_at": [
+       {
+        "platform": "1mg",
+        "url": "https://www.1mg.com/otc/venusia-max-intensive-moisturizing-cream-face-care-product-for-dry-very-dry-skin-repairs-the-skin-otc172235",
+        "price": 606,
+        "confidence": "verified"
+       },
+       {
+        "platform": "Blinkit",
+        "url": "https://blinkit.com/prn/venusia-max-intensive-moisturizing-cream/prid/619987",
+        "price": 606,
+        "confidence": "estimated"
+       },
+       {
+        "platform": "Apollo Pharmacy",
+        "url": "https://www.apollopharmacy.in/otc/venusia-max-cream-150gm",
+        "price": 672,
+        "confidence": "estimated"
+       }
+      ],
+      "key_actives": [
+       "shea/mango/aloe butters",
+       "glycerin",
+       "hyaluronic acid (Max variant)"
+      ],
+      "texture_finish": "rich occlusive cream — the classic Indian dermatologist prescription for dry to very dry skin",
+      "review_signal": {
+       "count_seen": "971 ratings on 1mg",
+       "rating_seen": 4.6,
+       "recurring_negative": "greasy/heavy if over-applied on the face; a butter-cream, not a gel"
+      },
+      "why": "The most prescribed dry-skin emollient in Indian derm clinics, at pharmacy pricing, 4.6-star at volume — unbeatable night-cream value.",
+      "not_for": "Daytime under sunscreen in Bangalore humidity - too occlusive.",
+      "flags": [
+       "derm-prescribed-classic",
+       "no ceramides (butter-based occlusive instead)"
+      ],
+      "source_url": "https://www.1mg.com/otc/venusia-max-intensive-moisturizing-cream-face-care-product-for-dry-very-dry-skin-repairs-the-skin-otc172235",
+      "checked_on": "2026-08-08",
+      "estimated": false
+     },
+     {
+      "id": "mo-cerave-lotion",
+      "name": "Moisturising Lotion (day, normal to dry)",
+      "brand": "CeraVe",
+      "tier": "mid",
+      "best_overall": false,
+      "size": "236 ml",
+      "price": {
+       "low": 521,
+       "typical": 579,
+       "high": 1250,
+       "currency": "INR"
+      },
+      "cost_per_month": 190,
+      "months_per_pack": 3.0,
+      "in_sweet_spot": false,
+      "buy_at": [
+       {
+        "platform": "Nykaa",
+        "url": "https://www.nykaa.com/cerave-moisturizing-lotion-for-dry-skin-with-ceramides-hyaluronic-acid-fragrance-free/p/13169475",
+        "price": 521,
+        "confidence": "estimated"
+       },
+       {
+        "platform": "Apollo Pharmacy",
+        "url": "https://www.apollopharmacy.in/otc/cerave-lait-hydratant-moisturising-ltn-236ml",
+        "price": 1250,
+        "confidence": "estimated"
+       }
+      ],
+      "key_actives": [
+       "3 essential ceramides",
+       "hyaluronic acid",
+       "MVE 24h release"
+      ],
+      "texture_finish": "light lotion, layers invisibly under sunscreen",
+      "review_signal": {
+       "count_seen": "not captured for India listing",
+       "rating_seen": null,
+       "recurring_negative": "price varies wildly between platforms (₹521 Nykaa vs ₹1,250 Apollo) — compare before buying"
+      },
+      "why": "Ceramide day layer with the best per-ml price when bought on Nykaa; face + body use.",
+      "not_for": "Anyone who wants a single verified price - this SKU's pricing is chaotic across platforms.",
+      "flags": [
+       "fragrance-free",
+       "ceramides"
+      ],
+      "source_url": "https://www.nykaa.com/cerave-moisturizing-lotion-for-dry-skin-with-ceramides-hyaluronic-acid-fragrance-free/p/13169475",
+      "checked_on": "2026-08-08",
+      "estimated": true
+     },
+     {
+      "id": "mo-cerave-cream",
+      "name": "Moisturising Cream (night, dry to very dry)",
+      "brand": "CeraVe",
+      "tier": "mid",
+      "best_overall": true,
+      "size": "340 g (also 177 ml ~₹1,197)",
+      "price": {
+       "low": 1197,
+       "typical": 1529,
+       "high": 1699,
+       "currency": "INR"
+      },
+      "cost_per_month": 380,
+      "months_per_pack": 4.0,
+      "in_sweet_spot": true,
+      "buy_at": [
+       {
+        "platform": "1mg",
+        "url": "https://www.1mg.com/otc/cerave-moisturising-cream-for-dry-to-very-dry-skin-hydrating-face-care-product-otc910912",
+        "price": 1529,
+        "confidence": "verified"
+       }
+      ],
+      "key_actives": [
+       "3 essential ceramides",
+       "hyaluronic acid",
+       "petrolatum",
+       "MVE technology"
+      ],
+      "texture_finish": "thick but non-greasy cream; the global gold standard for barrier repair",
+      "review_signal": {
+       "count_seen": "47 ratings on 1mg India (4.6-4.7 at huge volume globally)",
+       "rating_seen": 4.0,
+       "recurring_negative": "heavy for humid daytime (use at night); tub packaging - scoop with clean fingers"
+      },
+      "what_premium_buys": "Clinically studied ceramide:cholesterol:fatty-acid ratio with slow-release MVE — the exact mechanism a smoker's impaired barrier needs overnight.",
+      "why": "Best-regardless moisturizer for this profile: ceramide-led, fragrance-free, 340 g lasts ~4 months so real monthly cost is modest.",
+      "not_for": "Under sunscreen on sweaty days - keep it for PM.",
+      "flags": [
+       "fragrance-free",
+       "ceramides",
+       "non-comedogenic"
+      ],
+      "source_url": "https://www.1mg.com/otc/cerave-moisturising-cream-for-dry-to-very-dry-skin-hydrating-face-care-product-otc910912",
+      "checked_on": "2026-08-08",
+      "estimated": false
+     },
+     {
+      "id": "mo-lrp-cicaplast",
+      "name": "Cicaplast Baume B5+ (premium repair balm / retinoid-night buffer)",
+      "brand": "La Roche-Posay",
+      "tier": "premium",
+      "best_overall": false,
+      "size": "100 ml (40 ml also sold)",
+      "price": {
+       "low": 1478,
+       "typical": 1499,
+       "high": 2495,
+       "currency": "INR"
+      },
+      "cost_per_month": 600,
+      "months_per_pack": 2.5,
+      "in_sweet_spot": true,
+      "buy_at": [
+       {
+        "platform": "Nykaa",
+        "url": "https://www.nykaa.com/la-roche-posay-cicaplast-baume-b5-repair-moisturizer-balm-soothing-cream/p/23326362",
+        "price": 1499,
+        "confidence": "estimated"
+       },
+       {
+        "platform": "Flipkart",
+        "url": "https://www.flipkart.com/la-roche-posay-cicaplast-baume-b5-soothing-repairing-balm/p/itmb601d25f355c6",
+        "price": 1478,
+        "confidence": "estimated"
+       }
+      ],
+      "key_actives": [
+       "panthenol 5%",
+       "madecassoside",
+       "tribioma prebiotics",
+       "shea butter"
+      ],
+      "texture_finish": "protective balm; the thing you reach for when skin is angry, wind-burnt, or retinoid-irritated",
+      "review_signal": {
+       "count_seen": "global cult product; India listings new since LRP's official 2024-25 entry",
+       "rating_seen": null,
+       "recurring_negative": "slight initial white tint on deep skin until massaged in; MRP vs street price gap is large — never pay ₹2,495"
+      },
+      "what_premium_buys": "5% panthenol + madecassoside in a lipid balm — the best over-the-counter rescue for barrier flare-ups and the ideal buffer on retinal nights.",
+      "why": "Premium slot best spent on repair, not luxury texture; officially in India via Nykaa/Apollo now.",
+      "not_for": "Daily AM use in humidity - it is a repair/night product.",
+      "flags": [
+       "fragrance-free",
+       "sensitive-skin-tested"
+      ],
+      "source_url": "https://www.nykaa.com/la-roche-posay-cicaplast-baume-b5-repair-moisturizer-balm-soothing-cream/p/23326362",
+      "checked_on": "2026-08-08",
+      "estimated": true
+     }
+    ]
+   },
+   {
+    "id": "vitamin-c",
+    "name": "Vitamin C (AM antioxidant)",
+    "priority": 4,
+    "notes": "L-AA vs derivative trade-off: pure L-ascorbic acid has the strongest evidence but needs a low pH (~3.5) to penetrate, which is exactly what stings and disrupts a dry, sensitive, smoker-stressed barrier; it also oxidizes fast in Indian heat. Derivatives (ethyl ascorbic acid, SAP, THD) work at skin-friendly pH, stay stable in Bangalore temperatures, and convert to ascorbic acid in skin — you trade some potency and evidence depth for near-zero irritation and a serum that's still active in month 3. For this profile, derivatives are the right call; L-AA only via gentle low-% formats (Klairs 5%) if ever.",
+    "options": [
+     {
+      "id": "vc-minimalist-eaa",
+      "name": "Vitamin C 10% Face Serum (ethyl ascorbic acid + acetyl glucosamine)",
+      "brand": "Minimalist",
+      "tier": "cheap",
+      "best_overall": false,
+      "size": "10 ml entry size (20/30 ml available; 30 ml ~₹699)",
+      "price": {
+       "low": 285,
+       "typical": 299,
+       "high": 699,
+       "currency": "INR"
+      },
+      "cost_per_month": 465,
+      "months_per_pack": 0.7,
+      "in_sweet_spot": false,
+      "buy_at": [
+       {
+        "platform": "Brand site (beminimalist.co)",
+        "url": "https://beminimalist.co/products/vitamin-c-ethyl-ascorbic-acid-10-acetyl-glucosamine-1",
+        "price": 285,
+        "confidence": "verified"
+       }
+      ],
+      "key_actives": [
+       "10% ethyl ascorbic acid (86% active C)",
+       "1% acetyl glucosamine",
+       "PHA"
+      ],
+      "texture_finish": "light watery serum, slight tack, layers fine under moisturizer + SPF",
+      "review_signal": {
+       "count_seen": "2,115 on brand site",
+       "rating_seen": 4.1,
+       "recurring_negative": "'no visible change' from a minority; results take 6-8 weeks; mild tackiness"
+      },
+      "why": "Cheapest way to trial a stable, sensitive-skin-safe C derivative — the ₹299 10 ml is a purpose-built patch-and-trial size.",
+      "not_for": "Anyone expecting L-AA-speed brightening in two weeks.",
+      "flags": [
+       "fragrance-free",
+       "derivative (EAA)",
+       "essential-oil-free"
+      ],
+      "source_url": "https://beminimalist.co/products/vitamin-c-ethyl-ascorbic-acid-10-acetyl-glucosamine-1",
+      "checked_on": "2026-08-08",
+      "estimated": false
+     },
+     {
+      "id": "vc-deconstruct",
+      "name": "10% Vitamin C + 0.5% Ferulic Acid Serum (3-O-ethyl ascorbic, liposomal)",
+      "brand": "Deconstruct",
+      "tier": "mid",
+      "best_overall": true,
+      "size": "30 ml",
+      "price": {
+       "low": 467,
+       "typical": 599,
+       "high": 799,
+       "currency": "INR"
+      },
+      "cost_per_month": 400,
+      "months_per_pack": 1.5,
+      "in_sweet_spot": false,
+      "buy_at": [
+       {
+        "platform": "Brand site (thedeconstruct.in)",
+        "url": "https://thedeconstruct.in/products/vitamin-c-and-ferulic-acid-serum",
+        "price": 599,
+        "confidence": "verified"
+       },
+       {
+        "platform": "Tira",
+        "url": "https://www.tirabeauty.com/product/deconstruct-10-vitamin-c--055-ferulic-acid-vitamin-c-serum-30ml-giemi7vwdd",
+        "price": 599,
+        "confidence": "estimated"
+       }
+      ],
+      "key_actives": [
+       "10% 3-O-ethyl ascorbic acid (liposomal)",
+       "0.5% ferulic acid",
+       "centella",
+       "panthenol"
+      ],
+      "texture_finish": "light serum, non-sticky per most reviews",
+      "review_signal": {
+       "count_seen": "1,182 on brand site (100k+ units sold)",
+       "rating_seen": 4.3,
+       "recurring_negative": "34% below 5-star: slight stickiness for some; slow results on deep pigmentation"
+      },
+      "why": "Best overall: derivative + ferulic (antioxidant synergy that matters for a smoker's oxidative load) + panthenol/centella buffering, fragrance-free, ₹599 for a full 30 ml.",
+      "not_for": "Treating established dark spots fast - that's a derm conversation, not a serum promise.",
+      "flags": [
+       "fragrance-free",
+       "derivative (EAA)",
+       "ferulic-antioxidant"
+      ],
+      "source_url": "https://thedeconstruct.in/products/vitamin-c-and-ferulic-acid-serum",
+      "checked_on": "2026-08-08",
+      "estimated": false
+     },
+     {
+      "id": "vc-klairs",
+      "name": "Freshly Juiced Vitamin Drop (5% L-AA, gentle)",
+      "brand": "Klairs (Korea)",
+      "tier": "premium",
+      "best_overall": false,
+      "size": "35 ml",
+      "price": {
+       "low": 1256,
+       "typical": 1413,
+       "high": 1570,
+       "currency": "INR"
+      },
+      "cost_per_month": 900,
+      "months_per_pack": 1.6,
+      "in_sweet_spot": true,
+      "buy_at": [
+       {
+        "platform": "Nykaa",
+        "url": "https://www.nykaa.com/klairs-freshly-juiced-vitamin-drop/p/262939",
+        "price": 1570,
+        "confidence": "estimated"
+       },
+       {
+        "platform": "1mg",
+        "url": "https://www.1mg.com/otc/klairs-freshly-juiced-vitamin-drop-otc533956",
+        "price": 1570,
+        "confidence": "estimated"
+       }
+      ],
+      "key_actives": [
+       "5% ascorbic acid (L-AA) at gentle pH",
+       "centella asiatica"
+      ],
+      "texture_finish": "slightly oily drop texture; designed as the beginner L-AA",
+      "review_signal": {
+       "count_seen": "12,816 on Nykaa",
+       "rating_seen": 4.4,
+       "recurring_negative": "tingling on very sensitive skin; oxidizes (turns yellow-orange) within ~2 months in heat — refrigerate"
+      },
+      "what_premium_buys": "If you later want true L-AA evidence-grade brightening, this is the gentlest on-ramp sold in India, with massive review volume.",
+      "why": "Premium option only if derivatives plateau after 3-4 months; not the starting point for sensitive skin.",
+      "not_for": "First-time actives users or current barrier-repair phase - start with a derivative.",
+      "flags": [
+       "L-AA (mild sting possible)",
+       "refrigerate-after-opening"
+      ],
+      "source_url": "https://www.nykaa.com/klairs-freshly-juiced-vitamin-drop/p/262939",
+      "checked_on": "2026-08-08",
+      "estimated": true
+     }
+    ]
+   },
+   {
+    "id": "retinoid",
+    "name": "Retinoid (PM, gentle entry)",
+    "priority": 5,
+    "notes": "Ramp: weeks 1-2 → 2 nights/week, buffered (moisturizer first, then pea-size retinal, then moisturizer again). Weeks 3-4 → 3 nights/week if zero flaking. Short-contact option if stinging: apply, wash off after 30-60 min. Never on damp skin. SUN NOTE for an outdoor presenter: retinoids make skin measurably more photosensitive — the entire plan collapses without daily SPF 50 + reapplication; if you can't reapply sunscreen on a given job, skip the retinal the night before, not the sunscreen.",
+    "options": [
+     {
+      "id": "rt-minimalist-granactive",
+      "name": "Granactive Retinoid 2% Face Cream (gentlest entry)",
+      "brand": "Minimalist",
+      "tier": "cheap",
+      "best_overall": false,
+      "size": "30 g",
+      "price": {
+       "low": 630,
+       "typical": 699,
+       "high": 699,
+       "currency": "INR"
+      },
+      "cost_per_month": 160,
+      "months_per_pack": 4.0,
+      "in_sweet_spot": false,
+      "buy_at": [
+       {
+        "platform": "Brand site (beminimalist.co)",
+        "url": "https://beminimalist.co/search?q=retinal",
+        "price": 630,
+        "confidence": "verified"
+       }
+      ],
+      "key_actives": [
+       "2% granactive retinoid (hydroxypinacolone retinoate)",
+       "cream base"
+      ],
+      "texture_finish": "moisturizer-like cream — active and buffer in one step",
+      "review_signal": {
+       "count_seen": "not captured",
+       "rating_seen": null,
+       "recurring_negative": "mild results vs retinal (HPR is the weakest-but-gentlest option); occasional pilling over serums"
+      },
+      "why": "If even 0.05% retinal scares your skin, HPR in a cream is the no-drama entry with near-zero irritation reports.",
+      "not_for": "Anyone wanting visible texture change within 12 weeks - it's slow by design.",
+      "flags": [
+       "fragrance-free",
+       "gentlest-option"
+      ],
+      "source_url": "https://beminimalist.co/search?q=retinal",
+      "checked_on": "2026-08-08",
+      "estimated": false
+     },
+     {
+      "id": "rt-hyphen-005",
+      "name": "0.05% Retinal Reset Serum (beginner)",
+      "brand": "Hyphen",
+      "tier": "mid",
+      "best_overall": true,
+      "size": "30 ml",
+      "price": {
+       "low": 299,
+       "typical": 599,
+       "high": 599,
+       "currency": "INR"
+      },
+      "cost_per_month": 150,
+      "months_per_pack": 4.0,
+      "in_sweet_spot": false,
+      "buy_at": [
+       {
+        "platform": "Brand site (letshyphen.com)",
+        "url": "https://letshyphen.com/products/0-05-retinal-reset-serum-beginner-friendly",
+        "price": 299,
+        "confidence": "estimated"
+       },
+       {
+        "platform": "1mg",
+        "url": "https://www.1mg.com/otc/hyphen-0.05-retinal-reset-serum-otc959690",
+        "price": 599,
+        "confidence": "verified"
+       },
+       {
+        "platform": "Nykaa",
+        "url": "https://www.nykaa.com/hyphen-0-05percent-retinal-reset-serum/p/14015799",
+        "price": 599,
+        "confidence": "estimated"
+       }
+      ],
+      "key_actives": [
+       "0.05% encapsulated retinaldehyde",
+       "soothing/hydrating base"
+      ],
+      "texture_finish": "lightweight serum, absorbs fast (rare for a retinoid)",
+      "review_signal": {
+       "count_seen": "modest volume (newer product); 85 reviews on the 0.1% sibling",
+       "rating_seen": null,
+       "recurring_negative": "1mg listing shows 'unavailable' intermittently — buy brand site or Nykaa; low long-term review history"
+      },
+      "why": "Best overall: retinal works faster than retinol at lower irritation, 0.05% encapsulated is the textbook sensitive-skin entry dose, and at ₹299-599 it's the cheapest retinal in India.",
+      "not_for": "Skipping the ramp - even 'beginner' retinal needs the 2-nights-a-week start.",
+      "flags": [
+       "fragrance-free (brand claim)",
+       "encapsulated-retinal",
+       "verify-stock"
+      ],
+      "source_url": "https://www.1mg.com/otc/hyphen-0.05-retinal-reset-serum-otc959690",
+      "checked_on": "2026-08-08",
+      "estimated": false
+     },
+     {
+      "id": "rt-hyphen-01",
+      "name": "0.1% Retinal Reset Serum Pro (step-up after 6 months)",
+      "brand": "Hyphen",
+      "tier": "mid",
+      "best_overall": false,
+      "size": "30 ml",
+      "price": {
+       "low": 649,
+       "typical": 649,
+       "high": 849,
+       "currency": "INR"
+      },
+      "cost_per_month": 165,
+      "months_per_pack": 4.0,
+      "in_sweet_spot": false,
+      "buy_at": [
+       {
+        "platform": "Brand site (letshyphen.com)",
+        "url": "https://letshyphen.com/products/0-1-retinal-reset-serum-pro-advanced",
+        "price": 649,
+        "confidence": "verified"
+       },
+       {
+        "platform": "Nykaa",
+        "url": "https://www.nykaa.com/hyphen-0-1percent-retinal-reset-serum-pro/p/14015800",
+        "price": 649,
+        "confidence": "estimated"
+       }
+      ],
+      "key_actives": [
+       "0.1% encapsulated retinaldehyde"
+      ],
+      "texture_finish": "lightweight, quick-absorbing",
+      "review_signal": {
+       "count_seen": "85 on brand site",
+       "rating_seen": 4.5,
+       "recurring_negative": "low review volume; jump from 0.05% too early causes flaking"
+      },
+      "why": "The natural upgrade path once 0.05% is boring - same brand, same base, double strength.",
+      "not_for": "Month one.",
+      "flags": [
+       "encapsulated-retinal"
+      ],
+      "source_url": "https://letshyphen.com/products/0-1-retinal-reset-serum-pro-advanced",
+      "checked_on": "2026-08-08",
+      "estimated": false
+     },
+     {
+      "id": "rt-ordinary-retinal",
+      "name": "Retinal 0.2% Emulsion (premium / much later)",
+      "brand": "The Ordinary",
+      "tier": "premium",
+      "best_overall": false,
+      "size": "15 ml",
+      "price": {
+       "low": 1500,
+       "typical": 1500,
+       "high": 1500,
+       "currency": "INR"
+      },
+      "cost_per_month": 375,
+      "months_per_pack": 4.0,
+      "in_sweet_spot": true,
+      "buy_at": [
+       {
+        "platform": "Nykaa",
+        "url": "https://www.nykaa.com/the-ordinary-retinal-0-2percent-emulsion/p/14257004",
+        "price": 1500,
+        "confidence": "estimated"
+       }
+      ],
+      "key_actives": [
+       "0.2% retinaldehyde emulsion"
+      ],
+      "texture_finish": "cream-emulsion",
+      "review_signal": {
+       "count_seen": "240 ratings on Nykaa",
+       "rating_seen": 4.5,
+       "recurring_negative": "too strong for retinoid beginners — dryness/flaking when used more than 2x/week early on"
+      },
+      "what_premium_buys": "Highest OTC retinal strength officially sold in India (The Ordinary entered via Nykaa) — a year-two product, not a starting point.",
+      "why": "Listed for the upgrade path only; buying this first contradicts the sensitive-skin brief.",
+      "not_for": "Entry use on dry sensitive skin - start at 0.05%.",
+      "flags": [
+       "strong",
+       "year-two-product"
+      ],
+      "source_url": "https://www.nykaa.com/the-ordinary-retinal-0-2percent-emulsion/p/14257004",
+      "checked_on": "2026-08-08",
+      "estimated": true
+     }
+    ]
+   },
+   {
+    "id": "hydrating-serum",
+    "name": "Hydrating / barrier serum",
+    "priority": 6,
+    "notes": "HA humidity caveat: humectants pull water from wherever it's plentiful. In humid Bangalore (most of the year) HA pulls from the air — fine. In dry AC studio air or a dry spell, a strong HA layer on bare skin can pull water OUT of the dermis and worsen dryness. Rule: apply HA on damp skin and always seal with moisturizer; skip it on long dry-AC days rather than layering more.",
+    "options": [
+     {
+      "id": "hs-minimalist-hapga",
+      "name": "2% Hyaluronic Acid + PGA Face Serum (with B5)",
+      "brand": "Minimalist",
+      "tier": "cheap",
+      "best_overall": true,
+      "size": "30 ml",
+      "price": {
+       "low": 539,
+       "typical": 570,
+       "high": 599,
+       "currency": "INR"
+      },
+      "cost_per_month": 300,
+      "months_per_pack": 1.8,
+      "in_sweet_spot": false,
+      "buy_at": [
+       {
+        "platform": "Apollo Pharmacy",
+        "url": "https://www.apollopharmacy.in/otc/minimalist-2-hyaluronic-acid-face-serum-30-ml",
+        "price": 539,
+        "confidence": "verified"
+       },
+       {
+        "platform": "Blinkit",
+        "url": "https://blinkit.com/prn/minimalist-hyaluronic-acid-2-face-serum/prid/519985",
+        "price": 570,
+        "confidence": "estimated"
+       },
+       {
+        "platform": "1mg",
+        "url": "https://www.1mg.com/otc/minimalist-hyaluronic-pga-02-face-serum-otc846685",
+        "price": 570,
+        "confidence": "verified"
+       }
+      ],
+      "key_actives": [
+       "multi-weight hyaluronic acid 2%",
+       "polyglutamic acid (holds more water than HA)",
+       "panthenol (B5)"
+      ],
+      "texture_finish": "water-gel, disappears under moisturizer",
+      "review_signal": {
+       "count_seen": "sold across Apollo/1mg/Blinkit/Tira at volume",
+       "rating_seen": null,
+       "recurring_negative": "tacky if over-applied; useless (or counterproductive) without a moisturizer on top"
+      },
+      "why": "Best overall: HA + PGA + panthenol is exactly the brief, from quick-commerce (Blinkit) to pharmacy availability, under ₹600.",
+      "not_for": "Standalone use in dry AC air - see humidity caveat.",
+      "flags": [
+       "fragrance-free",
+       "panthenol"
+      ],
+      "source_url": "https://www.apollopharmacy.in/otc/minimalist-2-hyaluronic-acid-face-serum-30-ml",
+      "checked_on": "2026-08-08",
+      "estimated": false
+     },
+     {
+      "id": "hs-lrp-hyalub5",
+      "name": "Hyalu B5 Serum (premium)",
+      "brand": "La Roche-Posay",
+      "tier": "premium",
+      "best_overall": false,
+      "size": "30 ml",
+      "price": {
+       "low": 2999,
+       "typical": 2999,
+       "high": 3600,
+       "currency": "INR"
+      },
+      "cost_per_month": 1650,
+      "months_per_pack": 1.8,
+      "in_sweet_spot": false,
+      "buy_at": [
+       {
+        "platform": "Flipkart",
+        "url": "https://www.flipkart.com/la-roche-posay-hyalu-b5-hyaluronic-acid-serum/p/itm177bc991c7899",
+        "price": 2999,
+        "confidence": "estimated"
+       }
+      ],
+      "key_actives": [
+       "hyaluronic acid (dual weight)",
+       "5% panthenol (vitamin B5)",
+       "madecassoside"
+      ],
+      "texture_finish": "silky serum, sensitive-skin tested",
+      "review_signal": {
+       "count_seen": "global bestseller; India listings via LRP's official entry",
+       "rating_seen": null,
+       "recurring_negative": "5x the price of the Minimalist for a comparable humectant payload — the extras are panthenol % and elegance"
+      },
+      "what_premium_buys": "5% panthenol + madecassoside in the serum itself and LRP's sensitive-skin testing rigor; a like-for-like upgrade if budget is no object.",
+      "why": "Premium option only; the cheap pick covers ~90% of the function.",
+      "not_for": "Value-driven buyers.",
+      "flags": [
+       "fragrance-free",
+       "sensitive-skin-tested"
+      ],
+      "source_url": "https://www.flipkart.com/la-roche-posay-hyalu-b5-hyaluronic-acid-serum/p/itm177bc991c7899",
+      "checked_on": "2026-08-08",
+      "estimated": true
+     }
+    ]
+   },
+   {
+    "id": "lip-balm-spf",
+    "name": "Lip balm with SPF",
+    "priority": 7,
+    "options": [
+     {
+      "id": "lip-fixderma-shield",
+      "name": "Shadow SPF 50 Lip Shield",
+      "brand": "Fixderma",
+      "tier": "cheap",
+      "best_overall": true,
+      "size": "15 g",
+      "price": {
+       "low": 169,
+       "typical": 195,
+       "high": 260,
+       "currency": "INR"
+      },
+      "cost_per_month": 100,
+      "months_per_pack": 2.0,
+      "in_sweet_spot": false,
+      "buy_at": [
+       {
+        "platform": "1mg",
+        "url": "https://www.1mg.com/otc/fixderma-shadow-spf-50-lip-shield-sunscreen-lip-balm-prevents-pigmentation-sun-damage-otc1117425",
+        "price": 195,
+        "confidence": "verified"
+       },
+       {
+        "platform": "Brand site (fixderma.com)",
+        "url": "https://www.fixderma.com/products/lip-balm-with-spf-50",
+        "price": 200,
+        "confidence": "estimated"
+       }
+      ],
+      "key_actives": [
+       "SPF 50 filters",
+       "emollient balm base"
+      ],
+      "texture_finish": "balm; brief white tint on application that rubs in",
+      "review_signal": {
+       "count_seen": "not shown on 1mg page",
+       "rating_seen": null,
+       "recurring_negative": "initial white cast on lips; needs reapplication like any lip SPF"
+      },
+      "why": "Highest lip SPF actually stocked in Indian pharmacies at pocket-money price — smokers' lips are extra pigmentation-prone, so this matters.",
+      "not_for": "Anyone bothered by a 30-second white phase before it rubs in.",
+      "flags": [
+       "spf-50",
+       "pharmacy-available"
+      ],
+      "source_url": "https://www.1mg.com/otc/fixderma-shadow-spf-50-lip-shield-sunscreen-lip-balm-prevents-pigmentation-sun-damage-otc1117425",
+      "checked_on": "2026-08-08",
+      "estimated": false
+     },
+     {
+      "id": "lip-minimalist-spf30",
+      "name": "Lip Balm SPF 30",
+      "brand": "Minimalist",
+      "tier": "cheap",
+      "best_overall": false,
+      "size": "standard stick/tube",
+      "price": {
+       "low": 270,
+       "typical": 270,
+       "high": 299,
+       "currency": "INR"
+      },
+      "cost_per_month": 135,
+      "months_per_pack": 2.0,
+      "in_sweet_spot": false,
+      "buy_at": [
+       {
+        "platform": "Brand site (beminimalist.co)",
+        "url": "https://beminimalist.co/search?q=sunscreen",
+        "price": 270,
+        "confidence": "verified"
+       }
+      ],
+      "key_actives": [
+       "SPF 30",
+       "emollient base"
+      ],
+      "texture_finish": "balm, no tint",
+      "review_signal": {
+       "count_seen": "not captured",
+       "rating_seen": null,
+       "recurring_negative": "SPF 30 vs Fixderma's 50; brand sells via own site primarily"
+      },
+      "why": "Fragrance-free-house alternative if the Fixderma white phase annoys you.",
+      "not_for": "Maximum protection seekers - take the SPF 50.",
+      "flags": [
+       "spf-30"
+      ],
+      "source_url": "https://beminimalist.co/search?q=sunscreen",
+      "checked_on": "2026-08-08",
+      "estimated": false
+     }
+    ]
+   },
+   {
+    "id": "niacinamide",
+    "name": "Niacinamide (optional, low %)",
+    "priority": 8,
+    "options": [
+     {
+      "id": "ni-minimalist-5",
+      "name": "Niacinamide 5% Face Serum (low-strength on purpose)",
+      "brand": "Minimalist",
+      "tier": "cheap",
+      "best_overall": true,
+      "size": "30 ml (10 ml trial ₹225)",
+      "price": {
+       "low": 225,
+       "typical": 540,
+       "high": 599,
+       "currency": "INR"
+      },
+      "cost_per_month": 270,
+      "months_per_pack": 2.0,
+      "in_sweet_spot": false,
+      "buy_at": [
+       {
+        "platform": "Brand site (beminimalist.co)",
+        "url": "https://beminimalist.co/search?q=niacinamide",
+        "price": 540,
+        "confidence": "verified"
+       }
+      ],
+      "key_actives": [
+       "5% niacinamide",
+       "no zinc variant needed for dry skin"
+      ],
+      "texture_finish": "light watery serum",
+      "review_signal": {
+       "count_seen": "brand's flagship line; large volume",
+       "rating_seen": null,
+       "recurring_negative": "10% version causes flushing/irritation on sensitive skin — stick to 5%; many buy 10% by mistake"
+      },
+      "why": "5% (not 10%) is the sensitive-skin dose for barrier support and post-smoking redness; already present at lower % in the Minimalist sunscreen.",
+      "not_for": "Stacking with vitamin C in the same routine while skin is still reactive - alternate days first.",
+      "flags": [
+       "fragrance-free",
+       "buy-5%-not-10%"
+      ],
+      "source_url": "https://beminimalist.co/search?q=niacinamide",
+      "checked_on": "2026-08-08",
+      "estimated": false
+     }
+    ]
+   },
+   {
+    "id": "gentle-exfoliant",
+    "name": "Gentle exfoliant (optional, PHA/lactic over glycolic)",
+    "priority": 9,
+    "notes": "Why PHA/lactic over glycolic: glycolic acid has the smallest molecule — fastest penetration, most sting, most photosensitivity; wrong on all three counts for dry sensitive outdoor skin. Lactic (larger, hydrating, milder) and PHAs (largest, humectant, barely penetrate) exfoliate the surface with a fraction of the irritation. Max 1x/week here, never on a retinal night.",
+    "options": [
+     {
+      "id": "ex-ordinary-lactic5",
+      "name": "Lactic Acid 5% + HA 2%",
+      "brand": "The Ordinary",
+      "tier": "mid",
+      "best_overall": true,
+      "size": "30 ml",
+      "price": {
+       "low": 950,
+       "typical": 950,
+       "high": 1050,
+       "currency": "INR"
+      },
+      "cost_per_month": 120,
+      "months_per_pack": 8.0,
+      "in_sweet_spot": true,
+      "buy_at": [
+       {
+        "platform": "Nykaa (10% listed; 5% availability varies)",
+        "url": "https://www.nykaa.com/the-ordinary-lactic-acid-10percent-ha-2percent/p/5003150",
+        "price": 950,
+        "confidence": "estimated"
+       },
+       {
+        "platform": "JioMart",
+        "url": "https://www.jiomart.com/p/groceries/the-ordinary-lactic-acid-5-andha-2-30-ml/609436378",
+        "price": 950,
+        "confidence": "estimated"
+       }
+      ],
+      "key_actives": [
+       "5% lactic acid",
+       "2% HA",
+       "Tasmanian pepperberry (anti-irritant)"
+      ],
+      "texture_finish": "light serum, used 1x/week at night",
+      "review_signal": {
+       "count_seen": "The Ordinary official India entry via Nykaa; 5% SKU stock fluctuates",
+       "rating_seen": null,
+       "recurring_negative": "India stock skews to the 10% version — do NOT substitute 10% for 5% on sensitive skin"
+      },
+      "why": "The only widely-known 5% lactic with a built-in anti-irritant sold through official India channels; at 1x/week a bottle lasts most of a year.",
+      "not_for": "Weeks 1-8 of this plan, retinal nights, or the day before long outdoor shoots.",
+      "flags": [
+       "1x-week-max",
+       "check-5%-stock",
+       "photosensitizing (mild)"
+      ],
+      "source_url": "https://www.nykaa.com/the-ordinary-lactic-acid-10percent-ha-2percent/p/5003150",
+      "checked_on": "2026-08-08",
+      "estimated": true
+     }
+    ]
+   }
+  ],
+  "routines": {
+   "am": [
+    "1. Splash-rinse with lukewarm water, or gentle cleanser only if you wake up oily (dry skin usually needs water only)",
+    "2. Vitamin C derivative serum (Deconstruct/Minimalist) on dry skin — wait 1-2 min",
+    "3. HA + PGA serum on slightly damp skin (mist or damp palms) — wait 1 min",
+    "4. Day moisturizer (Minimalist Ceramides or CeraVe Lotion) — wait 2-3 min until tack-free",
+    "5. Sunscreen: two-finger dose (~1.25 g) for face + neck — wait 10 min before stepping out or going on camera",
+    "6. SPF lip balm",
+    "During the day: reapply sunscreen every 2-3 h outdoors — stick top-up on camera days, proper cream reapplication at the midday break; reapply lip SPF after eating/drinking"
+   ],
+   "pm": [
+    "1. Micellar water on cotton pads until pads come away clean (dissolves the day's sunscreen)",
+    "2. Gentle cleanser (CeraVe Hydrating / Cetaphil), lukewarm water, pat dry — never rub",
+    "3a. RETINAL NIGHTS (per ramp): wait 10-15 min until fully dry → thin moisturizer layer → pea-size retinal for whole face → wait 10 min → seal with night cream (the 'sandwich')",
+    "3b. OTHER NIGHTS: HA serum on damp skin → night cream (Venusia Max / CeraVe Cream)",
+    "4. Optional 1x/week (from week 8, never on a retinal night): lactic acid 5% after cleansing, then moisturizer only"
+   ]
+  },
+  "ramp_8_week": [
+   {
+    "week": 1,
+    "add": "Cleanser + moisturizer + sunscreen only (the boring trio). Micellar at night if using sunscreen daily — which you are.",
+    "watch_for": "Any sting from the sunscreen itself (eye watering, burning at 5+ min). If so, switch sunscreen before adding anything else."
+   },
+   {
+    "week": 2,
+    "add": "Nothing. Same trio. Nail the two-finger SPF dose and one midday reapplication.",
+    "watch_for": "Tightness after cleansing = water too hot or cleansing twice in the morning unnecessarily."
+   },
+   {
+    "week": 3,
+    "add": "HA + PGA serum, AM and/or PM daily (lowest-risk active).",
+    "watch_for": "Tackiness or increased dryness in AC — if drier, use PM only on damp skin under cream."
+   },
+   {
+    "week": 4,
+    "add": "Vitamin C derivative, AM, alternate days.",
+    "watch_for": "Warmth/flush lasting >10 min or itching = rinse off, retry in 3 days; if it repeats, return it."
+   },
+   {
+    "week": 5,
+    "add": "Vitamin C daily if week 4 was clean. Patch-test the retinal behind the ear / inner forearm nightly this week.",
+    "watch_for": "Any redness at the patch site within 48 h of each application."
+   },
+   {
+    "week": 6,
+    "add": "Retinal 0.05%, 2 nights/week (e.g., Mon/Thu), sandwiched between moisturizer layers.",
+    "watch_for": "Next-morning redness, flaking at nose corners/mouth — normal if mild and gone by evening; if not, drop to 1 night/week."
+   },
+   {
+    "week": 7,
+    "add": "Retinal stays at 2 nights/week. No new products.",
+    "watch_for": "The 'week-3-of-retinoid' purge/dryness dip — buffer harder (more cream), don't quit."
+   },
+   {
+    "week": 8,
+    "add": "Retinal to 3 nights/week if skin is calm. Optional: niacinamide 5% AM or lactic 5% 1x/week — pick ONE.",
+    "watch_for": "Cumulative irritation from stacking — if anything stings, run the sting-reset and re-add one thing at a time."
+   }
+  ],
+  "do_not_combine": [
+   "Retinal + lactic/PHA/any exfoliating acid in the same night (barrier assault)",
+   "Retinal + vitamin C in the same routine (C stays AM, retinal stays PM)",
+   "Two new actives introduced in the same fortnight (you won't know which one caused the reaction)",
+   "Lactic acid the night before a long outdoor day (mild photosensitizer)",
+   "Niacinamide 10%+ with anything on reactive days (the 5% is the ceiling here)",
+   "Physical scrubs/loofahs on the face at all — they're permanently off this plan",
+   "Benzoyl peroxide (if ever prescribed for acne) + retinal same night without derm sign-off"
+  ],
+  "sting_reset": "If anything stings for more than 5 minutes, burns, or leaves next-day redness twice in a row: stop ALL actives (vitamin C, retinal, exfoliant, niacinamide) immediately and run cleanser + moisturizer + sunscreen only for 7 days. Add Cicaplast Baume B5+ at night if the skin feels raw. After 7 calm days, re-introduce ONE active per week starting with the HA serum, then vitamin C, then retinal at half the previous frequency. If the same product stings again on clean reintroduction, that product is out — no third chances on sensitive skin.",
+  "patch_test": "For every new product: apply a small amount to the inner forearm or behind the ear nightly for 3 consecutive nights. No redness/itch → apply to a 2 cm patch at the jawline for 2 more nights. Still clear → full-face. For the retinal, extend the forearm phase to 5 nights. This costs 5-7 days per product and prevents the multi-week barrier repair a full-face reaction costs. Note: patch-testing catches irritation reliably but allergy only ~70% of the time — a delayed reaction on day 10 of full use is still possible; stop and reset if so.",
+  "starter_set": {
+   "items": [
+    "cl-cetaphil-gentle",
+    "mo-venusia-max",
+    "ss-drsheths-ceramide"
+   ],
+   "total_cost": 1734,
+   "note": "Three things only for month 1: Cetaphil Gentle Cleanser ₹429 + Venusia Max 150g ₹606 + Dr. Sheth's Ceramide SPF50+ 80g ₹699 = ₹1,734. This trio alone — used every single day with a real sunscreen dose — delivers more visible change in 8 weeks than any serum stack."
+  },
+  "full_set": {
+   "items": [
+    "cl-cetaphil-gentle",
+    "cl-bioderma-micellar",
+    "mo-minimalist-ceramide",
+    "mo-cerave-cream",
+    "ss-boj-relief",
+    "vc-deconstruct",
+    "rt-hyphen-005",
+    "hs-minimalist-hapga",
+    "lip-fixderma-shield"
+   ],
+   "total_cost": 6495,
+   "note": "Cetaphil cleanser ₹429 + Bioderma micellar ₹809 + Minimalist day ceramide ₹540 + CeraVe night cream 340g ₹1,529 + BoJ Relief Sun ₹1,256 + Deconstruct vit C ₹599 + Hyphen 0.05% retinal ₹599 + Minimalist HA+PGA ₹539 + Fixderma lip SPF ₹195 ≈ ₹6,495 upfront; ~₹2,200-2,600/month ongoing (sunscreen is the biggest recurring cost at outdoor usage rates)."
+  },
+  "smoking_honesty": "No product on this list can outrun cigarettes. Smoking cuts dermal blood flow within minutes of each cigarette, degrades collagen and elastin faster than UV does, depletes the skin's own vitamin C (the very thing the AM serum is trying to top up), delays wound healing, and keeps the barrier chronically inflamed — which is a large part of why your skin is dry and reactive in the first place. A ₹6,500 routine on a smoker's skin is pouring water into a leaking bucket: worth doing, but the leak wins until it's plugged. The single most effective 'skincare product' in this entire document is the quit date; skin microcirculation measurably improves within weeks of stopping, and the sallow tone smokers develop starts reversing within months. Keep the routine — it protects the recovery — but be clear about which intervention is doing the heavy lifting.",
+  "derm_consult": {
+   "when": "See a dermatologist instead of buying more products if: (1) anything on this list stings twice even after the reset protocol — you may have rosacea, seborrheic or atopic dermatitis masquerading as 'sensitive skin'; (2) you have established dark patches/melasma — prescription azelaic acid/tretinoin beats every OTC serum here per rupee; (3) you're about to spend ₹3,000+ on premium serums — one consult costs less and replaces guesswork with a prescription plan; (4) any mole or patch changes while you're quitting smoking. For an outdoor presenter, one baseline consult + annual review is the highest-ROI line item in this whole budget.",
+   "bangalore_price_range": "₹200-₹1,200 per consult across Practo-listed Bangalore dermatologists; typical established clinics charge ₹600-₹1,000; online consults from ~₹300",
+   "source_url": "https://www.practo.com/bangalore/dermatologist",
+   "confidence": "estimated (Practo listing pages verified to exist; fee range from Practo/Lybrate listing summaries, direct page fetch blocked by bot protection)"
+  }
+ },
+ "teeth": {
+  "checked_on": "2026-08-08",
+  "context": {
+   "subject": "male smoker ~10/day, on 8-week taper, yellowing teeth, on-camera professional, Indiranagar Bangalore",
+   "constraint": "effective AND enamel-safe, dentist-approved only",
+   "currency": "INR"
+  },
+  "tiers": [
+   {
+    "tier": 0,
+    "name": "Scaling & polish (professional cleaning)",
+    "what": "Ultrasonic scaling to remove tartar plus polishing (rubber cup/air-polishing) to buff off the surface tar-and-nicotine film. Not bleaching - it returns teeth to their natural shade, it does not lighten beyond it.",
+    "bangalore_price": {
+     "low": 800,
+     "typical": 1800,
+     "high": 3000
+    },
+    "price_notes": "Verified Bangalore ranges: Credence Dental scaling Rs1,000-2,000 + polishing Rs250-300; Dental Sanctuary (Indiranagar) Rs1,200-3,000; Clove Dental standardised rates scaling from Rs1,690, polishing from Rs890; Credence lists pre-whitening cleaning Rs800-2,800. Deep cleaning (only if gum disease) Rs3,000-6,000.",
+    "effect_for_smoker": "Smoker staining is largely extrinsic (a tar film sitting on enamel). A 2024/2025 clinical study found professional polishing/air-polishing eliminated extrinsic tobacco staining with all methods tested - though none fully restored original colour because some nicotine staining penetrates the tooth. Practically: this one visit removes the majority of the visible yellow-brown smoker film for under Rs3,000, which is why it is step one before spending anything on bleaching.",
+    "first_step": true,
+    "sources": [
+     {
+      "url": "https://credencedental.com/teeth-scaling-cost-in-bangalore/",
+      "confidence": "verified"
+     },
+     {
+      "url": "https://www.dentalsanctuary.in/blog/teeth-cleaning-in-bangalore",
+      "confidence": "verified"
+     },
+     {
+      "url": "https://clovedental.in/teeth-cleaning-cost-in-india",
+      "confidence": "verified"
+     },
+     {
+      "url": "https://credencedental.com/teeth-whitening-cost-in-bangalore/",
+      "confidence": "verified"
+     },
+     {
+      "url": "https://pmc.ncbi.nlm.nih.gov/articles/PMC11976585/",
+      "confidence": "verified"
+     }
+    ]
+   },
+   {
+    "tier": 1,
+    "name": "In-clinic whitening (chairside peroxide, light/laser-activated e.g. Zoom)",
+    "what": "Dentist applies 25-40% hydrogen peroxide gel with gum barrier, 30-90 minutes, sometimes LED/laser activation. Fastest, biggest single-visit change. Note: evidence says the light adds little - the peroxide does the work - so do not pay a large premium for 'laser' branding alone.",
+    "bangalore_price": {
+     "low": 5000,
+     "typical": 12000,
+     "high": 25000
+    },
+    "price_notes": "Verified Bangalore ranges: National Dental Care Rs5,000-15,000; The Dental Lounge (Kalyan Nagar) Rs9,000/session; Clinicspots aggregator laser/Zoom Rs7,490-12,840 (overall Rs7,643-22,028); Partha Dental Zoom Rs12,000-25,000; Amaya Dental laser Rs15,000-25,000, LED Rs12,000-15,000. Premium clinics quote up to Rs40,000-50,000 (Credence: Zoom Rs7,000-50,000) - paying that much buys ambience, not more shades.",
+    "effect_for_smoker": "Clinics claim 2-8 shades in one session; realistic for a smoker with partly intrinsic nicotine staining is 3-5 shades. Longevity is the catch: non-smokers keep results 6 months-2 years, but for an active smoker visible darkening starts within about a month and colour relapse typically lands within 6 months; smokers need touch-ups 2-3x more often. Zero smoking for 24-48h after the session is mandatory (enamel is porous). Expect transient sensitivity - ADA notes up to two-thirds of users get it, peaking days 2-3, resolving by ~day 4.",
+    "legitimacy_checklist": [
+     "Treatment performed by a registered dentist (BDS/MDS, state dental council registration displayed) - whitening is a dental procedure, not a beauty service",
+     "Clinic does an oral exam first and insists on scaling before bleaching - a clinic that bleaches over tartar is a red flag",
+     "Gum barrier/dam used; peroxide concentration disclosed on request",
+     "Avoid mall kiosks and salons: non-dental operators have been prosecuted for gels far above legal peroxide limits, causing burns",
+     "Named examples verified as real Bangalore dental practices from their own pages: Apollo Dental (Koramangala and other branches), Clove Dental (Bengaluru branches), Partha Dental, The Dental Lounge (Kalyan Nagar), Amaya Dental, Credence Dental (RR Nagar), Dental Sanctuary (Indiranagar). Listed as verified-to-exist, not personally endorsed."
+    ],
+    "first_step": false,
+    "sources": [
+     {
+      "url": "https://www.nationaldentalcare.in/teeth-whitening-cost-in-bangalore/",
+      "confidence": "verified"
+     },
+     {
+      "url": "https://thedentalloungeindia.com/teeth-whitening-in-bangalore-cost-comparison-guide/",
+      "confidence": "verified"
+     },
+     {
+      "url": "https://www.clinicspots.com/cost/teeth-whitening/india/bangalore",
+      "confidence": "verified"
+     },
+     {
+      "url": "https://parthadental.com/zoom-teeth-whitening-cost-in-bangalore-price-breakdown/",
+      "confidence": "verified"
+     },
+     {
+      "url": "https://amayadental.in/teeth-whitening-cost-in-bangalore-2026/",
+      "confidence": "verified"
+     },
+     {
+      "url": "https://apollodental.in/bengaluru/koramangala/treatment/teeth-whitening",
+      "confidence": "verified"
+     },
+     {
+      "url": "https://www.ada.org/resources/ada-library/oral-health-topics/whitening",
+      "confidence": "verified"
+     },
+     {
+      "url": "https://www.lockportdentalgroup.com/how-long-does-teeth-whitening-last-if-you-smoke/",
+      "confidence": "verified"
+     },
+     {
+      "url": "https://www.trysnow.com/blogs/news/smoking-after-teeth-whitening",
+      "confidence": "verified"
+     },
+     {
+      "url": "https://thedentistuk.com/behind-the-smile-the-dangers-of-teeth-whitening-at-beauty-salons/",
+      "confidence": "verified"
+     }
+    ]
+   },
+   {
+    "tier": 2,
+    "name": "Dentist-supervised custom take-home trays (10-16% carbamide peroxide)",
+    "what": "Dentist takes impressions, makes custom-fit trays, dispenses carbamide peroxide gel (ADA describes 10-38% CP worn 2-10 h/day for 6-28 days; 10-16% is the standard gentle range). Slower than chairside but reaches a similar endpoint - ADA-cited research: a 7-day tray system matched a 1-day in-office result. Often the best value per shade, and the trays are reusable for cheap gel-only touch-ups later - ideal for a smoker who will need maintenance.",
+    "bangalore_price": {
+     "low": 2000,
+     "typical": 5000,
+     "high": 8000
+    },
+    "price_notes": "Verified: Credence Dental (Bangalore) lists custom take-home trays Rs2,000-8,000; Partha Dental lists home kits Rs3,000-8,000. Refill gel syringes later cost a fraction of the initial fee (gel-only refill figure not verified; ask the clinic).",
+    "effect_for_smoker": "Realistic 2-4 shades over 2-4 weeks. Same smoker caveat: relapse within ~6 months while smoking continues, but tray owners can run a 1-2 night touch-up monthly instead of paying for a new in-clinic session. Lower peak sensitivity than chairside because concentration is lower.",
+    "first_step": false,
+    "sources": [
+     {
+      "url": "https://credencedental.com/teeth-whitening-cost-in-bangalore/",
+      "confidence": "verified"
+     },
+     {
+      "url": "https://parthadental.com/zoom-teeth-whitening-cost-in-bangalore-price-breakdown/",
+      "confidence": "verified"
+     },
+     {
+      "url": "https://www.ada.org/resources/ada-library/oral-health-topics/whitening",
+      "confidence": "verified"
+     }
+    ]
+   },
+   {
+    "tier": 3,
+    "name": "OTC in India (toothpastes, PAP strips; LED kits assessed honestly)",
+    "what": "Maintenance layer, not transformation. Realistic ceiling ~1-2 shades and mostly stain-prevention between professional treatments. In India, true hydrogen-peroxide toothpastes are effectively absent from shelves; what works here is (a) 'active oxygen' / enzyme chemistry, (b) blue/purple optical colour-correctors, (c) PAP (peroxide-free bleaching acid) strips, (d) gentle polishing agents. High-peroxide Crest-style strips are grey-market imports - see avoid list.",
+    "bangalore_price": {
+     "low": 169,
+     "typical": 400,
+     "high": 1300
+    },
+    "price_notes": "Toothpastes Rs169-499; PAP strips Rs949-1,299; marketplace 'whitening kits' Rs5,350-9,630 per Clinicspots - poor value given the LED adds little.",
+    "effect_for_smoker": "Keeps the post-cleaning shade from re-browning day to day. Will not visibly whiten heavy tar staining on its own. Use whitening paste 2-3x/week alongside a daily fluoride sensitivity paste rather than as the only paste, to limit cumulative abrasion.",
+    "led_kit_verdict": "Evidence is against the light mattering: a 2014 review found light activation neither sped up nor improved bleaching, and Healthline's summary calls the incremental benefit unproven - the gel concentration does the work. An LED kit is at best a tray-plus-weak-gel purchase with theatre lighting; dentist trays beat it at similar or lower cost.",
+    "first_step": false,
+    "sources": [
+     {
+      "url": "https://www.1mg.com/otc/colgate-colgate-visible-white-o2-teeth-whitening-toothpaste-active-oxygen-technology-enamel-safe-teeth-whitening-product-toothpaste-otc756878",
+      "confidence": "verified"
+     },
+     {
+      "url": "https://www.1mg.com/otc/colgate-visible-white-teeth-whitening-fluoride-toothpaste-otc332261",
+      "confidence": "verified"
+     },
+     {
+      "url": "https://perforacare.com/collections/teeth-whitening-products",
+      "confidence": "verified"
+     },
+     {
+      "url": "https://www.healthline.com/health/dental-and-oral-health/blue-light-teeth-whitening",
+      "confidence": "verified"
+     },
+     {
+      "url": "https://www.clinicspots.com/cost/teeth-whitening/india/bangalore",
+      "confidence": "verified"
+     }
+    ]
+   },
+   {
+    "tier": 4,
+    "name": "Avoid list",
+    "what": "Charcoal anything, baking-soda-plus-lemon DIY, salon/kiosk whitening, unregulated high-peroxide kits, over-abrasive pastes. Details in avoid array.",
+    "bangalore_price": {
+     "low": 0,
+     "typical": 0,
+     "high": 0
+    },
+    "effect_for_smoker": "These either thin enamel (which makes teeth look YELLOWER long-term as dentine shows through) or risk chemical burns. A smoker's enamel is already under acid+heat stress; do not add abrasion.",
+    "first_step": false,
+    "sources": [
+     {
+      "url": "https://www.ada.org/resources/ada-library/oral-health-topics/whitening",
+      "confidence": "verified"
+     },
+     {
+      "url": "https://dentistdecoded.com/articles/charcoal-toothpaste-truth-2026/",
+      "confidence": "verified"
+     },
+     {
+      "url": "https://www.healthline.com/health/baking-soda-and-lemon",
+      "confidence": "verified"
+     }
+    ]
+   }
+  ],
+  "products": [
+   {
+    "id": "colgate-visible-white-o2",
+    "name": "Colgate Visible White O2 Teeth Whitening Toothpaste 50g",
+    "brand": "Colgate",
+    "tier_level": 3,
+    "price": {
+     "low": 260,
+     "typical": 273,
+     "high": 279
+    },
+    "where": [
+     {
+      "platform": "1mg",
+      "url": "https://www.1mg.com/otc/colgate-colgate-visible-white-o2-teeth-whitening-toothpaste-active-oxygen-technology-enamel-safe-teeth-whitening-product-toothpaste-otc756878",
+      "price": 273,
+      "confidence": "verified"
+     },
+     {
+      "platform": "Amazon.in",
+      "url": null,
+      "price": null,
+      "confidence": "estimated",
+      "note": "Listed on Amazon.in per search results; page not fetchable (HTTP 500), price unverified"
+     }
+    ],
+    "mechanism": "peroxide",
+    "mechanism_note": "'Active oxygen technology' - peroxide-derived oxygen release claim; the Indian ingredient list (1mg) does not declare hydrogen peroxide itself. Contains fluoride (sodium monofluorophosphate). Marketed enamel-safe.",
+    "rda_if_known": null,
+    "review_signal": {
+     "rating_seen": null,
+     "recurring_negative": "Whitening effect disputed - some users report visible change in days, others report none at all (Amazon.in review summary via search; not independently fetched)"
+    },
+    "why": "The closest thing to a legal peroxide-type whitening paste on Indian shelves, from a mainstream brand, with fluoride. Reasonable daily-maintenance pick after scaling.",
+    "not_for": "Anyone expecting it to bleach established tar staining; it maintains, it does not transform.",
+    "source_url": "https://www.1mg.com/otc/colgate-colgate-visible-white-o2-teeth-whitening-toothpaste-active-oxygen-technology-enamel-safe-teeth-whitening-product-toothpaste-otc756878",
+    "estimated": false
+   },
+   {
+    "id": "colgate-visible-white-classic",
+    "name": "Colgate Visible White Teeth Whitening Fluoride Toothpaste 100g",
+    "brand": "Colgate",
+    "tier_level": 3,
+    "price": {
+     "low": 150,
+     "typical": 169,
+     "high": 169
+    },
+    "where": [
+     {
+      "platform": "1mg",
+      "url": "https://www.1mg.com/otc/colgate-visible-white-teeth-whitening-fluoride-toothpaste-otc332261",
+      "price": 169,
+      "confidence": "verified",
+      "note": "MRP Rs169; was showing sold-out on 1mg at check time - widely stocked offline"
+     }
+    ],
+    "mechanism": "covarine",
+    "mechanism_note": "Blue pigment (Sorbosil BFG 51 Blue) optical colour-correction plus phosphate polishing agents ('whitening accelerators'). Fluoride present.",
+    "rda_if_known": null,
+    "review_signal": {
+     "rating_seen": 4.3,
+     "recurring_negative": "No dominant complaint pattern in visible 1mg reviews (558 ratings, 93 reviews); optical effect is temporary by nature"
+    },
+    "why": "Cheapest credible option; blue-covarine effect gives an immediate on-camera lift by cancelling yellow tones, useful before presentations.",
+    "not_for": "Actual stain removal - the optical effect washes off; pair with professional cleaning.",
+    "source_url": "https://www.1mg.com/otc/colgate-visible-white-teeth-whitening-fluoride-toothpaste-otc332261",
+    "estimated": false
+   },
+   {
+    "id": "perfora-whitening-strips",
+    "name": "Perfora Teeth Whitening Strips (28 strips / 14-day course)",
+    "brand": "Perfora",
+    "tier_level": 3,
+    "price": {
+     "low": 949,
+     "typical": 949,
+     "high": 949
+    },
+    "where": [
+     {
+      "platform": "perforacare.com",
+      "url": "https://perforacare.com/collections/teeth-whitening-products",
+      "price": 949,
+      "confidence": "verified"
+     },
+     {
+      "platform": "Amazon.in",
+      "url": null,
+      "price": null,
+      "confidence": "estimated",
+      "note": "Also listed on Amazon.in/Flipkart per search; pages not fetchable"
+     }
+    ],
+    "mechanism": "peroxide",
+    "mechanism_note": "PAP (phthalimidoperoxycaproic acid) - a peroxide-free bleaching oxidant legal for Indian OTC sale; brand claims enamel-safe with hydroxyapatite. Indian D2C brand, dentist-endorsed marketing, ~1M customers claimed.",
+    "rda_if_known": null,
+    "review_signal": {
+     "rating_seen": 4.6,
+     "recurring_negative": "On-site ratings skew high (brand-owned storefront) - treat 4.6 as ceiling, not consensus; PAP evidence base is younger than peroxide's"
+    },
+    "why": "The legitimate Indian answer to grey-market Crest strips: locally sold, returnable, peroxide-free chemistry with some clinical backing, no authenticity risk.",
+    "not_for": "Replacing dentist whitening; expect ~1-2 shades. Purple Magic variant (Rs1,299, self-dissolving) adds an optical purple corrector on top.",
+    "source_url": "https://perforacare.com/collections/teeth-whitening-products",
+    "estimated": false
+   },
+   {
+    "id": "perfora-dream-white-toothpaste",
+    "name": "Perfora Dream White Teeth Whitening Toothpaste 150g",
+    "brand": "Perfora",
+    "tier_level": 3,
+    "price": {
+     "low": 239,
+     "typical": 239,
+     "high": 249
+    },
+    "where": [
+     {
+      "platform": "perforacare.com",
+      "url": "https://perforacare.com/collections/toothpaste",
+      "price": 239,
+      "confidence": "verified"
+     },
+     {
+      "platform": "1mg",
+      "url": null,
+      "price": null,
+      "confidence": "estimated",
+      "note": "Perfora range listed on 1mg/Amazon.in per search"
+     }
+    ],
+    "mechanism": "abrasive",
+    "mechanism_note": "Enzyme + gentle-polish chemistry: bromelain/papain enzymes, ImerCare PerlWhite, nano-hydroxyapatite for remineralisation. SLS-free. CAUTION: this variant is fluoride-free - a smoker mid-taper should not give up fluoride; use alongside a fluoride paste, or prefer Perfora's 'Fluoride+' variants.",
+    "rda_if_known": null,
+    "review_signal": {
+     "rating_seen": null,
+     "recurring_negative": "Site marks it 'Bestseller' without a numeric rating; sibling pastes show 4.6-4.7 on brand-owned site (inflated-sample caveat)"
+    },
+    "why": "Gentler enzyme-based stain control with remineralising hydroxyapatite - a good low-abrasion rotation paste.",
+    "not_for": "Sole daily paste (no fluoride in this variant).",
+    "source_url": "https://perforacare.com/collections/toothpaste",
+    "estimated": false
+   },
+   {
+    "id": "generic-led-whitening-kit",
+    "name": "Marketplace LED whitening kits (category, not a specific SKU)",
+    "brand": "various",
+    "tier_level": 3,
+    "price": {
+     "low": 5350,
+     "typical": 7000,
+     "high": 9630
+    },
+    "where": [
+     {
+      "platform": "Clinicspots (Bangalore price aggregate)",
+      "url": "https://www.clinicspots.com/cost/teeth-whitening/india/bangalore",
+      "price": null,
+      "confidence": "verified",
+      "note": "Whitening kits Rs5,350-9,630 band from aggregator page"
+     }
+    ],
+    "mechanism": "peroxide",
+    "mechanism_note": "Any real effect comes from the gel; evidence (2014 review, Healthline summary) shows the LED light does not meaningfully speed or improve results - immediate 'wow' is partly dehydration whitening that rebounds.",
+    "rda_if_known": null,
+    "review_signal": {
+     "rating_seen": null,
+     "recurring_negative": "Category-wide: rebound after teeth rehydrate, undisclosed gel concentrations, sensitivity"
+    },
+    "why": "Included only for honest assessment - at Rs5,000-9,600 it costs more than verified dentist take-home trays (Rs2,000-8,000) and delivers less accountability. Skip.",
+    "not_for": "Anyone with access to a dentist - Tier 2 dominates this option.",
+    "source_url": "https://www.healthline.com/health/dental-and-oral-health/blue-light-teeth-whitening",
+    "estimated": false
+   }
+  ],
+  "sensitivity": [
+   {
+    "id": "sensodyne-fresh-mint",
+    "name": "Sensodyne Fresh Mint Sensitive Toothpaste 75g",
+    "brand": "Sensodyne (Haleon)",
+    "tier_level": 3,
+    "price": {
+     "low": 112,
+     "typical": 118,
+     "high": 125
+    },
+    "where": [
+     {
+      "platform": "1mg",
+      "url": "https://www.1mg.com/otc/sensodyne-fresh-mint-sensitive-toothpaste-for-strong-teeth-healthy-gums-otc90986",
+      "price": 112,
+      "confidence": "verified"
+     },
+     {
+      "platform": "Apollo Pharmacy",
+      "url": null,
+      "price": 124,
+      "confidence": "estimated",
+      "note": "Rs124.5 per Apollo listing in search results; page not fetched"
+     }
+    ],
+    "mechanism": "potassium nitrate + fluoride",
+    "rda_if_known": null,
+    "review_signal": {
+     "rating_seen": 4.5,
+     "recurring_negative": "None dominant across 1,624 ratings / 368 reviews on 1mg"
+    },
+    "why": "Potassium nitrate calms the tooth nerve - the standard pre/post-whitening desensitiser. Start brushing with it 2 weeks BEFORE any peroxide treatment and continue through it.",
+    "not_for": "Whitening expectations - zero whitening action.",
+    "source_url": "https://www.1mg.com/otc/sensodyne-fresh-mint-sensitive-toothpaste-for-strong-teeth-healthy-gums-otc90986",
+    "estimated": false
+   },
+   {
+    "id": "sensodyne-repair-protect",
+    "name": "Sensodyne Repair & Protect Toothpaste 100g (NovaMin)",
+    "brand": "Sensodyne (Haleon)",
+    "tier_level": 3,
+    "price": {
+     "low": 218,
+     "typical": 242,
+     "high": 255
+    },
+    "where": [
+     {
+      "platform": "Apollo Pharmacy",
+      "url": "https://www.apollopharmacy.in/otc/sensodyne-repair-protect-toothpaste-100gm",
+      "price": 242,
+      "confidence": "verified"
+     }
+    ],
+    "mechanism": "NovaMin (calcium sodium phosphosilicate) + fluoride",
+    "rda_if_known": null,
+    "review_signal": {
+     "rating_seen": 5.0,
+     "recurring_negative": "Only 2 reviews visible on Apollo page - rating is real but statistically meaningless; product line itself is long-established"
+    },
+    "why": "NovaMin rebuilds a mineral layer over exposed dentine - the 'repair' option if sensitivity persists after whitening rather than just during it.",
+    "not_for": "Whitening; also pricier per gram than Fresh Mint - use if potassium nitrate alone is not enough.",
+    "source_url": "https://www.apollopharmacy.in/otc/sensodyne-repair-protect-toothpaste-100gm",
+    "estimated": false
+   }
+  ],
+  "maintenance_for_smoker": [
+   "Rinse your mouth with plain water immediately after every cigarette for the remaining taper weeks - it clears staining chemicals before they bond to enamel (verified tip from post-whitening smoker guidance).",
+   "Absolute no-smoking window for 48 hours after any peroxide whitening - enamel is porous and restains fastest then. Schedule whitening for after taper week 8 and this problem deletes itself.",
+   "Cold acidic/staining drinks (cold coffee, cola, iced tea) through a straw, past the front teeth. Hot drinks: no straw - just rinse with water after.",
+   "Never brush within 30-60 minutes of acidic drinks or of vaping/smoking - acid-softened enamel brushes away; rinse with water, chew sugar-free gum, brush later (ADA-cited guidance).",
+   "Scaling + polish every 6 months as a non-smoker; every 3-4 months while any smoking continues (smoker-specific cleaning cadence from dental guidance).",
+   "Whitening paste 2-3x/week, fluoride sensitivity paste (Sensodyne) the rest - do not run an abrasive whitening paste twice daily forever.",
+   "If you buy Tier 2 trays: one gel touch-up night per month keeps the shade without another clinic bill.",
+   "Realistic timeline while still smoking: visible darkening returns from ~1 month, full relapse by ~6 months. After a completed quit: professional results hold 12+ months with the above habits."
+  ],
+  "avoid": [
+   {
+    "what": "Charcoal toothpastes and powders (any brand, including 'natural' D2C ones)",
+    "why": "Abrasivity measured 2-3x the ADA recommended maximum; measurable enamel loss in as little as 4 weeks; most lack fluoride; ADA finds insufficient evidence of whitening benefit and cites 'deep concave abrasion cavities' in one study. Thinner enamel ultimately shows more yellow dentine - the opposite of the goal.",
+    "source_url": "https://www.ada.org/resources/ada-library/oral-health-topics/whitening"
+   },
+   {
+    "what": "Baking soda + lemon juice DIY",
+    "why": "Lemon juice (pH 2-3) dissolves enamel, which never regenerates; scrubbing acid-softened enamel with an abrasive removes tooth structure, not just stain. Healthline's review: 'leave the lemons in the kitchen.'",
+    "source_url": "https://www.healthline.com/health/baking-soda-and-lemon"
+   },
+   {
+    "what": "Salon, kiosk, or mall-cart 'instant whitening' by non-dentists",
+    "why": "Whitening is a dental procedure. Non-dental operators have been prosecuted for gels up to 300x legal peroxide limits - chemical burns, blistered gums, no oral exam, no recourse. In Bangalore, insist on a registered dentist (BDS/MDS, state dental council registration).",
+    "source_url": "https://thedentistuk.com/behind-the-smile-the-dangers-of-teeth-whitening-at-beauty-salons/"
+   },
+   {
+    "what": "Grey-market high-peroxide strips (Crest Whitestrips etc.) via Indian marketplaces/importers",
+    "why": "Not officially sold in India; the category is widely counterfeited, and informal imports strip away authenticity guarantees (check batch printing, gel coating, packaging consistency - or better, skip). A fake strip means unknown chemistry held against your teeth for 30 minutes. Perfora PAP strips or dentist trays achieve the goal without the gamble.",
+    "source_url": "https://www.directteethwhitening.io/crest-whitestrips-plain-silver-foil-packaging/"
+   },
+   {
+    "what": "Unregulated high-peroxide or no-label LED kits from marketplaces",
+    "why": "Undisclosed concentrations + one-size trays = gum contact burns and sensitivity (ADA: gingival irritation is typically from ill-fitting trays); the LED itself adds nothing proven. Dentist-dispensed trays are the safe version of this exact product.",
+    "source_url": "https://www.ada.org/resources/ada-library/oral-health-topics/whitening"
+   }
+  ],
+  "decision_paths": [
+   {
+    "route": "cheap",
+    "steps": [
+     "Week 1-2 of taper: scaling + polish at a standard Bangalore clinic (Rs800-3,000)",
+     "Daily: Colgate Visible White O2 (Rs273) or Visible White classic (Rs169) 2-3x/week, Sensodyne Fresh Mint (Rs112) otherwise",
+     "Rinse-after-smoking + straw + no-brush-after-acid habits from day one"
+    ],
+    "total_cost": {
+     "low": 1200,
+     "high": 3500
+    },
+    "shades_realistic": "1-2 shades of visible improvement - mostly from removing the tar film and returning to natural shade, plus optical lift on camera; no true bleaching",
+    "lasts_for_smoker": "2-3 months before the film rebuilds while smoking continues; repeat polish visits (Rs890-2,000) maintain it. Post-quit, a single cleaning holds ~6 months."
+   },
+   {
+    "route": "mid",
+    "steps": [
+     "Week 1-2 of taper: scaling + polish (Rs800-3,000)",
+     "Week 6-8: dentist visit for impressions; start Sensodyne 2 weeks pre-whitening",
+     "After taper week 8 (quit complete): 2-4 week course of custom take-home trays, 10-16% carbamide peroxide (Rs2,000-8,000)",
+     "Monthly single-night gel touch-ups thereafter"
+    ],
+    "total_cost": {
+     "low": 3000,
+     "high": 11000
+    },
+    "shades_realistic": "2-4 shades of genuine bleaching on top of the cleaning",
+    "lasts_for_smoker": "If whitening waits for the quit as sequenced: 12+ months with touch-ups. If done while still smoking: relapse within ~6 months and touch-ups needed 2-3x as often."
+   },
+   {
+    "route": "do_it_properly",
+    "steps": [
+     "Week 1-2 of taper: scaling + polish (Rs800-3,000)",
+     "Week 6: consult at a verified dental clinic (registered dentist, exam first); start Sensodyne pre-treatment",
+     "Week 8+ (quit complete, 48h+ smoke-free guaranteed): single chairside peroxide session, Rs7,000-25,000 typical Bangalore band - do not pay a premium purely for 'laser/LED' activation",
+     "Same visit: impressions for custom trays (Rs2,000-8,000) for maintenance touch-ups",
+     "Quarterly polish (Rs890-2,000) + monthly tray touch-up night"
+    ],
+    "total_cost": {
+     "low": 10000,
+     "high": 36000
+    },
+    "shades_realistic": "Clinics claim up to 8 shades; realistic for an ex-smoker with partial intrinsic nicotine staining is 3-6 shades, camera-obvious",
+    "lasts_for_smoker": "Done after the quit: 1-2 years with tray maintenance. Done while still smoking: visible darkening from month 1, relapse by month 6 - which is why sequencing is the whole game."
+   }
+  ],
+  "sequencing_advice": "Order of operations: (1) Scaling + polish NOW, in taper week 1-2 - it removes most of the visible smoker film for under Rs3,000, gives an immediate on-camera win, and dentists require it before bleaching anyway. (2) Start potassium nitrate toothpaste 2 weeks before any peroxide step. (3) Book actual whitening (trays or chairside) for AFTER taper week 8 - peroxide results need a 48-hour zero-smoke window and continuing smokers relapse within ~6 months, so whitening a quit mouth roughly doubles-to-quadruples the lifespan of the same rupees. A freshly whitened smile is also a strong relapse deterrent: you paid for it, smoking visibly un-pays it. (4) OTC pastes and habits are the maintenance layer, never the treatment.",
+  "honest_line": "Whitening while you're still smoking is bailing water out of a leaking boat - the 8-week taper is the real whitening treatment, and peroxide just finishes the job after week 8."
+ },
+ "hair": {
+  "checked_on": "2026-08-08",
+  "diagnosis": {
+   "causes": [
+    {
+     "id": "androgenetic-alopecia",
+     "name": "Androgenetic alopecia (male pattern hair loss)",
+     "pattern": "Gradual, patterned: recession at the temples and/or thinning at the crown. Hairs in affected zones become progressively finer and shorter (miniaturization) rather than falling out all at once.",
+     "how_to_check": "Compare hairline and crown against photos from 6-12 months ago under the same light. Look for finer, wispier hairs at the temples/crown vs the back of the head (the back is spared in AGA). Family history on either side raises likelihood. Diffuse all-over shedding is NOT the typical AGA signature.",
+     "note": "AGA responds best to treatment started early, which is one concrete reason a dermatologist visit is worth it if the temples/crown look thinner. A derm can confirm with trichoscopy (magnified view showing hair-shaft diameter variability)."
+    },
+    {
+     "id": "telogen-effluvium",
+     "name": "Telogen effluvium (TE)",
+     "pattern": "Diffuse shedding from the whole scalp, not a patterned zone. Shed hairs are full-length with a small white club (bulb) at the root end. Classic timing: shedding peaks 2-4 months AFTER a trigger, then self-resolves over 3-6 months once the trigger settles.",
+     "how_to_check": "Notice where hair falls from: everywhere (TE) vs mainly temples/crown (AGA). Look at shed hairs: full-length with white bulb = normal telogen shed; short broken fragments = breakage, a different problem. Count-based reality check: losing up to ~100 hairs/day is normal; running hands through dry hair dislodging a few is within normal.",
+     "note": "This subject has three plausible TE triggers stacked: starting a calorie deficit, nicotine withdrawal, and background stress. TE from these usually resolves on its own; the hair that sheds was already programmed to shed, and the follicle regrows."
+    },
+    {
+     "id": "seborrheic-dermatitis",
+     "name": "Seborrheic dermatitis",
+     "pattern": "Flaky + oily + itchy. Flakes are larger, yellowish, greasy-feeling; scalp can be red underneath; often also affects eyebrows, sides of the nose, behind ears. Comes and goes; often worse with stress and in certain weather.",
+     "how_to_check": "Self-check trio: (1) flake texture - greasy/yellowish clumps (seb derm) vs fine white powder (dry scalp); (2) is the scalp oily by day 2 after washing? oily+flaky+itchy points to seb derm; (3) do eyebrows or the creases beside the nose also flake or redden? That pattern strongly suggests seb derm.",
+     "note": "Treated with antifungal shampoo (e.g. ketoconazole 2% twice weekly) - this WORKS for seb derm but will further dry out a scalp that is merely dry. Getting this distinction right decides which shampoo aisle to use."
+    },
+    {
+     "id": "dry-scalp",
+     "name": "Genuinely dry scalp",
+     "pattern": "Tight, sometimes itchy scalp with fine, small, white, powdery flakes. No greasiness, little or no redness. Worse after hot showers, harsh shampoo, AC exposure, or winter air.",
+     "how_to_check": "If skin elsewhere is dry and sensitive (true for this subject), dry scalp is the prior. Test: switch to a sulfate-free fragrance-free shampoo + lukewarm water for 3-4 weeks. If flaking and tightness settle, it was dryness; if greasy yellow flakes and itch persist, treat as seborrheic dermatitis.",
+     "note": "The fix is subtraction, not addition: milder shampoo, cooler water, fewer washes, light conditioner/oil. Medicated anti-dandruff shampoos make genuinely dry scalps worse."
+    },
+    {
+     "id": "smoking",
+     "name": "Smoking-associated hair loss",
+     "pattern": "Not a distinct pattern of its own - smoking is a documented aggravator. Proposed mechanisms in the literature: oxidative stress damaging the follicle, microvascular constriction reducing blood flow to the papilla, and DNA damage; observational studies associate smoking with earlier/more severe androgenetic loss.",
+     "how_to_check": "Nothing to self-check; the relevant fact is directional - the 8-week quit taper is one of the best things being done for hair (and everything else). Expect no visible hair benefit for months; follicle cycles are slow.",
+     "note": "Quitting itself is a physiological stressor and can transiently contribute to telogen effluvium. That does not mean quitting is bad for hair - it means a temporary shed during/after the quit is expected and not a reason to resume smoking."
+    },
+    {
+     "id": "nutrient-linked",
+     "name": "Nutrient-linked shedding",
+     "pattern": "Diffuse (TE-like) shedding when a relevant deficiency exists. The best-studied links: low ferritin (iron stores), low vitamin D, low B12, low zinc, and inadequate protein intake - all plausible risks while eating in a deficit.",
+     "how_to_check": "Cannot be self-checked reliably; this is what the blood panel is for. Practical guardrail during the ~500 kcal deficit: keep protein intake adequate (hair is protein; crash-dieting protein is a classic TE trigger) and do not start blind supplementation - test first.",
+     "note": "Supplementing without a measured deficiency has no demonstrated hair benefit, and excess biotin specifically can distort thyroid and other lab assays - another reason to test before supplementing."
+    }
+   ],
+   "pull_test": "Gentle hair pull test: grasp a bundle of roughly 50-60 hairs close to the scalp and draw fingers slowly along the full length with light, steady traction. Repeat at crown, both temples, and back. Reading: 0-2 hairs out per pull is normal; consistently 6 or more (about 10%) with white club bulbs, across multiple areas, suggests active excessive shedding such as TE. Limits: heavily affected by when hair was last washed or brushed (recently washed = fewer hairs, so it under-reads), it is not standardized, and it does not identify the CAUSE - a negative pull test does not rule out androgenetic alopecia, which can progress with a normal pull test.",
+   "deficit_warning": "Plain warning, worth remembering: starting the ~500 kcal deficit now can INCREASE visible shedding roughly in weeks 8-16 of the deficit (telogen effluvium lag), with nicotine withdrawal potentially adding to it. This is expected, usually self-resolving over 3-6 months, and not a sign the deficit or the quit is failing. Keep protein adequate, do not crash the deficit deeper, and do not panic-buy supplements when it happens.",
+   "see_derm": {
+    "why": "A dermatologist can do in minutes what self-checks cannot: trichoscopy to distinguish miniaturization (AGA) from uniform-shaft diffuse shedding (TE), a proper scalp exam to separate seborrheic dermatitis from dry scalp, and a decision on whether treatment (e.g. minoxidil for AGA - prescription-level discussion, not a self-start) is warranted early, when it works best. Shedding + newly dry hair + dry scalp with multiple triggers stacked is exactly the ambiguous presentation where one consult saves months of guessing.",
+    "bloods": [
+     "ferritin",
+     "vitamin D",
+     "B12",
+     "TSH",
+     "CBC"
+    ],
+    "bloods_note": "Several of these overlap the already-planned GP visit - carry one set of results to both doctors rather than testing twice.",
+    "bangalore_price_range": "₹200-700 typical clinic consult; well-known practitioners commonly ₹800-1,300",
+    "source_url": "https://www.hexahealth.com/bangalore/doctors/dermatologist",
+    "source_note": "Fetched 2026-08-08. Page FAQ states Bengaluru dermatologist consultation ranges ₹200-700; individual listed doctors on the same page show ₹800-1,300. Practo listings were bot-blocked at fetch time but corroborating search results showed similar spreads (₹350-800 and ₹500-1,500 by source)."
+   }
+  },
+  "categories": [
+   {
+    "id": "shampoo-gentle",
+    "name": "Gentle shampoo for dry hair / dry-sensitive scalp",
+    "options": [
+     {
+      "id": "dove-intense-repair-shampoo",
+      "name": "Dove Intense Repair Shampoo",
+      "brand": "Dove",
+      "tier": "cheap",
+      "best_overall": false,
+      "size": "340 ml",
+      "price": {
+       "low": 150,
+       "typical": 348,
+       "high": 435
+      },
+      "cost_per_month": 135,
+      "buy_at": [
+       {
+        "platform": "Tira",
+        "url": "https://www.tirabeauty.com/product/dove-intense-repair-hair-shampoo-340ml-2tvea6qfnsa",
+        "price": 348,
+        "confidence": "verified"
+       },
+       {
+        "platform": "Amazon.in / grocery apps",
+        "url": "https://pricee.com/dove-intense-repair-shampoo-price-in-india-27714",
+        "price": 170,
+        "confidence": "estimated"
+       }
+      ],
+      "key_actives": [
+       "SLES (sulfate) + cocamidopropyl betaine",
+       "fibre actives/keratin-style conditioning agents"
+      ],
+      "review_signal": {
+       "rating_seen": 0,
+       "count_seen": "not shown on fetched Tira page; widely reviewed on marketplaces",
+       "recurring_negative": "contains sulfates and fragrance - reported as drying by some sensitive-scalp users"
+      },
+      "why": "Cheapest widely-stocked option that is still one of the milder mass-market formulas; fine if the scalp turns out not to be reactive.",
+      "not_for": "Flagged irritants: SLES (sulfate) and fragrance. Skip if the sensitive/dry scalp pattern holds - the sulfate-free picks below fit better.",
+      "source_url": "https://www.tirabeauty.com/product/dove-intense-repair-hair-shampoo-340ml-2tvea6qfnsa",
+      "estimated": false
+     },
+     {
+      "id": "reequil-hair-fall-control-shampoo",
+      "name": "Re'equil Hair Fall Control Shampoo",
+      "brand": "Re'equil",
+      "tier": "mid",
+      "best_overall": false,
+      "size": "250 ml",
+      "price": {
+       "low": 356,
+       "typical": 395,
+       "high": 395
+      },
+      "cost_per_month": 205,
+      "buy_at": [
+       {
+        "platform": "Re'equil (brand site)",
+        "url": "https://www.reequil.com/products/hair-fall-control-shampoo",
+        "price": 356,
+        "confidence": "verified"
+       },
+       {
+        "platform": "Amazon.in",
+        "url": "https://www.amazon.in/RE-EQUIL-Hair-Control-Shampoo/dp/B07GJJ1DYR",
+        "price": 395,
+        "confidence": "estimated"
+       }
+      ],
+      "key_actives": [
+       "sodium cocoyl isethionate (mild surfactant)",
+       "cocamidopropyl betaine",
+       "hydrolyzed wheat protein",
+       "panthenol",
+       "niacinamide"
+      ],
+      "review_signal": {
+       "rating_seen": 4.5,
+       "count_seen": "666 reviews (brand site)",
+       "recurring_negative": "contains fragrance; 'hair fall control' claim is marketing - a shampoo cannot stop AGA or TE"
+      },
+      "why": "Sulfate-free, silicone-free, mild surfactant system at a fair price; strong review base. Good middle pick if fragrance is tolerated.",
+      "not_for": "Fragrance-sensitive scalps (fragrance listed in ingredients). Ignore the hair-fall-control marketing claim.",
+      "source_url": "https://www.reequil.com/products/hair-fall-control-shampoo",
+      "estimated": false
+     },
+     {
+      "id": "minimalist-maleic-bond-repair-shampoo",
+      "name": "Minimalist Maleic Bond Repair Complex 3.5% Shampoo",
+      "brand": "Minimalist",
+      "tier": "mid",
+      "best_overall": true,
+      "size": "250 ml (also 100 ml at ₹220 MRP)",
+      "price": {
+       "low": 198,
+       "typical": 549,
+       "high": 599
+      },
+      "cost_per_month": 310,
+      "buy_at": [
+       {
+        "platform": "Minimalist (brand site)",
+        "url": "https://beminimalist.co/products/maleic-bond-repair-complex-3-5-shampoo",
+        "price": 198,
+        "confidence": "verified"
+       },
+       {
+        "platform": "Tira",
+        "url": "https://www.tirabeauty.com/product/minimalist-hair-repair-complex-3-5-hair-shampoo-with-ceramide-250ml-7567456",
+        "price": 599,
+        "confidence": "estimated"
+       }
+      ],
+      "key_actives": [
+       "sulfate-free surfactant blend (SCI, sodium lauroyl sarcosinate, SLSa, disodium laureth sulfosuccinate)",
+       "maleic acid bond-builder 3.5%",
+       "ceramide",
+       "panthenol"
+      ],
+      "review_signal": {
+       "rating_seen": 4.03,
+       "count_seen": "182 reviews (brand site)",
+       "recurring_negative": "does not reduce hair fall (correct expectation - no shampoo does); lower lather than sulfate shampoos"
+      },
+      "why": "BEST OVERALL for this profile: the only mainstream Indian option that is both sulfate-free AND fragrance-free (also essential-oil-free and dye-free) - exactly the filter for a dry, sensitive scalp - at a mid price. 100 ml trial size (₹198-220) lets him test before committing.",
+      "not_for": "Anyone expecting hair-fall reduction from a shampoo; it cleans gently, nothing more.",
+      "source_url": "https://beminimalist.co/products/maleic-bond-repair-complex-3-5-shampoo",
+      "estimated": false
+     },
+     {
+      "id": "sebamed-everyday-shampoo",
+      "name": "Sebamed Everyday Shampoo (pH 5.5)",
+      "brand": "Sebamed",
+      "tier": "premium",
+      "best_overall": false,
+      "size": "200 ml",
+      "price": {
+       "low": 646,
+       "typical": 680,
+       "high": 680
+      },
+      "cost_per_month": 440,
+      "buy_at": [
+       {
+        "platform": "Tira",
+        "url": "https://www.tirabeauty.com/product/sebamed-everyday-shampoo-200ml-kexy0rqekz",
+        "price": 646,
+        "confidence": "verified"
+       },
+       {
+        "platform": "Amazon.in",
+        "url": "https://www.amazon.in/Sebamed-Everyday-Shampoo-Types-200ml/dp/B0015XEE5S",
+        "price": 680,
+        "confidence": "estimated"
+       }
+      ],
+      "key_actives": [
+       "very mild surfactant base at skin pH 5.5",
+       "dermatologically tested German pharmacy brand"
+      ],
+      "review_signal": {
+       "rating_seen": 0,
+       "count_seen": "no rating displayed on fetched Tira page",
+       "recurring_negative": "price per ml is high; thin lather; contains mild fragrance"
+      },
+      "why": "The classic dermatologist-counter recommendation for sensitive scalps in India; pH 5.5 positioning is legitimate for irritated skin. Worth it if the Minimalist/Re'equil tier still feels irritating.",
+      "not_for": "Budget-conscious use - roughly 3x the per-wash cost of the cheap tier for a modest incremental benefit.",
+      "source_url": "https://www.tirabeauty.com/product/sebamed-everyday-shampoo-200ml-kexy0rqekz",
+      "estimated": false
+     }
+    ]
+   },
+   {
+    "id": "anti-dandruff",
+    "name": "Anti-dandruff (use ONLY if flaky + oily + itchy pattern - i.e. seborrheic dermatitis, not dry scalp)",
+    "options": [
+     {
+      "id": "selsun-suspension",
+      "name": "Selsun Suspension (selenium sulfide 2.5%)",
+      "brand": "Abbott",
+      "tier": "cheap",
+      "best_overall": false,
+      "size": "60 ml (120 ml ≈ ₹478 at Apollo)",
+      "price": {
+       "low": 195,
+       "typical": 210,
+       "high": 238
+      },
+      "cost_per_month": 130,
+      "buy_at": [
+       {
+        "platform": "1mg",
+        "url": "https://www.1mg.com/otc/selsun-suspension-anti-dandruff-shampoo-hair-care-otc140329",
+        "price": 195,
+        "confidence": "verified"
+       },
+       {
+        "platform": "MedPlus",
+        "url": "https://www.medplusmart.com/product/selsun-suspension-anti-dandruff-shampoo-60ml_sels0001",
+        "price": 210,
+        "confidence": "estimated"
+       }
+      ],
+      "key_actives": [
+       "selenium sulfide 2.5% w/v"
+      ],
+      "review_signal": {
+       "rating_seen": 4.5,
+       "count_seen": "1,337 ratings / 295 reviews (1mg)",
+       "recurring_negative": "strong sulfurous smell; can be drying; 60 ml was out of stock on 1mg at check (120/200 ml available)"
+      },
+      "why": "Cheapest evidence-backed antifungal active; a valid alternative or rotation partner to ketoconazole for seb derm.",
+      "not_for": "Dry scalp without oily/greasy flakes - it will worsen dryness. Also drying to hair lengths; keep it on the scalp, condition the ends after.",
+      "source_url": "https://www.1mg.com/otc/selsun-suspension-anti-dandruff-shampoo-hair-care-otc140329",
+      "estimated": false
+     },
+     {
+      "id": "nizral-2-ketoconazole",
+      "name": "Nizral 2% (ketoconazole 2%) scalp solution/shampoo",
+      "brand": "Janssen/J&J (Indian equivalent of Nizoral)",
+      "tier": "mid",
+      "best_overall": true,
+      "size": "50 ml",
+      "price": {
+       "low": 258,
+       "typical": 287,
+       "high": 319
+      },
+      "cost_per_month": 230,
+      "buy_at": [
+       {
+        "platform": "Apollo Pharmacy",
+        "url": "https://www.apollopharmacy.in/medicine/nizral-2-shampoo-50ml",
+        "price": 287,
+        "confidence": "verified"
+       },
+       {
+        "platform": "Blinkit (pharmacy)",
+        "url": "https://blinkit.com/prn/nizral-2-bottle-of-50ml-solution/prid/651752",
+        "price": 276,
+        "confidence": "estimated"
+       }
+      ],
+      "key_actives": [
+       "ketoconazole 2% w/v"
+      ],
+      "review_signal": {
+       "rating_seen": 0,
+       "count_seen": "rating not shown on Apollo page",
+       "recurring_negative": "small 50 ml bottle; can dry hair lengths with regular use"
+      },
+      "why": "BEST OVERALL for confirmed seb derm: ketoconazole 2% is the gold-standard OTC-tier antifungal, used twice weekly, lather left on scalp ~5 minutes. Sold online in India (Apollo, 1mg, Blinkit pharmacy) without a prescription in practice; a chemist may occasionally ask - it is a medicated product, so mention it to the dermatologist/GP anyway.",
+      "not_for": "Dry scalp (fine white powdery flakes, no itch/oil) - antifungals do nothing for dryness and the wash base worsens it. Decision rule: greasy yellowish flakes + itch + oily scalp = use this; tight scalp + fine white flakes = use the gentle shampoo category instead.",
+      "source_url": "https://www.apollopharmacy.in/medicine/nizral-2-shampoo-50ml",
+      "estimated": false
+     },
+     {
+      "id": "scalpe-plus-expert",
+      "name": "Scalpe Plus Expert Anti-Dandruff Shampoo (ketoconazole 2% + ZPT 1%)",
+      "brand": "Glenmark",
+      "tier": "mid",
+      "best_overall": false,
+      "size": "75 ml",
+      "price": {
+       "low": 276,
+       "typical": 310,
+       "high": 344
+      },
+      "cost_per_month": 150,
+      "buy_at": [
+       {
+        "platform": "PharmEasy",
+        "url": "https://pharmeasy.in/health-care/products/scalpe-plus-anti-dandruff-shampoo-bottle-of-75-ml-11943",
+        "price": 276,
+        "confidence": "verified"
+       },
+       {
+        "platform": "Amazon.in",
+        "url": "https://www.amazon.in/Scalpe-Expert-Bottle-Dandruff-Shampoo/dp/B09XJJYGDK",
+        "price": 344,
+        "confidence": "estimated"
+       }
+      ],
+      "key_actives": [
+       "ketoconazole 2%",
+       "zinc pyrithione 1%"
+      ],
+      "review_signal": {
+       "rating_seen": 0,
+       "count_seen": "993 ratings (PharmEasy), mixed - 'excellent' to 'did not work'",
+       "recurring_negative": "some users report no effect (often misuse on dry scalp); drying with overuse"
+      },
+      "why": "Combination active at a better per-ml price than Nizral; OTC (no prescription needed per PharmEasy). Same twice-weekly, only-if-seb-derm rule.",
+      "not_for": "Dry scalp; daily use (twice weekly is the pattern - it is a treatment, not a daily shampoo).",
+      "source_url": "https://pharmeasy.in/health-care/products/scalpe-plus-anti-dandruff-shampoo-bottle-of-75-ml-11943",
+      "estimated": false
+     },
+     {
+      "id": "head-shoulders-zpt",
+      "name": "Head & Shoulders Anti-Dandruff (zinc pyrithione 1%)",
+      "brand": "P&G",
+      "tier": "cheap",
+      "best_overall": false,
+      "size": "340 ml",
+      "price": {
+       "low": 380,
+       "typical": 434,
+       "high": 480
+      },
+      "cost_per_month": 100,
+      "buy_at": [
+       {
+        "platform": "Flipkart (2x340ml pack)",
+        "url": "https://www.flipkart.com/head-shoulders-anti-dandruff-shampoo-hairfall-340-ml-2pcs/p/itm6b3c8a536202c",
+        "price": 434,
+        "confidence": "estimated"
+       }
+      ],
+      "key_actives": [
+       "zinc pyrithione 1%"
+      ],
+      "review_signal": {
+       "rating_seen": 0,
+       "count_seen": "not verified in this pass",
+       "recurring_negative": "fragranced, sulfate base - works for mild dandruff but is not a gentle formula for a sensitive scalp"
+      },
+      "why": "Gentler-strength cosmetic option for mild flaking; ZPT has genuine antifungal evidence. Reasonable first step before medicated ketoconazole if flaking is mild.",
+      "not_for": "Sensitive/dry scalps (fragrance + sulfates); established seb derm that mild ZPT has already failed.",
+      "source_url": "https://www.flipkart.com/head-shoulders-anti-dandruff-shampoo-hairfall-340-ml-2pcs/p/itm6b3c8a536202c",
+      "estimated": true
+     }
+    ]
+   },
+   {
+    "id": "conditioner",
+    "name": "Conditioner (mid-lengths to ends only - never on the scalp)",
+    "options": [
+     {
+      "id": "dove-intense-repair-conditioner",
+      "name": "Dove Intense Repair Conditioner",
+      "brand": "Dove",
+      "tier": "cheap",
+      "best_overall": true,
+      "size": "175 ml",
+      "price": {
+       "low": 210,
+       "typical": 219,
+       "high": 285
+      },
+      "cost_per_month": 125,
+      "buy_at": [
+       {
+        "platform": "Tira",
+        "url": "https://www.tirabeauty.com/product/dove-intense-repair-conditioner-175ml-fii-e4pdrb9",
+        "price": 219,
+        "confidence": "verified"
+       },
+       {
+        "platform": "Amazon.in",
+        "url": "https://www.amazon.in/Dove-Therapy-Intense-Repair-Conditioner/dp/B07H9Y6YHX",
+        "price": 285,
+        "confidence": "estimated"
+       }
+      ],
+      "key_actives": [
+       "silicone/quaternary conditioning agents",
+       "keratin-style actives"
+      ],
+      "review_signal": {
+       "rating_seen": 0,
+       "count_seen": "not shown on fetched Tira page; long-standing mass-market product",
+       "recurring_negative": "fragranced; can weigh fine hair down if over-applied"
+      },
+      "why": "BEST OVERALL: conditioners are a solved problem - silicones smooth the cuticle whether they cost ₹200 or ₹2,600. Applied mid-length to ends only, scalp sensitivity barely matters. This does the job for the least money.",
+      "not_for": "Applying at the roots/scalp (weighs hair, can irritate).",
+      "source_url": "https://www.tirabeauty.com/product/dove-intense-repair-conditioner-175ml-fii-e4pdrb9",
+      "estimated": false
+     },
+     {
+      "id": "tresemme-keratin-smooth-conditioner",
+      "name": "TRESemmé Keratin Smooth Conditioner",
+      "brand": "TRESemmé",
+      "tier": "mid",
+      "best_overall": false,
+      "size": "190 ml",
+      "price": {
+       "low": 245,
+       "typical": 245,
+       "high": 318
+      },
+      "cost_per_month": 130,
+      "buy_at": [
+       {
+        "platform": "Blinkit",
+        "url": "https://blinkit.com/prn/tresemme-keratin-smooth-conditioner/prid/67402",
+        "price": 245,
+        "confidence": "estimated"
+       },
+       {
+        "platform": "bigbasket",
+        "url": "https://www.bigbasket.com/pd/40002095/tresemme-keratin-smooth-conditioner-190-ml/",
+        "price": 245,
+        "confidence": "estimated"
+       }
+      ],
+      "key_actives": [
+       "silicones + argan oil",
+       "hydrolyzed keratin"
+      ],
+      "review_signal": {
+       "rating_seen": 0,
+       "count_seen": "not verified this pass (retailer pages bot-blocked)",
+       "recurring_negative": "strong fragrance"
+      },
+      "why": "Slightly richer slip than Dove for barely more money; good if hair is on the frizzier side.",
+      "not_for": "Fragrance-averse users.",
+      "source_url": "https://blinkit.com/prn/tresemme-keratin-smooth-conditioner/prid/67402",
+      "estimated": true
+     },
+     {
+      "id": "olaplex-no5-conditioner",
+      "name": "Olaplex No.5 Bond Maintenance Conditioner",
+      "brand": "Olaplex",
+      "tier": "premium",
+      "best_overall": false,
+      "size": "250 ml",
+      "price": {
+       "low": 1898,
+       "typical": 2363,
+       "high": 3250
+      },
+      "cost_per_month": 945,
+      "buy_at": [
+       {
+        "platform": "Truemeds",
+        "url": "https://www.truemeds.in/otc/olaplex-no-5-bond-maintenance-conditioner-250ml-tm-coer1-000011",
+        "price": 2363,
+        "confidence": "verified"
+       },
+       {
+        "platform": "Flipkart",
+        "url": "https://www.flipkart.com/olaplex-no-5-bond-maintenance-conditioner-250ml/p/itm2cdd5df062b35",
+        "price": 1898,
+        "confidence": "estimated"
+       }
+      ],
+      "key_actives": [
+       "bis-aminopropyl diglycol dimaleate (bond builder)",
+       "rich conditioning base"
+      ],
+      "review_signal": {
+       "rating_seen": 0,
+       "count_seen": "not shown on fetched Truemeds page",
+       "recurring_negative": "price; benefit over mass-market conditioners is modest on hair that is not bleach/heat damaged"
+      },
+      "why": "The honest premium: real bond-building chemistry with genuine data behind the category - but designed for chemically damaged hair. For simple dryness in short male hair it is overkill.",
+      "not_for": "This subject's actual problem. Included so the premium tier is honest: at ~10x the price it does not fix dryness 10x better.",
+      "source_url": "https://www.truemeds.in/otc/olaplex-no-5-bond-maintenance-conditioner-250ml-tm-coer1-000011",
+      "estimated": false
+     }
+    ]
+   },
+   {
+    "id": "prewash-oil",
+    "name": "Pre-wash oil / mask",
+    "options": [
+     {
+      "id": "parachute-coconut-oil",
+      "name": "Parachute 100% Pure Coconut Oil",
+      "brand": "Marico",
+      "tier": "cheap",
+      "best_overall": true,
+      "size": "500 ml (smaller sizes ₹35-145)",
+      "price": {
+       "low": 177,
+       "typical": 190,
+       "high": 208
+      },
+      "cost_per_month": 21,
+      "buy_at": [
+       {
+        "platform": "PharmEasy",
+        "url": "https://pharmeasy.in/health-care/products/parachute-coconut-oil-500-ml-3634562",
+        "price": 177,
+        "confidence": "verified"
+       },
+       {
+        "platform": "Blinkit/Zepto/bigbasket",
+        "url": "https://blinkit.com/prn/parachute-pure-coconut-250-ml-oil/prid/22447",
+        "price": 145,
+        "confidence": "estimated"
+       }
+      ],
+      "key_actives": [
+       "plain coconut oil (high lauric acid)"
+      ],
+      "review_signal": {
+       "rating_seen": 0,
+       "count_seen": "commodity product, ubiquitous",
+       "recurring_negative": "solidifies below ~24°C (non-issue in Bangalore most of the year); greasy if under-washed-out"
+      },
+      "why": "BEST OVERALL and the one hair oil with actual published evidence: coconut oil penetrates the hair shaft and measurably reduces protein loss when applied before washing (lauric acid affinity for hair keratin). Everything pricier is buying fragrance and branding, not better chemistry. Honest frequency for an irritated scalp: once a week, 20-60 minutes before wash, on lengths and (lightly) scalp - NOT overnight, and skip scalp application entirely during any flaky-itchy flare.",
+      "not_for": "Overnight soaks on an irritated or seb-derm-prone scalp (occlusion + malassezia feed on oils); daily oiling - it then needs harsher shampooing to remove, defeating the purpose.",
+      "source_url": "https://pharmeasy.in/health-care/products/parachute-coconut-oil-500-ml-3634562",
+      "estimated": false
+     },
+     {
+      "id": "coco-soul-virgin-coconut-oil",
+      "name": "Coco Soul Cold-Pressed Virgin Coconut Oil",
+      "brand": "Marico (Coco Soul)",
+      "tier": "mid",
+      "best_overall": false,
+      "size": "250 ml",
+      "price": {
+       "low": 208,
+       "typical": 250,
+       "high": 499
+      },
+      "cost_per_month": 60,
+      "buy_at": [
+       {
+        "platform": "bigbasket",
+        "url": "https://www.bigbasket.com/pd/40145470/coco-soul-virgin-coconut-oil-cold-pressed-natural-250-ml/",
+        "price": 208,
+        "confidence": "estimated"
+       },
+       {
+        "platform": "Zepto",
+        "url": "https://www.zepto.com/pn/coco-soul-cold-pressed-natural-virgin-coconut-oil/pvid/ba325731-073e-4530-aa32-54b06526130e",
+        "price": 349,
+        "confidence": "estimated"
+       }
+      ],
+      "key_actives": [
+       "virgin (unrefined) coconut oil"
+      ],
+      "review_signal": {
+       "rating_seen": 0,
+       "count_seen": "not verified this pass",
+       "recurring_negative": "coconut aroma stronger than refined; for hair use the benefit over plain Parachute is marginal"
+      },
+      "why": "For anyone who wants cold-pressed/unrefined; honest note - for PRE-WASH HAIR use the protein-loss evidence was generated with plain coconut oil, so this is preference, not performance.",
+      "not_for": "Anyone expecting it to outperform the ₹177 bottle on hair.",
+      "source_url": "https://www.bigbasket.com/pd/40145470/coco-soul-virgin-coconut-oil-cold-pressed-natural-250-ml/",
+      "estimated": true
+     },
+     {
+      "id": "kama-bringadi-oil",
+      "name": "Kama Ayurveda Bringadi Intensive Hair Treatment Oil",
+      "brand": "Kama Ayurveda",
+      "tier": "premium",
+      "best_overall": false,
+      "size": "100 ml",
+      "price": {
+       "low": 675,
+       "typical": 933,
+       "high": 1144
+      },
+      "cost_per_month": 560,
+      "buy_at": [
+       {
+        "platform": "Tira",
+        "url": "https://www.tirabeauty.com/product/kama-ayurveda-bringadi-intensive-hair-treatment-oil-100ml-g7iku4mwivwt",
+        "price": 933,
+        "confidence": "verified"
+       },
+       {
+        "platform": "Flipkart",
+        "url": "https://www.flipkart.com/kama-ayurveda-bringadi-intensive-treatment-hair-oil/p/itmf3jyq4hyxcyjw",
+        "price": 675,
+        "confidence": "estimated"
+       }
+      ],
+      "key_actives": [
+       "sesame/coconut base infused with bhringraj, amla, indigo, licorice, milk"
+      ],
+      "review_signal": {
+       "rating_seen": 0,
+       "count_seen": "no rating on fetched Tira page (100 ml out of stock at check; 50/200 ml listed)",
+       "recurring_negative": "herbal smell divisive; price; no controlled evidence for the growth/anti-grey claims"
+      },
+      "why": "The premium slot, honestly labelled: a pleasant, well-made herbal oil - but its hair-loss/greying claims rest on traditional use, not trials. At 5x the per-ml price of plain coconut oil, this is a fragrance-and-ritual purchase. Fine if he enjoys it; skip if the goal is results per rupee.",
+      "not_for": "Sensitive scalps during a flare (botanical infusions = more potential irritants); anyone buying it expecting regrowth.",
+      "source_url": "https://www.tirabeauty.com/product/kama-ayurveda-bringadi-intensive-hair-treatment-oil-100ml-g7iku4mwivwt",
+      "estimated": false
+     }
+    ]
+   },
+   {
+    "id": "leave-in-serum",
+    "name": "Leave-in / serum for dryness (applied to damp lengths, not scalp)",
+    "options": [
+     {
+      "id": "livon-serum",
+      "name": "Livon Hair Serum (argan oil + vitamin E)",
+      "brand": "Marico",
+      "tier": "cheap",
+      "best_overall": true,
+      "size": "100 ml",
+      "price": {
+       "low": 256,
+       "typical": 262,
+       "high": 350
+      },
+      "cost_per_month": 52,
+      "buy_at": [
+       {
+        "platform": "PharmEasy",
+        "url": "https://pharmeasy.in/health-care/products/livon-serum-for-frizz-free-smooth-hair-with-argan-oil-vitamin-e-100-ml-175115",
+        "price": 262,
+        "confidence": "verified"
+       },
+       {
+        "platform": "Nykaa",
+        "url": "https://www.nykaa.com/livon-serum/p/28661",
+        "price": 263,
+        "confidence": "estimated"
+       }
+      ],
+      "key_actives": [
+       "cyclomethicone/dimethiconol silicone blend"
+      ],
+      "review_signal": {
+       "rating_seen": 0,
+       "count_seen": "18 ratings on fetched PharmEasy listing (that listing OOS at check; widely stocked elsewhere)",
+       "recurring_negative": "greasy look if over-applied; fragranced"
+      },
+      "why": "BEST OVERALL: leave-in serums are silicones, and silicones are cheap. 2-3 drops on damp mid-lengths/ends seals in moisture and cuts the roughness that makes hair feel dry. Livon does exactly what serums 15x its price do.",
+      "not_for": "Scalp application; expecting it to treat the scalp or shedding - it is a cosmetic coating for the hair shaft.",
+      "source_url": "https://pharmeasy.in/health-care/products/livon-serum-for-frizz-free-smooth-hair-with-argan-oil-vitamin-e-100-ml-175115",
+      "estimated": false
+     },
+     {
+      "id": "loreal-extraordinary-oil-serum",
+      "name": "L'Oréal Paris Extraordinary Oil Hair Serum",
+      "brand": "L'Oréal Paris",
+      "tier": "mid",
+      "best_overall": false,
+      "size": "100 ml",
+      "price": {
+       "low": 437,
+       "typical": 656,
+       "high": 729
+      },
+      "cost_per_month": 146,
+      "buy_at": [
+       {
+        "platform": "Tira",
+        "url": "https://www.tirabeauty.com/product/loreal-paris-extraordinary-oil-hair-serum-100ml-2ucs5m72t",
+        "price": 729,
+        "confidence": "verified"
+       },
+       {
+        "platform": "Nykaa",
+        "url": "https://www.nykaa.com/l-oreal-paris-elseve-extraordinary-oil-serum/p/1133168",
+        "price": 656,
+        "confidence": "estimated"
+       }
+      ],
+      "key_actives": [
+       "silicones + flower-oil blend",
+       "UV filter claim"
+      ],
+      "review_signal": {
+       "rating_seen": 0,
+       "count_seen": "'Top rated by 100+ users' badge on Tira; exact score not displayed",
+       "recurring_negative": "heavily fragranced; premium over Livon buys scent and texture, not different chemistry"
+      },
+      "why": "Nicer texture and finish than Livon; frequently discounted to ₹437-500 on Nykaa. A fair mid pick if the fragrance appeals.",
+      "not_for": "Fragrance-sensitive users; value seekers (Livon is functionally equivalent).",
+      "source_url": "https://www.tirabeauty.com/product/loreal-paris-extraordinary-oil-hair-serum-100ml-2ucs5m72t",
+      "estimated": false
+     },
+     {
+      "id": "moroccanoil-treatment",
+      "name": "Moroccanoil Treatment",
+      "brand": "Moroccanoil",
+      "tier": "premium",
+      "best_overall": false,
+      "size": "100 ml (25 ml travel size also sold)",
+      "price": {
+       "low": 4320,
+       "typical": 4320,
+       "high": 4320
+      },
+      "cost_per_month": 864,
+      "buy_at": [
+       {
+        "platform": "Tira",
+        "url": "https://www.tirabeauty.com/product/moroccanoil-treatment-hair-oil-100ml-1ozleagzomq",
+        "price": 4320,
+        "confidence": "verified"
+       },
+       {
+        "platform": "Nykaa",
+        "url": "https://www.nykaa.com/moroccanoil-treatment/p/36191",
+        "price": 4320,
+        "confidence": "estimated"
+       }
+      ],
+      "key_actives": [
+       "silicones (cyclomethicone/dimethicone) + argan oil",
+       "signature fragrance"
+      ],
+      "review_signal": {
+       "rating_seen": 0,
+       "count_seen": "no rating displayed on fetched Tira page",
+       "recurring_negative": "first ingredients are the same silicones as ₹262 Livon; you are paying for fragrance and brand"
+      },
+      "why": "Included as the honest premium benchmark: a genuinely pleasant product whose core chemistry is the same silicone family as the cheap tier. At ₹4,320 it is a luxury purchase, not a hair-health upgrade.",
+      "not_for": "Anyone buying on results per rupee; strong-fragrance-averse users.",
+      "source_url": "https://www.tirabeauty.com/product/moroccanoil-treatment-hair-oil-100ml-1ozleagzomq",
+      "estimated": false
+     }
+    ]
+   }
+  ],
+  "actives_evidence": [
+   {
+    "active": "ketoconazole 2%",
+    "evidence": "strong for seborrheic dermatitis/dandruff (antifungal vs Malassezia); weak/adjunct-only signals for hair growth",
+    "status": "otc-2%-with-caution",
+    "note": "Twice weekly, lather held ~5 min on scalp. Sold without prescription on Indian online pharmacies (Apollo/1mg/PharmEasy listings marked OTC); a physical chemist may occasionally treat it as pharmacist-mediated. Use only for the flaky-oily-itchy pattern."
+   },
+   {
+    "active": "zinc pyrithione 1%",
+    "evidence": "good for mild-moderate dandruff",
+    "status": "otc-cosmetic",
+    "note": "Gentler first step than ketoconazole for mild flaking; found in Head & Shoulders India and combined in Scalpe Plus."
+   },
+   {
+    "active": "selenium sulfide 2.5%",
+    "evidence": "good for dandruff/seb derm; comparable class to ketoconazole",
+    "status": "otc",
+    "note": "Cheapest per month; smell and dryness are the trade-offs."
+   },
+   {
+    "active": "minoxidil (topical)",
+    "evidence": "strong for androgenetic alopecia - the best-evidenced OTC-class regrowth treatment",
+    "status": "discuss-with-dermatologist",
+    "note": "Deliberately no strength/dosing here: whether AGA is even the diagnosis is the open question, it requires indefinite continuation, and it causes a temporary shed on starting - all reasons this is a dermatologist conversation, not a self-start."
+   },
+   {
+    "active": "rosemary oil",
+    "evidence": "weak: essentially one small 2015 randomized trial vs minoxidil 2% with methodological limits; not replicated at scale",
+    "status": "optional-low-evidence",
+    "note": "Not harmful diluted, but it is an essential oil - a known irritant class for sensitive scalps. For this subject's dry-sensitive scalp it is a skip."
+   },
+   {
+    "active": "biotin",
+    "evidence": "no evidence of benefit without a documented deficiency; deficiency is rare on a normal diet",
+    "status": "not-recommended-blind",
+    "note": "High-dose biotin can also interfere with thyroid and cardiac lab assays - relevant since a TSH test is planned. Stop any biotin supplement several days before bloods."
+   },
+   {
+    "active": "hair growth supplements/gummies (collagen, multivitamin blends, 'hair vitamins')",
+    "evidence": "mostly marketing; no good evidence in non-deficient people",
+    "status": "not-recommended",
+    "note": "Money is better spent on the derm consult and the blood panel. If bloods show low ferritin/D/B12/zinc, treat the specific deficiency with the doctor."
+   },
+   {
+    "active": "caffeine shampoos",
+    "evidence": "weak/inconsistent; contact time in a shampoo is too short for meaningful follicle delivery",
+    "status": "not-recommended",
+    "note": "Marketing-led category."
+   }
+  ],
+  "free_changes": [
+   "Wash frequency: for a dry scalp in Bangalore, 2-3x per week with a gentle shampoo is enough; daily washing with harsh surfactants worsens both dryness and perceived shedding (more wash-day hairs at once).",
+   "Lukewarm, not hot water - hot showers strip scalp lipids and directly worsen tightness/fine flaking.",
+   "Pat-dry with the towel, do not rub - directly relevant here: wet hair stretches and snaps, and rough towelling is likely part of the 'hair in my hands' he is noticing. Squeeze, press, done.",
+   "Wide-tooth comb on damp hair, starting from the ends and working up; no fine combs or aggressive brushing while wet.",
+   "Do not tie or compress hair while wet (also applies to caps/helmets - let hair dry first when possible).",
+   "Condition mid-lengths to ends every wash; keep conditioner, oils and serums off the scalp during any flaky or itchy phase.",
+   "During the deficit: keep protein adequate every day - the cheapest 'hair supplement' that actually works.",
+   "Take a monthly photo of hairline and crown in the same light - the only reliable free tool for telling pattern loss from diffuse shedding over time."
+  ],
+  "interactions_note": "The calorie deficit and the smoking taper can BOTH transiently increase shedding on a 2-4 month lag (telogen effluvium) before things improve - if shedding visibly rises around weeks 8-16 of the deficit, that is the expected signature, not a signal to abandon the deficit or the quit. Persistent shedding beyond ~6 months, or visible temple/crown thinning at any point, is the cue to see the dermatologist (₹200-1,300 in Bangalore) with ferritin, vitamin D, B12, TSH and CBC results in hand."
+ }
+}

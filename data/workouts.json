@@ -1,1 +1,1705 @@
-{"placeholder": true, "phases": [], "sessions": [], "exercises": []}
+{
+ "checked_on": "2026-08-08",
+ "phases": [
+  {
+   "id": 1,
+   "name": "Foundation",
+   "weeks": "1-5",
+   "start": "2026-08-10",
+   "split_table": [
+    {
+     "day": "mon",
+     "session": "push-1",
+     "label": "Push"
+    },
+    {
+     "day": "tue",
+     "session": "run-1",
+     "label": "Run intervals + core"
+    },
+    {
+     "day": "wed",
+     "session": "pull-1",
+     "label": "Pull"
+    },
+    {
+     "day": "thu",
+     "session": "recovery-1",
+     "label": "Active recovery walk + mobility"
+    },
+    {
+     "day": "fri",
+     "session": "legs-1",
+     "label": "Legs + core"
+    },
+    {
+     "day": "sat",
+     "session": "run-2",
+     "label": "Run + KB swing finisher"
+    },
+    {
+     "day": "sun",
+     "session": null,
+     "label": "Rest"
+    }
+   ],
+   "progression_rule": "Reps first, then sets, then tempo, then a harder variation: work each exercise to the top of its rep range for all sets, then add one set (max 4), then slow the eccentric to 3 seconds, then move to the next variation (e.g. incline push-up -> full push-up, dead hang -> negatives -> band-assisted pull-up). Runs: complete the C25K intervals for the week; never chase pace, only completion.",
+   "boundary_note": "Weeks 1-2 are deliberately sub-maximal to build the 5:30 AM habit. If a session is missed, do not double up the next day. By end of week 5 targets: 3x10 full push-ups, 3x5 negative pull-ups (5s down), 30s plank x3, C25K week 5 completed (first 20-min continuous run)."
+  },
+  {
+   "id": 2,
+   "name": "Progression",
+   "weeks": "6-13",
+   "start": "2026-09-14",
+   "split_table": [
+    {
+     "day": "mon",
+     "session": "push-2",
+     "label": "Push strength + core"
+    },
+    {
+     "day": "tue",
+     "session": "runint-2",
+     "label": "Run intervals"
+    },
+    {
+     "day": "wed",
+     "session": "pull-2",
+     "label": "Pull strength + core"
+    },
+    {
+     "day": "thu",
+     "session": "legs-2",
+     "label": "Legs strength"
+    },
+    {
+     "day": "fri",
+     "session": "longrun-2",
+     "label": "Long run"
+    },
+    {
+     "day": "sat",
+     "session": "circuit-2",
+     "label": "Full-body circuit + core"
+    },
+    {
+     "day": "sun",
+     "session": null,
+     "label": "Rest"
+    }
+   ],
+   "progression_rule": "Double progression with load: for weighted lifts work from 3x8 to 3x12, then increase dumbbell weight ~2.5kg and drop back to 3x8. Pull-ups: negatives -> band-assisted -> first strict rep -> add singles until 3x5. Oblique/core work 3x/week (Mon/Wed/Sat blocks). Runs: extend continuous running each week (C25K weeks 6-9), then consolidate 25-30 min continuous so a full 5K is run by ~week 12.",
+   "boundary_note": "WEEK 6 EQUIPMENT DECISION (the 2x2.5kg dumbbells and 4kg kettlebell are now too light for lower-body and row strength work): either buy adjustable dumbbells or join a gym. Option A budget: plate-loaded 20kg adjustable set (Kore 20kg combo ~Rs.700-1,200 promo pricing on Amazon.in, Bullar 20kg cast-iron ~Rs.2,500-3,500 estimated). Option A premium: Boldfit Powerflex dial-adjustable 2.5-24kg pair, Rs.16,999 on boldfit.com (listed ~Rs.14,999 on Amazon.in). Option B: gym membership in Indiranagar - Cult SELECT/ELITE from ~Rs.1,155-1,470/month on long-commitment passes; independent gyms Rs.1,000-6,500/month (Gold's Gym Rs.4,800/mo, Snap Fitness Rs.4,700/mo, Figurine Rs.3,000/mo, budget gyms ~Rs.1,000-2,000/mo). The plan's weighted exercises (floor press, rows, RDLs, lunges, carries) assume ~20-24kg total is available from week 6."
+  },
+  {
+   "id": 3,
+   "name": "Cut & Define",
+   "weeks": "14-21",
+   "start": "2026-11-09",
+   "split_table": [
+    {
+     "day": "mon",
+     "session": "strengthA-3",
+     "label": "Full-body strength A + core"
+    },
+    {
+     "day": "tue",
+     "session": "runint-3",
+     "label": "Run intervals + core"
+    },
+    {
+     "day": "wed",
+     "session": "metcon-3",
+     "label": "Metabolic circuit"
+    },
+    {
+     "day": "thu",
+     "session": "strengthB-3",
+     "label": "Full-body strength B + core"
+    },
+    {
+     "day": "fri",
+     "session": "easyrun-3",
+     "label": "Easy run"
+    },
+    {
+     "day": "sat",
+     "session": "longrun-3",
+     "label": "Long run + metcon finisher + core"
+    },
+    {
+     "day": "sun",
+     "session": null,
+     "label": "Rest"
+    }
+   ],
+   "progression_rule": "Keep lifting loads (do NOT drop weights while cutting - strength work preserves muscle in a deficit); progress by density instead: shave 15s off circuit rest each week, add one circuit round every 2 weeks, cap RPE 8. Two metabolic circuits/week (Wed full session + Sat finisher: KB swing + burpee + push-up + mountain climber). Three runs/week (Tue intervals, Fri easy, Sat long). Core 4x/week (Mon/Tue/Thu/Sat). Week 21 is a DELOAD: halve all sets, drop the Sat finisher, all runs easy 20-30 min.",
+   "boundary_note": "WEEK 14 SHIFT: training volume stays similar but intent changes from building to defining - a modest calorie deficit does the cutting, training preserves muscle and raises weekly energy burn. Strength moves consolidate into two full-body days to make room for the second metcon and third run. If sleep or 5:30 AM energy degrades, cut the deficit before cutting the training."
+  }
+ ],
+ "sessions": [
+  {
+   "id": "push-1",
+   "phase": 1,
+   "label": "Push",
+   "duration_min": 40,
+   "warmup_ref": "warmup-dynamic",
+   "cooldown_ref": "cooldown-stretch",
+   "exercises": [
+    {
+     "ref": "pushup",
+     "sets": "3",
+     "reps": "6-12 (start incline if <6 full)",
+     "rest": "90s"
+    },
+    {
+     "ref": "decline-pushup",
+     "sets": "2-3",
+     "reps": "5-10 (dip substitute - primary)",
+     "rest": "90s"
+    },
+    {
+     "ref": "band-chest-press",
+     "sets": "3",
+     "reps": "12-15",
+     "rest": "60s"
+    },
+    {
+     "ref": "goblet-squat",
+     "sets": "3",
+     "reps": "10-15 @ 4kg KB",
+     "rest": "90s"
+    },
+    {
+     "ref": "plank",
+     "sets": "3",
+     "reps": "20-45s hold",
+     "rest": "60s"
+    }
+   ]
+  },
+  {
+   "id": "run-1",
+   "phase": 1,
+   "label": "Run intervals + core",
+   "duration_min": 40,
+   "warmup_ref": "warmup-dynamic",
+   "cooldown_ref": "cooldown-stretch",
+   "exercises": [
+    {
+     "ref": "run-walk-intervals",
+     "sets": "1",
+     "reps": "C25K session of the week (wk1: 60s run/90s walk x8)",
+     "rest": "-"
+    },
+    {
+     "ref": "dead-bug",
+     "sets": "2",
+     "reps": "8-10/side slow",
+     "rest": "45s"
+    },
+    {
+     "ref": "bird-dog",
+     "sets": "2",
+     "reps": "8/side, 2s hold",
+     "rest": "45s"
+    }
+   ]
+  },
+  {
+   "id": "pull-1",
+   "phase": 1,
+   "label": "Pull",
+   "duration_min": 40,
+   "warmup_ref": "warmup-dynamic",
+   "cooldown_ref": "cooldown-stretch",
+   "exercises": [
+    {
+     "ref": "dead-hang",
+     "sets": "3",
+     "reps": "15-45s hang",
+     "rest": "90s"
+    },
+    {
+     "ref": "negative-pullup",
+     "sets": "3",
+     "reps": "3-5 x 3-5s lowering",
+     "rest": "120s"
+    },
+    {
+     "ref": "band-assisted-pullup",
+     "sets": "2",
+     "reps": "3-6 (from wk3, if negatives solid)",
+     "rest": "120s"
+    },
+    {
+     "ref": "table-inverted-row",
+     "sets": "3",
+     "reps": "8-15",
+     "rest": "90s"
+    },
+    {
+     "ref": "split-squat",
+     "sets": "3",
+     "reps": "8-12/leg",
+     "rest": "90s"
+    },
+    {
+     "ref": "dead-bug",
+     "sets": "2",
+     "reps": "8-10/side",
+     "rest": "45s"
+    }
+   ]
+  },
+  {
+   "id": "recovery-1",
+   "phase": 1,
+   "label": "Active recovery walk + mobility",
+   "duration_min": 35,
+   "warmup_ref": null,
+   "cooldown_ref": null,
+   "exercises": [
+    {
+     "ref": "recovery-walk",
+     "sets": "1",
+     "reps": "20-30 min brisk walk",
+     "rest": "-"
+    },
+    {
+     "ref": "hip-9090",
+     "sets": "2",
+     "reps": "60s/side",
+     "rest": "-"
+    },
+    {
+     "ref": "worlds-greatest-stretch",
+     "sets": "2",
+     "reps": "5/side slow",
+     "rest": "-"
+    },
+    {
+     "ref": "ankle-rocks",
+     "sets": "2",
+     "reps": "10/side + 30s stretch",
+     "rest": "-"
+    },
+    {
+     "ref": "band-dislocates",
+     "sets": "2",
+     "reps": "10 slow",
+     "rest": "-"
+    },
+    {
+     "ref": "cat-cow",
+     "sets": "2",
+     "reps": "10 slow breaths",
+     "rest": "-"
+    }
+   ]
+  },
+  {
+   "id": "legs-1",
+   "phase": 1,
+   "label": "Legs + core",
+   "duration_min": 40,
+   "warmup_ref": "warmup-dynamic",
+   "cooldown_ref": "cooldown-stretch",
+   "exercises": [
+    {
+     "ref": "bw-squat",
+     "sets": "3",
+     "reps": "12-20",
+     "rest": "90s"
+    },
+    {
+     "ref": "kb-swing",
+     "sets": "3",
+     "reps": "12-15 @ 4kg",
+     "rest": "90s"
+    },
+    {
+     "ref": "glute-bridge",
+     "sets": "3",
+     "reps": "12-15, 2s squeeze",
+     "rest": "60s"
+    },
+    {
+     "ref": "calf-raise",
+     "sets": "3",
+     "reps": "15-20 slow",
+     "rest": "60s"
+    },
+    {
+     "ref": "side-plank",
+     "sets": "2",
+     "reps": "15-30s/side",
+     "rest": "45s"
+    }
+   ]
+  },
+  {
+   "id": "run-2",
+   "phase": 1,
+   "label": "Run + KB swing finisher",
+   "duration_min": 40,
+   "warmup_ref": "warmup-dynamic",
+   "cooldown_ref": "cooldown-stretch",
+   "exercises": [
+    {
+     "ref": "run-walk-intervals",
+     "sets": "1",
+     "reps": "repeat the week's C25K session (Cubbon Park loop)",
+     "rest": "-"
+    },
+    {
+     "ref": "kb-swing",
+     "sets": "3",
+     "reps": "15 @ 4kg",
+     "rest": "60s"
+    }
+   ]
+  },
+  {
+   "id": "push-2",
+   "phase": 2,
+   "label": "Push strength + core",
+   "duration_min": 50,
+   "warmup_ref": "warmup-dynamic",
+   "cooldown_ref": "cooldown-stretch",
+   "exercises": [
+    {
+     "ref": "db-floor-press",
+     "sets": "3-4",
+     "reps": "8-12",
+     "rest": "120s"
+    },
+    {
+     "ref": "db-shoulder-press",
+     "sets": "3",
+     "reps": "8-12",
+     "rest": "120s"
+    },
+    {
+     "ref": "pushup",
+     "sets": "3",
+     "reps": "AMRAP-2 (leave 2 in tank)",
+     "rest": "90s"
+    },
+    {
+     "ref": "pike-pushup",
+     "sets": "3",
+     "reps": "6-10",
+     "rest": "90s"
+    },
+    {
+     "ref": "side-plank",
+     "sets": "3",
+     "reps": "30-45s/side",
+     "rest": "45s"
+    },
+    {
+     "ref": "dead-bug",
+     "sets": "2",
+     "reps": "10/side",
+     "rest": "45s"
+    }
+   ]
+  },
+  {
+   "id": "runint-2",
+   "phase": 2,
+   "label": "Run intervals",
+   "duration_min": 45,
+   "warmup_ref": "warmup-dynamic",
+   "cooldown_ref": "cooldown-stretch",
+   "exercises": [
+    {
+     "ref": "run-walk-intervals",
+     "sets": "1",
+     "reps": "C25K wk6-9 session; from wk10: 6-8 x 2min brisk / 1min easy",
+     "rest": "-"
+    }
+   ]
+  },
+  {
+   "id": "pull-2",
+   "phase": 2,
+   "label": "Pull strength + core",
+   "duration_min": 50,
+   "warmup_ref": "warmup-dynamic",
+   "cooldown_ref": "cooldown-stretch",
+   "exercises": [
+    {
+     "ref": "full-pullup",
+     "sets": "4",
+     "reps": "work up to 3x5 strict (band-assist as needed)",
+     "rest": "150s"
+    },
+    {
+     "ref": "db-row",
+     "sets": "3",
+     "reps": "8-12/arm",
+     "rest": "90s"
+    },
+    {
+     "ref": "table-inverted-row",
+     "sets": "3",
+     "reps": "12-20 (elevate feet to progress)",
+     "rest": "90s"
+    },
+    {
+     "ref": "hanging-knee-raise",
+     "sets": "3",
+     "reps": "6-12",
+     "rest": "90s"
+    },
+    {
+     "ref": "russian-twist",
+     "sets": "3",
+     "reps": "10-16/side (hold 2.5kg DB)",
+     "rest": "60s"
+    }
+   ]
+  },
+  {
+   "id": "legs-2",
+   "phase": 2,
+   "label": "Legs strength",
+   "duration_min": 50,
+   "warmup_ref": "warmup-dynamic",
+   "cooldown_ref": "cooldown-stretch",
+   "exercises": [
+    {
+     "ref": "goblet-squat",
+     "sets": "4",
+     "reps": "8-12 @ 12-20kg DB",
+     "rest": "120s"
+    },
+    {
+     "ref": "db-rdl",
+     "sets": "3",
+     "reps": "8-12",
+     "rest": "120s"
+    },
+    {
+     "ref": "db-reverse-lunge",
+     "sets": "3",
+     "reps": "8-10/leg",
+     "rest": "90s"
+    },
+    {
+     "ref": "calf-raise",
+     "sets": "3",
+     "reps": "12-15 weighted",
+     "rest": "60s"
+    },
+    {
+     "ref": "farmer-carry",
+     "sets": "3",
+     "reps": "30-40m heavy",
+     "rest": "90s"
+    }
+   ]
+  },
+  {
+   "id": "longrun-2",
+   "phase": 2,
+   "label": "Long run",
+   "duration_min": 50,
+   "warmup_ref": "warmup-dynamic",
+   "cooldown_ref": "cooldown-stretch",
+   "exercises": [
+    {
+     "ref": "long-run",
+     "sets": "1",
+     "reps": "wk6-9: longest C25K continuous block; wk10-13: 25-40 min easy - run full 5K by wk12",
+     "rest": "-"
+    }
+   ]
+  },
+  {
+   "id": "circuit-2",
+   "phase": 2,
+   "label": "Full-body circuit + core",
+   "duration_min": 40,
+   "warmup_ref": "warmup-dynamic",
+   "cooldown_ref": "cooldown-stretch",
+   "exercises": [
+    {
+     "ref": "kb-swing",
+     "sets": "3-4 rounds",
+     "reps": "15",
+     "rest": "circuit; 90s between rounds"
+    },
+    {
+     "ref": "pushup",
+     "sets": "3-4 rounds",
+     "reps": "10",
+     "rest": "circuit"
+    },
+    {
+     "ref": "goblet-squat",
+     "sets": "3-4 rounds",
+     "reps": "10",
+     "rest": "circuit"
+    },
+    {
+     "ref": "table-inverted-row",
+     "sets": "3-4 rounds",
+     "reps": "10",
+     "rest": "circuit"
+    },
+    {
+     "ref": "hollow-body",
+     "sets": "3-4 rounds",
+     "reps": "20-30s",
+     "rest": "circuit"
+    },
+    {
+     "ref": "bicycle-crunch",
+     "sets": "2",
+     "reps": "12-16/side",
+     "rest": "45s"
+    }
+   ]
+  },
+  {
+   "id": "strengthA-3",
+   "phase": 3,
+   "label": "Full-body strength A + core",
+   "duration_min": 50,
+   "warmup_ref": "warmup-dynamic",
+   "cooldown_ref": "cooldown-stretch",
+   "exercises": [
+    {
+     "ref": "db-floor-press",
+     "sets": "3",
+     "reps": "6-10 heavy (keep load)",
+     "rest": "120s"
+    },
+    {
+     "ref": "full-pullup",
+     "sets": "3",
+     "reps": "5-8",
+     "rest": "150s"
+    },
+    {
+     "ref": "goblet-squat",
+     "sets": "3",
+     "reps": "8-10 heavy",
+     "rest": "120s"
+    },
+    {
+     "ref": "hanging-knee-raise",
+     "sets": "3",
+     "reps": "10-15",
+     "rest": "60s"
+    },
+    {
+     "ref": "side-plank",
+     "sets": "2",
+     "reps": "45s/side",
+     "rest": "45s"
+    }
+   ]
+  },
+  {
+   "id": "runint-3",
+   "phase": 3,
+   "label": "Run intervals + core",
+   "duration_min": 45,
+   "warmup_ref": "warmup-dynamic",
+   "cooldown_ref": "cooldown-stretch",
+   "exercises": [
+    {
+     "ref": "run-walk-intervals",
+     "sets": "1",
+     "reps": "8-10 x 1min hard / 90s easy, or 5 x 3min @ 5K effort",
+     "rest": "-"
+    },
+    {
+     "ref": "dead-bug",
+     "sets": "2",
+     "reps": "10/side",
+     "rest": "45s"
+    },
+    {
+     "ref": "russian-twist",
+     "sets": "2",
+     "reps": "16/side",
+     "rest": "45s"
+    }
+   ]
+  },
+  {
+   "id": "metcon-3",
+   "phase": 3,
+   "label": "Metabolic circuit",
+   "duration_min": 40,
+   "warmup_ref": "warmup-dynamic",
+   "cooldown_ref": "cooldown-stretch",
+   "exercises": [
+    {
+     "ref": "kb-swing",
+     "sets": "4-5 rounds",
+     "reps": "15",
+     "rest": "circuit; 60-90s between rounds"
+    },
+    {
+     "ref": "burpee",
+     "sets": "4-5 rounds",
+     "reps": "8-10",
+     "rest": "circuit"
+    },
+    {
+     "ref": "pushup",
+     "sets": "4-5 rounds",
+     "reps": "10-12",
+     "rest": "circuit"
+    },
+    {
+     "ref": "mountain-climber",
+     "sets": "4-5 rounds",
+     "reps": "30-40s",
+     "rest": "circuit"
+    }
+   ]
+  },
+  {
+   "id": "strengthB-3",
+   "phase": 3,
+   "label": "Full-body strength B + core",
+   "duration_min": 50,
+   "warmup_ref": "warmup-dynamic",
+   "cooldown_ref": "cooldown-stretch",
+   "exercises": [
+    {
+     "ref": "db-shoulder-press",
+     "sets": "3",
+     "reps": "6-10",
+     "rest": "120s"
+    },
+    {
+     "ref": "db-row",
+     "sets": "3",
+     "reps": "8-10 heavy",
+     "rest": "90s"
+    },
+    {
+     "ref": "db-rdl",
+     "sets": "3",
+     "reps": "8-10",
+     "rest": "120s"
+    },
+    {
+     "ref": "db-reverse-lunge",
+     "sets": "2",
+     "reps": "8/leg",
+     "rest": "90s"
+    },
+    {
+     "ref": "hollow-body",
+     "sets": "3",
+     "reps": "20-40s",
+     "rest": "60s"
+    },
+    {
+     "ref": "bird-dog",
+     "sets": "2",
+     "reps": "8/side slow",
+     "rest": "45s"
+    }
+   ]
+  },
+  {
+   "id": "easyrun-3",
+   "phase": 3,
+   "label": "Easy run",
+   "duration_min": 35,
+   "warmup_ref": "warmup-dynamic",
+   "cooldown_ref": "cooldown-stretch",
+   "exercises": [
+    {
+     "ref": "easy-run",
+     "sets": "1",
+     "reps": "20-30 min conversational pace (Indiranagar loop)",
+     "rest": "-"
+    }
+   ]
+  },
+  {
+   "id": "longrun-3",
+   "phase": 3,
+   "label": "Long run + metcon finisher + core",
+   "duration_min": 60,
+   "warmup_ref": "warmup-dynamic",
+   "cooldown_ref": "cooldown-stretch",
+   "exercises": [
+    {
+     "ref": "long-run",
+     "sets": "1",
+     "reps": "40-55 min easy (Cubbon Park)",
+     "rest": "-"
+    },
+    {
+     "ref": "kb-swing",
+     "sets": "2 rounds",
+     "reps": "15 (finisher with burpee x8 + push-up x10 + mountain climber 30s)",
+     "rest": "60s"
+    },
+    {
+     "ref": "bicycle-crunch",
+     "sets": "2",
+     "reps": "15/side",
+     "rest": "45s"
+    }
+   ]
+  }
+ ],
+ "exercises": [
+  {
+   "id": "pushup",
+   "name": "Push-up (wall -> incline -> knee -> full progression)",
+   "muscles": [
+    "chest",
+    "triceps",
+    "front delts",
+    "core"
+   ],
+   "cue": "Body one straight line - squeeze glutes so the hips never sag or pike.",
+   "video": {
+    "url": "https://www.youtube.com/watch?v=ze4qofHM20k",
+    "channel": "Hybrid Calisthenics",
+    "views_approx": "n/a",
+    "type": "video",
+    "verified": true
+   },
+   "equipment": "none"
+  },
+  {
+   "id": "incline-pushup",
+   "name": "Incline push-up (hands on table/wall)",
+   "muscles": [
+    "chest",
+    "triceps",
+    "core"
+   ],
+   "cue": "Same rigid plank as a full push-up - only the angle changes, not the form.",
+   "video": {
+    "url": "https://www.youtube.com/watch?v=ze4qofHM20k",
+    "channel": "Hybrid Calisthenics",
+    "views_approx": "n/a",
+    "type": "video",
+    "verified": true
+   },
+   "equipment": "sturdy table or wall"
+  },
+  {
+   "id": "decline-pushup",
+   "name": "Decline push-up (feet on chair) - PRIMARY dip substitute",
+   "muscles": [
+    "upper chest",
+    "front delts",
+    "triceps",
+    "core"
+   ],
+   "cue": "Hands slightly ahead of shoulders; don't let the head dive - lead with the chest.",
+   "video": {
+    "url": "https://www.youtube.com/watch?v=ze4qofHM20k",
+    "channel": "Hybrid Calisthenics",
+    "views_approx": "n/a",
+    "type": "video",
+    "verified": true,
+    "note": "Same progression video - decline is the 'harder variation' step of the push-up ladder"
+   },
+   "equipment": "chair"
+  },
+  {
+   "id": "chair-dips",
+   "name": "Chair dips (bench dips, feet on floor) - ALTERNATIVE dip substitute",
+   "muscles": [
+    "triceps",
+    "chest",
+    "front delts"
+   ],
+   "cue": "Hips brush the chair edge and elbows point straight back; stop at upper-arm-parallel - deeper strains the shoulder.",
+   "video": {
+    "url": "https://www.youtube.com/watch?v=AWz_7B1cch0",
+    "channel": "Coach Nick Fitness",
+    "views_approx": "n/a",
+    "type": "video",
+    "verified": true
+   },
+   "equipment": "sturdy chair"
+  },
+  {
+   "id": "band-chest-press",
+   "name": "Standing resistance band chest press",
+   "muscles": [
+    "chest",
+    "triceps",
+    "front delts"
+   ],
+   "cue": "Brace like a plank - press with the chest, don't twist or lean into the band.",
+   "video": {
+    "url": "https://www.youtube.com/watch?v=6-86jEAXA08",
+    "channel": "Live Lean TV Daily Exercises",
+    "views_approx": "n/a",
+    "type": "video",
+    "verified": true
+   },
+   "equipment": "resistance band"
+  },
+  {
+   "id": "pike-pushup",
+   "name": "Pike push-up",
+   "muscles": [
+    "front delts",
+    "triceps",
+    "upper chest",
+    "traps"
+   ],
+   "cue": "Head travels forward-and-down toward a spot ahead of your hands, not straight down.",
+   "video": {
+    "url": "https://www.youtube.com/watch?v=0cT6ug3WVn4",
+    "channel": "SaturnoMovement",
+    "views_approx": "n/a",
+    "type": "video",
+    "verified": true
+   },
+   "equipment": "none"
+  },
+  {
+   "id": "db-floor-press",
+   "name": "Dumbbell floor press (no-bench bench press)",
+   "muscles": [
+    "chest",
+    "triceps",
+    "front delts"
+   ],
+   "cue": "Upper arms at ~45 degrees from the torso; touch triceps to floor softly, never bounce.",
+   "video": {
+    "url": "https://www.youtube.com/watch?v=qHCI9rK7HqM",
+    "channel": "Live Lean TV Daily Exercises",
+    "views_approx": "n/a",
+    "type": "video",
+    "verified": true
+   },
+   "equipment": "adjustable dumbbells (wk6+)"
+  },
+  {
+   "id": "db-shoulder-press",
+   "name": "Standing dumbbell shoulder press",
+   "muscles": [
+    "delts",
+    "triceps",
+    "upper traps",
+    "core"
+   ],
+   "cue": "Squeeze glutes and ribs down - if the lower back arches, the weight is too heavy.",
+   "video": {
+    "url": "https://www.youtube.com/watch?v=e_f5oodNEcI",
+    "channel": "Live Lean TV Daily Exercises",
+    "views_approx": "n/a",
+    "type": "video",
+    "verified": true
+   },
+   "equipment": "adjustable dumbbells (wk6+)"
+  },
+  {
+   "id": "dead-hang",
+   "name": "Dead hang",
+   "muscles": [
+    "grip/forearms",
+    "lats",
+    "shoulders"
+   ],
+   "cue": "Shoulders active - pull shoulder blades slightly down instead of hanging on the joint capsule.",
+   "video": {
+    "url": "https://www.youtube.com/watch?v=5PQsVexiAJY",
+    "channel": "Dr. Tim Chow, DC",
+    "views_approx": "n/a",
+    "type": "video",
+    "verified": true
+   },
+   "equipment": "pull-up bar"
+  },
+  {
+   "id": "negative-pullup",
+   "name": "Negative (eccentric) pull-up",
+   "muscles": [
+    "lats",
+    "biceps",
+    "mid-back",
+    "grip"
+   ],
+   "cue": "Jump to chin-over-bar, then fight gravity for a full 3-5 seconds - never just drop.",
+   "video": {
+    "url": "https://www.youtube.com/watch?v=gbPURTSxQLY",
+    "channel": "Bodybuilding.com",
+    "views_approx": "n/a",
+    "type": "video",
+    "verified": true
+   },
+   "equipment": "pull-up bar + chair"
+  },
+  {
+   "id": "band-assisted-pullup",
+   "name": "Band-assisted pull-up",
+   "muscles": [
+    "lats",
+    "biceps",
+    "mid-back"
+   ],
+   "cue": "Drive elbows down to your ribs - think 'pull the bar to your chest', not 'chin over'.",
+   "video": {
+    "url": "https://www.youtube.com/watch?v=fO3dKSQayfg",
+    "channel": "Hybrid Calisthenics",
+    "views_approx": "n/a",
+    "type": "video",
+    "verified": true
+   },
+   "equipment": "pull-up bar + resistance band"
+  },
+  {
+   "id": "full-pullup",
+   "name": "Pull-up (strict)",
+   "muscles": [
+    "lats",
+    "biceps",
+    "mid-back",
+    "core"
+   ],
+   "cue": "Start every rep from a dead stop with active shoulders - no kipping.",
+   "video": {
+    "url": "https://www.youtube.com/watch?v=fO3dKSQayfg",
+    "channel": "Hybrid Calisthenics",
+    "views_approx": "n/a",
+    "type": "video",
+    "verified": true
+   },
+   "equipment": "pull-up bar"
+  },
+  {
+   "id": "table-inverted-row",
+   "name": "Inverted row under a sturdy table (or band row)",
+   "muscles": [
+    "mid-back",
+    "lats",
+    "biceps",
+    "rear delts"
+   ],
+   "cue": "Squeeze shoulder blades together before the arms bend; body stays a rigid plank.",
+   "video": {
+    "url": "https://www.youtube.com/watch?v=EIFEKZe4Wm8",
+    "channel": "Alex Bunt",
+    "views_approx": "n/a",
+    "type": "video",
+    "verified": true
+   },
+   "equipment": "sturdy table (or resistance band)"
+  },
+  {
+   "id": "db-row",
+   "name": "One-arm dumbbell row",
+   "muscles": [
+    "lats",
+    "mid-back",
+    "biceps",
+    "rear delts"
+   ],
+   "cue": "Pull the elbow to your hip, not your armpit - no torso twist to heave the weight.",
+   "video": {
+    "url": "https://www.youtube.com/watch?v=k2kVniB5eQI",
+    "channel": "Renaissance Periodization",
+    "views_approx": "n/a",
+    "type": "video",
+    "verified": true
+   },
+   "equipment": "adjustable dumbbells (wk6+)"
+  },
+  {
+   "id": "goblet-squat",
+   "name": "Goblet squat",
+   "muscles": [
+    "quads",
+    "glutes",
+    "core",
+    "upper back"
+   ],
+   "cue": "Elbows track inside the knees at the bottom - chest tall, heels glued down.",
+   "video": {
+    "url": "https://www.youtube.com/watch?v=u7-HLtOglfM",
+    "channel": "Dan John",
+    "views_approx": "n/a",
+    "type": "video",
+    "verified": true
+   },
+   "equipment": "4kg kettlebell (P1) -> heavier DB (wk6+)"
+  },
+  {
+   "id": "bw-squat",
+   "name": "Bodyweight squat (deep)",
+   "muscles": [
+    "quads",
+    "glutes",
+    "adductors",
+    "core"
+   ],
+   "cue": "Sit between your heels, not behind them - full depth with heels down beats half reps.",
+   "video": {
+    "url": "https://www.youtube.com/watch?v=z3XQ7T4-abQ",
+    "channel": "Hybrid Calisthenics",
+    "views_approx": "n/a",
+    "type": "video",
+    "verified": true
+   },
+   "equipment": "none"
+  },
+  {
+   "id": "split-squat",
+   "name": "Split squat",
+   "muscles": [
+    "quads",
+    "glutes",
+    "adductors",
+    "balance"
+   ],
+   "cue": "Drop the back knee straight down under your hip - the front shin stays near vertical.",
+   "video": {
+    "url": "https://www.youtube.com/watch?v=4bNQITw0VdY",
+    "channel": "E3 Rehab",
+    "views_approx": "n/a",
+    "type": "video",
+    "verified": true
+   },
+   "equipment": "none (hold DBs from wk6)"
+  },
+  {
+   "id": "db-reverse-lunge",
+   "name": "Dumbbell reverse lunge",
+   "muscles": [
+    "quads",
+    "glutes",
+    "hamstrings",
+    "balance"
+   ],
+   "cue": "Step back, then push the floor away through the FRONT heel to stand.",
+   "video": {
+    "url": "https://www.youtube.com/watch?v=MyqQRJ2lW7Q",
+    "channel": "Team Evolve",
+    "views_approx": "n/a",
+    "type": "video",
+    "verified": true
+   },
+   "equipment": "adjustable dumbbells (wk6+)"
+  },
+  {
+   "id": "db-rdl",
+   "name": "Dumbbell Romanian deadlift",
+   "muscles": [
+    "hamstrings",
+    "glutes",
+    "lower back",
+    "grip"
+   ],
+   "cue": "Push the hips straight back with soft knees until the hamstrings scream - the spine never rounds.",
+   "video": {
+    "url": "https://www.youtube.com/watch?v=_oyxCn2iSjU",
+    "channel": "Renaissance Periodization",
+    "views_approx": "n/a",
+    "type": "video",
+    "verified": true
+   },
+   "equipment": "adjustable dumbbells (wk6+)"
+  },
+  {
+   "id": "kb-swing",
+   "name": "Kettlebell swing (two-hand)",
+   "muscles": [
+    "glutes",
+    "hamstrings",
+    "core",
+    "grip"
+   ],
+   "cue": "It's a hip HINGE and snap, not a squat or a front raise - the arms are just ropes.",
+   "video": {
+    "url": "https://www.youtube.com/watch?v=m-S9H2XVvYg",
+    "channel": "Mark Wildman",
+    "views_approx": "n/a",
+    "type": "video",
+    "verified": true
+   },
+   "equipment": "4kg kettlebell (go heavier when available)"
+  },
+  {
+   "id": "glute-bridge",
+   "name": "Glute bridge",
+   "muscles": [
+    "glutes",
+    "hamstrings",
+    "core"
+   ],
+   "cue": "Posterior-tilt first (tuck the tailbone), then squeeze up - lift with glutes, not lower back.",
+   "video": {
+    "url": "https://www.youtube.com/watch?v=wPM8icPu6H8",
+    "channel": "Well+Good",
+    "views_approx": "n/a",
+    "type": "video",
+    "verified": true
+   },
+   "equipment": "none"
+  },
+  {
+   "id": "calf-raise",
+   "name": "Standing calf raise",
+   "muscles": [
+    "calves (gastrocnemius, soleus)"
+   ],
+   "cue": "3-second lowering into a full stretch at the bottom - the stretch is where calves grow.",
+   "video": {
+    "url": "https://www.youtube.com/watch?v=SVtg-1loH4c",
+    "channel": "Colossus Fitness",
+    "views_approx": "n/a",
+    "type": "video",
+    "verified": true
+   },
+   "equipment": "step edge (hold DB to load)"
+  },
+  {
+   "id": "farmer-carry",
+   "name": "Farmer's carry / suitcase carry",
+   "muscles": [
+    "grip",
+    "traps",
+    "core",
+    "obliques"
+   ],
+   "cue": "Walk tall as if balancing a book on your head - no leaning toward the weight.",
+   "video": {
+    "url": "https://www.youtube.com/watch?v=293Xf1wAcI8",
+    "channel": "Dan John",
+    "views_approx": "n/a",
+    "type": "video",
+    "verified": true
+   },
+   "equipment": "kettlebell/dumbbells"
+  },
+  {
+   "id": "plank",
+   "name": "Plank (forearm)",
+   "muscles": [
+    "core",
+    "shoulders",
+    "glutes"
+   ],
+   "cue": "Squeeze glutes and abs so hard the body trembles slightly - a saggy 60s is worse than a hard 30s.",
+   "video": {
+    "url": "https://www.youtube.com/watch?v=kL_NJAkCQBg",
+    "channel": "Calisthenicmovement",
+    "views_approx": "n/a",
+    "type": "video",
+    "verified": true
+   },
+   "equipment": "none"
+  },
+  {
+   "id": "side-plank",
+   "name": "Side plank",
+   "muscles": [
+    "obliques",
+    "QL",
+    "glute med",
+    "shoulders"
+   ],
+   "cue": "Stack shoulder over elbow and push the hips UP and slightly forward - no sagging.",
+   "video": {
+    "url": "https://www.youtube.com/watch?v=44ND4bOB-T0",
+    "channel": "NASM (National Academy of Sports Medicine)",
+    "views_approx": "n/a",
+    "type": "video",
+    "verified": true
+   },
+   "equipment": "none"
+  },
+  {
+   "id": "dead-bug",
+   "name": "Dead bug",
+   "muscles": [
+    "deep core (TVA)",
+    "hip flexors"
+   ],
+   "cue": "Lower back stays welded to the floor - if it arches, shorten the leg reach.",
+   "video": {
+    "url": "https://www.youtube.com/watch?v=bxn9FBrt4-A",
+    "channel": "NASM (National Academy of Sports Medicine)",
+    "views_approx": "n/a",
+    "type": "video",
+    "verified": true
+   },
+   "equipment": "none"
+  },
+  {
+   "id": "bird-dog",
+   "name": "Bird dog",
+   "muscles": [
+    "spinal erectors",
+    "glutes",
+    "core stability"
+   ],
+   "cue": "Reach LONG (heel back, fingers forward) keeping hips level - a glass of water on your back shouldn't spill.",
+   "video": {
+    "url": "https://www.youtube.com/watch?v=ZdAHe9_HeEw",
+    "channel": "NASM (National Academy of Sports Medicine)",
+    "views_approx": "n/a",
+    "type": "video",
+    "verified": true
+   },
+   "equipment": "none"
+  },
+  {
+   "id": "hollow-body",
+   "name": "Hollow body hold",
+   "muscles": [
+    "rectus abdominis",
+    "deep core"
+   ],
+   "cue": "Press the lower back into the floor first, then extend limbs only as far as that contact holds.",
+   "video": {
+    "url": "https://www.youtube.com/watch?v=uZqTUwq96iU",
+    "channel": "FitnessFAQs",
+    "views_approx": "n/a",
+    "type": "video",
+    "verified": true
+   },
+   "equipment": "none"
+  },
+  {
+   "id": "hanging-knee-raise",
+   "name": "Hanging knee raise",
+   "muscles": [
+    "abs",
+    "hip flexors",
+    "grip"
+   ],
+   "cue": "Curl the pelvis up at the top (tuck tailbone toward navel) - lifting knees alone is just hip flexors.",
+   "video": {
+    "url": "https://www.youtube.com/watch?v=l7OroezzX9k",
+    "channel": "Runna",
+    "views_approx": "n/a",
+    "type": "video",
+    "verified": true
+   },
+   "equipment": "pull-up bar"
+  },
+  {
+   "id": "russian-twist",
+   "name": "Russian twist",
+   "muscles": [
+    "obliques",
+    "abs"
+   ],
+   "cue": "Rotate the ribcage, not just the arms - shoulders turn, eyes follow the hands.",
+   "video": {
+    "url": "https://www.youtube.com/watch?v=wkD8rjkodUI",
+    "channel": "Howcast",
+    "views_approx": "n/a",
+    "type": "video",
+    "verified": true
+   },
+   "equipment": "none (add 2.5kg DB)"
+  },
+  {
+   "id": "bicycle-crunch",
+   "name": "Bicycle crunch",
+   "muscles": [
+    "obliques",
+    "abs"
+   ],
+   "cue": "Slow and controlled - shoulder toward opposite hip, don't yank the neck.",
+   "video": {
+    "url": "https://www.youtube.com/results?search_query=bicycle+crunch+proper+form+athlean-x",
+    "channel": null,
+    "views_approx": null,
+    "type": "search",
+    "verified": false
+   },
+   "equipment": "none"
+  },
+  {
+   "id": "mountain-climber",
+   "name": "Mountain climber",
+   "muscles": [
+    "core",
+    "hip flexors",
+    "shoulders",
+    "conditioning"
+   ],
+   "cue": "Hips stay level with the shoulders - speed is worthless once the plank breaks.",
+   "video": {
+    "url": "https://www.youtube.com/watch?v=cnyTQDSE884",
+    "channel": "Well+Good",
+    "views_approx": "n/a",
+    "type": "video",
+    "verified": true
+   },
+   "equipment": "none"
+  },
+  {
+   "id": "burpee",
+   "name": "Burpee",
+   "muscles": [
+    "full body",
+    "conditioning"
+   ],
+   "cue": "Snap the hips back under you before you jump - land soft with knees tracking over toes.",
+   "video": {
+    "url": "https://www.youtube.com/watch?v=wS4OsJ4yzx4",
+    "channel": "ScottHermanFitness",
+    "views_approx": "n/a",
+    "type": "video",
+    "verified": true
+   },
+   "equipment": "none"
+  },
+  {
+   "id": "run-walk-intervals",
+   "name": "Run/walk intervals (C25K style)",
+   "muscles": [
+    "cardiovascular",
+    "legs"
+   ],
+   "cue": "The run segments should be slow enough to speak full sentences - most beginners run them twice too fast.",
+   "video": {
+    "url": "https://www.youtube.com/watch?v=_1b-0Vlmfa4",
+    "channel": "Marathon Handbook",
+    "views_approx": "n/a",
+    "type": "video",
+    "verified": true,
+    "resource": "https://www.nhs.uk/live-well/exercise/running-and-aerobic-exercises/get-running-with-couch-to-5k/"
+   },
+   "equipment": "running shoes"
+  },
+  {
+   "id": "easy-run",
+   "name": "Easy run (conversational)",
+   "muscles": [
+    "cardiovascular",
+    "legs"
+   ],
+   "cue": "Nose-breathing-possible pace; short quick steps (~170+ per minute) beat long lopes.",
+   "video": {
+    "url": "https://www.youtube.com/@runningchannel",
+    "channel": "The Running Channel",
+    "views_approx": "n/a",
+    "type": "channel",
+    "verified": true
+   },
+   "equipment": "running shoes"
+  },
+  {
+   "id": "long-run",
+   "name": "Long run",
+   "muscles": [
+    "cardiovascular",
+    "legs",
+    "endurance"
+   ],
+   "cue": "Slowest run of the week on purpose - finish feeling like you could do 10 more minutes.",
+   "video": {
+    "url": "https://www.youtube.com/@runningchannel",
+    "channel": "The Running Channel",
+    "views_approx": "n/a",
+    "type": "channel",
+    "verified": true
+   },
+   "equipment": "running shoes"
+  },
+  {
+   "id": "recovery-walk",
+   "name": "Active recovery brisk walk",
+   "muscles": [
+    "circulation",
+    "legs"
+   ],
+   "cue": "Brisk but easy - this is a recovery tool, arriving sweaty means it was too hard.",
+   "video": {
+    "url": "https://www.youtube.com/results?search_query=active+recovery+day+walk+benefits",
+    "channel": null,
+    "views_approx": null,
+    "type": "search",
+    "verified": false
+   },
+   "equipment": "none"
+  },
+  {
+   "id": "warmup-dynamic",
+   "name": "Dynamic warm-up (5-8 min follow-along)",
+   "muscles": [
+    "full body",
+    "joint prep"
+   ],
+   "cue": "Move through ranges you'll train today - raise heart rate and joint temperature, don't fatigue.",
+   "video": {
+    "url": "https://www.youtube.com/watch?v=3qyWpJ34dWw",
+    "channel": "Juice & Toya",
+    "views_approx": "n/a",
+    "type": "video",
+    "verified": true
+   },
+   "equipment": "none"
+  },
+  {
+   "id": "worlds-greatest-stretch",
+   "name": "World's greatest stretch",
+   "muscles": [
+    "hips",
+    "hip flexors",
+    "thoracic spine",
+    "hamstrings"
+   ],
+   "cue": "Long spine in the lunge; rotate the chest open toward the front leg and reach tall.",
+   "video": {
+    "url": "https://www.youtube.com/watch?v=T6j7BpxeqqU",
+    "channel": "FIT.nl",
+    "views_approx": "n/a",
+    "type": "video",
+    "verified": true
+   },
+   "equipment": "none"
+  },
+  {
+   "id": "cat-cow",
+   "name": "Cat-cow",
+   "muscles": [
+    "spinal mobility",
+    "core awareness"
+   ],
+   "cue": "Move one vertebra at a time with the breath - exhale round, inhale extend.",
+   "video": {
+    "url": "https://www.youtube.com/watch?v=xyNwxiuERXc",
+    "channel": "FIT.nl",
+    "views_approx": "n/a",
+    "type": "video",
+    "verified": true
+   },
+   "equipment": "none"
+  },
+  {
+   "id": "ankle-rocks",
+   "name": "Ankle mobility (knee-to-wall rocks + calf stretch)",
+   "muscles": [
+    "ankle dorsiflexion",
+    "calves"
+   ],
+   "cue": "Drive the knee over the toes with the heel nailed to the floor.",
+   "video": {
+    "url": "https://www.youtube.com/watch?v=7hrTiJIqvr4",
+    "channel": "Squat University",
+    "views_approx": "n/a",
+    "type": "video",
+    "verified": true
+   },
+   "equipment": "wall"
+  },
+  {
+   "id": "hip-9090",
+   "name": "90/90 hip stretch",
+   "muscles": [
+    "hip internal + external rotators",
+    "glutes"
+   ],
+   "cue": "Both knees at 90 degrees; hinge the chest over the front shin with a straight back.",
+   "video": {
+    "url": "https://www.youtube.com/watch?v=t4Zz6-aG8Iw",
+    "channel": "Jack Hanrahan Fitness",
+    "views_approx": "n/a",
+    "type": "video",
+    "verified": true
+   },
+   "equipment": "none"
+  },
+  {
+   "id": "band-dislocates",
+   "name": "Band shoulder dislocates (pass-throughs)",
+   "muscles": [
+    "shoulder mobility",
+    "rotator cuff",
+    "chest"
+   ],
+   "cue": "Wide grip, straight arms, slow arc - narrow the grip only over weeks.",
+   "video": {
+    "url": "https://www.youtube.com/results?search_query=band+shoulder+dislocates+pass+through+tutorial",
+    "channel": null,
+    "views_approx": null,
+    "type": "search",
+    "verified": false
+   },
+   "equipment": "resistance band"
+  },
+  {
+   "id": "cooldown-stretch",
+   "name": "Cool-down stretch + breathing (5 min follow-along)",
+   "muscles": [
+    "full body",
+    "parasympathetic downshift"
+   ],
+   "cue": "Hold each stretch ~20-30s and lengthen the exhale - end with 5 slow nasal breaths.",
+   "video": {
+    "url": "https://www.youtube.com/watch?v=u5Hr3rNUZ24",
+    "channel": "FitnessBlender",
+    "views_approx": "n/a",
+    "type": "video",
+    "verified": true
+   },
+   "equipment": "none"
+  }
+ ],
+ "dip_substitute": {
+  "primary": "Decline push-up (feet on a chair)",
+  "alternative": "Chair dips (feet on floor, shallow range)",
+  "why": "For a previously sedentary desk worker, bench/chair dips load the shoulder in deep extension + internal rotation - exactly the position tight anterior shoulders tolerate worst, and the most common dip-related impingement complaint. The decline push-up uses the same chair, trains the same pressing muscles (chest/triceps/front delts) with MORE load than a flat push-up, keeps the shoulder in a safe pressing plane, and slots directly into the Hybrid Calisthenics push-up progression already in the program (progress: flat 3x10 -> decline). Chair dips stay as the alternative for triceps-focused variety once shoulder mobility improves - with strict rules: hips brushing the chair, elbows pointing back, stop at upper-arm-parallel. Pseudo-planche push-ups were rejected: they are a skill-level movement (wrist and straight-arm scapular strength) inappropriate for weeks 1-5 of a beginner program."
+ },
+ "channels": [
+  {
+   "name": "Hybrid Calisthenics",
+   "url": "https://www.youtube.com/@HybridCalisthenics",
+   "category": "calisthenics progressions (beginner)",
+   "why": "Hampton's wall-to-full progressions for push-ups/pull-ups/squats are the exact ladders this program uses - the friendliest beginner coaching on YouTube.",
+   "verified": true
+  },
+  {
+   "name": "Calisthenicmovement",
+   "url": "https://www.youtube.com/@calimove",
+   "category": "form breakdowns (bodyweight)",
+   "why": "Crisp 2-5 minute technique breakdowns (plank, push-up, rows) with common-mistake corrections.",
+   "verified": true
+  },
+  {
+   "name": "Squat University",
+   "url": "https://www.youtube.com/@SquatUniversity",
+   "category": "mobility / injury-proofing",
+   "why": "Dr. Aaron Horschig (DPT) on ankle/hip mobility and pain-free squatting - the go-to when something starts aching.",
+   "verified": true
+  },
+  {
+   "name": "Mark Wildman",
+   "url": "https://www.youtube.com/@MarkWildman",
+   "category": "kettlebell",
+   "why": "The most systematic kettlebell teaching series on YouTube - his numbered swing/clean progressions fit a single-4kg-KB household perfectly.",
+   "verified": true
+  },
+  {
+   "name": "Renaissance Periodization",
+   "url": "https://www.youtube.com/@RenaissancePeriodization",
+   "category": "form breakdowns (weights) + diet science",
+   "why": "Dr. Mike Israetel's exercise-technique series covers every dumbbell lift in Phase 2-3, plus evidence-based fat-loss guidance for the Phase 3 cut.",
+   "verified": true
+  },
+  {
+   "name": "Jeff Nippard",
+   "url": "https://www.youtube.com/@JeffNippard",
+   "category": "form breakdowns (weights, science-based)",
+   "why": "Research-referenced technique and program-design videos - ideal once adjustable dumbbells or a gym arrive at week 6.",
+   "verified": true
+  },
+  {
+   "name": "FitnessBlender",
+   "url": "https://www.youtube.com/@fitnessblender",
+   "category": "follow-along warm-ups/cool-downs/home workouts",
+   "why": "No-hype follow-along videos - the 5-minute warm-up and cool-down slots in every session can just play these.",
+   "verified": true
+  },
+  {
+   "name": "The Running Channel",
+   "url": "https://www.youtube.com/@runningchannel",
+   "category": "running / C25K",
+   "why": "Beginner-friendly running form, pacing and couch-to-5K content for the Tue/Sat run slots.",
+   "verified": true
+  }
+ ],
+ "c25k": [
+  {
+   "week": 1,
+   "pattern": "5 min warm-up walk, then 60s run / 90s walk x 8",
+   "total_min": 25
+  },
+  {
+   "week": 2,
+   "pattern": "5 min walk, then 90s run / 2 min walk x 6",
+   "total_min": 26
+  },
+  {
+   "week": 3,
+   "pattern": "5 min walk, then 2 x (90s run, 90s walk, 3 min run, 3 min walk)",
+   "total_min": 23
+  },
+  {
+   "week": 4,
+   "pattern": "5 min walk, then 3 min run, 90s walk, 5 min run, 2.5 min walk, 3 min run, 90s walk, 5 min run",
+   "total_min": 27
+  },
+  {
+   "week": 5,
+   "pattern": "3 sessions build: 5/3/5/3/5 -> 8 run/5 walk/8 run -> 20 min continuous run",
+   "total_min": 26
+  },
+  {
+   "week": 6,
+   "pattern": "5/3/8/3/5 -> 10 run/3 walk/10 run -> 25 min continuous",
+   "total_min": 28
+  },
+  {
+   "week": 7,
+   "pattern": "25 min continuous run each session",
+   "total_min": 30
+  },
+  {
+   "week": 8,
+   "pattern": "28 min continuous run each session",
+   "total_min": 33
+  },
+  {
+   "week": 9,
+   "pattern": "30 min continuous run (~5K) each session",
+   "total_min": 35
+  },
+  {
+   "mapping_note": "Program has 2 dedicated run days (Tue + Sat), not 3: do the week's key C25K session Tuesday and repeat/consolidate it Saturday (Sat adds the KB-swing finisher in Phase 1). Program week N = C25K week N through week 9; weeks 10-12 consolidate 25-30 min continuous so a full 5K is run by ~week 12, matching the Phase 2 goal. Resource (verified): NHS Couch to 5K - https://www.nhs.uk/live-well/exercise/running-and-aerobic-exercises/get-running-with-couch-to-5k/ ; explainer video (verified): https://www.youtube.com/watch?v=_1b-0Vlmfa4 (Marathon Handbook)."
+  }
+ ],
+ "equipment_upgrade": {
+  "decision_week": 6,
+  "adjustable_db": [
+   {
+    "name": "Boldfit Powerflex dial-adjustable dumbbells 2.5-24kg (pair)",
+    "price": 16999,
+    "url": "https://www.boldfit.com/products/adjustable-dumbells-yellow-black",
+    "confidence": "verified",
+    "note": "Fetched from boldfit.com 2026-08-08: Rs.16,999 sale (MRP Rs.19,999). Amazon.in listing (B0GXDZV37C) reported ~Rs.14,999 in search results but Amazon.in blocked direct fetch."
+   },
+   {
+    "name": "Kore 20kg plate-loaded adjustable dumbbell combo (COMBO16, 2 rods + plates)",
+    "price": 699,
+    "url": "https://www.amazon.in/Kore-DM-20KG-COMBO16-Dumbbells-Kit/dp/B01CELP9T4",
+    "confidence": "verified",
+    "note": "Price via BuyHatke Amazon.in price tracker, fetched 2026-08-08: current Rs.699 (74% off Rs.2,670 MRP); tracked range Rs.529-1,188. Budget PVC/rubber plate set - slower to change weights than a dial set but covers all Phase 2 lifts."
+   },
+   {
+    "name": "Bullar 20kg adjustable dumbbell set (cast iron / PVC variants)",
+    "price": 3000,
+    "url": "https://www.amazon.in/BULLER-Dumbbell-Combo-Plates-Accessories/dp/B08HWWDC69",
+    "confidence": "estimated",
+    "note": "Amazon.in and JioMart blocked direct price fetch; search snippets put Bullar sets at ~Rs.1,600-5,600 depending on variant. Rs.2,500-3,500 is the typical cast-iron 20kg price. Mixed durability reviews - inspect on delivery."
+   }
+  ],
+  "gym_range_indiranagar": {
+   "low": 1155,
+   "high": 6500,
+   "confidence": "verified",
+   "note": "Fetched 2026-08-08. Cult Gym Indiranagar (cult.fit): SELECT from Rs.1,155/mo, ELITE from Rs.1,162/mo, ELITE PLUS from Rs.1,470/mo - 'onwards' pricing on long-commitment passes; a 3-month cultpass ELITE Bangalore lists at Rs.6,990 (~Rs.2,330/mo) on Flipkart per price tracker. Independent Indiranagar gyms (medifee.com listing): G M Gymnasium ~Rs.1,000/mo, Sweat 2B Fit Rs.2,000/mo, Figurine Rs.3,000/mo, Apple Fitness Rs.4,025/mo, Slam Rs.4,248/mo, Snap Fitness Rs.4,700/mo, Gold's Gym Rs.4,800/mo, Ben Body Studio Rs.6,500/mo. Realistic planning range: Rs.1,200-5,000/month."
+  }
+ },
+ "version": 1
+}

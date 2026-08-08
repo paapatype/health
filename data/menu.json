@@ -1,97 +1,408 @@
 {
-  "$schema_note": "7-day menu as designed. Meal times come from plan.json schedule and are editable in Settings. fresh (perishables per day) is reconciled with groceries.json ids.",
-  "version": 1,
-  "checked_on": "2026-08-08",
-  "macros_daily_estimate": {
-    "kcal": 3000, "protein_g": 108, "carbs_g": 358, "fat_g": 120,
-    "estimated": true,
-    "note": "Whole-menu estimates, not lab values. See RESEARCH.md on the protein flag."
+ "$schema_note": "7-day menu as designed. Meal times come from plan.json schedule and are editable in Settings. fresh (perishables per day) is reconciled with groceries.json ids.",
+ "version": 1,
+ "checked_on": "2026-08-08",
+ "macros_daily_estimate": {
+  "kcal": 3000,
+  "protein_g": 108,
+  "carbs_g": 358,
+  "fat_g": 120,
+  "estimated": true,
+  "note": "Whole-menu estimates, not lab values. See RESEARCH.md on the protein flag."
+ },
+ "cut_accelerators": [
+  {
+   "id": "bedtime-training-only",
+   "rank": 1,
+   "rule": "Bedtime milk + oats + nuts on training nights only — skip on rest days.",
+   "saves_kcal_est": 300
   },
-  "cut_accelerators": [
-    { "id": "bedtime-training-only", "rank": 1, "rule": "Bedtime milk + oats + nuts on training nights only — skip on rest days.", "saves_kcal_est": 300 },
-    { "id": "no-added-sugar", "rank": 2, "rule": "No added sugar in banana/chikku shakes. Fruit + milk stay.", "saves_kcal_est": 120 },
-    { "id": "right-size-starch", "rank": 3, "rule": "1 paratha not 2; rice ~1 cup not 1.5. Protein and veg stay full.", "saves_kcal_est": 180 }
-  ],
-  "cook_rules": [
-    "Kam tel — less oil, don't deep-fry",
-    "Tawa ya grill — not deep fried",
-    "Ghee/makkhan minimal",
-    "Shake mein cheeni nahi — no added sugar",
-    "1 paratha only; rice ek cup"
-  ],
-  "days": {
-    "mon": {
-      "nuts":      { "name": "Badam ×20 (soaked)", "fresh": [] },
-      "breakfast": { "name": "Avocado + egg sandwich, milk, fruit", "fresh": ["avocado", "eggs", "bread", "milk", "fruit"], "cook": "Avocado-egg sandwich (2 eggs), ek glass doodh, fruit" },
-      "lunch":     { "name": "Curd rice + cashew, palak, kala chana, fruit", "fresh": ["curd", "palak"], "cook": "Curd rice with cashew, palak sabzi, kala chana (kam tel), fruit" },
-      "snack":     { "name": "Milk + cereal", "fresh": ["milk"] },
-      "dinner":    { "name": "Roti, gobi aloo, arhar dal, apple raita, fruit", "fresh": ["gobi", "curd", "apple"], "cook": "Roti, gobi-aloo (kam tel), arhar dal, apple raita" },
-      "bedtime":   { "name": "Milk + oats + nuts", "training_only": true, "fresh": ["milk"] }
-    },
-    "tue": {
-      "nuts":      { "name": "Walnut ×6", "fresh": [] },
-      "breakfast": { "name": "Dal paratha + egg + banana shake", "fresh": ["eggs", "milk", "banana"], "cook": "Dal paratha (1 only, tawa, kam tel), 1 egg, banana shake — cheeni nahi" },
-      "lunch":     { "name": "Little millet, dal makhani, aloo jeera, curd + flax, fruit", "fresh": ["curd"], "cook": "Little millet (ek cup), dal makhani (makkhan minimal), aloo jeera, curd with flax, fruit" },
-      "snack":     { "name": "Sattu drink", "fresh": [] },
-      "dinner":    { "name": "Roti, dry rajma, bhindi, kheera raita, fruit", "fresh": ["bhindi", "kheera", "curd"], "cook": "Roti, dry rajma, bhindi (kam tel), kheera raita" },
-      "bedtime":   { "name": "Milk + oats + nuts", "training_only": true, "fresh": ["milk"] }
-    },
-    "wed": {
-      "nuts":      { "name": "Pista ×20", "fresh": [] },
-      "breakfast": { "name": "Bread omelette + chikku shake", "fresh": ["eggs", "bread", "milk", "chikku"], "cook": "Bread omelette (2 eggs, kam tel), chikku shake — cheeni nahi" },
-      "lunch":     { "name": "Puliogare rice, tawa paneer, curd + flax, fruit", "fresh": ["paneer", "curd"], "cook": "Puliogare rice (ek cup), tawa paneer (grill, kam tel), curd with flax, fruit" },
-      "snack":     { "name": "Kala chana chaat", "fresh": ["onion", "tomato"] },
-      "dinner":    { "name": "Roti, paneer capsicum, carrot raita, fruit", "fresh": ["paneer", "capsicum", "carrot", "curd"], "cook": "Roti, paneer-capsicum (kam tel), carrot raita" },
-      "bedtime":   { "name": "Milk + oats + nuts", "training_only": true, "fresh": ["milk"] }
-    },
-    "thu": {
-      "nuts":      { "name": "Badam ×20 (soaked)", "fresh": [] },
-      "breakfast": { "name": "Milk + sewai + cashew + raisin, 2 eggs, fruit", "fresh": ["milk", "eggs", "fruit"], "cook": "Doodh-sewai with cashew-raisin (cheeni nahi), 2 boiled eggs, fruit" },
-      "lunch":     { "name": "Little millet, white chole, beans aloo, boondi raita, fruit", "fresh": ["beans", "curd"], "cook": "Little millet (ek cup), white chole, beans-aloo (kam tel), boondi raita, fruit" },
-      "snack":     { "name": "Sattu drink", "fresh": [] },
-      "dinner":    { "name": "Dosa, lobia dry, bhindi, tomato-onion raita, fruit", "fresh": ["bhindi", "tomato", "onion", "curd"], "cook": "Dosa (tawa, kam tel), lobia dry, bhindi, tamatar-pyaaz raita" },
-      "bedtime":   { "name": "Milk + oats + nuts", "training_only": true, "fresh": ["milk"] }
-    },
-    "fri": {
-      "nuts":      { "name": "Walnut ×6", "fresh": [] },
-      "breakfast": { "name": "Kheera + cheese sandwich, eggs, milk, fruit", "fresh": ["kheera", "cheese", "bread", "eggs", "milk", "fruit"], "cook": "Kheera-cheese sandwich, 2 eggs, doodh, fruit" },
-      "lunch":     { "name": "Lemon rice, palak, kala chana, curd + flax, fruit", "fresh": ["palak", "curd", "lemon"], "cook": "Lemon rice (ek cup), palak sabzi, kala chana, curd with flax, fruit" },
-      "snack":     { "name": "Milk + cereal", "fresh": ["milk"] },
-      "dinner":    { "name": "Dosa, chicken sausages in tomato-onion, apple raita, fruit", "fresh": ["chicken-sausages", "tomato", "onion", "curd", "apple"], "cook": "Dosa, chicken sausages tamatar-pyaaz mein (kam tel), apple raita" },
-      "bedtime":   { "name": "Milk + oats + nuts", "training_only": true, "fresh": ["milk"] }
-    },
-    "sat": {
-      "nuts":      { "name": "Pista ×20", "fresh": [] },
-      "breakfast": { "name": "Chiwra + peanuts + 2 fried eggs + banana shake", "fresh": ["eggs", "milk", "banana"], "cook": "Chiwra-peanut (kam tel), 2 fried eggs (tawa), banana shake — cheeni nahi" },
-      "lunch":     { "name": "Veg pulao + chicken dry + boondi raita + fruit", "fresh": ["chicken", "curd", "matar", "carrot"], "cook": "Veg pulao (ek cup), chicken dry (grill/tawa, kam tel), boondi raita, fruit" },
-      "snack":     { "name": "Sattu drink", "fresh": [] },
-      "dinner":    { "name": "Roti, masoor dal, stuffed capsicum, carrot raita", "fresh": ["capsicum", "carrot", "curd", "paneer"], "cook": "Roti, masoor dal, bharwa shimla mirch (kam tel), carrot raita" },
-      "bedtime":   { "name": "Milk + oats + nuts", "training_only": true, "fresh": ["milk"] }
-    },
-    "sun": {
-      "nuts":      { "name": "Cashew ×20", "fresh": [] },
-      "breakfast": { "name": "Aloo paratha + milk + fruit", "fresh": ["milk", "fruit"], "cook": "Aloo paratha (1 only, tawa, kam tel), doodh, fruit" },
-      "lunch":     { "name": "Roti, matar paneer, kadhi pakora, carrot salad, fruit", "fresh": ["paneer", "matar", "curd", "carrot"], "cook": "Roti, matar paneer, kadhi pakora (pakora tawa-style, kam tel), gajar salad, fruit" },
-      "snack":     { "name": "Chole chaat", "fresh": ["onion", "tomato"] },
-      "dinner":    { "name": "Roti, chicken gravy, apple raita, cucumber salad, fruit", "fresh": ["chicken", "curd", "apple", "kheera"], "cook": "Roti, chicken gravy (kam tel), apple raita, kheera salad" },
-      "bedtime":   null
-    }
+  {
+   "id": "no-added-sugar",
+   "rank": 2,
+   "rule": "No added sugar in banana/chikku shakes. Fruit + milk stay.",
+   "saves_kcal_est": 120
   },
-  "go_to_picks": {
-    "breakfast": [
-      { "day": "mon", "why": "leanest" },
-      { "day": "wed", "why": "bread omelette + shake" },
-      { "day": "thu", "why": "sewai + eggs" }
-    ],
-    "lunch": [
-      { "day": "sat", "why": "highest protein" },
-      { "day": "tue", "why": "little millet + dal makhani" },
-      { "day": "mon", "why": "lightest" }
-    ],
-    "dinner": [
-      { "day": "sun", "why": "leanest" },
-      { "day": "tue", "why": "rajma + bhindi" },
-      { "day": "wed", "why": "paneer capsicum" }
-    ]
+  {
+   "id": "right-size-starch",
+   "rank": 3,
+   "rule": "1 paratha not 2; rice ~1 cup not 1.5. Protein and veg stay full.",
+   "saves_kcal_est": 180
   }
+ ],
+ "cook_rules": [
+  "Kam tel — less oil, don't deep-fry",
+  "Tawa ya grill — not deep fried",
+  "Ghee/makkhan minimal",
+  "Shake mein cheeni nahi — no added sugar",
+  "1 paratha only; rice ek cup"
+ ],
+ "days": {
+  "mon": {
+   "nuts": {
+    "name": "Badam ×20 (soaked)",
+    "fresh": []
+   },
+   "breakfast": {
+    "name": "Avocado + egg sandwich, milk, fruit",
+    "fresh": [
+     "avocado",
+     "eggs",
+     "bread_ww",
+     "milk_toned",
+     "seasonal_fruit"
+    ],
+    "cook": "Avocado-egg sandwich (2 eggs), ek glass doodh, fruit"
+   },
+   "lunch": {
+    "name": "Curd rice + cashew, palak, kala chana, fruit",
+    "fresh": [
+     "curd",
+     "palak"
+    ],
+    "cook": "Curd rice with cashew, palak sabzi, kala chana (kam tel), fruit"
+   },
+   "snack": {
+    "name": "Milk + cereal",
+    "fresh": [
+     "milk_toned"
+    ]
+   },
+   "dinner": {
+    "name": "Roti, gobi aloo, arhar dal, apple raita, fruit",
+    "fresh": [
+     "gobi",
+     "curd",
+     "apple"
+    ],
+    "cook": "Roti, gobi-aloo (kam tel), arhar dal, apple raita"
+   },
+   "bedtime": {
+    "name": "Milk + oats + nuts",
+    "training_only": true,
+    "fresh": [
+     "milk_toned"
+    ]
+   }
+  },
+  "tue": {
+   "nuts": {
+    "name": "Walnut ×6",
+    "fresh": []
+   },
+   "breakfast": {
+    "name": "Dal paratha + egg + banana shake",
+    "fresh": [
+     "eggs",
+     "milk_toned",
+     "banana"
+    ],
+    "cook": "Dal paratha (1 only, tawa, kam tel), 1 egg, banana shake — cheeni nahi"
+   },
+   "lunch": {
+    "name": "Little millet, dal makhani, aloo jeera, curd + flax, fruit",
+    "fresh": [
+     "curd"
+    ],
+    "cook": "Little millet (ek cup), dal makhani (makkhan minimal), aloo jeera, curd with flax, fruit"
+   },
+   "snack": {
+    "name": "Sattu drink",
+    "fresh": []
+   },
+   "dinner": {
+    "name": "Roti, dry rajma, bhindi, kheera raita, fruit",
+    "fresh": [
+     "bhindi",
+     "cucumber",
+     "curd"
+    ],
+    "cook": "Roti, dry rajma, bhindi (kam tel), kheera raita"
+   },
+   "bedtime": {
+    "name": "Milk + oats + nuts",
+    "training_only": true,
+    "fresh": [
+     "milk_toned"
+    ]
+   }
+  },
+  "wed": {
+   "nuts": {
+    "name": "Pista ×20",
+    "fresh": []
+   },
+   "breakfast": {
+    "name": "Bread omelette + chikku shake",
+    "fresh": [
+     "eggs",
+     "bread_ww",
+     "milk_toned",
+     "chikku"
+    ],
+    "cook": "Bread omelette (2 eggs, kam tel), chikku shake — cheeni nahi"
+   },
+   "lunch": {
+    "name": "Puliogare rice, tawa paneer, curd + flax, fruit",
+    "fresh": [
+     "paneer",
+     "curd"
+    ],
+    "cook": "Puliogare rice (ek cup), tawa paneer (grill, kam tel), curd with flax, fruit"
+   },
+   "snack": {
+    "name": "Kala chana chaat",
+    "fresh": [
+     "onion",
+     "tomato"
+    ]
+   },
+   "dinner": {
+    "name": "Roti, paneer capsicum, carrot raita, fruit",
+    "fresh": [
+     "paneer",
+     "capsicum",
+     "carrot",
+     "curd"
+    ],
+    "cook": "Roti, paneer-capsicum (kam tel), carrot raita"
+   },
+   "bedtime": {
+    "name": "Milk + oats + nuts",
+    "training_only": true,
+    "fresh": [
+     "milk_toned"
+    ]
+   }
+  },
+  "thu": {
+   "nuts": {
+    "name": "Badam ×20 (soaked)",
+    "fresh": []
+   },
+   "breakfast": {
+    "name": "Milk + sewai + cashew + raisin, 2 eggs, fruit",
+    "fresh": [
+     "milk_toned",
+     "eggs",
+     "seasonal_fruit"
+    ],
+    "cook": "Doodh-sewai with cashew-raisin (cheeni nahi), 2 boiled eggs, fruit"
+   },
+   "lunch": {
+    "name": "Little millet, white chole, beans aloo, boondi raita, fruit",
+    "fresh": [
+     "beans",
+     "curd"
+    ],
+    "cook": "Little millet (ek cup), white chole, beans-aloo (kam tel), boondi raita, fruit"
+   },
+   "snack": {
+    "name": "Sattu drink",
+    "fresh": []
+   },
+   "dinner": {
+    "name": "Dosa, lobia dry, bhindi, tomato-onion raita, fruit",
+    "fresh": [
+     "bhindi",
+     "tomato",
+     "onion",
+     "curd",
+     "dosa_batter"
+    ],
+    "cook": "Dosa (tawa, kam tel), lobia dry, bhindi, tamatar-pyaaz raita"
+   },
+   "bedtime": {
+    "name": "Milk + oats + nuts",
+    "training_only": true,
+    "fresh": [
+     "milk_toned"
+    ]
+   }
+  },
+  "fri": {
+   "nuts": {
+    "name": "Walnut ×6",
+    "fresh": []
+   },
+   "breakfast": {
+    "name": "Kheera + cheese sandwich, eggs, milk, fruit",
+    "fresh": [
+     "cucumber",
+     "cheese_slices",
+     "bread_ww",
+     "eggs",
+     "milk_toned",
+     "seasonal_fruit"
+    ],
+    "cook": "Kheera-cheese sandwich, 2 eggs, doodh, fruit"
+   },
+   "lunch": {
+    "name": "Lemon rice, palak, kala chana, curd + flax, fruit",
+    "fresh": [
+     "palak",
+     "curd",
+     "lemon"
+    ],
+    "cook": "Lemon rice (ek cup), palak sabzi, kala chana, curd with flax, fruit"
+   },
+   "snack": {
+    "name": "Milk + cereal",
+    "fresh": [
+     "milk_toned"
+    ]
+   },
+   "dinner": {
+    "name": "Dosa, chicken sausages in tomato-onion, apple raita, fruit",
+    "fresh": [
+     "chicken_sausages",
+     "tomato",
+     "onion",
+     "curd",
+     "apple",
+     "dosa_batter"
+    ],
+    "cook": "Dosa, chicken sausages tamatar-pyaaz mein (kam tel), apple raita"
+   },
+   "bedtime": {
+    "name": "Milk + oats + nuts",
+    "training_only": true,
+    "fresh": [
+     "milk_toned"
+    ]
+   }
+  },
+  "sat": {
+   "nuts": {
+    "name": "Pista ×20",
+    "fresh": []
+   },
+   "breakfast": {
+    "name": "Chiwra + peanuts + 2 fried eggs + banana shake",
+    "fresh": [
+     "eggs",
+     "milk_toned",
+     "banana"
+    ],
+    "cook": "Chiwra-peanut (kam tel), 2 fried eggs (tawa), banana shake — cheeni nahi"
+   },
+   "lunch": {
+    "name": "Veg pulao + chicken dry + boondi raita + fruit",
+    "fresh": [
+     "chicken_breast",
+     "curd",
+     "matar",
+     "carrot"
+    ],
+    "cook": "Veg pulao (ek cup), chicken dry (grill/tawa, kam tel), boondi raita, fruit"
+   },
+   "snack": {
+    "name": "Sattu drink",
+    "fresh": []
+   },
+   "dinner": {
+    "name": "Roti, masoor dal, stuffed capsicum, carrot raita",
+    "fresh": [
+     "capsicum",
+     "carrot",
+     "curd",
+     "paneer"
+    ],
+    "cook": "Roti, masoor dal, bharwa shimla mirch (kam tel), carrot raita"
+   },
+   "bedtime": {
+    "name": "Milk + oats + nuts",
+    "training_only": true,
+    "fresh": [
+     "milk_toned"
+    ]
+   }
+  },
+  "sun": {
+   "nuts": {
+    "name": "Cashew ×20",
+    "fresh": []
+   },
+   "breakfast": {
+    "name": "Aloo paratha + milk + fruit",
+    "fresh": [
+     "milk_toned",
+     "seasonal_fruit"
+    ],
+    "cook": "Aloo paratha (1 only, tawa, kam tel), doodh, fruit"
+   },
+   "lunch": {
+    "name": "Roti, matar paneer, kadhi pakora, carrot salad, fruit",
+    "fresh": [
+     "paneer",
+     "matar",
+     "curd",
+     "carrot"
+    ],
+    "cook": "Roti, matar paneer, kadhi pakora (pakora tawa-style, kam tel), gajar salad, fruit"
+   },
+   "snack": {
+    "name": "Chole chaat",
+    "fresh": [
+     "onion",
+     "tomato"
+    ]
+   },
+   "dinner": {
+    "name": "Roti, chicken gravy, apple raita, cucumber salad, fruit",
+    "fresh": [
+     "chicken_breast",
+     "curd",
+     "apple",
+     "cucumber"
+    ],
+    "cook": "Roti, chicken gravy (kam tel), apple raita, kheera salad"
+   },
+   "bedtime": null
+  }
+ },
+ "go_to_picks": {
+  "breakfast": [
+   {
+    "day": "mon",
+    "why": "leanest"
+   },
+   {
+    "day": "wed",
+    "why": "bread omelette + shake"
+   },
+   {
+    "day": "thu",
+    "why": "sewai + eggs"
+   }
+  ],
+  "lunch": [
+   {
+    "day": "sat",
+    "why": "highest protein"
+   },
+   {
+    "day": "tue",
+    "why": "little millet + dal makhani"
+   },
+   {
+    "day": "mon",
+    "why": "lightest"
+   }
+  ],
+  "dinner": [
+   {
+    "day": "sun",
+    "why": "leanest"
+   },
+   {
+    "day": "tue",
+    "why": "rajma + bhindi"
+   },
+   {
+    "day": "wed",
+    "why": "paneer capsicum"
+   }
+  ]
+ }
 }

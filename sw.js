@@ -2,7 +2,7 @@
    Bump VERSION on every deploy: old caches are purged on activate,
    and the page shows an update prompt driven by SKIP_WAITING. */
 
-const VERSION = 'v1';
+const VERSION = 'v2';
 const CACHE = `healthos-${VERSION}`;
 
 const SHELL = [
@@ -50,11 +50,36 @@ self.addEventListener('message', e => {
   if (e.data === 'SKIP_WAITING') self.skipWaiting();
 });
 
-/* Cache-first for same-origin GET; network fallback updates the cache.
+/* Two strategies, on purpose:
+
+   - Shell (html/css/js/icons): cache-first, keyed on VERSION. Instant, and it
+     only changes when a deploy bumps VERSION.
+   - data/*.json: stale-while-revalidate. Serves the cached copy immediately so
+     the app still opens instantly and works offline, but always refetches in the
+     background. This is what keeps the promise that editing a price in the
+     GitHub web UI actually reaches the phone — cache-first would freeze the data
+     until someone remembered to bump VERSION in this file, which nobody will.
+
    External links (YouTube, shops) pass through untouched. */
 self.addEventListener('fetch', e => {
   const url = new URL(e.request.url);
   if (e.request.method !== 'GET' || url.origin !== location.origin) return;
+
+  const isData = url.pathname.includes('/data/') && url.pathname.endsWith('.json');
+
+  if (isData) {
+    e.respondWith(
+      caches.open(CACHE).then(async cache => {
+        const hit = await cache.match(e.request);
+        const net = fetch(e.request)
+          .then(res => { if (res.ok) cache.put(e.request, res.clone()); return res; })
+          .catch(() => null);
+        return hit ?? (await net) ?? Response.error();
+      })
+    );
+    return;
+  }
+
   e.respondWith(
     caches.match(e.request, { ignoreSearch: url.pathname.endsWith('.html') }).then(hit =>
       hit ??
