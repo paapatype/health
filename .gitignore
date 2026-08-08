@@ -1,5 +1,7 @@
 # Local working files — not part of the app
 BUILD_PROMPT.md
+# Personal research doc — kept honest, kept off the public repo
+RESEARCH.md
 .claude/
 .DS_Store
 *.local.*

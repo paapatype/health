@@ -3,7 +3,7 @@
  "checked_on": "2026-08-08",
  "skincare": {
   "checked_on": "2026-08-08",
-  "buyer_profile": "Indian male, brown skin, dry + sensitive, Bangalore, smoker (quitting), outdoors/on-camera professionally",
+  "buyer_profile": "Indian male, brown skin, dry + sensitive, Bangalore, elevated oxidative stress, outdoors/on-camera professionally",
   "categories": [
    {
     "id": "sunscreen",
@@ -777,7 +777,7 @@
        "rating_seen": 4.0,
        "recurring_negative": "heavy for humid daytime (use at night); tub packaging - scoop with clean fingers"
       },
-      "what_premium_buys": "Clinically studied ceramide:cholesterol:fatty-acid ratio with slow-release MVE — the exact mechanism a smoker's impaired barrier needs overnight.",
+      "what_premium_buys": "Clinically studied ceramide:cholesterol:fatty-acid ratio with slow-release MVE — the exact mechanism a an impaired barrier needs overnight.",
       "why": "Best-regardless moisturizer for this profile: ceramide-led, fragrance-free, 340 g lasts ~4 months so real monthly cost is modest.",
       "not_for": "Under sunscreen on sweaty days - keep it for PM.",
       "flags": [
@@ -848,7 +848,7 @@
     "id": "vitamin-c",
     "name": "Vitamin C (AM antioxidant)",
     "priority": 4,
-    "notes": "L-AA vs derivative trade-off: pure L-ascorbic acid has the strongest evidence but needs a low pH (~3.5) to penetrate, which is exactly what stings and disrupts a dry, sensitive, smoker-stressed barrier; it also oxidizes fast in Indian heat. Derivatives (ethyl ascorbic acid, SAP, THD) work at skin-friendly pH, stay stable in Bangalore temperatures, and convert to ascorbic acid in skin — you trade some potency and evidence depth for near-zero irritation and a serum that's still active in month 3. For this profile, derivatives are the right call; L-AA only via gentle low-% formats (Klairs 5%) if ever.",
+    "notes": "L-AA vs derivative trade-off: pure L-ascorbic acid has the strongest evidence but needs a low pH (~3.5) to penetrate, which is exactly what stings and disrupts a dry, sensitive, a stressed barrier; it also oxidizes fast in Indian heat. Derivatives (ethyl ascorbic acid, SAP, THD) work at skin-friendly pH, stay stable in Bangalore temperatures, and convert to ascorbic acid in skin — you trade some potency and evidence depth for near-zero irritation and a serum that's still active in month 3. For this profile, derivatives are the right call; L-AA only via gentle low-% formats (Klairs 5%) if ever.",
     "options": [
      {
       "id": "vc-minimalist-eaa",
@@ -938,7 +938,7 @@
        "rating_seen": 4.3,
        "recurring_negative": "34% below 5-star: slight stickiness for some; slow results on deep pigmentation"
       },
-      "why": "Best overall: derivative + ferulic (antioxidant synergy that matters for a smoker's oxidative load) + panthenol/centella buffering, fragrance-free, ₹599 for a full 30 ml.",
+      "why": "Best overall: derivative + ferulic (antioxidant synergy that matters for a elevated oxidative stress) + panthenol/centella buffering, fragrance-free, ₹599 for a full 30 ml.",
       "not_for": "Treating established dark spots fast - that's a derm conversation, not a serum promise.",
       "flags": [
        "fragrance-free",
@@ -1359,7 +1359,7 @@
        "rating_seen": null,
        "recurring_negative": "initial white cast on lips; needs reapplication like any lip SPF"
       },
-      "why": "Highest lip SPF actually stocked in Indian pharmacies at pocket-money price — smokers' lips are extra pigmentation-prone, so this matters.",
+      "why": "Highest lip SPF actually stocked in Indian pharmacies at pocket-money price — lips here are extra pigmentation-prone, so this matters.",
       "not_for": "Anyone bothered by a 30-second white phase before it rubs in.",
       "flags": [
        "spf-50",
@@ -1453,7 +1453,7 @@
        "rating_seen": null,
        "recurring_negative": "10% version causes flushing/irritation on sensitive skin — stick to 5%; many buy 10% by mistake"
       },
-      "why": "5% (not 10%) is the sensitive-skin dose for barrier support and post-smoking redness; already present at lower % in the Minimalist sunscreen.",
+      "why": "5% (not 10%) is the sensitive-skin dose for barrier support and post-exposure redness; already present at lower % in the Minimalist sunscreen.",
       "not_for": "Stacking with vitamin C in the same routine while skin is still reactive - alternate days first.",
       "flags": [
        "fragrance-free",
@@ -1621,9 +1621,9 @@
    "total_cost": 6495,
    "note": "Cetaphil cleanser ₹429 + Bioderma micellar ₹809 + Minimalist day ceramide ₹540 + CeraVe night cream 340g ₹1,529 + BoJ Relief Sun ₹1,256 + Deconstruct vit C ₹599 + Hyphen 0.05% retinal ₹599 + Minimalist HA+PGA ₹539 + Fixderma lip SPF ₹195 ≈ ₹6,495 upfront; ~₹2,200-2,600/month ongoing (sunscreen is the biggest recurring cost at outdoor usage rates)."
   },
-  "smoking_honesty": "No product on this list can outrun cigarettes. Smoking cuts dermal blood flow within minutes of each cigarette, degrades collagen and elastin faster than UV does, depletes the skin's own vitamin C (the very thing the AM serum is trying to top up), delays wound healing, and keeps the barrier chronically inflamed — which is a large part of why your skin is dry and reactive in the first place. A ₹6,500 routine on a smoker's skin is pouring water into a leaking bucket: worth doing, but the leak wins until it's plugged. The single most effective 'skincare product' in this entire document is the quit date; skin microcirculation measurably improves within weeks of stopping, and the sallow tone smokers develop starts reversing within months. Keep the routine — it protects the recovery — but be clear about which intervention is doing the heavy lifting.",
+  "habit_honesty": "No product on this list can outrun the habit. It cuts dermal blood flow within minutes of each exposure, degrades collagen and elastin faster than UV does, depletes the skin's own vitamin C (the very thing the AM serum is trying to top up), delays wound healing, and keeps the barrier chronically inflamed — which is a large part of why your skin is dry and reactive in the first place. A ₹6,500 routine on a stressed skin is pouring water into a leaking bucket: worth doing, but the leak wins until it's plugged. The single most effective 'skincare product' in this entire document is the quit date; skin microcirculation measurably improves within weeks of stopping, and the the sallow tone that develops starts reversing within months. Keep the routine — it protects the recovery — but be clear about which intervention is doing the heavy lifting.",
   "derm_consult": {
-   "when": "See a dermatologist instead of buying more products if: (1) anything on this list stings twice even after the reset protocol — you may have rosacea, seborrheic or atopic dermatitis masquerading as 'sensitive skin'; (2) you have established dark patches/melasma — prescription azelaic acid/tretinoin beats every OTC serum here per rupee; (3) you're about to spend ₹3,000+ on premium serums — one consult costs less and replaces guesswork with a prescription plan; (4) any mole or patch changes while you're quitting smoking. For an outdoor presenter, one baseline consult + annual review is the highest-ROI line item in this whole budget.",
+   "when": "See a dermatologist instead of buying more products if: (1) anything on this list stings twice even after the reset protocol — you may have rosacea, seborrheic or atopic dermatitis masquerading as 'sensitive skin'; (2) you have established dark patches/melasma — prescription azelaic acid/tretinoin beats every OTC serum here per rupee; (3) you're about to spend ₹3,000+ on premium serums — one consult costs less and replaces guesswork with a prescription plan; (4) any mole or patch changes. For an outdoor presenter, one baseline consult + annual review is the highest-ROI line item in this whole budget.",
    "bangalore_price_range": "₹200-₹1,200 per consult across Practo-listed Bangalore dermatologists; typical established clinics charge ₹600-₹1,000; online consults from ~₹300",
    "source_url": "https://www.practo.com/bangalore/dermatologist",
    "confidence": "estimated (Practo listing pages verified to exist; fee range from Practo/Lybrate listing summaries, direct page fetch blocked by bot protection)"
@@ -1632,7 +1632,7 @@
  "teeth": {
   "checked_on": "2026-08-08",
   "context": {
-   "subject": "male smoker ~10/day, on 8-week taper, yellowing teeth, on-camera professional, Indiranagar Bangalore",
+   "subject": "male with extrinsic tooth staining, on-camera professional, Indiranagar Bangalore",
    "constraint": "effective AND enamel-safe, dentist-approved only",
    "currency": "INR"
   },
@@ -1640,14 +1640,14 @@
    {
     "tier": 0,
     "name": "Scaling & polish (professional cleaning)",
-    "what": "Ultrasonic scaling to remove tartar plus polishing (rubber cup/air-polishing) to buff off the surface tar-and-nicotine film. Not bleaching - it returns teeth to their natural shade, it does not lighten beyond it.",
+    "what": "Ultrasonic scaling to remove tartar plus polishing (rubber cup/air-polishing) to buff off the surface surface tar film. Not bleaching - it returns teeth to their natural shade, it does not lighten beyond it.",
     "bangalore_price": {
      "low": 800,
      "typical": 1800,
      "high": 3000
     },
     "price_notes": "Verified Bangalore ranges: Credence Dental scaling Rs1,000-2,000 + polishing Rs250-300; Dental Sanctuary (Indiranagar) Rs1,200-3,000; Clove Dental standardised rates scaling from Rs1,690, polishing from Rs890; Credence lists pre-whitening cleaning Rs800-2,800. Deep cleaning (only if gum disease) Rs3,000-6,000.",
-    "effect_for_smoker": "Smoker staining is largely extrinsic (a tar film sitting on enamel). A 2024/2025 clinical study found professional polishing/air-polishing eliminated extrinsic tobacco staining with all methods tested - though none fully restored original colour because some nicotine staining penetrates the tooth. Practically: this one visit removes the majority of the visible yellow-brown smoker film for under Rs3,000, which is why it is step one before spending anything on bleaching.",
+    "effect_with_exposure": "This staining is largely extrinsic (a tar film sitting on enamel). A 2024/2025 clinical study found professional polishing/air-polishing eliminated extrinsic tobacco staining with all methods tested - though none fully restored original colour because some deep-set staining penetrates the tooth. Practically: this one visit removes the majority of the visible yellow-brown surface film for under Rs3,000, which is why it is step one before spending anything on bleaching.",
     "first_step": true,
     "sources": [
      {
@@ -1682,7 +1682,7 @@
      "high": 25000
     },
     "price_notes": "Verified Bangalore ranges: National Dental Care Rs5,000-15,000; The Dental Lounge (Kalyan Nagar) Rs9,000/session; Clinicspots aggregator laser/Zoom Rs7,490-12,840 (overall Rs7,643-22,028); Partha Dental Zoom Rs12,000-25,000; Amaya Dental laser Rs15,000-25,000, LED Rs12,000-15,000. Premium clinics quote up to Rs40,000-50,000 (Credence: Zoom Rs7,000-50,000) - paying that much buys ambience, not more shades.",
-    "effect_for_smoker": "Clinics claim 2-8 shades in one session; realistic for a smoker with partly intrinsic nicotine staining is 3-5 shades. Longevity is the catch: non-smokers keep results 6 months-2 years, but for an active smoker visible darkening starts within about a month and colour relapse typically lands within 6 months; smokers need touch-ups 2-3x more often. Zero smoking for 24-48h after the session is mandatory (enamel is porous). Expect transient sensitivity - ADA notes up to two-thirds of users get it, peaking days 2-3, resolving by ~day 4.",
+    "effect_with_exposure": "Clinics claim 2-8 shades in one session; realistic with ongoing exposure with partly intrinsic deep-set staining is 3-5 shades. Longevity is the catch: results without ongoing exposure last 6 months-2 years, but for ongoing exposure visible darkening starts within about a month and colour relapse typically lands within 6 months; ongoing exposure needs touch-ups 2-3x more often. Zero exposure for 24-48h after the session is mandatory (enamel is porous). Expect transient sensitivity - ADA notes up to two-thirds of users get it, peaking days 2-3, resolving by ~day 4.",
     "legitimacy_checklist": [
      "Treatment performed by a registered dentist (BDS/MDS, state dental council registration displayed) - whitening is a dental procedure, not a beauty service",
      "Clinic does an oral exam first and insists on scaling before bleaching - a clinic that bleaches over tartar is a red flag",
@@ -1721,14 +1721,6 @@
       "confidence": "verified"
      },
      {
-      "url": "https://www.lockportdentalgroup.com/how-long-does-teeth-whitening-last-if-you-smoke/",
-      "confidence": "verified"
-     },
-     {
-      "url": "https://www.trysnow.com/blogs/news/smoking-after-teeth-whitening",
-      "confidence": "verified"
-     },
-     {
       "url": "https://thedentistuk.com/behind-the-smile-the-dangers-of-teeth-whitening-at-beauty-salons/",
       "confidence": "verified"
      }
@@ -1737,14 +1729,14 @@
    {
     "tier": 2,
     "name": "Dentist-supervised custom take-home trays (10-16% carbamide peroxide)",
-    "what": "Dentist takes impressions, makes custom-fit trays, dispenses carbamide peroxide gel (ADA describes 10-38% CP worn 2-10 h/day for 6-28 days; 10-16% is the standard gentle range). Slower than chairside but reaches a similar endpoint - ADA-cited research: a 7-day tray system matched a 1-day in-office result. Often the best value per shade, and the trays are reusable for cheap gel-only touch-ups later - ideal for a smoker who will need maintenance.",
+    "what": "Dentist takes impressions, makes custom-fit trays, dispenses carbamide peroxide gel (ADA describes 10-38% CP worn 2-10 h/day for 6-28 days; 10-16% is the standard gentle range). Slower than chairside but reaches a similar endpoint - ADA-cited research: a 7-day tray system matched a 1-day in-office result. Often the best value per shade, and the trays are reusable for cheap gel-only touch-ups later - ideal for someone who will need maintenance.",
     "bangalore_price": {
      "low": 2000,
      "typical": 5000,
      "high": 8000
     },
     "price_notes": "Verified: Credence Dental (Bangalore) lists custom take-home trays Rs2,000-8,000; Partha Dental lists home kits Rs3,000-8,000. Refill gel syringes later cost a fraction of the initial fee (gel-only refill figure not verified; ask the clinic).",
-    "effect_for_smoker": "Realistic 2-4 shades over 2-4 weeks. Same smoker caveat: relapse within ~6 months while smoking continues, but tray owners can run a 1-2 night touch-up monthly instead of paying for a new in-clinic session. Lower peak sensitivity than chairside because concentration is lower.",
+    "effect_with_exposure": "Realistic 2-4 shades over 2-4 weeks. Same exposure caveat: relapse within ~6 months while exposure continues, but tray owners can run a 1-2 night touch-up monthly instead of paying for a new in-clinic session. Lower peak sensitivity than chairside because concentration is lower.",
     "first_step": false,
     "sources": [
      {
@@ -1771,7 +1763,7 @@
      "high": 1300
     },
     "price_notes": "Toothpastes Rs169-499; PAP strips Rs949-1,299; marketplace 'whitening kits' Rs5,350-9,630 per Clinicspots - poor value given the LED adds little.",
-    "effect_for_smoker": "Keeps the post-cleaning shade from re-browning day to day. Will not visibly whiten heavy tar staining on its own. Use whitening paste 2-3x/week alongside a daily fluoride sensitivity paste rather than as the only paste, to limit cumulative abrasion.",
+    "effect_with_exposure": "Keeps the post-cleaning shade from re-browning day to day. Will not visibly whiten heavy tar staining on its own. Use whitening paste 2-3x/week alongside a daily fluoride sensitivity paste rather than as the only paste, to limit cumulative abrasion.",
     "led_kit_verdict": "Evidence is against the light mattering: a 2014 review found light activation neither sped up nor improved bleaching, and Healthline's summary calls the incremental benefit unproven - the gel concentration does the work. An LED kit is at best a tray-plus-weak-gel purchase with theatre lighting; dentist trays beat it at similar or lower cost.",
     "first_step": false,
     "sources": [
@@ -1806,7 +1798,7 @@
      "typical": 0,
      "high": 0
     },
-    "effect_for_smoker": "These either thin enamel (which makes teeth look YELLOWER long-term as dentine shows through) or risk chemical burns. A smoker's enamel is already under acid+heat stress; do not add abrasion.",
+    "effect_with_exposure": "These either thin enamel (which makes teeth look YELLOWER long-term as dentine shows through) or risk chemical burns. This enamel is already under acid+heat stress; do not add abrasion.",
     "first_step": false,
     "sources": [
      {
@@ -1956,7 +1948,7 @@
      }
     ],
     "mechanism": "abrasive",
-    "mechanism_note": "Enzyme + gentle-polish chemistry: bromelain/papain enzymes, ImerCare PerlWhite, nano-hydroxyapatite for remineralisation. SLS-free. CAUTION: this variant is fluoride-free - a smoker mid-taper should not give up fluoride; use alongside a fluoride paste, or prefer Perfora's 'Fluoride+' variants.",
+    "mechanism_note": "Enzyme + gentle-polish chemistry: bromelain/papain enzymes, ImerCare PerlWhite, nano-hydroxyapatite for remineralisation. SLS-free. CAUTION: this variant is fluoride-free - anyone mid-plan should not give up fluoride; use alongside a fluoride paste, or prefer Perfora's 'Fluoride+' variants.",
     "rda_if_known": null,
     "review_signal": {
      "rating_seen": null,
@@ -2066,15 +2058,15 @@
     "estimated": false
    }
   ],
-  "maintenance_for_smoker": [
-   "Rinse your mouth with plain water immediately after every cigarette for the remaining taper weeks - it clears staining chemicals before they bond to enamel (verified tip from post-whitening smoker guidance).",
-   "Absolute no-smoking window for 48 hours after any peroxide whitening - enamel is porous and restains fastest then. Schedule whitening for after taper week 8 and this problem deletes itself.",
+  "maintenance": [
+   "Rinse your mouth with plain water immediately after every exposure for the remaining plan weeks - it clears staining chemicals before they bond to enamel (verified tip from post-whitening maintenance guidance).",
+   "Absolute zero-exposure window for 48 hours after any peroxide whitening - enamel is porous and restains fastest then. Schedule whitening for after plan week 8 and this problem deletes itself.",
    "Cold acidic/staining drinks (cold coffee, cola, iced tea) through a straw, past the front teeth. Hot drinks: no straw - just rinse with water after.",
-   "Never brush within 30-60 minutes of acidic drinks or of vaping/smoking - acid-softened enamel brushes away; rinse with water, chew sugar-free gum, brush later (ADA-cited guidance).",
-   "Scaling + polish every 6 months as a non-smoker; every 3-4 months while any smoking continues (smoker-specific cleaning cadence from dental guidance).",
+   "Never brush within 30-60 minutes of acidic drinks or of acidic exposure - acid-softened enamel brushes away; rinse with water, chew sugar-free gum, brush later (ADA-cited guidance).",
+   "Scaling + polish every 6 months without ongoing exposure; every 3-4 months while any exposure continues (exposure-specific cleaning cadence from dental guidance).",
    "Whitening paste 2-3x/week, fluoride sensitivity paste (Sensodyne) the rest - do not run an abrasive whitening paste twice daily forever.",
    "If you buy Tier 2 trays: one gel touch-up night per month keeps the shade without another clinic bill.",
-   "Realistic timeline while still smoking: visible darkening returns from ~1 month, full relapse by ~6 months. After a completed quit: professional results hold 12+ months with the above habits."
+   "Realistic timeline while exposure continues: visible darkening returns from ~1 month, full relapse by ~6 months. After a completed quit: professional results hold 12+ months with the above habits."
   ],
   "avoid": [
    {
@@ -2107,23 +2099,23 @@
    {
     "route": "cheap",
     "steps": [
-     "Week 1-2 of taper: scaling + polish at a standard Bangalore clinic (Rs800-3,000)",
+     "Week 1-2 of the plan: scaling + polish at a standard Bangalore clinic (Rs800-3,000)",
      "Daily: Colgate Visible White O2 (Rs273) or Visible White classic (Rs169) 2-3x/week, Sensodyne Fresh Mint (Rs112) otherwise",
-     "Rinse-after-smoking + straw + no-brush-after-acid habits from day one"
+     "Rinse-after-exposure + straw + no-brush-after-acid habits from day one"
     ],
     "total_cost": {
      "low": 1200,
      "high": 3500
     },
     "shades_realistic": "1-2 shades of visible improvement - mostly from removing the tar film and returning to natural shade, plus optical lift on camera; no true bleaching",
-    "lasts_for_smoker": "2-3 months before the film rebuilds while smoking continues; repeat polish visits (Rs890-2,000) maintain it. Post-quit, a single cleaning holds ~6 months."
+    "lasts_with_exposure": "2-3 months before the film rebuilds while exposure continues; repeat polish visits (Rs890-2,000) maintain it. Afterwards, a single cleaning holds ~6 months."
    },
    {
     "route": "mid",
     "steps": [
-     "Week 1-2 of taper: scaling + polish (Rs800-3,000)",
+     "Week 1-2 of the plan: scaling + polish (Rs800-3,000)",
      "Week 6-8: dentist visit for impressions; start Sensodyne 2 weeks pre-whitening",
-     "After taper week 8 (quit complete): 2-4 week course of custom take-home trays, 10-16% carbamide peroxide (Rs2,000-8,000)",
+     "After plan week 8 (quit complete): 2-4 week course of custom take-home trays, 10-16% carbamide peroxide (Rs2,000-8,000)",
      "Monthly single-night gel touch-ups thereafter"
     ],
     "total_cost": {
@@ -2131,14 +2123,14 @@
      "high": 11000
     },
     "shades_realistic": "2-4 shades of genuine bleaching on top of the cleaning",
-    "lasts_for_smoker": "If whitening waits for the quit as sequenced: 12+ months with touch-ups. If done while still smoking: relapse within ~6 months and touch-ups needed 2-3x as often."
+    "lasts_with_exposure": "If whitening waits until afterwards as sequenced: 12+ months with touch-ups. If done while exposure continues: relapse within ~6 months and touch-ups needed 2-3x as often."
    },
    {
     "route": "do_it_properly",
     "steps": [
-     "Week 1-2 of taper: scaling + polish (Rs800-3,000)",
+     "Week 1-2 of the plan: scaling + polish (Rs800-3,000)",
      "Week 6: consult at a verified dental clinic (registered dentist, exam first); start Sensodyne pre-treatment",
-     "Week 8+ (quit complete, 48h+ smoke-free guaranteed): single chairside peroxide session, Rs7,000-25,000 typical Bangalore band - do not pay a premium purely for 'laser/LED' activation",
+     "Week 8+ (quit complete, 48h+ exposure-free guaranteed): single chairside peroxide session, Rs7,000-25,000 typical Bangalore band - do not pay a premium purely for 'laser/LED' activation",
      "Same visit: impressions for custom trays (Rs2,000-8,000) for maintenance touch-ups",
      "Quarterly polish (Rs890-2,000) + monthly tray touch-up night"
     ],
@@ -2146,12 +2138,12 @@
      "low": 10000,
      "high": 36000
     },
-    "shades_realistic": "Clinics claim up to 8 shades; realistic for an ex-smoker with partial intrinsic nicotine staining is 3-6 shades, camera-obvious",
-    "lasts_for_smoker": "Done after the quit: 1-2 years with tray maintenance. Done while still smoking: visible darkening from month 1, relapse by month 6 - which is why sequencing is the whole game."
+    "shades_realistic": "Clinics claim up to 8 shades; realistic for someone past the habit with partial intrinsic deep-set staining is 3-6 shades, camera-obvious",
+    "lasts_with_exposure": "Done afterwards: 1-2 years with tray maintenance. Done while exposure continues: visible darkening from month 1, relapse by month 6 - which is why sequencing is the whole game."
    }
   ],
-  "sequencing_advice": "Order of operations: (1) Scaling + polish NOW, in taper week 1-2 - it removes most of the visible smoker film for under Rs3,000, gives an immediate on-camera win, and dentists require it before bleaching anyway. (2) Start potassium nitrate toothpaste 2 weeks before any peroxide step. (3) Book actual whitening (trays or chairside) for AFTER taper week 8 - peroxide results need a 48-hour zero-smoke window and continuing smokers relapse within ~6 months, so whitening a quit mouth roughly doubles-to-quadruples the lifespan of the same rupees. A freshly whitened smile is also a strong relapse deterrent: you paid for it, smoking visibly un-pays it. (4) OTC pastes and habits are the maintenance layer, never the treatment.",
-  "honest_line": "Whitening while you're still smoking is bailing water out of a leaking boat - the 8-week taper is the real whitening treatment, and peroxide just finishes the job after week 8."
+  "sequencing_advice": "Order of operations: (1) Scaling + polish NOW, in plan week 1-2 - it removes most of the visible surface film for under Rs3,000, gives an immediate on-camera win, and dentists require it before bleaching anyway. (2) Start potassium nitrate toothpaste 2 weeks before any peroxide step. (3) Book actual whitening (trays or chairside) for AFTER plan week 8 - peroxide results need a 48-hour zero-exposure window and continuing exposure relapses within ~6 months, so whitening a quit mouth roughly doubles-to-quadruples the lifespan of the same rupees. A freshly whitened smile is also a strong relapse deterrent: you paid for it, relapse visibly un-pays it. (4) OTC pastes and habits are the maintenance layer, never the treatment.",
+  "honest_line": "Whitening while the exposure continues is bailing water out of a leaking boat - the 8-week plan is the real whitening treatment, and peroxide just finishes the job after week 8."
  },
  "hair": {
   "checked_on": "2026-08-08",
@@ -2169,7 +2161,7 @@
      "name": "Telogen effluvium (TE)",
      "pattern": "Diffuse shedding from the whole scalp, not a patterned zone. Shed hairs are full-length with a small white club (bulb) at the root end. Classic timing: shedding peaks 2-4 months AFTER a trigger, then self-resolves over 3-6 months once the trigger settles.",
      "how_to_check": "Notice where hair falls from: everywhere (TE) vs mainly temples/crown (AGA). Look at shed hairs: full-length with white bulb = normal telogen shed; short broken fragments = breakage, a different problem. Count-based reality check: losing up to ~100 hairs/day is normal; running hands through dry hair dislodging a few is within normal.",
-     "note": "This subject has three plausible TE triggers stacked: starting a calorie deficit, nicotine withdrawal, and background stress. TE from these usually resolves on its own; the hair that sheds was already programmed to shed, and the follicle regrows."
+     "note": "This subject has three plausible TE triggers stacked: starting a calorie deficit, withdrawal, and background stress. TE from these usually resolves on its own; the hair that sheds was already programmed to shed, and the follicle regrows."
     },
     {
      "id": "seborrheic-dermatitis",
@@ -2186,11 +2178,11 @@
      "note": "The fix is subtraction, not addition: milder shampoo, cooler water, fewer washes, light conditioner/oil. Medicated anti-dandruff shampoos make genuinely dry scalps worse."
     },
     {
-     "id": "smoking",
-     "name": "Smoking-associated hair loss",
-     "pattern": "Not a distinct pattern of its own - smoking is a documented aggravator. Proposed mechanisms in the literature: oxidative stress damaging the follicle, microvascular constriction reducing blood flow to the papilla, and DNA damage; observational studies associate smoking with earlier/more severe androgenetic loss.",
-     "how_to_check": "Nothing to self-check; the relevant fact is directional - the 8-week quit taper is one of the best things being done for hair (and everything else). Expect no visible hair benefit for months; follicle cycles are slow.",
-     "note": "Quitting itself is a physiological stressor and can transiently contribute to telogen effluvium. That does not mean quitting is bad for hair - it means a temporary shed during/after the quit is expected and not a reason to resume smoking."
+     "id": "habit-related",
+     "name": "Habit-associated hair loss",
+     "pattern": "Not a distinct pattern of its own - it is a documented aggravator. Proposed mechanisms in the literature: oxidative stress damaging the follicle, microvascular constriction reducing blood flow to the papilla, and DNA damage; observational studies associate it with earlier/more severe androgenetic loss.",
+     "how_to_check": "Nothing to self-check; the relevant fact is directional - the 8-week habit plan is one of the best things being done for hair (and everything else). Expect no visible hair benefit for months; follicle cycles are slow.",
+     "note": "The change itself is a physiological stressor and can transiently contribute to telogen effluvium. That does not mean the change is bad for hair - it means a temporary shed during/afterwards is expected and not a reason to reverse course."
     },
     {
      "id": "nutrient-linked",
@@ -2201,7 +2193,7 @@
     }
    ],
    "pull_test": "Gentle hair pull test: grasp a bundle of roughly 50-60 hairs close to the scalp and draw fingers slowly along the full length with light, steady traction. Repeat at crown, both temples, and back. Reading: 0-2 hairs out per pull is normal; consistently 6 or more (about 10%) with white club bulbs, across multiple areas, suggests active excessive shedding such as TE. Limits: heavily affected by when hair was last washed or brushed (recently washed = fewer hairs, so it under-reads), it is not standardized, and it does not identify the CAUSE - a negative pull test does not rule out androgenetic alopecia, which can progress with a normal pull test.",
-   "deficit_warning": "Plain warning, worth remembering: starting the ~500 kcal deficit now can INCREASE visible shedding roughly in weeks 8-16 of the deficit (telogen effluvium lag), with nicotine withdrawal potentially adding to it. This is expected, usually self-resolving over 3-6 months, and not a sign the deficit or the quit is failing. Keep protein adequate, do not crash the deficit deeper, and do not panic-buy supplements when it happens.",
+   "deficit_warning": "Plain warning, worth remembering: starting the ~500 kcal deficit now can INCREASE visible shedding roughly in weeks 8-16 of the deficit (telogen effluvium lag), with withdrawal potentially adding to it. This is expected, usually self-resolving over 3-6 months, and not a sign the deficit or the quit is failing. Keep protein adequate, do not crash the deficit deeper, and do not panic-buy supplements when it happens.",
    "see_derm": {
     "why": "A dermatologist can do in minutes what self-checks cannot: trichoscopy to distinguish miniaturization (AGA) from uniform-shaft diffuse shedding (TE), a proper scalp exam to separate seborrheic dermatitis from dry scalp, and a decision on whether treatment (e.g. minoxidil for AGA - prescription-level discussion, not a self-start) is warranted early, when it works best. Shedding + newly dry hair + dry scalp with multiple triggers stacked is exactly the ambiguous presentation where one consult saves months of guessing.",
     "bloods": [
@@ -2998,6 +2990,6 @@
    "During the deficit: keep protein adequate every day - the cheapest 'hair supplement' that actually works.",
    "Take a monthly photo of hairline and crown in the same light - the only reliable free tool for telling pattern loss from diffuse shedding over time."
   ],
-  "interactions_note": "The calorie deficit and the smoking taper can BOTH transiently increase shedding on a 2-4 month lag (telogen effluvium) before things improve - if shedding visibly rises around weeks 8-16 of the deficit, that is the expected signature, not a signal to abandon the deficit or the quit. Persistent shedding beyond ~6 months, or visible temple/crown thinning at any point, is the cue to see the dermatologist (₹200-1,300 in Bangalore) with ferritin, vitamin D, B12, TSH and CBC results in hand."
+  "interactions_note": "The calorie deficit and the habit change can BOTH transiently increase shedding on a 2-4 month lag (telogen effluvium) before things improve - if shedding visibly rises around weeks 8-16 of the deficit, that is the expected signature, not a signal to abandon the deficit or the quit. Persistent shedding beyond ~6 months, or visible temple/crown thinning at any point, is the cue to see the dermatologist (₹200-1,300 in Bangalore) with ferritin, vitamin D, B12, TSH and CBC results in hand."
  }
 }
