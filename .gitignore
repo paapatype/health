@@ -1,0 +1,6 @@
+# Local working files — not part of the app
+BUILD_PROMPT.md
+.claude/
+.DS_Store
+*.local.*
+scratch/
