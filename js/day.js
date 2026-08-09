@@ -104,12 +104,20 @@ export function markIngredient(d, id, missing) {
     const list = new Set(rec.ingredients_missing);
     missing ? list.add(id) : list.delete(id);
     rec.ingredients_missing = [...list];
-    rec.ingredients_checked = true;
     // Buy list: add on missing, remove on have (only if not bought yet today)
     const idx = s.buyList.findIndex(b => b.item === id);
     if (missing && idx === -1) s.buyList.push({ item: id, addedOn: key });
     if (!missing && idx !== -1 && s.buyList[idx].addedOn === key) s.buyList.splice(idx, 1);
   });
+}
+
+/* Explicit "I've been through the list". Marking one item must NOT imply this —
+   otherwise tapping the first missing thing collapses the list you're still
+   reading. Started checking != finished checking. */
+export function finishCheck(d = new Date(), done = true) {
+  ensureRecord(d);
+  const key = isoDate(d);
+  update(s => { s.records[key].ingredients_checked = done; });
 }
 
 export function buyList() {

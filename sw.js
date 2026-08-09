@@ -5,6 +5,12 @@
 const VERSION = 'v2';
 const CACHE = `healthos-${VERSION}`;
 
+/* On localhost, shell files go network-first (falling back to cache, so the
+   offline test still works). Otherwise every source edit needs a manual VERSION
+   bump before the browser will see it — which during a build means editing this
+   file dozens of times and, worse, forgetting to. Production is unaffected. */
+const DEV = ['localhost', '127.0.0.1'].includes(self.location.hostname);
+
 const SHELL = [
   './',
   './index.html',
@@ -76,6 +82,18 @@ self.addEventListener('fetch', e => {
           .catch(() => null);
         return hit ?? (await net) ?? Response.error();
       })
+    );
+    return;
+  }
+
+  if (DEV) {
+    e.respondWith(
+      fetch(e.request)
+        .then(res => {
+          if (res.ok) { const copy = res.clone(); caches.open(CACHE).then(c => c.put(e.request, copy)); }
+          return res;
+        })
+        .catch(() => caches.match(e.request).then(hit => hit ?? Response.error()))
     );
     return;
   }

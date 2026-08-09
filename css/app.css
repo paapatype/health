@@ -241,20 +241,32 @@ body {
 
 /* ---------- water dots ---------- */
 
-.water-dots { display: flex; gap: var(--space-2); align-items: center; }
+/* The dot reads as 1.75rem but the button is a full 44pt target — HIG puts the
+   default at 44x44 and 28x28 at the absolute floor, and this is tapped several
+   times a day. Visual size lives on ::before so the touch area can be bigger
+   than the circle without making the row look clumsy. */
+.water-dots { display: flex; align-items: center; margin-right: calc(var(--space-2) * -1); }
 .water-dot {
+  width: var(--hit-target);
+  height: var(--hit-target);
+  display: grid;
+  place-items: center;
+  border: none;
+  background: none;
+  padding: 0;
+  cursor: pointer;
+  -webkit-tap-highlight-color: transparent;
+}
+.water-dot::before {
+  content: '';
   width: 1.75rem;
   height: 1.75rem;
   border-radius: 50%;
   border: 1.5px solid var(--teal);
-  background: none;
-  cursor: pointer;
   transition: background var(--duration-fast) var(--ease-standard), transform var(--duration-fast) var(--ease-spring);
-  padding: 0;
 }
-.water-dot.full { background: var(--teal); }
-.water-dot.half { background: linear-gradient(to right, var(--teal) 50%, transparent 50%); }
-.water-dot:active { transform: scale(0.88); }
+.water-dot.full::before { background: var(--teal); }
+.water-dot:active::before { transform: scale(0.88); }
 
 /* ---------- buttons ---------- */
 

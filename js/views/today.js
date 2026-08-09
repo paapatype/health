@@ -5,7 +5,7 @@ import { data, menuFor, timelineFor, sessionFor, exercise, grocery,
          currentPhase, weekNumber, daysToTarget, isoDate } from '../data.js';
 import { load } from '../store.js';
 import { ensureRecord, getRecord, toggle, water, morningCheck, markIngredient,
-         openItems, closeDay, backfill, completeness } from '../day.js';
+         finishCheck, openItems, closeDay, backfill, completeness } from '../day.js';
 import { cookNote, shareCookNote, copyCookNote } from '../share.js';
 import { icons, mountNav, refresh } from '../app.js';
 import { h, esc, sheet, closeSheet, toast, buzz } from '../ui.js';
@@ -38,6 +38,7 @@ export async function render(el, { sub } = {}) {
   mountNav('Today');
 
   if (sub === 'check' || !rec.ingredients_checked) renderMorningCheck(el, now);
+  else renderCheckSummary(el, now, rec);
   renderTimeline(el, now);
   renderCloseout(el, now, sub === 'closeout');
   if (sub === 'closeout') {
@@ -78,6 +79,19 @@ function renderMorningCheck(el, now) {
     list.appendChild(row);
   }
 
+  /* Explicit finish. Without this the list collapses on the first tap, i.e.
+     the moment you flag one missing thing the other ten vanish mid-read. */
+  const missing = items.filter(i => i.missing).length;
+  const doneRow = h(`
+    <button class="row" id="check-done">
+      <div class="content"><div class="title" style="color:var(--tint)">Done</div></div>
+      <div class="trailing">${missing
+        ? `<span class="chip" style="background:color-mix(in srgb,var(--red) 14%,transparent);color:var(--red)">${missing} to buy</span>`
+        : '<span class="chip verified">all in</span>'}</div>
+    </button>`);
+  doneRow.addEventListener('click', () => { finishCheck(now); buzz(); location.hash = '#/today'; refresh(); });
+  list.appendChild(doneRow);
+
   // cook note row
   const cookRow = h(`
     <button class="row">
@@ -89,6 +103,36 @@ function renderMorningCheck(el, now) {
   cookRow.addEventListener('click', () => openCookSheet(now));
   list.appendChild(cookRow);
 
+  el.appendChild(section);
+}
+
+/* Once the check is done it collapses to one line — but stays reachable, and
+   still shows the outcome. Hiding it outright loses the day's result. */
+function renderCheckSummary(el, now, rec) {
+  const missing = rec.ingredients_missing.length;
+  const section = h(`<section class="section">
+    <div class="list">
+      <button class="row" id="check-reopen">
+        <div class="content">
+          <div class="title">Ingredients checked</div>
+          <div class="detail">${missing
+            ? `${missing} on the Buy list in Food`
+            : 'Everything for today is in'}</div>
+        </div>
+        <div class="trailing">${icons.chevron}</div>
+      </button>
+      <button class="row" id="cook-row">
+        <div class="leading">${icons.food}</div>
+        <div class="content"><div class="title">Today's cooking</div>
+          <div class="detail">The note for the cook — copy or share</div></div>
+        <div class="trailing">${icons.chevron}</div>
+      </button>
+    </div>
+  </section>`);
+  section.querySelector('#check-reopen').addEventListener('click', () => {
+    finishCheck(now, false); location.hash = '#/today/check'; refresh();
+  });
+  section.querySelector('#cook-row').addEventListener('click', () => openCookSheet(now));
   el.appendChild(section);
 }
 
@@ -206,6 +250,14 @@ function timelineRow(now, rec, item) {
   return row;
 }
 
+/* Pace markers come from plan.json and are sliced to the day's target — on a
+   training day the target is 4, and a hardcoded three-bottle line silently
+   dropped the last one. */
+function pace(target) {
+  const cps = (data.plan.hydration.checkpoints ?? []).slice(0, target);
+  return cps.length ? ' · ' + cps.map((t, i) => `${i + 1} by ${t}`).join(' · ') : '';
+}
+
 function waterRow(now, rec) {
   const target = rec.water_target ?? 3;
   const dots = [];
@@ -217,7 +269,7 @@ function waterRow(now, rec) {
     <div class="row static">
       <div class="content">
         <div class="title">Water</div>
-        <div class="detail">${rec.water_bottles} of ${target} bottles · 1 by 11:00 · 2 by 15:30 · 3 by 19:00</div>
+        <div class="detail">${rec.water_bottles} of ${target} bottles${pace(target)}</div>
       </div>
       <div class="trailing"><div class="water-dots">${dots.join('')}</div></div>
     </div>`);

@@ -1,258 +1,265 @@
 {
-  "version": 1,
-  "checked_on": "2026-08-08",
-  "target_date": "2026-12-05",
-  "target": "Lean, defined — full-body build with visible chest and abs",
-  "week1_monday": "2026-08-10",
-  "soft_start_note": "8–9 Aug are a soft start; programme weeks run Mon–Sun from 10 Aug.",
-  "phases": [
-    {
-      "id": 1,
-      "name": "Foundation",
-      "weeks": "1–5",
-      "start": "2026-08-10",
-      "end": "2026-09-13",
-      "focus": "Habit + base. Bodyweight progressions, C25K intervals, light-gear overload."
-    },
-    {
-      "id": 2,
-      "name": "Progression",
-      "weeks": "6–13",
-      "start": "2026-09-14",
-      "end": "2026-11-08",
-      "focus": "Strength. Continuous 5K by ~week 12. Needs the equipment decision."
-    },
-    {
-      "id": 3,
-      "name": "Cut & Define",
-      "weeks": "14–21",
-      "start": "2026-11-09",
-      "end": "2027-01-03",
-      "focus": "Keep lifting heavy, metabolic circuits ×2, 3 runs/wk, core ×4/wk. Final week deload."
-    }
-  ],
-  "decision_points": [
-    {
-      "id": "week6-timeline",
-      "date": "2026-09-14",
-      "title": "Week 6 — timeline decision",
-      "body": "Original phases end 3 Jan, five weeks past the 5 Dec target. Option A: compress — Phase 2 to weeks 6–10, Phase 3 to weeks 11–17, deload week 17, done 5 Dec. Option B: keep full phase lengths, finish 3 Jan. Decide off five weeks of actual progress.",
-      "choices": [
-        "compress-to-dec-5",
-        "extend-to-jan-3"
-      ]
-    },
-    {
-      "id": "week6-equipment",
-      "date": "2026-09-14",
-      "title": "Week 6 — equipment decision",
-      "body": "2.5 kg dumbbells and the 4 kg kettlebell are outgrown. Phase 2 loading needs adjustable dumbbells (20–24 kg) or a gym. Prices in the Train tab.",
-      "choices": [
-        "adjustable-dumbbells",
-        "gym",
-        "defer-one-week"
-      ]
-    }
-  ],
-  "schedule": {
-    "wake": "05:00",
-    "sleep": "22:00",
-    "training_day": [
-      {
-        "id": "wake",
-        "time": "05:00",
-        "label": "Wake",
-        "category": "ritual"
-      },
-      {
-        "id": "recovery-shot",
-        "time": "05:05",
-        "label": "Warm water + recovery shot",
-        "category": "ritual",
-        "detail": "1\" ginger, ½ tsp turmeric, ½ lemon, pinch black pepper, 1 tsp honey (or 1 amla), 60 ml warm water"
-      },
-      {
-        "id": "nuts",
-        "time": "05:10",
-        "label": "Early nuts",
-        "category": "meal",
-        "record_key": "meals.nuts"
-      },
-      {
-        "id": "breathing",
-        "time": "05:15",
-        "label": "Breathing ritual",
-        "category": "ritual",
-        "detail": "5 min: diaphragmatic → anulom-vilom → in-4/out-8"
-      },
-      {
-        "id": "workout",
-        "time": "05:30",
-        "label": "Workout",
-        "category": "workout",
-        "record_key": "workout.done",
-        "duration_min": 45
-      },
-      {
-        "id": "post-workout",
-        "time": "06:15",
-        "label": "Post-workout",
-        "category": "supplement",
-        "record_key": "supplements.post",
-        "detail": "NAC + start bottle 1"
-      },
-      {
-        "id": "morning-check",
-        "time": "06:30",
-        "label": "Morning check + cook note",
-        "category": "anchor",
-        "deep_link": "#/today/check"
-      },
-      {
-        "id": "breakfast",
-        "time": "07:00",
-        "label": "Breakfast",
-        "category": "meal",
-        "record_key": "meals.breakfast",
-        "detail": "With it: D3, omega-3, vitamin C — fat-soluble, they need the meal"
-      },
-      {
-        "id": "skincare-am",
-        "time": "07:30",
-        "label": "Skincare AM",
-        "category": "care",
-        "record_key": "skincare.am"
-      },
-      {
-        "id": "green-tea",
-        "time": "10:30",
-        "label": "Green tea",
-        "category": "ritual",
-        "detail": "Timed slot. Second cup fine until 15:00. Nothing after."
-      },
-      {
-        "id": "water-1",
-        "time": "11:00",
-        "label": "Bottle 1 done",
-        "category": "water",
-        "checkpoint": 1
-      },
-      {
-        "id": "lunch",
-        "time": "13:00",
-        "label": "Lunch",
-        "category": "meal",
-        "record_key": "meals.lunch"
-      },
-      {
-        "id": "water-2",
-        "time": "15:30",
-        "label": "Bottle 2 done",
-        "category": "water",
-        "checkpoint": 2
-      },
-      {
-        "id": "snack",
-        "time": "16:30",
-        "label": "Evening snack",
-        "category": "meal",
-        "record_key": "meals.snack"
-      },
-      {
-        "id": "water-3",
-        "time": "19:00",
-        "label": "Bottle 3 done",
-        "category": "water",
-        "checkpoint": 3
-      },
-      {
-        "id": "dinner",
-        "time": "19:30",
-        "label": "Dinner",
-        "category": "meal",
-        "record_key": "meals.dinner"
-      },
-      {
-        "id": "skincare-pm",
-        "time": "21:00",
-        "label": "Skincare PM",
-        "category": "care",
-        "record_key": "skincare.pm",
-        "detail": "Cleanse off SPF → retinoid (scheduled nights) → moisturizer"
-      },
-      {
-        "id": "bedtime-snack",
-        "time": "21:15",
-        "label": "Bedtime milk + oats + nuts",
-        "category": "meal",
-        "record_key": "meals.bedtime",
-        "training_only": true
-      },
-      {
-        "id": "closeout",
-        "time": "21:30",
-        "label": "Close out today",
-        "category": "anchor",
-        "deep_link": "#/today/closeout"
-      },
-      {
-        "id": "magnesium",
-        "time": "21:45",
-        "label": "Magnesium + phone away",
-        "category": "supplement",
-        "record_key": "supplements.pm"
-      },
-      {
-        "id": "sleep",
-        "time": "22:00",
-        "label": "Lights out",
-        "category": "ritual",
-        "detail": "7 h to 05:00 — the floor, not the target"
-      }
-    ],
-    "rest_day": {
-      "remove": [
-        "bedtime-snack"
-      ],
-      "workout_override": {
-        "thu": {
-          "label": "Active recovery",
-          "detail": "30–40 min walk + mobility",
-          "duration_min": 35
-        },
-        "sun": null
-      },
-      "sunday_add": [
-        {
-          "id": "restock",
-          "time": "18:00",
-          "label": "Weekly restock check",
-          "category": "anchor",
-          "deep_link": "#/food/restock"
-        },
-        {
-          "id": "weekly-review",
-          "time": "18:15",
-          "label": "Weekly review",
-          "category": "anchor",
-          "deep_link": "#/me/review"
-        }
-      ]
-    }
+ "version": 1,
+ "checked_on": "2026-08-08",
+ "target_date": "2026-12-05",
+ "target": "Lean, defined — full-body build with visible chest and abs",
+ "week1_monday": "2026-08-10",
+ "soft_start_note": "8–9 Aug are a soft start; programme weeks run Mon–Sun from 10 Aug.",
+ "phases": [
+  {
+   "id": 1,
+   "name": "Foundation",
+   "weeks": "1–5",
+   "start": "2026-08-10",
+   "end": "2026-09-13",
+   "focus": "Habit + base. Bodyweight progressions, C25K intervals, light-gear overload."
   },
-  "hydration": {
-    "bottle_size_l": 1,
-    "base_bottles": 3,
-    "training_bottles": 4,
-    "basis": "EFSA adequate intake ~2.5 L/day total water for men, ~20% from food; adjusted for 83 kg, ~5:30 AM training, Bangalore climate, high-fibre diet",
-    "caveat": "Do not force water — extremes risk hyponatremia. These are pace targets, not minimum-per-hour.",
-    "estimated": false
+  {
+   "id": 2,
+   "name": "Progression",
+   "weeks": "6–13",
+   "start": "2026-09-14",
+   "end": "2026-11-08",
+   "focus": "Strength. Continuous 5K by ~week 12. Needs the equipment decision."
   },
-  "training_days_default": [
-    "mon",
-    "tue",
-    "wed",
-    "fri",
-    "sat"
-  ]
+  {
+   "id": 3,
+   "name": "Cut & Define",
+   "weeks": "14–21",
+   "start": "2026-11-09",
+   "end": "2027-01-03",
+   "focus": "Keep lifting heavy, metabolic circuits ×2, 3 runs/wk, core ×4/wk. Final week deload."
+  }
+ ],
+ "decision_points": [
+  {
+   "id": "week6-timeline",
+   "date": "2026-09-14",
+   "title": "Week 6 — timeline decision",
+   "body": "Original phases end 3 Jan, five weeks past the 5 Dec target. Option A: compress — Phase 2 to weeks 6–10, Phase 3 to weeks 11–17, deload week 17, done 5 Dec. Option B: keep full phase lengths, finish 3 Jan. Decide off five weeks of actual progress.",
+   "choices": [
+    "compress-to-dec-5",
+    "extend-to-jan-3"
+   ]
+  },
+  {
+   "id": "week6-equipment",
+   "date": "2026-09-14",
+   "title": "Week 6 — equipment decision",
+   "body": "2.5 kg dumbbells and the 4 kg kettlebell are outgrown. Phase 2 loading needs adjustable dumbbells (20–24 kg) or a gym. Prices in the Train tab.",
+   "choices": [
+    "adjustable-dumbbells",
+    "gym",
+    "defer-one-week"
+   ]
+  }
+ ],
+ "schedule": {
+  "wake": "05:00",
+  "sleep": "22:00",
+  "training_day": [
+   {
+    "id": "wake",
+    "time": "05:00",
+    "label": "Wake",
+    "category": "ritual"
+   },
+   {
+    "id": "recovery-shot",
+    "time": "05:05",
+    "label": "Warm water + recovery shot",
+    "category": "ritual",
+    "detail": "1\" ginger, ½ tsp turmeric, ½ lemon, pinch black pepper, 1 tsp honey (or 1 amla), 60 ml warm water"
+   },
+   {
+    "id": "nuts",
+    "time": "05:10",
+    "label": "Early nuts",
+    "category": "meal",
+    "record_key": "meals.nuts"
+   },
+   {
+    "id": "breathing",
+    "time": "05:15",
+    "label": "Breathing ritual",
+    "category": "ritual",
+    "detail": "5 min: diaphragmatic → anulom-vilom → in-4/out-8"
+   },
+   {
+    "id": "workout",
+    "time": "05:30",
+    "label": "Workout",
+    "category": "workout",
+    "record_key": "workout.done",
+    "duration_min": 45
+   },
+   {
+    "id": "post-workout",
+    "time": "06:15",
+    "label": "Post-workout",
+    "category": "supplement",
+    "record_key": "supplements.post",
+    "detail": "NAC + start bottle 1"
+   },
+   {
+    "id": "morning-check",
+    "time": "06:30",
+    "label": "Morning check + cook note",
+    "category": "anchor",
+    "deep_link": "#/today/check"
+   },
+   {
+    "id": "breakfast",
+    "time": "07:00",
+    "label": "Breakfast",
+    "category": "meal",
+    "record_key": "meals.breakfast",
+    "detail": "With it: D3, omega-3, vitamin C — fat-soluble, they need the meal"
+   },
+   {
+    "id": "skincare-am",
+    "time": "07:30",
+    "label": "Skincare AM",
+    "category": "care",
+    "record_key": "skincare.am"
+   },
+   {
+    "id": "green-tea",
+    "time": "10:30",
+    "label": "Green tea",
+    "category": "ritual",
+    "detail": "Timed slot. Second cup fine until 15:00. Nothing after."
+   },
+   {
+    "id": "water-1",
+    "time": "11:00",
+    "label": "Bottle 1 done",
+    "category": "water",
+    "checkpoint": 1
+   },
+   {
+    "id": "lunch",
+    "time": "13:00",
+    "label": "Lunch",
+    "category": "meal",
+    "record_key": "meals.lunch"
+   },
+   {
+    "id": "water-2",
+    "time": "15:30",
+    "label": "Bottle 2 done",
+    "category": "water",
+    "checkpoint": 2
+   },
+   {
+    "id": "snack",
+    "time": "16:30",
+    "label": "Evening snack",
+    "category": "meal",
+    "record_key": "meals.snack"
+   },
+   {
+    "id": "water-3",
+    "time": "19:00",
+    "label": "Bottle 3 done",
+    "category": "water",
+    "checkpoint": 3
+   },
+   {
+    "id": "dinner",
+    "time": "19:30",
+    "label": "Dinner",
+    "category": "meal",
+    "record_key": "meals.dinner"
+   },
+   {
+    "id": "skincare-pm",
+    "time": "21:00",
+    "label": "Skincare PM",
+    "category": "care",
+    "record_key": "skincare.pm",
+    "detail": "Cleanse off SPF → retinoid (scheduled nights) → moisturizer"
+   },
+   {
+    "id": "bedtime-snack",
+    "time": "21:15",
+    "label": "Bedtime milk + oats + nuts",
+    "category": "meal",
+    "record_key": "meals.bedtime",
+    "training_only": true
+   },
+   {
+    "id": "closeout",
+    "time": "21:30",
+    "label": "Close out today",
+    "category": "anchor",
+    "deep_link": "#/today/closeout"
+   },
+   {
+    "id": "magnesium",
+    "time": "21:45",
+    "label": "Magnesium + phone away",
+    "category": "supplement",
+    "record_key": "supplements.pm"
+   },
+   {
+    "id": "sleep",
+    "time": "22:00",
+    "label": "Lights out",
+    "category": "ritual",
+    "detail": "7 h to 05:00 — the floor, not the target"
+   }
+  ],
+  "rest_day": {
+   "remove": [
+    "bedtime-snack"
+   ],
+   "workout_override": {
+    "thu": {
+     "label": "Active recovery",
+     "detail": "30–40 min walk + mobility",
+     "duration_min": 35
+    },
+    "sun": null
+   },
+   "sunday_add": [
+    {
+     "id": "restock",
+     "time": "18:00",
+     "label": "Weekly restock check",
+     "category": "anchor",
+     "deep_link": "#/food/restock"
+    },
+    {
+     "id": "weekly-review",
+     "time": "18:15",
+     "label": "Weekly review",
+     "category": "anchor",
+     "deep_link": "#/me/review"
+    }
+   ]
+  }
+ },
+ "hydration": {
+  "bottle_size_l": 1,
+  "base_bottles": 3,
+  "training_bottles": 4,
+  "basis": "EFSA adequate intake ~2.5 L/day total water for men, ~20% from food; adjusted for 83 kg, ~5:30 AM training, Bangalore climate, high-fibre diet",
+  "caveat": "Do not force water — extremes risk hyponatremia. These are pace targets, not minimum-per-hour.",
+  "estimated": false,
+  "checkpoints": [
+   "11:00",
+   "15:30",
+   "19:00",
+   "21:00"
+  ],
+  "checkpoints_note": "Pace markers for bottle 1..n. Sliced to the day's target (3 rest / 4 training)."
+ },
+ "training_days_default": [
+  "mon",
+  "tue",
+  "wed",
+  "fri",
+  "sat"
+ ]
 }
