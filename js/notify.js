@@ -78,7 +78,7 @@ export function buildICS(appURL) {
     });
   });
 
-  return [
+  return fold([
     'BEGIN:VCALENDAR',
     'VERSION:2.0',
     'PRODID:-//healthos//EN',
@@ -87,7 +87,26 @@ export function buildICS(appURL) {
     VTIMEZONE,
     ...events,
     'END:VCALENDAR'
-  ].join('\r\n');
+  ].join('\r\n'));
+}
+
+/* RFC 5545 §3.1: no line over 75 octets; continuations start with a space.
+   Apple Calendar tolerates long lines, stricter validators don't. Counts
+   octets, not characters, so a multi-byte glyph can't be split down the middle. */
+function fold(ics) {
+  const enc = new TextEncoder();
+  return ics.split('\r\n').map(line => {
+    if (enc.encode(line).length <= 75) return line;
+    const out = [];
+    let cur = '', curBytes = 0, limit = 75;
+    for (const ch of line) {                        // iterate code points
+      const n = enc.encode(ch).length;
+      if (curBytes + n > limit) { out.push(cur); cur = ' '; curBytes = 1; limit = 75; }
+      cur += ch; curBytes += n;
+    }
+    if (cur) out.push(cur);
+    return out.join('\r\n');
+  }).join('\r\n');
 }
 
 export function downloadICS(appURL) {

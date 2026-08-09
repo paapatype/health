@@ -9,6 +9,7 @@ import { load, update, exportJSON, importJSON, storageEstimate } from '../store.
 import { completeness, weekSummary, logWeight, getRecord } from '../day.js';
 import { icons, mountNav, refresh } from '../app.js';
 import { h, esc, sheet, closeSheet, toast, buzz } from '../ui.js';
+import { downloadICS, requestPermission } from '../notify.js';
 
 /* ---- tracker: separate key, separate export, never in the main backup ---- */
 const TRACK_KEY = 'healthos.track.v1';
@@ -282,6 +283,40 @@ function renderSettings(el) {
   });
   el.appendChild(timeSection);
 
+  /* Two mechanisms, because they do different jobs. The calendar covers the
+     day's granular reminders — a banner is enough for "eat now". The two
+     anchors need you *in* the app, and tapping a Calendar alert opens Calendar,
+     not the app, so those are Shortcuts automations instead. */
+  const notif = h(`<section class="section">
+    <div class="section-header">Reminders</div>
+    <div class="list">
+      <button class="row" id="ics-btn">
+        <div class="content"><div class="title">Add the day to your calendar</div>
+          <div class="detail">Meals, supplements, skincare and water as repeating alarms</div></div>
+        <div class="trailing">${icons.chevron}</div></button>
+      <button class="row" id="shortcut-btn">
+        <div class="content"><div class="title">The two that open the app</div>
+          <div class="detail">06:00 ingredient check · 21:30 close-out</div></div>
+        <div class="trailing">${icons.chevron}</div></button>
+      <button class="row" id="perm-btn">
+        <div class="content"><div class="title">Allow notifications</div>
+          <div class="detail">Only fires while the app is open — the calendar does the rest</div></div>
+        <div class="trailing">${icons.chevron}</div></button>
+    </div>
+    <div class="section-footer">Re-export the calendar after you change a time, or the alarms will be wrong.</div>
+  </section>`);
+
+  notif.querySelector('#ics-btn').addEventListener('click', () => {
+    downloadICS(location.href.split('#')[0]);
+    toast('Calendar file saved — open it to import');
+  });
+  notif.querySelector('#shortcut-btn').addEventListener('click', () => openShortcutSheet());
+  notif.querySelector('#perm-btn').addEventListener('click', async () => {
+    const r = await requestPermission();
+    toast(r === 'granted' ? 'Notifications on' : r === 'denied' ? 'Denied — change it in Settings' : String(r));
+  });
+  el.appendChild(notif);
+
   const backup = h(`<section class="section">
     <div class="section-header">Backup</div>
     <div class="list">
@@ -327,6 +362,26 @@ function renderSettings(el) {
     const note = document.getElementById('storage-note');
     if (note) note.textContent = `Using ${mb} MB on this device. Nothing ever leaves it — clearing browser data deletes it, so export sometimes.`;
   });
+}
+
+function openShortcutSheet() {
+  const base = location.href.split('#')[0];
+  const step = (n, t) => `<div class="row static"><div class="content">
+    <div class="title">${n}</div><div class="detail">${esc(t)}</div></div></div>`;
+  sheet(`
+    <div class="sheet-title">Two automations</div>
+    <div class="sheet-body">
+      <p class="sheet-note">A calendar alert opens Calendar, not this app. For the two moments where you need to actually be <em>in</em> here, an iOS Shortcuts automation opens it directly — no tap needed.</p>
+      <div class="section-header">In Shortcuts → Automation → +</div>
+      <div class="list">
+        ${step('1', 'Time of Day → 06:00 → Daily')}
+        ${step('2', 'New Blank Automation → add action “Open URLs”')}
+        ${step('3', `Paste ${base}#/today/check`)}
+        ${step('4', 'Turn OFF “Ask Before Running”, then Done')}
+        ${step('5', `Repeat for 21:30 with ${base}#/today/closeout`)}
+      </div>
+      <div class="section-footer">Check the first one fires tomorrow morning before trusting it.</div>
+    </div>`);
 }
 
 /* ---------------- tracker (private, separate key) ---------------- */
