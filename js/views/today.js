@@ -244,7 +244,17 @@ function timelineRow(now, rec, item) {
     });
   }
   if (item.category === 'anchor' && item.deep_link) {
-    row.addEventListener('click', () => { location.hash = item.deep_link.slice(1); });
+    const go = () => { location.hash = item.deep_link.slice(1); };
+    /* A chevron promises navigation, so this has to behave like a control for
+       keyboard and VoiceOver too — as a bare div it was mouse-only, which made
+       "Close out today" unreachable without a pointer. Anchors are never
+       tickable, so there's no nested button to conflict with the role. */
+    row.setAttribute('role', 'button');
+    row.setAttribute('tabindex', '0');
+    row.addEventListener('click', go);
+    row.addEventListener('keydown', e => {
+      if (e.key === 'Enter' || e.key === ' ') { e.preventDefault(); go(); }
+    });
     row.querySelector('.trailing').insertAdjacentHTML('beforeend', icons.chevron);
   }
   return row;

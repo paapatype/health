@@ -155,10 +155,19 @@ function renderCost(el) {
       </button>`;
   }).join('');
 
+  /* The tier figures are researched constants — they account for pack
+     amortisation, delivery and handling fees, which a naive sum can't. So they
+     don't move when you edit one price. This line does: it's the live sum of
+     the cheapest price on file for every item, one pack each. Not the tier
+     total, but it makes an edit visible and catches a typo'd zero. */
+  const basket = data.groceries.items
+    .map(cheapest).filter(Boolean).reduce((s, p) => s + p.price, 0);
+
   const section = h(`<section class="section">
     <div class="section-header">Monthly cost — your portions</div>
     <div class="list" id="cost-list">${rows}</div>
-    <div class="section-footer">Ranges, not receipts: quick-commerce pricing moves with surge and stock. Tap a tier for the range and what drives it.</div>
+    <div class="section-footer">Ranges, not receipts: quick-commerce pricing moves with surge and stock. Tap a tier for the range and what drives it.<br>
+      Live check: one pack of all ${data.groceries.items.length} items at today's cheapest prices comes to <strong>${money(basket)}</strong> — edit any price in data/groceries.json and this moves.</div>
   </section>`);
 
   section.querySelectorAll('[data-tier]').forEach(btn => {
