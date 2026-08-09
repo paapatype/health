@@ -46,7 +46,11 @@ export function toast(msg) {
   toastTimer = setTimeout(() => el.remove(), 1800);
 }
 
-/* haptic-ish acknowledgment where supported */
+/* Haptic-ish acknowledgment where supported. Browsers refuse vibrate() until
+   the document has been genuinely interacted with, and log a console error when
+   you try — that is an intervention message, not an exception, so try/catch
+   cannot silence it. Check activation first and simply don't call it. */
 export function buzz() {
-  navigator.vibrate?.(10);
+  if (navigator.userActivation && !navigator.userActivation.hasBeenActive) return;
+  try { navigator.vibrate?.(10); } catch { /* not supported */ }
 }

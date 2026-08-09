@@ -367,6 +367,10 @@ body {
   margin: var(--space-1) auto var(--space-3);
 }
 .sheet .sheet-title { font: var(--type-headline); text-align: center; margin-bottom: var(--space-3); }
+.sheet .sheet-body { max-height: 60vh; overflow-y: auto; -webkit-overflow-scrolling: touch; }
+.sheet .sheet-lede { font: var(--type-body); color: var(--label); margin: 0 0 var(--space-2); }
+.sheet .sheet-note { font: var(--type-footnote); color: var(--label-secondary); margin: 0 0 var(--space-4); }
+.sheet .section-header:first-child { padding-top: 0; }
 
 /* ---------- misc ---------- */
 
@@ -405,6 +409,66 @@ a { color: var(--tint); }
   outline-offset: 2px;
   border-radius: 0.25rem;
 }
+
+/* ---------- record calendar ---------- */
+
+.cal-head, .cal-grid {
+  display: grid;
+  grid-template-columns: repeat(7, 1fr);
+  gap: var(--space-1);
+  padding: 0 var(--space-4);
+}
+.cal-head {
+  font: var(--type-caption1);
+  color: var(--label-tertiary);
+  text-align: center;
+  padding-bottom: var(--space-2);
+}
+.cal-grid { padding-bottom: var(--space-2); }
+.cal-cell {
+  position: relative;
+  aspect-ratio: 1;
+  min-height: 2.5rem;
+  display: grid;
+  place-items: center;
+  border: none;
+  border-radius: var(--radius-card);
+  background: var(--fill-quaternary);
+  color: var(--label);
+  font: var(--type-subhead);
+  font-variant-numeric: tabular-nums;
+  cursor: pointer;
+  -webkit-tap-highlight-color: transparent;
+}
+.cal-cell.empty-cell { background: none; cursor: default; }
+.cal-cell.none { color: var(--label-tertiary); }
+.cal-cell.low  { background: color-mix(in srgb, var(--red) 20%, transparent); }
+.cal-cell.mid  { background: color-mix(in srgb, var(--orange) 26%, transparent); }
+.cal-cell.high { background: color-mix(in srgb, var(--green) 30%, transparent); }
+.cal-cell:active { transform: scale(0.94); }
+.cal-cell .bf {
+  position: absolute;
+  top: 0.25rem; right: 0.25rem;
+  width: 0.3rem; height: 0.3rem;
+  border-radius: 50%;
+  background: var(--label-tertiary);
+}
+
+/* ---------- round stepper button ---------- */
+
+.btn-round {
+  width: var(--hit-target);
+  height: var(--hit-target);
+  border-radius: 50%;
+  border: none;
+  background: var(--fill-tertiary);
+  color: var(--tint);
+  font: var(--type-title3);
+  line-height: 1;
+  cursor: pointer;
+  -webkit-tap-highlight-color: transparent;
+}
+.btn-round:active { background: var(--fill-secondary); }
 
 @media (prefers-reduced-motion: reduce) {
   *, *::before, *::after { transition-duration: 0.01ms !important; animation-duration: 0.01ms !important; }
