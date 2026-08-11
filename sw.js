@@ -2,7 +2,7 @@
    Bump VERSION on every deploy: old caches are purged on activate,
    and the page shows an update prompt driven by SKIP_WAITING. */
 
-const VERSION = 'v3';
+const VERSION = 'v4';
 const CACHE = `healthos-${VERSION}`;
 
 /* On localhost, shell files go network-first (falling back to cache, so the

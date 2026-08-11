@@ -112,18 +112,45 @@ function mountEdgeBack() {
   }, { passive: true });
 }
 
+let lastScreen = null;
+
+/* Navigating and re-rendering-in-place are different things. Arriving at a
+   screen scrolls to the top; refreshing the one you're already on must leave
+   the page exactly where it is, or a tap on a checkbox throws you across the
+   document. `fresh` tells the view whether this is an arrival, so it knows
+   whether auto-scrolling anything into view is welcome or violent. */
 async function route() {
   const { tab, sub } = parseHash();
+  const screen = `${tab}/${sub ?? ''}`;
+  const fresh = screen !== lastScreen;
+  const y = window.scrollY;
+
   renderTabBar(tab);
   const view = document.getElementById('view');
   view.innerHTML = '';
   const mod = await viewModule(tab);
-  await mod.render(view, { sub });
-  window.scrollTo(0, 0);
+  await mod.render(view, { sub, fresh });
+
+  if (fresh) window.scrollTo(0, 0);
+  else window.scrollTo(0, y);
+  lastScreen = screen;
 }
 
-/* re-render current view (after a state change that affects other chrome, e.g. badge) */
+/* Re-render the current screen, keeping the scroll position. Prefer updating
+   the DOM in place for a single tap — this is for changes that ripple. */
 export function refresh() { route(); }
+
+/* Tab-bar badge only, so a state change doesn't need a whole re-render. */
+export function refreshBadge() {
+  const el = document.getElementById('tab-bar');
+  const food = el?.querySelector('a[href="#/food"]');
+  if (!food) return;
+  const n = buyList().length;
+  let b = food.querySelector('.badge');
+  if (!n) { b?.remove(); return; }
+  if (!b) { b = document.createElement('span'); b.className = 'badge'; food.appendChild(b); }
+  b.textContent = String(n);
+}
 
 window.addEventListener('hashchange', () => { navDepth++; route(); });
 

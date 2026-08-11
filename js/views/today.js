@@ -7,7 +7,7 @@ import { load } from '../store.js';
 import { ensureRecord, getRecord, toggle, water, morningCheck, markIngredient,
          finishCheck, openItems, closeDay, backfill, completeness } from '../day.js';
 import { cookNote, shareCookNote, copyCookNote } from '../share.js';
-import { icons, mountNav, refresh } from '../app.js';
+import { icons, mountNav, refresh, refreshBadge } from '../app.js';
 import { h, esc, sheet, closeSheet, toast, buzz } from '../ui.js';
 
 const MEAL_LABELS = {
@@ -25,7 +25,7 @@ function fmtDate(d) {
   return d.toLocaleDateString('en-IN', { weekday: 'long', day: 'numeric', month: 'long' });
 }
 
-export async function render(el, { sub } = {}) {
+export async function render(el, { sub, fresh = true } = {}) {
   const now = new Date();
   const rec = ensureRecord(now);
   const phase = currentPhase(now);
@@ -39,9 +39,9 @@ export async function render(el, { sub } = {}) {
 
   if (sub === 'check' || !rec.ingredients_checked) renderMorningCheck(el, now);
   else renderCheckSummary(el, now, rec);
-  renderTimeline(el, now);
+  renderTimeline(el, now, fresh);
   renderCloseout(el, now, sub === 'closeout');
-  if (sub === 'closeout') {
+  if (sub === 'closeout' && fresh) {
     setTimeout(() => document.getElementById('closeout-section')?.scrollIntoView({ block: 'start' }), 50);
   }
 }
@@ -57,38 +57,60 @@ function renderMorningCheck(el, now) {
   </section>`);
   const list = section.querySelector('#check-list');
 
+  const NEED = 'background:color-mix(in srgb,var(--red) 14%,transparent);color:var(--red)';
+
+  /* Repaint one row from its own state. Tapping a checkbox must never re-render
+     the screen: that tore down the DOM, jumped to the top and then scrolled the
+     timeline into view, so a tap on "Banana" threw you halfway down the page. */
+  const paintRow = (row, it, g) => {
+    row.setAttribute('aria-pressed', String(it.missing));
+    const detail = row.querySelector('.detail');
+    if (it.missing && g?.cheapest_platform) {
+      const text = `On Buy list — cheapest: ${g.cheapest_platform}`;
+      if (detail) detail.textContent = text;
+      else row.querySelector('.content').insertAdjacentHTML('beforeend', `<div class="detail">${esc(text)}</div>`);
+    } else detail?.remove();
+    row.querySelector('.trailing').innerHTML = it.missing
+      ? `<span class="chip" style="${NEED}">need</span>`
+      : '<span class="chip verified">have</span>';
+  };
+
+  const paintDone = () => {
+    const n = items.filter(i => i.missing).length;
+    doneRow.querySelector('.trailing').innerHTML = n
+      ? `<span class="chip" style="${NEED}">${n} to buy</span>`
+      : '<span class="chip verified">all in</span>';
+  };
+
   for (const it of items) {
     const g = grocery(it.id);
     /* short name here: this list is scanned at 6am, not shopped from */
     const name = g?.short ?? g?.name ?? it.id;
     const row = h(`
-      <button class="row" aria-pressed="${it.missing}">
-        <div class="content">
-          <div class="title">${esc(name)}</div>
-          ${it.missing && g?.cheapest_platform ? `<div class="detail">On Buy list — cheapest: ${esc(g.cheapest_platform)}</div>` : ''}
-        </div>
-        <div class="trailing">${it.missing
-          ? '<span class="chip" style="background:color-mix(in srgb,var(--red) 14%,transparent);color:var(--red)">need</span>'
-          : '<span class="chip verified">have</span>'}</div>
+      <button class="row">
+        <div class="content"><div class="title">${esc(name)}</div></div>
+        <div class="trailing"></div>
       </button>`);
+    paintRow(row, it, g);
     row.addEventListener('click', () => {
-      markIngredient(now, it.id, !it.missing);
+      it.missing = !it.missing;
+      markIngredient(now, it.id, it.missing);
       buzz();
-      refresh();
+      paintRow(row, it, g);     // this row
+      paintDone();              // the counter
+      refreshBadge();           // and the Food tab badge — nothing else moves
     });
     list.appendChild(row);
   }
 
   /* Explicit finish. Without this the list collapses on the first tap, i.e.
      the moment you flag one missing thing the other ten vanish mid-read. */
-  const missing = items.filter(i => i.missing).length;
   const doneRow = h(`
     <button class="row" id="check-done">
       <div class="content"><div class="title" style="color:var(--tint)">Done</div></div>
-      <div class="trailing">${missing
-        ? `<span class="chip" style="background:color-mix(in srgb,var(--red) 14%,transparent);color:var(--red)">${missing} to buy</span>`
-        : '<span class="chip verified">all in</span>'}</div>
+      <div class="trailing"></div>
     </button>`);
+  paintDone();
   doneRow.addEventListener('click', () => { finishCheck(now); buzz(); location.hash = '#/today'; refresh(); });
   list.appendChild(doneRow);
 
@@ -156,7 +178,7 @@ function openCookSheet(now) {
 
 /* ---------------- timeline ---------------- */
 
-function renderTimeline(el, now) {
+function renderTimeline(el, now, fresh = true) {
   const settings = load().settings;
   const rec = getRecord(now);
   let items = timelineFor(now, settings);
@@ -185,8 +207,9 @@ function renderTimeline(el, now) {
   });
 
   el.appendChild(section);
-  // bring the current row into view (unless deep-linked elsewhere)
-  if (!location.hash.includes('/check') && !location.hash.includes('/closeout')) {
+  /* Only on arrival. Doing this on every re-render meant ticking anything
+     hurled the page down to the timeline mid-tap. */
+  if (fresh && !location.hash.includes('/check') && !location.hash.includes('/closeout')) {
     setTimeout(() => list.children[Math.max(0, nowIdx)]?.scrollIntoView({ block: 'center' }), 50);
   }
 }
@@ -231,9 +254,13 @@ function timelineRow(now, rec, item) {
 
   row.querySelector('.tick')?.addEventListener('click', e => {
     e.stopPropagation();
-    toggle(now, path);
+    const on = toggle(now, path) === true;
     buzz();
-    refresh();
+    /* Just this control. A full re-render here is what made the page lurch. */
+    const tick = row.querySelector('.tick');
+    tick.classList.toggle('on', on);
+    tick.setAttribute('aria-pressed', String(on));
+    row.classList.toggle('done', on);
   });
 
   if (session) {
@@ -283,12 +310,16 @@ function waterRow(now, rec) {
       </div>
       <div class="trailing"><div class="water-dots">${dots.join('')}</div></div>
     </div>`);
+  const dotEls = () => row.querySelectorAll('.water-dot');
   row.querySelectorAll('.water-dot').forEach(dot => {
     dot.addEventListener('click', () => {
       const i = Number(dot.dataset.i);
-      water(now, i < rec.water_bottles ? -1 : +1);   // tap a full dot = undo, empty = fill
+      const cur = getRecord(now)?.water_bottles ?? 0;
+      const n = water(now, i < cur ? -1 : +1);   // tap a full dot = undo, empty = fill
       buzz();
-      refresh();
+      /* Fill the dots and update the count in place — no re-render, no jump. */
+      dotEls().forEach((d, idx) => d.classList.toggle('full', idx < n));
+      row.querySelector('.detail').textContent = `${n} of ${target} bottles${pace(target)}`;
     });
   });
   return row;
@@ -343,7 +374,15 @@ function renderCloseout(el, now, forced) {
           <div class="content"><div class="title">${esc(MEAL_LABELS[path] ?? path)}</div></div>
           <div class="trailing"><span class="tick" aria-hidden="true"><span class="ring">${icons.check}</span></span></div>
         </button>`);
-      row.addEventListener('click', () => { toggle(now, path); buzz(); refresh(); });
+      /* Tick in place and leave the row sitting there ticked. Removing it the
+         instant it's tapped would shuffle every row under your thumb; it drops
+         off the list next time you come back. */
+      row.addEventListener('click', () => {
+        const on = toggle(now, path) === true;
+        buzz();
+        row.querySelector('.tick').classList.toggle('on', on);
+        row.classList.toggle('done', on);
+      });
       list.appendChild(row);
     }
   }
