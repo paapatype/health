@@ -39,6 +39,17 @@ export function sheet(contentHTML, { onClose } = {}) {
 
   /* Apple's drawer spec is response 0.3; nudged to 0.38 because 0.3 read as
      abrupt in use. Still well short of sluggish, and the bounce is unchanged. */
+  /* Contents settle in just behind the sheet's leading edge, rather than the
+     whole panel arriving as one finished slab. Delayed slightly so the rows
+     land as the sheet reaches the top of its travel. */
+  if (!matchMedia('(prefers-reduced-motion: reduce)').matches) {
+    let i = 0;
+    panel.querySelectorAll('.sheet-title, .section-header, .row, .sheet-lede, .sheet-note')
+      .forEach(el => { el.style.setProperty('--d', `${90 + Math.min(i, 8) * 30}ms`); i++; });
+    panel.classList.add('enter');
+    setTimeout(() => panel.classList.remove('enter'), 900);
+  }
+
   const s = new Spring({ from: height(), damping: 0.8, response: 0.38, onUpdate: paint });
   paint(height());               // start offscreen, painted synchronously
   s.to(0);                       // ...then spring in from that live value

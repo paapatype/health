@@ -140,6 +140,12 @@ body {
   position: relative;
 }
 .tab-bar a.active { color: var(--tint); }
+/* A tap is a physical input, so a small settle on the icon it selects is
+   earned. Kept tiny — this is confirmation, not celebration. */
+@keyframes tab-settle { from { transform: scale(0.84); } to { transform: none; } }
+.tab-bar[data-settle="yes"] a.active svg {
+  animation: tab-settle calc(var(--duration-medium) * var(--mo)) var(--ease-bounce);
+}
 .tab-bar svg { width: 1.625rem; height: 1.625rem; }
 .tab-bar .tab-label { font: var(--type-caption2); font-weight: var(--weight-medium); }
 .tab-bar .badge {
@@ -205,7 +211,11 @@ body {
   bottom: 0;
   border-bottom: 0.5px solid var(--separator);
 }
-.row:active { background: var(--fill-quaternary); }
+/* Instant attack, gentle release: the highlight appears the moment you touch
+   (transition: none on :active) and fades out after. Transitioning both ways
+   would delay the acknowledgement, which is the one thing that must never wait. */
+.row { transition: background calc(var(--duration-medium) * var(--mo)) var(--ease-out-soft); }
+.row:active { background: var(--fill-quaternary); transition: none; }
 .row.static { cursor: default; }
 .row.static:active { background: none; }
 
@@ -297,12 +307,13 @@ body {
   border-radius: 50%;
   background: var(--green);
   transform: scale(0);
-  transition: transform 300ms var(--ease-standard);
+  /* the undo path — quicker than the commit */
+  transition: transform calc(var(--tick-undo-fill) * var(--mo)) var(--ease-exit);
 }
 .tick.on .ring { border-color: var(--green); }
 .tick.on .ring::before {
   transform: scale(1);
-  transition: transform 420ms var(--ease-bounce);
+  transition: transform calc(var(--tick-fill) * var(--mo)) var(--ease-bounce);
 }
 
 /* Press feedback lands on pointer-down, not on release — waiting for the tap to
@@ -319,13 +330,14 @@ body {
 .tick .ring svg path {
   stroke-dasharray: 1;
   stroke-dashoffset: 1;
-  transition: stroke-dashoffset 200ms var(--ease-standard);
+  transition: stroke-dashoffset calc(var(--tick-undo-draw) * var(--mo)) var(--ease-exit);
 }
 /* Draws in behind the fill, so the mark appears to be written onto the green
    rather than fading up through it. */
 .tick.on .ring svg path {
   stroke-dashoffset: 0;
-  transition: stroke-dashoffset 340ms 130ms cubic-bezier(0.22, 1, 0.36, 1);
+  transition: stroke-dashoffset calc(var(--tick-draw) * var(--mo))
+              calc(var(--tick-draw-delay) * var(--mo)) var(--ease-out-soft);
 }
 .tick.na { visibility: hidden; }
 
@@ -414,6 +426,53 @@ body {
 }
 /* Don't replay on arrival — the row is already animating in around it. */
 .enter .chip { animation: none; }
+
+/* ---------- state swap (have <-> need) ----------
+   Both faces exist permanently and stack in one grid cell, so the container is
+   always as wide as the wider label and nothing reflows. A tap only flips
+   data-state; no node is created or destroyed, which is what makes rapid
+   tapping safe — CSS interpolates clip-path from wherever it currently is.
+
+   One boundary sweeps across: the incoming face is revealed by exactly the
+   amount the outgoing face is hidden, so at the midpoint the pill really is
+   half one state and half the other. Direction carries meaning — going onto
+   the buy list wipes left-to-right, coming off it wipes back. */
+.swap { display: inline-grid; vertical-align: middle; }
+.swap-face { grid-area: 1 / 1; will-change: clip-path; }
+.swap .chip { animation: none; }
+
+.swap[data-state="need"] [data-face="need"],
+.swap[data-state="have"] [data-face="have"] {
+  clip-path: inset(0 0 0 0);
+  transition: clip-path calc(var(--swap) * var(--mo)) var(--ease-enter);
+}
+/* leaving accelerates away while the arriving face decelerates in */
+.swap[data-state="need"] [data-face="have"] {
+  clip-path: inset(0 0 0 100%);
+  transition: clip-path calc(var(--swap) * var(--mo)) var(--ease-exit);
+}
+.swap[data-state="have"] [data-face="need"] {
+  clip-path: inset(0 100% 0 0);
+  transition: clip-path calc(var(--swap) * var(--mo)) var(--ease-exit);
+}
+
+/* A count changing (2 to buy -> 3 to buy) is a magnitude change, not a state
+   change, so it gets a magnitude cue rather than the full wipe. */
+@keyframes count-bump {
+  50% { transform: scale(1.14); }
+}
+.chip.bumped { animation: count-bump calc(var(--duration-fast) * var(--mo)) var(--ease-bounce); }
+
+/* The "cheapest: …" line appears when an item goes on the buy list. It grows
+   the row either way — that's information arriving, not decoration — but it
+   should fade up rather than snap into existence under your thumb. */
+@keyframes detail-in {
+  from { opacity: 0; transform: translate3d(0, -0.25rem, 0); }
+  to   { opacity: 1; transform: none; }
+}
+.row .detail.fresh {
+  animation: detail-in calc(var(--duration-medium) * var(--mo)) var(--ease-enter) both;
+}
 .chip.verified { background: color-mix(in srgb, var(--green) 15%, transparent); color: var(--green); }
 .chip.derived  { background: color-mix(in srgb, var(--orange) 15%, transparent); color: var(--orange); }
 .chip.estimated { background: var(--fill-tertiary); color: var(--label-secondary); }
@@ -542,14 +601,31 @@ a { color: var(--tint); }
 }
 .enter .row,
 .enter .cal-cell {
-  animation: row-in var(--duration-slow) var(--ease-out-soft) both;
+  animation: row-in calc(var(--duration-slow) * var(--mo)) var(--ease-out-soft) both;
   animation-delay: var(--d, 0ms);
 }
 .enter .large-title,
-.enter .section-header {
-  animation: head-in var(--duration-medium) var(--ease-out-soft) both;
+.enter .section-header,
+.enter .sheet-title,
+.enter .sheet-lede,
+.enter .sheet-note {
+  animation: head-in calc(var(--duration-medium) * var(--mo)) var(--ease-out-soft) both;
   animation-delay: var(--d, 0ms);
 }
+
+/* Push and pop. Short and shallow — this happens often, so it reads as
+   direction rather than as an effect. The offset is deliberately small; a
+   full-width slide at this frequency would be exhausting. */
+@keyframes push-in {
+  from { opacity: 0; transform: translate3d(1.75rem, 0, 0); }
+  to   { opacity: 1; transform: none; }
+}
+@keyframes pop-in {
+  from { opacity: 0; transform: translate3d(-1.75rem, 0, 0); }
+  to   { opacity: 1; transform: none; }
+}
+#view.push { animation: push-in calc(var(--duration-medium) * var(--mo)) var(--ease-out-soft) both; }
+#view.pop  { animation: pop-in  calc(var(--duration-medium) * var(--mo)) var(--ease-out-soft) both; }
 
 /* ---------- record calendar ---------- */
 

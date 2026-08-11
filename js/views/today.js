@@ -62,24 +62,45 @@ function renderMorningCheck(el, now) {
   /* Repaint one row from its own state. Tapping a checkbox must never re-render
      the screen: that tore down the DOM, jumped to the top and then scrolled the
      timeline into view, so a tap on "Banana" threw you halfway down the page. */
+  /* Both faces are built once and never replaced. Flipping data-state wipes one
+     into the other; rebuilding the node would throw the transition away. */
+  const swapMarkup = (haveLabel, needLabel) => `
+    <span class="swap" data-state="have">
+      <span class="swap-face" data-face="have"><span class="chip verified">${esc(haveLabel)}</span></span>
+      <span class="swap-face" data-face="need"><span class="chip" style="${NEED}">${esc(needLabel)}</span></span>
+    </span>`;
+
   const paintRow = (row, it, g) => {
     row.setAttribute('aria-pressed', String(it.missing));
     const detail = row.querySelector('.detail');
     if (it.missing && g?.cheapest_platform) {
       const text = `On Buy list — cheapest: ${g.cheapest_platform}`;
       if (detail) detail.textContent = text;
-      else row.querySelector('.content').insertAdjacentHTML('beforeend', `<div class="detail">${esc(text)}</div>`);
+      else row.querySelector('.content')
+        .insertAdjacentHTML('beforeend', `<div class="detail fresh">${esc(text)}</div>`);
     } else detail?.remove();
-    row.querySelector('.trailing').innerHTML = it.missing
-      ? `<span class="chip" style="${NEED}">need</span>`
-      : '<span class="chip verified">have</span>';
+    row.querySelector('.swap').dataset.state = it.missing ? 'need' : 'have';
   };
 
+  /* Two different changes, two different cues. Crossing between "all in" and
+     "N to buy" is a state change and gets the same wipe as the rows. The count
+     merely going 2 -> 3 is a magnitude change and gets a bump — wiping on every
+     increment would be noise for something that says the same thing. */
+  let lastCount = null;
   const paintDone = () => {
     const n = items.filter(i => i.missing).length;
-    doneRow.querySelector('.trailing').innerHTML = n
-      ? `<span class="chip" style="${NEED}">${n} to buy</span>`
-      : '<span class="chip verified">all in</span>';
+    const swap = doneRow.querySelector('.swap');
+    const chip = swap.querySelector('[data-face="need"] .chip');
+    if (n) {
+      chip.textContent = `${n} to buy`;
+      if (lastCount !== null && lastCount > 0 && n !== lastCount) {
+        chip.classList.remove('bumped');
+        void chip.offsetWidth;            // restart the animation
+        chip.classList.add('bumped');
+      }
+    }
+    swap.dataset.state = n ? 'need' : 'have';
+    lastCount = n;
   };
 
   for (const it of items) {
@@ -89,7 +110,7 @@ function renderMorningCheck(el, now) {
     const row = h(`
       <button class="row">
         <div class="content"><div class="title">${esc(name)}</div></div>
-        <div class="trailing"></div>
+        <div class="trailing">${swapMarkup('have', 'need')}</div>
       </button>`);
     paintRow(row, it, g);
     row.addEventListener('click', () => {
@@ -108,7 +129,7 @@ function renderMorningCheck(el, now) {
   const doneRow = h(`
     <button class="row" id="check-done">
       <div class="content"><div class="title" style="color:var(--tint)">Done</div></div>
-      <div class="trailing"></div>
+      <div class="trailing">${swapMarkup('all in', '0 to buy')}</div>
     </button>`);
   paintDone();
   doneRow.addEventListener('click', () => { finishCheck(now); buzz(); location.hash = '#/today'; refresh(); });

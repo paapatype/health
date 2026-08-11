@@ -39,9 +39,17 @@ function parseHash() {
   return { tab: TABS.some(t => t.id === tab) ? tab : 'today', sub: rest.join('/') || null };
 }
 
+let lastTab = null;
+
 function renderTabBar(active) {
   const el = document.getElementById('tab-bar');
   const items = buyList();
+  /* Settle the icon only when the tab genuinely changes — the bar is rebuilt on
+     every route, and popping on a same-tab refresh would be a twitch with no
+     cause behind it. */
+  const changed = lastTab !== null && lastTab !== active;
+  lastTab = active;
+  el.dataset.settle = changed ? 'yes' : 'no';
   el.innerHTML = TABS.map(t => `
     <a href="#/${t.id}" class="${t.id === active ? 'active' : ''}" aria-label="${t.label}"
        ${t.id === active ? 'aria-current="page"' : ''}>
@@ -130,13 +138,36 @@ async function route() {
 
   renderTabBar(tab);
   const view = document.getElementById('view');
+  /* Clear any motion state left over from the previous navigation. Without
+     this a fast second navigation lands with the old class still on, and the
+     rows run the arrival stagger and the push slide at the same time. */
+  view.classList.remove('enter', 'push', 'pop');
   view.innerHTML = '';
   const mod = await viewModule(tab);
   await mod.render(view, { sub, fresh });
 
-  if (fresh) { window.scrollTo(0, 0); playEntrance(view); }
-  else window.scrollTo(0, y);
+  if (fresh) {
+    window.scrollTo(0, 0);
+    /* Two different kinds of arrival, so two different motions. Moving between
+       tabs is lateral and the content simply assembles. Pushing into a
+       sub-screen or popping back is spatial: it must leave the way it came, or
+       there's no sense of where you are. */
+    const dir = pushDirection(lastScreen, screen);
+    if (dir) { view.classList.add(dir); setTimeout(() => view.classList.remove(dir), 420); }
+    else playEntrance(view);
+  } else window.scrollTo(0, y);
   lastScreen = screen;
+}
+
+/* 'push' going deeper within the same tab, 'pop' coming back, null otherwise. */
+function pushDirection(from, to) {
+  if (!from) return null;
+  const [fTab, ...fRest] = from.split('/');
+  const [tTab, ...tRest] = to.split('/');
+  if (fTab !== tTab) return null;                       // tab switch, not a push
+  const d = seg => seg.filter(Boolean).join('/').split('/').filter(Boolean).length;
+  const a = d(fRest), b = d(tRest);
+  return b > a ? 'push' : b < a ? 'pop' : null;
 }
 
 /* Stagger the arrival. Delays are assigned in document order and capped, so a
@@ -176,8 +207,21 @@ export function refreshBadge() {
 
 window.addEventListener('hashchange', () => { navDepth++; route(); });
 
+/* Slow motion for reviewing motion. ?slowmo=6 multiplies every duration that
+   goes through --mo, so a 260ms wipe becomes 1.6s and can be watched frame by
+   frame. Reviewing animation at full speed hides almost everything wrong with
+   it. Dev affordance only: absent the flag, --mo stays 1 and nothing changes.
+   Also exposed as window.slowmo(n) from the console. */
+function mountSlowmo() {
+  const set = n => document.documentElement.style.setProperty('--mo', String(n || 1));
+  const q = Number(new URLSearchParams(location.search).get('slowmo'));
+  if (Number.isFinite(q) && q > 0) set(q);
+  window.slowmo = set;
+}
+
 (async function boot() {
   try {
+    mountSlowmo();
     await loadAll();
     load();
     mountEdgeBack();

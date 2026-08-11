@@ -78,12 +78,36 @@
   --ease-bounce: cubic-bezier(0.34, 1.56, 0.64, 1);   /* overshoots, then settles */
   --ease-out-soft: cubic-bezier(0.22, 1, 0.36, 1);    /* long, gentle decel */
 
+  /* Material 3's asymmetric pair. A thing arriving decelerates into place; a
+     thing leaving accelerates away. Using one symmetric curve for both makes a
+     replacement read as a crossfade instead of a handover. */
+  --ease-enter: cubic-bezier(0.05, 0.7, 0.1, 1);      /* m3 emphasized-decelerate */
+  --ease-exit:  cubic-bezier(0.3, 0, 0.8, 0.15);      /* m3 emphasized-accelerate */
+
   --duration-instant: 120ms;   /* press feedback only */
   --duration-fast: 200ms;
   --duration-medium: 320ms;
   --duration-slow: 460ms;
   --duration-expressive: 560ms;  /* completion moments: fill, draw, settle */
   --stagger-step: 34ms;          /* per-row delay when a list arrives */
+
+  /* The tick, staged. Completing is ceremonial; undoing is not, so the undo
+     path is deliberately about half the duration. The draw delay keeps the
+     checkmark starting while the fill is still travelling — slow both by the
+     same factor and that overlap survives. */
+  --tick-fill: 560ms;      /* was 420 */
+  --tick-draw: 450ms;      /* was 340 */
+  --tick-draw-delay: 180ms;/* was 130 — still ~⅓ into the fill */
+  --tick-undo-fill: 280ms;
+  --tick-undo-draw: 160ms;
+
+  /* State replacement (the have/need pill). Short on purpose: this is a
+     handover you read, not a moment you watch. */
+  --swap: 260ms;
+
+  /* Every duration below is multiplied by this. Normally 1; the ?slowmo= flag
+     raises it so motion can be reviewed frame by frame. */
+  --mo: 1;
 
   /* ---- Color: light appearance (published reference values) ---- */
   color-scheme: light dark;
