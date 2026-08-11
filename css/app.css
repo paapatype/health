@@ -45,7 +45,11 @@ body {
   background: var(--material-chrome);
   -webkit-backdrop-filter: var(--material-blur);
   backdrop-filter: var(--material-blur);
-  border-bottom: 0.5px solid var(--separator);
+  /* No hard divider. Content fades out into the material where it passes
+     underneath — a 0.5px line reads as a seam between two panels, a scroll
+     edge reads as one surface floating over another. */
+  -webkit-mask-image: linear-gradient(to bottom, #000 62%, rgba(0,0,0,0.55) 84%, transparent 100%);
+  mask-image: linear-gradient(to bottom, #000 62%, rgba(0,0,0,0.55) 84%, transparent 100%);
   z-index: 20;
   opacity: 0;
   transition: opacity var(--duration-fast) var(--ease-standard);
@@ -54,11 +58,50 @@ body {
 .nav-bar.visible { opacity: 1; pointer-events: auto; }
 .nav-bar .nav-title { font: var(--type-headline); }
 
+/* Back control. Chevron points the way the screen will leave, and the label
+   names where you land — "Food", not a bare arrow. */
+.nav-back {
+  position: absolute;
+  left: var(--space-2);
+  bottom: 0;
+  height: var(--nav-bar-height);
+  display: flex;
+  align-items: center;
+  gap: 0.125rem;
+  padding: 0 var(--space-2);
+  color: var(--tint);
+  font: var(--type-body);
+  text-decoration: none;
+  -webkit-tap-highlight-color: transparent;
+}
+.nav-back[hidden] { display: none; }
+.nav-back .chevron { transform: rotate(180deg); width: 0.6875rem; height: 0.6875rem; }
+.nav-back:active { opacity: 0.4; }
+
 .large-title {
   font: var(--type-large-title);
   font-weight: var(--weight-bold);
+  letter-spacing: var(--track-large-title);
   padding: var(--space-2) 0 var(--space-2);
 }
+
+/* ---------- tracking, applied per type role ----------
+   Paired with the size tokens: nothing here is a global letter-spacing, because
+   a single value is always wrong at one end of the scale. */
+.nav-title,
+.sheet-title,
+.btn                    { letter-spacing: var(--track-headline); }
+.row .title,
+.sheet-lede,
+.large-title .subtitle  { letter-spacing: var(--track-body); }
+.row .detail,
+.row .time,
+.section-footer,
+.sheet-note             { letter-spacing: var(--track-footnote); }
+.chip,
+.tab-bar .tab-label,
+.cal-head               { letter-spacing: var(--track-caption); }
+.large-title .subtitle  { letter-spacing: var(--track-subhead); }
 .large-title .subtitle {
   display: block;
   font: var(--type-subhead);
@@ -237,6 +280,12 @@ body {
   transition: background var(--duration-fast) var(--ease-standard),
               border-color var(--duration-fast) var(--ease-standard);
 }
+/* Press feedback lands on pointer-down, not on release — waiting for the tap to
+   complete before acknowledging it is what makes an interface feel dead. */
+.tick:active .ring { transform: scale(0.86); }
+.tick .ring { transition: background var(--duration-fast) var(--ease-standard),
+                          border-color var(--duration-fast) var(--ease-standard),
+                          transform 120ms var(--ease-spring); }
 .tick.on .ring { background: var(--green); border-color: var(--green); }
 .tick .ring svg { width: 0.875rem; height: 0.875rem; color: #fff; opacity: 0; transform: scale(0.5); transition: all var(--duration-fast) var(--ease-spring); }
 .tick.on .ring svg { opacity: 1; transform: scale(1); }
@@ -344,24 +393,30 @@ body {
   background: rgba(0,0,0,0.4);
   z-index: 30;
   opacity: 0;
-  transition: opacity var(--duration-medium) var(--ease-standard);
+  /* Opacity is written per frame from the sheet's live position — a transition
+     here would lag the finger. Dimming the background is what marks this as a
+     modal task rather than a parallel panel. */
 }
 .sheet {
   position: fixed;
   inset: auto 0 0 0;
   max-height: 88dvh;
   background: var(--bg-secondary);
-  border-radius: var(--radius-card) var(--radius-card) 0 0;
+  border-radius: 1rem 1rem 0 0;
   box-shadow: var(--shadow-sheet);
   z-index: 31;
-  transform: translateY(100%);
-  transition: transform var(--duration-medium) var(--ease-standard);
+  /* No transform transition: the spring in ui.js owns this property. A CSS
+     transition here would fight the gesture and make it un-grabbable. */
+  transform: translate3d(0, 100%, 0);
+  will-change: transform;
+  touch-action: none;
   overflow-y: auto;
   -webkit-overflow-scrolling: touch;
   padding: var(--space-2) var(--space-4) calc(env(safe-area-inset-bottom) + var(--space-6));
 }
-.sheet-open .sheet { transform: translateY(0); }
-.sheet-open .sheet-backdrop { opacity: 1; }
+/* The grabber is the affordance for the drag — make it look grabbable. */
+.sheet .grabber { cursor: grab; }
+.sheet:active .grabber { cursor: grabbing; }
 .sheet .grabber {
   width: 2.25rem;
   height: 0.3125rem;
@@ -473,6 +528,33 @@ a { color: var(--tint); }
 }
 .btn-round:active { background: var(--fill-secondary); }
 
+/* Reduced motion is a gentler equivalent, not an absence of feedback. Movement
+   and overshoot go; opacity and colour changes stay, because those are what
+   tell you a tap registered. The springs in motion.js settle instantly under
+   this setting rather than animating. */
 @media (prefers-reduced-motion: reduce) {
-  *, *::before, *::after { transition-duration: 0.01ms !important; animation-duration: 0.01ms !important; }
+  *, *::before, *::after {
+    animation-duration: 0.01ms !important;
+    transition-property: opacity, background-color, color, border-color !important;
+    transition-duration: 140ms !important;
+  }
+  .tick .ring svg { transform: none !important; }
+  .water-dot:active::before,
+  .cal-cell:active,
+  .button:active { transform: none !important; }
+}
+
+/* Frosted surfaces become solid rather than translucent — the material still
+   separates the layers, it just stops relying on blur to do it. */
+@media (prefers-reduced-transparency: reduce) {
+  .nav-bar, .tab-bar {
+    -webkit-backdrop-filter: none;
+    backdrop-filter: none;
+    background: var(--bg);
+    -webkit-mask-image: none;
+    mask-image: none;
+    border-bottom: 0.5px solid var(--separator);
+  }
+  .tab-bar { border-bottom: none; border-top: 0.5px solid var(--separator); }
+  .sheet-backdrop { background: rgba(0,0,0,0.6); }
 }

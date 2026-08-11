@@ -49,19 +49,67 @@ function renderTabBar(active) {
 }
 
 let navObserver = null;
+/* How many hash navigations we've made inside this session — tells us whether
+   history.back() lands somewhere in the app or throws the user out of it. */
+let navDepth = 0;
 
-/* Large title collapses: inline nav bar fades in when the large title scrolls out. */
+/* Large title collapses: inline nav bar fades in when the large title scrolls out.
+   On a sub-screen it also carries a back control — without one the only way out
+   of "This week" or a session detail was the tab bar, which is a dead end
+   dressed up as navigation. Every screen has to answer "how do I get out". */
 export function mountNav(titleText) {
   const nav = document.getElementById('nav-bar');
   nav.querySelector('.nav-title').textContent = titleText;
+
+  const { tab, sub } = parseHash();
+  const back = nav.querySelector('.nav-back');
+  if (sub) {
+    /* Going "up" a path segment is wrong here — "#/train/s" is a route prefix,
+       not a screen. Step back through actual history when we have some (so
+       care/skin → a product returns to the category you came from), and fall
+       back to the tab root when this screen was opened cold from a deep link. */
+    const label = TABS.find(t => t.id === tab)?.label ?? 'Back';
+    back.innerHTML = `${I.chevron}<span>${label}</span>`;
+    back.setAttribute('href', `#/${tab}`);
+    back.onclick = e => {
+      if (navDepth > 0) { e.preventDefault(); navDepth--; history.back(); }
+    };
+    back.hidden = false;
+    nav.classList.add('has-back');
+  } else {
+    back.hidden = true;
+    nav.classList.remove('has-back');
+  }
+
   if (navObserver) navObserver.disconnect();
   const large = document.querySelector('.large-title');
-  if (!large) { nav.classList.add('visible'); return; }
+  /* A sub-screen keeps its nav bar visible: the back control must never be
+     hidden behind a scroll position. */
+  if (!large || sub) { nav.classList.add('visible'); if (!large) return; }
   navObserver = new IntersectionObserver(
-    ([entry]) => nav.classList.toggle('visible', !entry.isIntersecting),
+    ([entry]) => nav.classList.toggle('visible', sub ? true : !entry.isIntersecting),
     { rootMargin: `-${nav.offsetHeight}px 0px 0px 0px` }
   );
   navObserver.observe(large);
+}
+
+/* Swipe in from the left edge to go back, the way iOS does. Only from the very
+   edge, so it can't eat a horizontal scroll or a row swipe. */
+function mountEdgeBack() {
+  let startX = null, startY = null;
+  document.addEventListener('pointerdown', e => {
+    startX = e.clientX <= 24 ? e.clientX : null;
+    startY = e.clientY;
+  }, { passive: true });
+  document.addEventListener('pointerup', e => {
+    if (startX === null) return;
+    const dx = e.clientX - startX, dy = Math.abs(e.clientY - startY);
+    startX = null;
+    if (dx > 60 && dy < 50) {
+      const back = document.querySelector('.nav-back:not([hidden])');
+      if (back) location.hash = back.getAttribute('href');
+    }
+  }, { passive: true });
 }
 
 async function route() {
@@ -77,12 +125,13 @@ async function route() {
 /* re-render current view (after a state change that affects other chrome, e.g. badge) */
 export function refresh() { route(); }
 
-window.addEventListener('hashchange', route);
+window.addEventListener('hashchange', () => { navDepth++; route(); });
 
 (async function boot() {
   try {
     await loadAll();
     load();
+    mountEdgeBack();
     await route();
   } catch (e) {
     document.getElementById('view').innerHTML =

@@ -28,6 +28,20 @@
   --type-caption1:    400 0.75rem/1.333  var(--font-stack);  /* 12/16 */
   --type-caption2:    400 0.6875rem/1.182 var(--font-stack); /* 11/13 */
 
+  /* Tracking is size-specific — SF ships tracking tables for exactly this
+     reason. Letters read too far apart as type grows, so large sizes tighten;
+     small sizes open up slightly to stay legible. One fixed letter-spacing is
+     wrong at both ends of a scale. */
+  --track-large-title: -0.024em;
+  --track-title1:      -0.021em;
+  --track-title2:      -0.017em;
+  --track-title3:      -0.012em;
+  --track-headline:    -0.008em;
+  --track-body:        -0.004em;
+  --track-subhead:      0;
+  --track-footnote:     0.006em;
+  --track-caption:      0.011em;
+
   /* Weights the HIG says to use (never Ultralight/Thin/Light) */
   --weight-regular: 400;
   --weight-medium: 500;

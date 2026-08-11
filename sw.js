@@ -2,7 +2,7 @@
    Bump VERSION on every deploy: old caches are purged on activate,
    and the page shows an update prompt driven by SKIP_WAITING. */
 
-const VERSION = 'v2';
+const VERSION = 'v3';
 const CACHE = `healthos-${VERSION}`;
 
 /* On localhost, shell files go network-first (falling back to cache, so the
@@ -23,6 +23,8 @@ const SHELL = [
   './js/day.js',
   './js/share.js',
   './js/notify.js',
+  './js/ui.js',
+  './js/motion.js',
   './js/views/today.js',
   './js/views/food.js',
   './js/views/train.js',

@@ -1,5 +1,7 @@
 /* ui.js — sheet, toast, tiny DOM helpers. */
 
+import { Spring, addDrag, project, rubberband } from './motion.js';
+
 export function h(html) {
   const t = document.createElement('template');
   t.innerHTML = html.trim();
@@ -12,23 +14,86 @@ export function esc(s) {
 
 let sheetEl = null;
 
+/* The sheet is driven by a spring rather than a CSS transition, because a
+   transition can't be grabbed mid-flight. You can catch this one while it's
+   still opening, drag it back down, and throw it away — the motion follows the
+   finger the whole time and never jumps. Apple's drawer values: damping 0.8,
+   response 0.3 — a little overshoot, earned because the gesture carries
+   momentum. */
 export function sheet(contentHTML, { onClose } = {}) {
-  closeSheet();
+  closeSheet(true);
   const backdrop = h('<div class="sheet-backdrop"></div>');
   const panel = h(`<div class="sheet" role="dialog" aria-modal="true"><div class="grabber"></div>${contentHTML}</div>`);
-  sheetEl = { backdrop, panel, onClose };
   document.body.append(backdrop, panel);
-  requestAnimationFrame(() => document.body.classList.add('sheet-open'));
-  backdrop.addEventListener('click', closeSheet);
+  document.body.classList.add('sheet-open');
+
+  const height = () => panel.offsetHeight || window.innerHeight * 0.5;
+
+  const paint = y => {
+    panel.style.transform = `translate3d(0, ${y}px, 0)`;
+    /* Backdrop tracks the sheet continuously — feedback during the gesture,
+       not only when it ends. */
+    const p = 1 - Math.min(1, Math.max(0, y / height()));
+    backdrop.style.opacity = String(p);
+  };
+
+  const s = new Spring({ from: height(), damping: 0.8, response: 0.3, onUpdate: paint });
+  paint(height());               // start offscreen, painted synchronously
+  s.to(0);                       // ...then spring in from that live value
+
+  const ref = { backdrop, panel, onClose, spring: s, dismiss };
+  sheetEl = ref;
+
+  function dismiss(velocity = 0) {
+    if (sheetEl !== ref) return;
+    sheetEl = null;
+    s.onRest = () => {
+      document.body.classList.remove('sheet-open');
+      backdrop.remove(); panel.remove(); onClose?.();
+    };
+    s.to(height() + 40, { velocity, damping: 1, response: 0.28 });
+  }
+
+  backdrop.addEventListener('click', () => dismiss(0));
+
+  /* Drag to dismiss. Only when the scrollable body is already at the top,
+     otherwise the gesture belongs to the scroller. */
+  addDrag(panel, {
+    axis: 'y',
+    onStart: e => {
+      const body = e.target.closest?.('.sheet-body');
+      ref.blocked = !!(body && body.scrollTop > 0);
+      if (!ref.blocked) s.stop();
+    },
+    onMove: dy => {
+      if (ref.blocked) return;
+      /* Down tracks 1:1; up resists progressively instead of stopping dead. */
+      const y = dy < 0 ? -rubberband(-dy, height()) : dy;
+      s.set(y);
+    },
+    onEnd: v => {
+      if (ref.blocked) return;
+      /* Decide on where the throw would LAND, not where the finger left off. */
+      const landing = s.x + project(v);
+      if (landing > height() * 0.4) dismiss(v);
+      else s.to(0, { velocity: v });
+    }
+  });
+
   return panel;
 }
 
-export function closeSheet() {
+export function closeSheet(immediate = false) {
   if (!sheetEl) return;
-  const { backdrop, panel, onClose } = sheetEl;
-  sheetEl = null;
-  document.body.classList.remove('sheet-open');
-  setTimeout(() => { backdrop.remove(); panel.remove(); onClose?.(); }, 320);
+  if (immediate) {
+    const { backdrop, panel, onClose } = sheetEl;
+    sheetEl.spring?.stop();
+    sheetEl = null;
+    document.body.classList.remove('sheet-open');
+    backdrop.remove(); panel.remove(); onClose?.();
+    return;
+  }
+  sheetEl.dismiss(0);
 }
 
 let toastTimer = null;
