@@ -37,7 +37,9 @@ export function sheet(contentHTML, { onClose } = {}) {
     backdrop.style.opacity = String(p);
   };
 
-  const s = new Spring({ from: height(), damping: 0.8, response: 0.3, onUpdate: paint });
+  /* Apple's drawer spec is response 0.3; nudged to 0.38 because 0.3 read as
+     abrupt in use. Still well short of sluggish, and the bounce is unchanged. */
+  const s = new Spring({ from: height(), damping: 0.8, response: 0.38, onUpdate: paint });
   paint(height());               // start offscreen, painted synchronously
   s.to(0);                       // ...then spring in from that live value
 

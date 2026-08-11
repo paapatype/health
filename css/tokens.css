@@ -69,12 +69,21 @@
 
   --separator-inset: 1rem;       /* leading inset for list separators */
 
-  /* ---- Motion: iOS-native curves ---- */
+  /* ---- Motion: iOS-native curves ----
+     Response stays instant — a press must never wait. What got slower is the
+     expressive half: the moment something completes is allowed to take its
+     time, because that's the part you actually watch. */
   --ease-standard: cubic-bezier(0.25, 0.1, 0.25, 1);
   --ease-spring: cubic-bezier(0.175, 0.885, 0.32, 1.1);
+  --ease-bounce: cubic-bezier(0.34, 1.56, 0.64, 1);   /* overshoots, then settles */
+  --ease-out-soft: cubic-bezier(0.22, 1, 0.36, 1);    /* long, gentle decel */
+
+  --duration-instant: 120ms;   /* press feedback only */
   --duration-fast: 200ms;
-  --duration-medium: 300ms;
-  --duration-slow: 450ms;
+  --duration-medium: 320ms;
+  --duration-slow: 460ms;
+  --duration-expressive: 560ms;  /* completion moments: fill, draw, settle */
+  --stagger-step: 34ms;          /* per-row delay when a list arrives */
 
   /* ---- Color: light appearance (published reference values) ---- */
   color-scheme: light dark;

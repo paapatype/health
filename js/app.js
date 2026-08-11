@@ -11,7 +11,10 @@ const I = {
   train: '<svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.1" stroke-linecap="round" aria-hidden="true"><path d="M4.2 9.5v5M7.4 7.5v9M2 12h2.2M7.4 12h9.2M19.8 9.5v5M16.6 7.5v9M22 12h-2.2" /></svg>',
   care: '<svg viewBox="0 0 24 24" fill="currentColor" aria-hidden="true"><path d="M12 20.6C7.2 17.5 3.4 14 3.4 9.9 3.4 7 5.7 4.8 8.4 4.8c1.5 0 2.8.7 3.6 1.8a4.5 4.5 0 0 1 3.6-1.8c2.7 0 5 2.2 5 5.1 0 4.1-3.8 7.6-8.6 10.7Z"/></svg>',
   me: '<svg viewBox="0 0 24 24" fill="currentColor" aria-hidden="true"><circle cx="12" cy="7.6" r="4.1"/><path d="M12 13.6c-4.4 0-7.6 2.5-7.6 5.6 0 .9.7 1.6 1.6 1.6h12a1.6 1.6 0 0 0 1.6-1.6c0-3.1-3.2-5.6-7.6-5.6Z"/></svg>',
-  check: '<svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="3" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M4.5 12.8l5 5 10-11"/></svg>',
+  /* pathLength="1" normalises the stroke so the dash animation that draws the
+     checkmark works from a single dashoffset of 1 -> 0, whatever the real
+     geometry measures. */
+  check: '<svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="3" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path pathLength="1" d="M4.5 12.8l5 5 10-11"/></svg>',
   chevron: '<svg class="chevron" viewBox="0 0 10 17" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M1.5 1.5l7 7-7 7"/></svg>'
 };
 export const icons = I;
@@ -131,9 +134,28 @@ async function route() {
   const mod = await viewModule(tab);
   await mod.render(view, { sub, fresh });
 
-  if (fresh) window.scrollTo(0, 0);
+  if (fresh) { window.scrollTo(0, 0); playEntrance(view); }
   else window.scrollTo(0, y);
   lastScreen = screen;
+}
+
+/* Stagger the arrival. Delays are assigned in document order and capped, so a
+   long list still feels like it assembles without the tail waiting seconds to
+   appear. Skipped entirely under reduced motion — the class is simply never
+   added, so nothing animates rather than animating to a zero duration. */
+function playEntrance(view) {
+  if (matchMedia('(prefers-reduced-motion: reduce)').matches) return;
+  const MAX = 10;                       // stop staggering past this many items
+  const STEP = 34;
+  let i = 0;
+  view.querySelectorAll('.large-title, .section-header, .row, .cal-cell').forEach(el => {
+    el.style.setProperty('--d', `${Math.min(i, MAX) * STEP}ms`);
+    i++;
+  });
+  view.classList.add('enter');
+  /* Strip the class once it's done so later in-place edits don't inherit it. */
+  setTimeout(() => { view.classList.remove('enter');
+    view.querySelectorAll('[style*="--d"]').forEach(el => el.style.removeProperty('--d')); }, 1200);
 }
 
 /* Re-render the current screen, keeping the scroll position. Prefer updating

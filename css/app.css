@@ -269,7 +269,15 @@ body {
   border: none;
   cursor: pointer;
 }
+/* ---------- the tick ----------
+   The one control tapped dozens of times a day, so it gets the most care.
+   Three staged parts, ~560ms end to end:
+     1. press    — instant, on pointer-down. Response is never delayed.
+     2. fill     — green blooms outward from the centre, overshooting slightly
+     3. check    — the mark draws itself on, starting as the fill lands
+   Untick reverses along the same path rather than snapping off. */
 .tick .ring {
+  position: relative;
   width: 1.5rem;
   height: 1.5rem;
   border-radius: 50%;
@@ -277,19 +285,54 @@ body {
   display: flex;
   align-items: center;
   justify-content: center;
-  transition: background var(--duration-fast) var(--ease-standard),
-              border-color var(--duration-fast) var(--ease-standard);
+  transition: border-color 260ms var(--ease-standard),
+              transform 160ms var(--ease-spring);
 }
+/* The colour is a disc that scales up, not a background that cross-fades —
+   that's what reads as "filling up". */
+.tick .ring::before {
+  content: '';
+  position: absolute;
+  inset: -1.5px;
+  border-radius: 50%;
+  background: var(--green);
+  transform: scale(0);
+  transition: transform 300ms var(--ease-standard);
+}
+.tick.on .ring { border-color: var(--green); }
+.tick.on .ring::before {
+  transform: scale(1);
+  transition: transform 420ms var(--ease-bounce);
+}
+
 /* Press feedback lands on pointer-down, not on release — waiting for the tap to
    complete before acknowledging it is what makes an interface feel dead. */
-.tick:active .ring { transform: scale(0.86); }
-.tick .ring { transition: background var(--duration-fast) var(--ease-standard),
-                          border-color var(--duration-fast) var(--ease-standard),
-                          transform 120ms var(--ease-spring); }
-.tick.on .ring { background: var(--green); border-color: var(--green); }
-.tick .ring svg { width: 0.875rem; height: 0.875rem; color: #fff; opacity: 0; transform: scale(0.5); transition: all var(--duration-fast) var(--ease-spring); }
-.tick.on .ring svg { opacity: 1; transform: scale(1); }
+.tick:active .ring { transform: scale(0.88); }
+
+.tick .ring svg {
+  position: relative;
+  width: 0.9375rem;
+  height: 0.9375rem;
+  color: #fff;
+  overflow: visible;
+}
+.tick .ring svg path {
+  stroke-dasharray: 1;
+  stroke-dashoffset: 1;
+  transition: stroke-dashoffset 200ms var(--ease-standard);
+}
+/* Draws in behind the fill, so the mark appears to be written onto the green
+   rather than fading up through it. */
+.tick.on .ring svg path {
+  stroke-dashoffset: 0;
+  transition: stroke-dashoffset 340ms 130ms cubic-bezier(0.22, 1, 0.36, 1);
+}
 .tick.na { visibility: hidden; }
+
+/* A completed row settles rather than blinking — the label eases back and the
+   whole row warms very slightly. */
+.row.done .title { color: var(--label-secondary); transition: color 420ms var(--ease-standard); }
+.row.done { transition: background 420ms var(--ease-standard); }
 
 /* ---------- water dots ---------- */
 
@@ -315,10 +358,17 @@ body {
   height: 1.75rem;
   border-radius: 50%;
   border: 1.5px solid var(--teal);
-  transition: background var(--duration-fast) var(--ease-standard), transform var(--duration-fast) var(--ease-spring);
+  background: radial-gradient(circle at 50% 50%, var(--teal) 0 70%, transparent 70%);
+  /* Filling a bottle should look like filling, so the colour swells from the
+     middle and overshoots a touch before settling. */
+  background-size: 0% 0%;
+  background-repeat: no-repeat;
+  background-position: 50% 50%;
+  transition: background-size 460ms var(--ease-bounce),
+              transform 160ms var(--ease-spring);
 }
-.water-dot.full::before { background: var(--teal); }
-.water-dot:active::before { transform: scale(0.88); }
+.water-dot.full::before { background-size: 165% 165%; }
+.water-dot:active::before { transform: scale(0.86); }
 
 /* ---------- buttons ---------- */
 
@@ -354,7 +404,16 @@ body {
   border-radius: var(--radius-pill);
   background: var(--fill-tertiary);
   color: var(--label-secondary);
+  /* have <-> need is a replaced node, so this plays on every swap: the new
+     state pops in rather than blinking into place. */
+  animation: chip-in 320ms var(--ease-bounce) both;
 }
+@keyframes chip-in {
+  from { opacity: 0; transform: scale(0.82); }
+  to   { opacity: 1; transform: none; }
+}
+/* Don't replay on arrival — the row is already animating in around it. */
+.enter .chip { animation: none; }
 .chip.verified { background: color-mix(in srgb, var(--green) 15%, transparent); color: var(--green); }
 .chip.derived  { background: color-mix(in srgb, var(--orange) 15%, transparent); color: var(--orange); }
 .chip.estimated { background: var(--fill-tertiary); color: var(--label-secondary); }
@@ -466,6 +525,30 @@ a { color: var(--tint); }
   outline: 2px solid var(--tint);
   outline-offset: 2px;
   border-radius: 0.25rem;
+}
+
+/* ---------- arrival ----------
+   Rows ease up and in with a small stagger when a screen appears, so the list
+   assembles instead of snapping into existence. Only on arrival — never on an
+   in-place update, or every tap would replay it. The delay is capped in JS so a
+   60-item list doesn't take four seconds to finish arriving. */
+@keyframes row-in {
+  from { opacity: 0; transform: translate3d(0, 0.5rem, 0); }
+  to   { opacity: 1; transform: none; }
+}
+@keyframes head-in {
+  from { opacity: 0; transform: translate3d(0, 0.375rem, 0); }
+  to   { opacity: 1; transform: none; }
+}
+.enter .row,
+.enter .cal-cell {
+  animation: row-in var(--duration-slow) var(--ease-out-soft) both;
+  animation-delay: var(--d, 0ms);
+}
+.enter .large-title,
+.enter .section-header {
+  animation: head-in var(--duration-medium) var(--ease-out-soft) both;
+  animation-delay: var(--d, 0ms);
 }
 
 /* ---------- record calendar ---------- */
